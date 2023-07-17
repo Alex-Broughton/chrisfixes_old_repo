@@ -248,14 +248,14 @@ class BrighterFatterKernelSolveTask(pipeBase.PipelineTask):
             ampName = amp.getName()
             gain = bfk.gain[ampName]
             mask = inputPtc.expIdMask[ampName]
-            
-            # Get single Cov model sample
-            mask = np.zeros(mask.shape, dtype=bool) # added
-            index = np.argmin( ( np.asarray(inputPtc.rawMeans[ampName]) - self.config.covSample )**2 )
-            mask[index] = True # added
-            
-            # Convert to A matrix
             if self.config.covSample > 0:
+                # Get single Cov model sample
+                mask = np.zeros(mask.shape, dtype=bool) # added
+                index = np.argmin( ( np.asarray(inputPtc.rawMeans[ampName]) - self.config.covSample )**2 )
+                mask[index] = True # added
+            
+                # Convert to A matrix
+            
                 from astropy.io import fits
                 #if detName == "R03_S12":
                 #    h = fits.open("/sdf/group/rubin/repo/main/u/abrought/BF/2023.06.16/ptc.R03-S12.trunc_to_pcti.fullnoisematrix/20230710T213347Z/ptc/ptc_LSSTCam_R03_S12_u_abrought_BF_2023_06_16_ptc_R03-S12_trunc_to_pcti_fullnoisematrix_20230710T213347Z.fits")
@@ -275,15 +275,15 @@ class BrighterFatterKernelSolveTask(pipeBase.PipelineTask):
                 A       = (_C_model[0])/ _mu**2
                 A[0][0] = (_C_model[0][0][0] / _mu**2) - (_mu/_g + _n/_g**2)/(_mu**2)
 
-                if gain <= 0:
-                    # We've received very bad data.
-                    self.log.warning("Impossible gain recieved from PTC for %s: %f. Skipping bad amplifier.",
-                                     ampName, gain)
-                    bfk.meanXcorrs[ampName] = np.zeros(bfk.shape)
-                    bfk.ampKernels[ampName] = np.zeros(bfk.shape)
-                    bfk.rawXcorrs[ampName] = np.zeros((len(mask), inputPtc.covMatrixSide, inputPtc.covMatrixSide))
-                    bfk.valid[ampName] = False
-                    continue
+            if gain <= 0:
+                # We've received very bad data.
+                self.log.warning("Impossible gain recieved from PTC for %s: %f. Skipping bad amplifier.",
+                                 ampName, gain)
+                bfk.meanXcorrs[ampName] = np.zeros(bfk.shape)
+                bfk.ampKernels[ampName] = np.zeros(bfk.shape)
+                bfk.rawXcorrs[ampName] = np.zeros((len(mask), inputPtc.covMatrixSide, inputPtc.covMatrixSide))
+                bfk.valid[ampName] = False
+                continue
 
             # Use inputPtc.expIdMask to get the means, variances, and
             # covariances that were not masked after PTC.  The
@@ -306,6 +306,7 @@ class BrighterFatterKernelSolveTask(pipeBase.PipelineTask):
             for xcorrNum, (xcorr, flux, var) in enumerate(zip(xCorrList, fluxes, variances), 1):
                 q = np.array(xcorr) * gain * gain  # xcorr now in e^-
                 q *= 2.0  # Remove factor of 1/2 applied in PTC.
+                print("Amp: %s %d/%d Flux: %f  Var: %f  Q(0,0): %g  Q(1,0): %g  Q(0,1): %g" % (ampName, xcorrNum, len(xCorrList), flux, var, q[0][0], q[1][0], q[0][1]))
                 self.log.info("Amp: %s %d/%d Flux: %f  Var: %f  Q(0,0): %g  Q(1,0): %g  Q(0,1): %g",
                               ampName, xcorrNum, len(xCorrList), flux, var, q[0][0], q[1][0], q[0][1])
 
