@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacelsst_1_1ip" kind="namespace" language="C++">
+    <compoundname>lsst::ip</compoundname>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr">lsst::ip::isr</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelsst_1_1ip_1aa30c5b7f066eee77f341a3ca837e4200" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::__path__</definition>
+        <argsstring></argsstring>
+        <name>__path__</name>
+        <qualifiedname>lsst::ip.__path__</qualifiedname>
+        <initializer>=  pkgutil.extend_path(__path__, __name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/__init__.py" line="2" column="1" bodyfile="python/lsst/ip/__init__.py" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lsst/ip/isr/applyLookupTable.h" line="33" column="1"/>
+  </compounddef>
+</doxygen>

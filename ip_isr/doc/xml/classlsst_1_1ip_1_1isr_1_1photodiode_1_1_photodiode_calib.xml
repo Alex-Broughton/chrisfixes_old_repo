@@ -1,0 +1,516 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::photodiode::PhotodiodeCalib</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib" prot="public" virt="non-virtual">lsst.ip.isr.calibType.IsrCalib</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a325565949653327d156e52d6012fd92d" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.photodiode.PhotodiodeCalib::_OBSTYPE</definition>
+        <argsstring></argsstring>
+        <name>_OBSTYPE</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib._OBSTYPE</qualifiedname>
+        <initializer>=  &apos;PHOTODIODE&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="59" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a1977101865284d721fe838b65a96dd28" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.photodiode.PhotodiodeCalib::_SCHEMA</definition>
+        <argsstring></argsstring>
+        <name>_SCHEMA</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib._SCHEMA</qualifiedname>
+        <initializer>=  &apos;Photodiode&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="60" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a25f8c6c69c50a81273045e8027ac2e2a" prot="private" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float lsst::ip::isr.photodiode.PhotodiodeCalib::_VERSION</definition>
+        <argsstring></argsstring>
+        <name>_VERSION</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib._VERSION</qualifiedname>
+        <initializer>=  1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="61" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1ae48d220b2e70470d27731ccaa50b5ba5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.photodiode.PhotodiodeCalib::timeSamples</definition>
+        <argsstring></argsstring>
+        <name>timeSamples</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib.timeSamples</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="68" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1afb29cb1b1f4b6da8a9f90d4cfa67babc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.photodiode.PhotodiodeCalib::currentSamples</definition>
+        <argsstring></argsstring>
+        <name>currentSamples</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib.currentSamples</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="69" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a88c226f345c18d6e74872cc228b37793" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.photodiode.PhotodiodeCalib::integrationMethod</definition>
+        <argsstring></argsstring>
+        <name>integrationMethod</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib.integrationMethod</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="77" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a6dd06fa6af4e6e0316881369c750db19" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.photodiode.PhotodiodeCalib::currentScale</definition>
+        <argsstring></argsstring>
+        <name>currentScale</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib.currentScale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="82" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1ac3668eaaaacf5dcbbf33597dfe6e64f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiode.PhotodiodeCalib.__init__</definition>
+        <argsstring>(self, timeSamples=None, currentSamples=None, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib.__init__</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a8b0c7d628ed5e5b429f66ec5b2b4f25b">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1ae48d220b2e70470d27731ccaa50b5ba5" kindref="member">timeSamples</ref></type>
+          <defname>timeSamples</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1afb29cb1b1f4b6da8a9f90d4cfa67babc" kindref="member">currentSamples</ref></type>
+          <defname>currentSamples</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="63" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="63" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a9c50aa1a317bbfb2bef5cf275b36ec03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiode.PhotodiodeCalib.fromDict</definition>
+        <argsstring>(cls, dictionary)</argsstring>
+        <name>fromDict</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib.fromDict</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a817599a7eef2221ba3908296dab05347">fromDict</reimplements>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>dictionary</type>
+          <defname>dictionary</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a PhotodiodeCalib from a dictionary of properties.
+
+Parameters
+----------
+dictionary : `dict`
+    Dictionary of properties.
+
+Returns
+-------
+calib : `lsst.ip.isr.PhotodiodeCalib`
+    Constructed photodiode data.
+
+Raises
+------
+RuntimeError
+    Raised if the supplied dictionary is for a different
+    calibration type.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="94" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="94" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1ae414d0126d5bdce22d7e638d3f3898d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiode.PhotodiodeCalib.toDict</definition>
+        <argsstring>(self)</argsstring>
+        <name>toDict</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib.toDict</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1aab4a381103b94dbea2acb727184db72f">toDict</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a dictionary containing the photodiode properties.
+
+The dictionary should be able to be round-tripped through.
+`fromDict`.
+
+Returns
+-------
+dictionary : `dict`
+    Dictionary of properties.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="128" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="128" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a132bfd6ce138a20d08c3f443dfcdb4c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiode.PhotodiodeCalib.fromTable</definition>
+        <argsstring>(cls, tableList)</argsstring>
+        <name>fromTable</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib.fromTable</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a1403d6fec5026193600341be1a426533">fromTable</reimplements>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>tableList</type>
+          <defname>tableList</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct calibration from a list of tables.
+
+This method uses the `fromDict` method to create the
+calibration after constructing an appropriate dictionary from
+the input tables.
+
+Parameters
+----------
+tableList : `list` [`astropy.table.Table`]
+    List of tables to use to construct the crosstalk
+    calibration.
+
+Returns
+-------
+calib : `lsst.ip.isr.PhotodiodeCalib`
+    The calibration defined in the tables.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="152" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="152" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a9780cf01710c2538455424d1d153f166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiode.PhotodiodeCalib.toTable</definition>
+        <argsstring>(self)</argsstring>
+        <name>toTable</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib.toTable</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a247f0c08c122d6c0da72f764b5e4c466">toTable</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a list of tables containing the information in this
+calibration.
+
+The list of tables should create an identical calibration
+after being passed to this class&apos;s fromTable method.
+
+Returns
+-------
+tableList : `list` [`astropy.table.Table`]
+    List of tables containing the photodiode calibration
+    information.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="182" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="182" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1af6d30bb106c105d104df74346e97c799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiode.PhotodiodeCalib.readTwoColumnPhotodiodeData</definition>
+        <argsstring>(cls, filename)</argsstring>
+        <name>readTwoColumnPhotodiodeData</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib.readTwoColumnPhotodiodeData</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a PhotodiodeCalib by reading the simple column format.
+
+Parameters
+----------
+filename : `str`
+    File to read samples from.
+
+Returns
+-------
+calib : `lsst.ip.isr.PhotodiodeCalib`
+    The calibration defined in the file.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="207" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="207" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a68cb3192ed74542c0ea137c8ca1dcfaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiode.PhotodiodeCalib.integrate</definition>
+        <argsstring>(self)</argsstring>
+        <name>integrate</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib.integrate</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Integrate the current.
+
+Raises
+------
+RuntimeError
+    Raised if the integration method is not known.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="231" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="231" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1af20ae748dfb2e8ddb0b726870af4745f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiode.PhotodiodeCalib.integrateDirectSum</definition>
+        <argsstring>(self)</argsstring>
+        <name>integrateDirectSum</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib.integrateDirectSum</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Integrate points.
+
+This uses numpy&apos;s trapezoidal integrator.
+
+Returns
+-------
+sum : `float`
+    Total charge measured.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="248" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="248" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a5be489fb25ceeed2e0e9650ff6b66aa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiode.PhotodiodeCalib.integrateTrimmedSum</definition>
+        <argsstring>(self)</argsstring>
+        <name>integrateTrimmedSum</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib.integrateTrimmedSum</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Integrate points with a baseline level subtracted.
+
+This uses numpy&apos;s trapezoidal integrator.
+
+Returns
+-------
+sum : `float`
+    Total charge measured.
+
+See Also
+--------
+lsst.eotask.gen3.eoPtc
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="260" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="260" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a7705cdd10e90a09b77f0b02050f6a72d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiode.PhotodiodeCalib.integrateChargeSum</definition>
+        <argsstring>(self)</argsstring>
+        <name>integrateChargeSum</name>
+        <qualifiedname>lsst::ip::isr.photodiode.PhotodiodeCalib.integrateChargeSum</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>For this method, the values in .currentSamples are actually the
+integrated charge values as measured by the ammeter for each
+sampling interval.  We need to do a baseline subtraction,
+based on the charge values when the LED is off, then sum up
+the corrected signals.
+
+Returns
+-------
+sum : `float`
+    Total charge measured.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiode.py" line="280" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="280" bodyend="314"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Independent current measurements from photodiode for linearity
+calculations.
+
+Parameters
+----------
+timeSamples : `list` or `numpy.ndarray`
+    List of samples the photodiode was measured at.
+currentSamples : `list` or `numpy.ndarray`
+    List of current measurements at each time sample.
+log : `lsst.log.Log`, optional
+    Log to write messages to.
+**kwargs :
+    Additional parameters. These will be passed to the parent
+    constructor with the exception of:
+
+    ``&quot;integrationMethod&quot;``
+        Name of the algorithm to use to integrate the current
+        samples. Allowed values are ``DIRECT_SUM``,
+        ``TRIMMED_SUM``, and ``CHARGE_SUM`` (`str`).
+    ``&quot;currentScale&quot;``
+        Scale factor to apply to the current samples for the
+        ``CHARGE_SUM`` integration method. A typical value
+        would be `-1`, to flip the sign of the integrated charge.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>abc::ABC</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.photodiode.PhotodiodeCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.calibType.IsrCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>abc::ABC</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.photodiode.PhotodiodeCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.calibType.IsrCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/photodiode.py" line="33" column="1" bodyfile="python/lsst/ip/isr/photodiode.py" bodystart="33" bodyend="314"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1ac3668eaaaacf5dcbbf33597dfe6e64f7" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a325565949653327d156e52d6012fd92d" prot="private" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>_OBSTYPE</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a1977101865284d721fe838b65a96dd28" prot="private" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>_SCHEMA</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a25f8c6c69c50a81273045e8027ac2e2a" prot="private" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>_VERSION</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1afb29cb1b1f4b6da8a9f90d4cfa67babc" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>currentSamples</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a6dd06fa6af4e6e0316881369c750db19" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>currentScale</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a9c50aa1a317bbfb2bef5cf275b36ec03" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>fromDict</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a132bfd6ce138a20d08c3f443dfcdb4c9" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>fromTable</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a68cb3192ed74542c0ea137c8ca1dcfaf" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>integrate</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a7705cdd10e90a09b77f0b02050f6a72d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>integrateChargeSum</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1af20ae748dfb2e8ddb0b726870af4745f" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>integrateDirectSum</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a5be489fb25ceeed2e0e9650ff6b66aa7" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>integrateTrimmedSum</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a88c226f345c18d6e74872cc228b37793" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>integrationMethod</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1af6d30bb106c105d104df74346e97c799" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>readTwoColumnPhotodiodeData</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1ae48d220b2e70470d27731ccaa50b5ba5" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>timeSamples</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1ae414d0126d5bdce22d7e638d3f3898d2" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>toDict</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a9780cf01710c2538455424d1d153f166" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiode::PhotodiodeCalib</scope><name>toTable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

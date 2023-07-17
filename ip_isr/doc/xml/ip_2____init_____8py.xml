@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="ip_2____init_____8py" kind="file" language="Python">
+    <compoundname>__init__.py</compoundname>
+    <innernamespace refid="namespacelsst">lsst</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip">lsst::ip</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>pkgutil</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">__path__<sp/>=<sp/>pkgutil.extend_path(__path__,<sp/>__name__)</highlight></codeline>
+    </programlisting>
+    <location file="python/lsst/ip/__init__.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1masking_1_1_masking_config" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::masking::MaskingConfig</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Config</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1masking_1_1_masking_config_1abdc43e4f0966313f51c367c36f480d81" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.masking.MaskingConfig::doSpecificMasking</definition>
+        <argsstring></argsstring>
+        <name>doSpecificMasking</name>
+        <qualifiedname>lsst::ip::isr.masking.MaskingConfig.doSpecificMasking</qualifiedname>
+        <initializer>=  Field(
+        dtype=bool,
+        doc=&quot;Masking configuration.&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/masking.py" line="30" column="1" bodyfile="python/lsst/ip/isr/masking.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.masking.MaskingConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1masking_1_1_masking_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Config</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.masking.MaskingConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1masking_1_1_masking_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Config</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/masking.py" line="29" column="1" bodyfile="python/lsst/ip/isr/masking.py" bodystart="29" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1masking_1_1_masking_config_1abdc43e4f0966313f51c367c36f480d81" prot="public" virt="non-virtual"><scope>lsst::ip::isr::masking::MaskingConfig</scope><name>doSpecificMasking</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

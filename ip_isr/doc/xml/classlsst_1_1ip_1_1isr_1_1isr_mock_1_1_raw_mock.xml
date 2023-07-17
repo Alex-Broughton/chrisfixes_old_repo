@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_mock" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::isrMock::RawMock</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock" prot="public" virt="non-virtual">lsst.ip.isr.isrMock.IsrMock</basecompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_calibrated_raw_mock" prot="public" virt="non-virtual">lsst.ip.isr.isrMock.CalibratedRawMock</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_dict_mock" prot="public" virt="non-virtual">lsst.ip.isr.isrMock.RawDictMock</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_trimmed_raw_mock" prot="public" virt="non-virtual">lsst.ip.isr.isrMock.TrimmedRawMock</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_mock_1af7fcf38a46a0c8aae00878cdff6c0406" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.RawMock.__init__</definition>
+        <argsstring>(self, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.isrMock.RawMock.__init__</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a35068086855cf36162cc91bbb69602a2">__init__</reimplements>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_trimmed_raw_mock_1a1e2370e9095000d5f440cb6fc6cb18ce">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_calibrated_raw_mock_1af909640d9aac7d2ae9f8b65c3ca7edf9">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_dict_mock_1a5f36e1dcdb83a4fd555d455cdc2ae12d">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="774" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="774" bodyend="786"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Generate a raw exposure suitable for ISR.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrMock.RawMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_mock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lsst.ip.isr.isrMock.CalibratedRawMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_calibrated_raw_mock"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.isrMock.IsrMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lsst.ip.isr.isrMock.RawDictMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_dict_mock"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lsst.ip.isr.isrMock.TrimmedRawMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_trimmed_raw_mock"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pipeBase.Task</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrMock.RawMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_mock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.isrMock.IsrMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pipeBase.Task</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/isrMock.py" line="771" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="771" bodyend="786"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_mock_1af7fcf38a46a0c8aae00878cdff6c0406" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::RawMock</scope><name>__init__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

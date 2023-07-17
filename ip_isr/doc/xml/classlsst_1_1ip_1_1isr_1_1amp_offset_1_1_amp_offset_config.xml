@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::ampOffset::AmpOffsetConfig</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pexConfig.Config</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1a3219869b2e4ec5717ee244486cee8d12" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ampOffset.AmpOffsetConfig::ampEdgeInset</definition>
+        <argsstring></argsstring>
+        <name>ampEdgeInset</name>
+        <qualifiedname>lsst::ip::isr.ampOffset.AmpOffsetConfig.ampEdgeInset</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        doc=&quot;Number of pixels the amp edge <ref refid="fits_8cc_1ade66fcd5f6e84e7d8692c81fc8b4d108" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">strip</ref> is inset <ref refid="_transform_map_8cc_1a302c2cce96a9eb2cb1d89356b89a84bd" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">from</ref> the amp edge. A thin <ref refid="fits_8cc_1ade66fcd5f6e84e7d8692c81fc8b4d108" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">strip</ref> of pixels running &quot;
+        &quot;parallel <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> the edge of the amp is used <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> characterize the average flux level at the amp edge.&quot;,
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        default=5,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ampOffset.py" line="33" column="1" bodyfile="python/lsst/ip/isr/ampOffset.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1aed80033c92c8592638b256b9a84f353e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ampOffset.AmpOffsetConfig::ampEdgeWidth</definition>
+        <argsstring></argsstring>
+        <name>ampEdgeWidth</name>
+        <qualifiedname>lsst::ip::isr.ampOffset.AmpOffsetConfig.ampEdgeWidth</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        doc=&quot;Pixel width of the amp edge <ref refid="fits_8cc_1ade66fcd5f6e84e7d8692c81fc8b4d108" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">strip</ref>, starting at <ref refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1a3219869b2e4ec5717ee244486cee8d12" kindref="member">ampEdgeInset</ref> and extending inwards.&quot;,
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        default=64,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ampOffset.py" line="39" column="1" bodyfile="python/lsst/ip/isr/ampOffset.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1a367ab0b1ab69cb9157f3411badbb032d" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ampOffset.AmpOffsetConfig::ampEdgeMinFrac</definition>
+        <argsstring></argsstring>
+        <name>ampEdgeMinFrac</name>
+        <qualifiedname>lsst::ip::isr.ampOffset.AmpOffsetConfig.ampEdgeMinFrac</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        doc=&quot;Minimum allowed fraction of viable <ref refid="_delta_function_kernel_8cc_1ae2a8d974644a75bdf33c1a72e76bd562" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">pixel</ref> rows along an amp edge. No amp offset estimate will be &quot;
+        &quot;generated for amp edges that do not have at least this fraction of unmasked <ref refid="_delta_function_kernel_8cc_1ae2a8d974644a75bdf33c1a72e76bd562" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">pixel</ref> rows.&quot;,
+        dtype=float,
+        default=0.5,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ampOffset.py" line="44" column="1" bodyfile="python/lsst/ip/isr/ampOffset.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1a5f0c309a4b31313259aa670786613bd1" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ampOffset.AmpOffsetConfig::ampEdgeMaxOffset</definition>
+        <argsstring></argsstring>
+        <name>ampEdgeMaxOffset</name>
+        <qualifiedname>lsst::ip::isr.ampOffset.AmpOffsetConfig.ampEdgeMaxOffset</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        doc=&quot;Maximum allowed amp offset ADU value. If <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> measured amp offset value is larger than this, the &quot;
+        &quot;result will be discarded and therefore not used <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> determine amp pedestal corrections.&quot;,
+        dtype=float,
+        default=5.0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ampOffset.py" line="50" column="1" bodyfile="python/lsst/ip/isr/ampOffset.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1aa3710988405f9184df7e109baf2a325e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ampOffset.AmpOffsetConfig::ampEdgeWindow</definition>
+        <argsstring></argsstring>
+        <name>ampEdgeWindow</name>
+        <qualifiedname>lsst::ip::isr.ampOffset.AmpOffsetConfig.ampEdgeWindow</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        doc=&quot;Pixel size of the sliding window used <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> generate rolling average amp offset values.&quot;,
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        default=512,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ampOffset.py" line="56" column="1" bodyfile="python/lsst/ip/isr/ampOffset.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1a2c025ef5a62e376acc02aaed100cb445" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ampOffset.AmpOffsetConfig::doBackground</definition>
+        <argsstring></argsstring>
+        <name>doBackground</name>
+        <qualifiedname>lsst::ip::isr.ampOffset.AmpOffsetConfig.doBackground</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        doc=&quot;Estimate and subtract <ref refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1ae94bf3fdf78ea1454a7b62fe45f8c2d8" kindref="member">background</ref> prior <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> amp offset estimation?&quot;,
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ampOffset.py" line="61" column="1" bodyfile="python/lsst/ip/isr/ampOffset.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1ae94bf3fdf78ea1454a7b62fe45f8c2d8" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ampOffset.AmpOffsetConfig::background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <qualifiedname>lsst::ip::isr.ampOffset.AmpOffsetConfig.background</qualifiedname>
+        <initializer>=  pexConfig.ConfigurableField(
+        doc=&quot;An initial background estimation <ref refid="_bounded_field_8cc_1a0bbe5f3df36a6b765aed607432fbcefc" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">step</ref> run prior <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> amp offset calculation.&quot;,
+        <ref refid="_base_column_view_8cc_1a33a50ea78c8f78d88e8c56f7582103bc" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">target</ref>=SubtractBackgroundTask,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ampOffset.py" line="66" column="1" bodyfile="python/lsst/ip/isr/ampOffset.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1a7bceef33c0cdec528c3357aa1b188711" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ampOffset.AmpOffsetConfig::doDetection</definition>
+        <argsstring></argsstring>
+        <name>doDetection</name>
+        <qualifiedname>lsst::ip::isr.ampOffset.AmpOffsetConfig.doDetection</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        doc=&quot;Detect sources and update cloned exposure prior <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> amp offset estimation?&quot;,
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ampOffset.py" line="70" column="1" bodyfile="python/lsst/ip/isr/ampOffset.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1a67f15da94b6aca768ac57786709a20c0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ampOffset.AmpOffsetConfig::detection</definition>
+        <argsstring></argsstring>
+        <name>detection</name>
+        <qualifiedname>lsst::ip::isr.ampOffset.AmpOffsetConfig.detection</qualifiedname>
+        <initializer>=  pexConfig.ConfigurableField(
+        doc=&quot;Source detection <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> add temporary detection footprints prior <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> amp offset calculation.&quot;,
+        <ref refid="_base_column_view_8cc_1a33a50ea78c8f78d88e8c56f7582103bc" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">target</ref>=SourceDetectionTask,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ampOffset.py" line="75" column="1" bodyfile="python/lsst/ip/isr/ampOffset.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Configuration parameters for AmpOffsetTask.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.ampOffset.AmpOffsetConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pexConfig::Config</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.ampOffset.AmpOffsetConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pexConfig::Config</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/ampOffset.py" line="30" column="1" bodyfile="python/lsst/ip/isr/ampOffset.py" bodystart="30" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1a3219869b2e4ec5717ee244486cee8d12" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ampOffset::AmpOffsetConfig</scope><name>ampEdgeInset</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1a5f0c309a4b31313259aa670786613bd1" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ampOffset::AmpOffsetConfig</scope><name>ampEdgeMaxOffset</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1a367ab0b1ab69cb9157f3411badbb032d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ampOffset::AmpOffsetConfig</scope><name>ampEdgeMinFrac</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1aed80033c92c8592638b256b9a84f353e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ampOffset::AmpOffsetConfig</scope><name>ampEdgeWidth</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1aa3710988405f9184df7e109baf2a325e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ampOffset::AmpOffsetConfig</scope><name>ampEdgeWindow</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1ae94bf3fdf78ea1454a7b62fe45f8c2d8" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ampOffset::AmpOffsetConfig</scope><name>background</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1a67f15da94b6aca768ac57786709a20c0" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ampOffset::AmpOffsetConfig</scope><name>detection</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1a2c025ef5a62e376acc02aaed100cb445" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ampOffset::AmpOffsetConfig</scope><name>doBackground</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config_1a7bceef33c0cdec528c3357aa1b188711" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ampOffset::AmpOffsetConfig</scope><name>doDetection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

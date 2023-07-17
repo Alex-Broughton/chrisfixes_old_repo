@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacelsst_1_1ip_1_1isr" kind="namespace" language="C++">
+    <compoundname>lsst::ip::isr</compoundname>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1_count_masked_pixels" prot="public">lsst::ip::isr::CountMaskedPixels</innerclass>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1amp_offset">lsst::ip::isr::ampOffset</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1assemble_ccd_task">lsst::ip::isr::assembleCcdTask</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1brighter_fatter_kernel">lsst::ip::isr::brighterFatterKernel</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1calib_type">lsst::ip::isr::calibType</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1crosstalk">lsst::ip::isr::crosstalk</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1defects">lsst::ip::isr::defects</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1deferred_charge">lsst::ip::isr::deferredCharge</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1fringe">lsst::ip::isr::fringe</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1isr_functions">lsst::ip::isr::isrFunctions</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1isr_mock">lsst::ip::isr::isrMock</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1isr_qa">lsst::ip::isr::isrQa</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1isr_statistics">lsst::ip::isr::isrStatistics</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1isr_task">lsst::ip::isr::isrTask</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1linearize">lsst::ip::isr::linearize</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1masking">lsst::ip::isr::masking</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1overscan">lsst::ip::isr::overscan</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1photodiode">lsst::ip::isr::photodiode</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1photodiode_correction">lsst::ip::isr::photodiodeCorrection</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1ptc_dataset">lsst::ip::isr::ptcDataset</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1straylight">lsst::ip::isr::straylight</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1transmission_curve">lsst::ip::isr::transmissionCurve</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1version">lsst::ip::isr::version</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1vignette">lsst::ip::isr::vignette</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1a8cda0eabf34fa8f117df7842c1c5226f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename PixelT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref></type>
+        <definition>int lsst::ip::isr::applyLookupTable</definition>
+        <argsstring>(afw::image::Image&lt; PixelT &gt; &amp;image, ndarray::Array&lt; PixelT, 1, 1 &gt; const &amp;table, PixelT indOffset)</argsstring>
+        <name>applyLookupTable</name>
+        <qualifiedname>lsst::ip::isr::applyLookupTable</qualifiedname>
+        <param>
+          <type><ref refid="classlsst_1_1afw_1_1image_1_1_image" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::Image</ref>&lt; PixelT &gt; &amp;</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>ndarray::Array&lt; PixelT, 1, 1 &gt; const &amp;</type>
+          <declname>table</declname>
+        </param>
+        <param>
+          <type>PixelT</type>
+          <declname>indOffset</declname>
+        </param>
+        <briefdescription>
+<para>Add the values in a lookup table to an image, e.g. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>for non-linearity correction</para>
+<para>The algorithm is as follows: numOutOfRange = 0 For each i,j of the image: lookupInd = int(indOffset + image[i,j]) if lookupInd not in range [0, table.size() - 1]: set lookupInd to nearest edge and increment numOutOfRange image[i,j] += table[lookupInd] return numOutOfRange</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>image to which to add the values; modified in place </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lookup table </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">indOffset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>scalar added to image value before truncating to lookup column</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the number of pixels whose values were out of range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/applyLookupTable.cc" line="35" column="5" bodyfile="src/applyLookupTable.cc" bodystart="35" bodyend="62" declfile="include/lsst/ip/isr/applyLookupTable.h" declline="55" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1a1cc90f7191c76d543520af0f9f473c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename PixelT</type>
+          </param>
+        </templateparamlist>
+        <type>size_t</type>
+        <definition>size_t lsst::ip::isr::maskNans</definition>
+        <argsstring>(afw::image::MaskedImage&lt; PixelT &gt; const &amp;mi, afw::image::MaskPixel maskVal, afw::image::MaskPixel allow=0)</argsstring>
+        <name>maskNans</name>
+        <qualifiedname>lsst::ip::isr::maskNans</qualifiedname>
+        <param>
+          <type><ref refid="classlsst_1_1afw_1_1image_1_1_masked_image" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::MaskedImage</ref>&lt; PixelT &gt; const &amp;</type>
+          <declname>mi</declname>
+          <briefdescription><para>Input image </para>
+</briefdescription>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1afw_1_1image_1a86bd065fe6dce2fe4c0f95987c3480d9" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::MaskPixel</ref></type>
+          <declname>maskVal</declname>
+          <briefdescription><para>Bit mask value to give a NaN </para>
+</briefdescription>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1afw_1_1image_1a86bd065fe6dce2fe4c0f95987c3480d9" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::MaskPixel</ref></type>
+          <declname>allow</declname>
+          <defval>0</defval>
+          <briefdescription><para>Retain NANs with this bit mask (0 to mask all NANs) </para>
+</briefdescription>
+        </param>
+        <briefdescription>
+<para>Mask NANs in an image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>NANs in the image or variance that are not already masked by the &apos;allow&apos; value are masked with the &apos;maskVal&apos;.</para>
+<para><simplesect kind="return"><para>Number of pixels masked </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Isr.cc" line="35" column="8" bodyfile="src/Isr.cc" bodystart="35" bodyend="50" declfile="include/lsst/ip/isr/isr.h" declline="88" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1a290ba5ef3fd39201f64651d01bfad9ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ImagePixelT</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="cpp/container/vector" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; lsst::ip::isr::fitOverscanImage</definition>
+        <argsstring>(lsst::afw::image::MaskedImage&lt; ImagePixelT &gt; const &amp;overscan, std::vector&lt; std::string &gt; badPixelMask, bool isTransposed)</argsstring>
+        <name>fitOverscanImage</name>
+        <qualifiedname>lsst::ip::isr::fitOverscanImage</qualifiedname>
+        <param>
+          <type><ref refid="classlsst_1_1afw_1_1image_1_1_masked_image" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">lsst::afw::image::MaskedImage</ref>&lt; ImagePixelT &gt; const &amp;</type>
+          <declname>overscan</declname>
+        </param>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; <ref refid="cpp/string/basic_string" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/cppreference-doxygen-web.tag.xml">std::string</ref> &gt;</type>
+          <declname>badPixelMask</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isTransposed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>This is transposed here to match the existing numpy-array ordering. This effectively transposes the image for us.</para>
+<para>This is transposed here to match the existing numpy-array ordering. This effectively transposes the image for us.</para>
+        </inbodydescription>
+        <location file="src/Isr.cc" line="53" column="13" bodyfile="src/Isr.cc" bodystart="53" bodyend="96" declfile="include/lsst/ip/isr/isr.h" declline="96" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1a665a3035781d07c788165a41879e0bf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>template <ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref></type>
+        <definition>template int lsst::ip::isr::applyLookupTable&lt; float &gt;</definition>
+        <argsstring>(afw::image::Image&lt; float &gt; &amp;, ndarray::Array&lt; float, 1, 1 &gt; const &amp;, float)</argsstring>
+        <name>applyLookupTable&lt; float &gt;</name>
+        <qualifiedname>lsst::ip::isr::applyLookupTable&lt; float &gt;</qualifiedname>
+        <param>
+          <type><ref refid="classlsst_1_1afw_1_1image_1_1_image" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::Image</ref>&lt; float &gt; &amp;</type>
+        </param>
+        <param>
+          <type>ndarray::Array&lt; float, 1, 1 &gt; const &amp;</type>
+        </param>
+        <param>
+          <type>float</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/applyLookupTable.cc" line="67" column="10" declfile="src/applyLookupTable.cc" declline="67" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1aafb37f1073a591af9369aa6084152a91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>template <ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref></type>
+        <definition>template int lsst::ip::isr::applyLookupTable&lt; double &gt;</definition>
+        <argsstring>(afw::image::Image&lt; double &gt; &amp;, ndarray::Array&lt; double, 1, 1 &gt; const &amp;, double)</argsstring>
+        <name>applyLookupTable&lt; double &gt;</name>
+        <qualifiedname>lsst::ip::isr::applyLookupTable&lt; double &gt;</qualifiedname>
+        <param>
+          <type><ref refid="classlsst_1_1afw_1_1image_1_1_image" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::Image</ref>&lt; double &gt; &amp;</type>
+        </param>
+        <param>
+          <type>ndarray::Array&lt; double, 1, 1 &gt; const &amp;</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/applyLookupTable.cc" line="68" column="10" declfile="src/applyLookupTable.cc" declline="68" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1afa41dacbfb489ee7cad58a4d212c139a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="cpp/string/basic_string" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/cppreference-doxygen-web.tag.xml">std::string</ref></type>
+        <definition>std::string lsst::ip::isr::between</definition>
+        <argsstring>(std::string &amp;s, char ldelim, char rdelim)</argsstring>
+        <name>between</name>
+        <qualifiedname>lsst::ip::isr::between</qualifiedname>
+        <param>
+          <type><ref refid="cpp/string/basic_string" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/cppreference-doxygen-web.tag.xml">std::string</ref> &amp;</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>ldelim</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>rdelim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Isr.cc" line="98" column="13" bodyfile="src/Isr.cc" bodystart="98" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1a95ecb253660306e67aea12312eceef9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>template <ref refid="cpp/container/vector" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>template std::vector&lt; double &gt; lsst::ip::isr::fitOverscanImage&lt; int &gt;</definition>
+        <argsstring>(afw::image::MaskedImage&lt; int &gt; const &amp;, std::vector&lt; std::string &gt; badPixelMask, bool isTransposed)</argsstring>
+        <name>fitOverscanImage&lt; int &gt;</name>
+        <qualifiedname>lsst::ip::isr::fitOverscanImage&lt; int &gt;</qualifiedname>
+        <param>
+          <type><ref refid="classlsst_1_1afw_1_1image_1_1_masked_image" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::MaskedImage</ref>&lt; <ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref> &gt; const &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; <ref refid="cpp/string/basic_string" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/cppreference-doxygen-web.tag.xml">std::string</ref> &gt;</type>
+          <declname>badPixelMask</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isTransposed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Isr.cc" line="115" column="1" declfile="src/Isr.cc" declline="115" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1ace1afe872025f119a913a7f3b3e4f6e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>template <ref refid="cpp/container/vector" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>template std::vector&lt; double &gt; lsst::ip::isr::fitOverscanImage&lt; float &gt;</definition>
+        <argsstring>(afw::image::MaskedImage&lt; float &gt; const &amp;, std::vector&lt; std::string &gt; badPixelMask, bool isTransposed)</argsstring>
+        <name>fitOverscanImage&lt; float &gt;</name>
+        <qualifiedname>lsst::ip::isr::fitOverscanImage&lt; float &gt;</qualifiedname>
+        <param>
+          <type><ref refid="classlsst_1_1afw_1_1image_1_1_masked_image" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::MaskedImage</ref>&lt; float &gt; const &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; <ref refid="cpp/string/basic_string" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/cppreference-doxygen-web.tag.xml">std::string</ref> &gt;</type>
+          <declname>badPixelMask</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isTransposed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Isr.cc" line="118" column="1" declfile="src/Isr.cc" declline="118" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1ab945ccedf40f5e2b06a97104d973bcbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>template <ref refid="cpp/container/vector" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; double &gt;</type>
+        <definition>template std::vector&lt; double &gt; lsst::ip::isr::fitOverscanImage&lt; double &gt;</definition>
+        <argsstring>(afw::image::MaskedImage&lt; double &gt; const &amp;, std::vector&lt; std::string &gt; badPixelMask, bool isTransposed)</argsstring>
+        <name>fitOverscanImage&lt; double &gt;</name>
+        <qualifiedname>lsst::ip::isr::fitOverscanImage&lt; double &gt;</qualifiedname>
+        <param>
+          <type><ref refid="classlsst_1_1afw_1_1image_1_1_masked_image" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::MaskedImage</ref>&lt; double &gt; const &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="cpp/container/vector" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/cppreference-doxygen-web.tag.xml">std::vector</ref>&lt; <ref refid="cpp/string/basic_string" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/cppreference-doxygen-web.tag.xml">std::string</ref> &gt;</type>
+          <declname>badPixelMask</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isTransposed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Isr.cc" line="121" column="1" declfile="src/Isr.cc" declline="121" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1a9c709c5b9a581bf8576f879b8c0bf4c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>template size_t</type>
+        <definition>template size_t lsst::ip::isr::maskNans&lt; float &gt;</definition>
+        <argsstring>(afw::image::MaskedImage&lt; float &gt; const &amp;, afw::image::MaskPixel, afw::image::MaskPixel)</argsstring>
+        <name>maskNans&lt; float &gt;</name>
+        <qualifiedname>lsst::ip::isr::maskNans&lt; float &gt;</qualifiedname>
+        <param>
+          <type><ref refid="classlsst_1_1afw_1_1image_1_1_masked_image" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::MaskedImage</ref>&lt; float &gt; const &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1afw_1_1image_1a86bd065fe6dce2fe4c0f95987c3480d9" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::MaskPixel</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1afw_1_1image_1a86bd065fe6dce2fe4c0f95987c3480d9" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::MaskPixel</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Isr.cc" line="130" column="10" declfile="src/Isr.cc" declline="130" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1ab1f40327d341a3b682164f1723ec6d28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>template size_t</type>
+        <definition>template size_t lsst::ip::isr::maskNans&lt; double &gt;</definition>
+        <argsstring>(afw::image::MaskedImage&lt; double &gt; const &amp;, afw::image::MaskPixel, afw::image::MaskPixel)</argsstring>
+        <name>maskNans&lt; double &gt;</name>
+        <qualifiedname>lsst::ip::isr::maskNans&lt; double &gt;</qualifiedname>
+        <param>
+          <type><ref refid="classlsst_1_1afw_1_1image_1_1_masked_image" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::MaskedImage</ref>&lt; double &gt; const &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1afw_1_1image_1a86bd065fe6dce2fe4c0f95987c3480d9" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::MaskPixel</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1afw_1_1image_1a86bd065fe6dce2fe4c0f95987c3480d9" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::MaskPixel</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Isr.cc" line="132" column="10" declfile="src/Isr.cc" declline="132" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1a2cb403c4b04a52638ef0c97991f3be23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>template size_t</type>
+        <definition>template size_t lsst::ip::isr::maskNans&lt; int &gt;</definition>
+        <argsstring>(afw::image::MaskedImage&lt; int &gt; const &amp;, afw::image::MaskPixel, afw::image::MaskPixel)</argsstring>
+        <name>maskNans&lt; int &gt;</name>
+        <qualifiedname>lsst::ip::isr::maskNans&lt; int &gt;</qualifiedname>
+        <param>
+          <type><ref refid="classlsst_1_1afw_1_1image_1_1_masked_image" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::MaskedImage</ref>&lt; <ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref> &gt; const &amp;</type>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1afw_1_1image_1a86bd065fe6dce2fe4c0f95987c3480d9" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::MaskPixel</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1afw_1_1image_1a86bd065fe6dce2fe4c0f95987c3480d9" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">afw::image::MaskPixel</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Isr.cc" line="134" column="10" declfile="src/Isr.cc" declline="134" declcolumn="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lsst/ip/isr/applyLookupTable.h" line="34" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_10459215da5096e8d0b4a511ab0eb5f4" kind="dir">
+    <compoundname>include/lsst/ip/isr</compoundname>
+    <innerfile refid="apply_lookup_table_8h">applyLookupTable.h</innerfile>
+    <innerfile refid="isr_2isr_8h">isr.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lsst/ip/isr/"/>
+  </compounddef>
+</doxygen>

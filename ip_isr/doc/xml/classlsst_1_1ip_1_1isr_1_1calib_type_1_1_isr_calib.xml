@@ -1,0 +1,1333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::calibType::IsrCalib</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">abc.ABC</basecompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_provenance" prot="public" virt="non-virtual">lsst.ip.isr.calibType.IsrProvenance</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib" prot="public" virt="non-virtual">lsst.ip.isr.crosstalk.CrosstalkCalib</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1defects_1_1_defects" prot="public" virt="non-virtual">lsst.ip.isr.defects.Defects</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_calib" prot="public" virt="non-virtual">lsst.ip.isr.deferredCharge.DeferredChargeCalib</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearizer" prot="public" virt="non-virtual">lsst.ip.isr.linearize.Linearizer</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib" prot="public" virt="non-virtual">lsst.ip.isr.photodiode.PhotodiodeCalib</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction" prot="public" virt="non-virtual">lsst.ip.isr.photodiodeCorrection.PhotodiodeCorrection</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset" prot="public" virt="non-virtual">lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_data" prot="public" virt="non-virtual">lsst.ip.isr.straylight.StrayLightData</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve" prot="public" virt="non-virtual">lsst.ip.isr.transmissionCurve.IntermediateTransmissionCurve</derivedcompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a345f21f0d5f074b5f054077522b6ab49" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.calibType.IsrCalib::_OBSTYPE</definition>
+        <argsstring></argsstring>
+        <name>_OBSTYPE</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib._OBSTYPE</qualifiedname>
+        <initializer>=  &quot;generic&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="62" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1ad3755fb78a5e8274f683f2d1626f22f6" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.calibType.IsrCalib::_SCHEMA</definition>
+        <argsstring></argsstring>
+        <name>_SCHEMA</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib._SCHEMA</qualifiedname>
+        <initializer>=  &quot;NO SCHEMA&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="63" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a5585d8f286afc033997e137fb269dffc" prot="private" static="yes" mutable="no">
+        <type><ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref></type>
+        <definition>int lsst::ip::isr.calibType.IsrCalib::_VERSION</definition>
+        <argsstring></argsstring>
+        <name>_VERSION</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib._VERSION</qualifiedname>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="64" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a2adf004aff0b846eae08323d6f112bee" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.calibType.IsrCalib::_instrument</definition>
+        <argsstring></argsstring>
+        <name>_instrument</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib._instrument</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="67" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a951a779b54e696ec11aafc09eeb15827" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.calibType.IsrCalib::_raftName</definition>
+        <argsstring></argsstring>
+        <name>_raftName</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib._raftName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="68" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a6ad2bb484a0bb972ea31fdcd19f72818" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.calibType.IsrCalib::_slotName</definition>
+        <argsstring></argsstring>
+        <name>_slotName</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib._slotName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="69" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a8133fc3d4ddd7d9ded66402f810f4509" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.calibType.IsrCalib::_detectorName</definition>
+        <argsstring></argsstring>
+        <name>_detectorName</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib._detectorName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="70" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a0ea3e170a2ebd7b288a6191b96e7fe0a" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.calibType.IsrCalib::_detectorSerial</definition>
+        <argsstring></argsstring>
+        <name>_detectorSerial</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib._detectorSerial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="71" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a97f2f0d2c3de7c039afc341db5bccd91" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.calibType.IsrCalib::_detectorId</definition>
+        <argsstring></argsstring>
+        <name>_detectorId</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib._detectorId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="72" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a0f6bd6659a6535b96550b68b41313b64" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.calibType.IsrCalib::_filter</definition>
+        <argsstring></argsstring>
+        <name>_filter</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib._filter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="73" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a7928d49d95e7c13dc21b91d77a4ac522" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.calibType.IsrCalib::_calibId</definition>
+        <argsstring></argsstring>
+        <name>_calibId</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib._calibId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="74" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a7868dd16e662bc2828911a267f30fcf5" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.calibType.IsrCalib::_seqfile</definition>
+        <argsstring></argsstring>
+        <name>_seqfile</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib._seqfile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="75" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a80e6d74f163617b5fcebde495e6d9db6" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.calibType.IsrCalib::_seqname</definition>
+        <argsstring></argsstring>
+        <name>_seqname</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib._seqname</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="76" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a1a80c0912c4aea0c9c262bc9b4678b34" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.calibType.IsrCalib::_seqcksum</definition>
+        <argsstring></argsstring>
+        <name>_seqcksum</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib._seqcksum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="77" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a0fa10b71ca6efd8a637aa5a3ecdbc9a4" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.calibType.IsrCalib::_metadata</definition>
+        <argsstring></argsstring>
+        <name>_metadata</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib._metadata</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="78" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a8e57af3da3a3008c659d3a5cd7d7addd" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.calibType.IsrCalib::_requiredAttributes</definition>
+        <argsstring></argsstring>
+        <name>_requiredAttributes</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib._requiredAttributes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="159" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1ad3476abba40729c58801cd853baa64f7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.calibType.IsrCalib::requiredAttributes</definition>
+        <argsstring></argsstring>
+        <name>requiredAttributes</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.requiredAttributes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="88" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a1a64908430e0e0c48dde22a7b41d8bc2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.calibType.IsrCalib::log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.log</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="94" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a8b0c7d628ed5e5b429f66ec5b2b4f25b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.__init__</definition>
+        <argsstring>(self, camera=None, detector=None, log=None, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.__init__</qualifiedname>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_calib_1a4769fcd4b0bcd9bf51b8ef5af34f82a8">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a0b66f32e4137da01908b5590bf3dafa1">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_provenance_1a113b1b5d3fc3be06a715519b989b6deb">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1defects_1_1_defects_1af3b5327efb12965f4451ad002e29a97b">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a335aafcc75e2dbd6517f73d717658784">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a5f20082b8e9f44aac8e3dc2036da5c06">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearizer_1ae0aa7730409f6d77a8c2fcde09719748">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a7ed343e7544bc1b538ddb043fc57d25b">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1ac3668eaaaacf5dcbbf33597dfe6e64f7">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>camera</type>
+          <defname>camera</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="_detector_collection_8cc_1a6b9c564255ea8f8ae53bf14d81234de7" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">detector</ref></type>
+          <defname>detector</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a1a64908430e0e0c48dde22a7b41d8bc2" kindref="member">log</ref></type>
+          <defname>log</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="66" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="66" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a0a4c5fe4f28180e3d63b49553d7a99af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.__str__</qualifiedname>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_provenance_1a63576065c50dcbae25459e18a049fc8d">__str__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1defects_1_1_defects_1a6057ae519b20e8423adff0ebdfc41f95">__str__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="100" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a04d9cc62ad2ccb747e13ed5a5a728b8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.__eq__</definition>
+        <argsstring>(self, other)</argsstring>
+        <name>__eq__</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.__eq__</qualifiedname>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_provenance_1a6d138e4604232e690628834af33157cc">__eq__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1defects_1_1_defects_1ad2153dda3b548da431fc4a75b3b25994">__eq__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>other</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Calibration equivalence.
+
+Running ``calib.log.setLevel(0)`` enables debug statements to
+identify problematic fields.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="103" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="103" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1aafa57ec8ed72627506866d39e7903637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.requiredAttributes</definition>
+        <argsstring>(self)</argsstring>
+        <name>requiredAttributes</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.requiredAttributes</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="154" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="154" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a3bd634ef75e3710c93d50f7c1829961f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.requiredAttributes</definition>
+        <argsstring>(self, value)</argsstring>
+        <name>requiredAttributes</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.requiredAttributes</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="158" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="158" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a5aa43aac89d3efd55adb897b148fddc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.getMetadata</definition>
+        <argsstring>(self)</argsstring>
+        <name>getMetadata</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.getMetadata</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Retrieve metadata associated with this calibration.
+
+Returns
+-------
+meta : `lsst.daf.base.PropertyList`
+    Metadata. The returned `~lsst.daf.base.PropertyList` can be
+    modified by the caller and the changes will be written to
+    external files.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="161" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="161" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a30a14c069ad836831726f303585ace41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.setMetadata</definition>
+        <argsstring>(self, metadata)</argsstring>
+        <name>setMetadata</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.setMetadata</qualifiedname>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1afdb35fa85f413ced66d13c788a9f5772">setMetadata</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>metadata</type>
+          <defname>metadata</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Store a copy of the supplied metadata with this calibration.
+
+Parameters
+----------
+metadata : `lsst.daf.base.PropertyList`
+    Metadata to associate with the calibration.  Will be copied and
+    overwrite existing metadata.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="173" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="173" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a800537ed1777875f9f9fd973a83c3809" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.updateMetadata</definition>
+        <argsstring>(self, camera=None, detector=None, filterName=None, setCalibId=False, setCalibInfo=False, setDate=False, **kwargs)</argsstring>
+        <name>updateMetadata</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.updateMetadata</qualifiedname>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1aabc2b0c3282530131bbf931ad8ec3b56">updateMetadata</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_provenance_1a564f6ea21ca8cbb2394708d643fd032f">updateMetadata</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a95d989721a3535579164c8b1ce762268">updateMetadata</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearizer_1ac104da4e9864ee2158139e640685b237">updateMetadata</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1ac536822e36fd963148a9cd03faac45dc">updateMetadata</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>camera</type>
+          <defname>camera</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="_detector_collection_8cc_1a6b9c564255ea8f8ae53bf14d81234de7" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">detector</ref></type>
+          <defname>detector</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>filterName</type>
+          <defname>filterName</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>setCalibId</type>
+          <defname>setCalibId</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>setCalibInfo</type>
+          <defname>setCalibInfo</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>setDate</type>
+          <defname>setDate</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update metadata keywords with new values.
+
+Parameters
+----------
+camera : `lsst.afw.cameraGeom.Camera`, optional
+    Reference camera to use to set ``_instrument`` field.
+detector : `lsst.afw.cameraGeom.Detector`, optional
+    Reference detector to use to set ``_detector*`` fields.
+filterName : `str`, optional
+    Filter name to assign to this calibration.
+setCalibId : `bool`, optional
+    Construct the ``_calibId`` field from other fields.
+setCalibInfo : `bool`, optional
+    Set calibration parameters from metadata.
+setDate : `bool`, optional
+    Ensure the metadata ``CALIBDATE`` fields are set to the current
+    datetime.
+kwargs : `dict` or `collections.abc.Mapping`, optional
+    Set of ``key=value`` pairs to assign to the metadata.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="195" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="197" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1ac77ee543a5e374c0a58c67ae7be2cce3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.updateMetadataFromExposures</definition>
+        <argsstring>(self, exposures)</argsstring>
+        <name>updateMetadataFromExposures</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.updateMetadataFromExposures</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposures</type>
+          <defname>exposures</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Extract and unify metadata information.
+
+Parameters
+----------
+exposures : `list`
+    Exposures or other calibrations to scan.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="281" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="281" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a0846c91fc9b0a56d69e2d06f54dad7c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.calibInfoFromDict</definition>
+        <argsstring>(self, dictionary)</argsstring>
+        <name>calibInfoFromDict</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.calibInfoFromDict</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dictionary</type>
+          <defname>dictionary</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Handle common keywords.
+
+This isn&apos;t an ideal solution, but until all calibrations
+expect to find everything in the metadata, they still need to
+search through dictionaries.
+
+Parameters
+----------
+dictionary : `dict` or `lsst.daf.base.PropertyList`
+    Source for the common keywords.
+
+Raises
+------
+RuntimeError
+    Raised if the dictionary does not match the expected OBSTYPE.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="311" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="311" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a9ad7e92a8ec5aa41b0decbdacdefb56b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.determineCalibClass</definition>
+        <argsstring>(cls, metadata, message)</argsstring>
+        <name>determineCalibClass</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.determineCalibClass</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>metadata</type>
+          <defname>metadata</defname>
+        </param>
+        <param>
+          <type>message</type>
+          <defname>message</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Attempt to find calibration class in metadata.
+
+Parameters
+----------
+metadata : `dict` or `lsst.daf.base.PropertyList`
+    Metadata possibly containing a calibration class entry.
+message : `str`
+    Message to include in any errors.
+
+Returns
+-------
+calibClass : `object`
+    The class to use to read the file contents.  Should be an
+    `lsst.ip.isr.IsrCalib` subclass.
+
+Raises
+------
+ValueError
+    Raised if the resulting calibClass is the base
+    `lsst.ip.isr.IsrClass` (which does not implement the
+    content methods).
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="368" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="368" bodyend="396"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a4ec8ec80fee792bd1db50a3321668b54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.readText</definition>
+        <argsstring>(cls, filename, **kwargs)</argsstring>
+        <name>readText</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.readText</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Read calibration representation from a yaml/ecsv file.
+
+Parameters
+----------
+filename : `str`
+    Name of the file containing the calibration definition.
+kwargs : `dict` or collections.abc.Mapping`, optional
+    Set of key=value pairs to pass to the ``fromDict`` or
+    ``fromTable`` methods.
+
+Returns
+-------
+calib : `~lsst.ip.isr.IsrCalibType`
+    Calibration class.
+
+Raises
+------
+RuntimeError
+    Raised if the filename does not end in &quot;.ecsv&quot; or &quot;.yaml&quot;.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="398" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="398" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a2557cf1d40d43b856c12b4cd4147621c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.writeText</definition>
+        <argsstring>(self, filename, format=&quot;auto&quot;)</argsstring>
+        <name>writeText</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.writeText</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <param>
+          <type>format</type>
+          <defname>format</defname>
+          <defval>&quot;auto&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Write the calibration data to a text file.
+
+Parameters
+----------
+filename : `str`
+    Name of the file to write.
+format : `str`
+    Format to write the file as.  Supported values are:
+        ``&quot;auto&quot;`` : Determine filetype from filename.
+        ``&quot;yaml&quot;`` : Write as yaml.
+        ``&quot;ecsv&quot;`` : Write as ecsv.
+
+Returns
+-------
+used : `str`
+    The name of the file used to write the data.  This may
+    differ from the input if the format is explicitly chosen.
+
+Raises
+------
+RuntimeError
+    Raised if filename does not end in a known extension, or
+    if all information cannot be written.
+
+Notes
+-----
+The file is written to YAML/ECSV format and will include any
+associated metadata.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="431" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="431" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1af0f95932440966465d3ec18d4151b73c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.readFits</definition>
+        <argsstring>(cls, filename, **kwargs)</argsstring>
+        <name>readFits</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.readFits</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Read calibration data from a FITS file.
+
+Parameters
+----------
+filename : `str`
+    Filename to read data from.
+kwargs : `dict` or collections.abc.Mapping`, optional
+    Set of key=value pairs to pass to the ``fromTable``
+    method.
+
+Returns
+-------
+calib : `lsst.ip.isr.IsrCalib`
+    Calibration contained within the file.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="485" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="485" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a33534b44aa3f134f809840472667631e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.writeFits</definition>
+        <argsstring>(self, filename)</argsstring>
+        <name>writeFits</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.writeFits</qualifiedname>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a5124a5bc3d746fede3820dfdeeeebcd2">writeFits</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Write calibration data to a FITS file.
+
+Parameters
+----------
+filename : `str`
+    Filename to write data to.
+
+Returns
+-------
+used : `str`
+    The name of the file used to write the data.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="524" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="524" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1aa4a68997772b1898843219a8d078e228" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.fromDetector</definition>
+        <argsstring>(self, detector)</argsstring>
+        <name>fromDetector</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.fromDetector</qualifiedname>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_calib_1a5352a7395741566dc409dfd666d357b9">fromDetector</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearizer_1ab439cf73c3ef86db0154126a42725a10">fromDetector</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a96a6481cc0a9330c26d4e2f6fae54112">fromDetector</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a89ab82e7112c51558cab8822723684a9">fromDetector</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="_detector_collection_8cc_1a6b9c564255ea8f8ae53bf14d81234de7" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">detector</ref></type>
+          <defname>detector</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Modify the calibration parameters to match the supplied detector.
+
+Parameters
+----------
+detector : `lsst.afw.cameraGeom.Detector`
+    Detector to use to set parameters from.
+
+Raises
+------
+NotImplementedError
+    Raised if not implemented by a subclass.
+    This needs to be implemented by subclasses for each
+    calibration type.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="547" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="547" bodyend="563"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a817599a7eef2221ba3908296dab05347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.fromDict</definition>
+        <argsstring>(cls, dictionary, **kwargs)</argsstring>
+        <name>fromDict</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.fromDict</qualifiedname>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_provenance_1a1869e1c7ff04ad469d13b47b106a5561">fromDict</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1af577ce5ea4a7263e6db7a711c30f874a">fromDict</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1defects_1_1_defects_1aa6380f0000eab0dde1ef6999b51ac4cf">fromDict</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_calib_1abaa49f7a1cc9e2adf17564d8c03e2ca1">fromDict</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearizer_1afb41f1cce2d7012d033b2de37c6e98b4">fromDict</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a9c50aa1a317bbfb2bef5cf275b36ec03">fromDict</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a69213bd418285258384f5f70d52b6fa1">fromDict</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a3397ec9c284f23d5082f649e0247110f">fromDict</reimplementedby>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>dictionary</type>
+          <defname>dictionary</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a calibration from a dictionary of properties.
+
+Must be implemented by the specific calibration subclasses.
+
+Parameters
+----------
+dictionary : `dict`
+    Dictionary of properties.
+kwargs : `dict` or collections.abc.Mapping`, optional
+    Set of key=value options.
+
+Returns
+-------
+calib : `lsst.ip.isr.CalibType`
+    Constructed calibration.
+
+Raises
+------
+NotImplementedError
+    Raised if not implemented.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="565" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="565" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1aab4a381103b94dbea2acb727184db72f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.toDict</definition>
+        <argsstring>(self)</argsstring>
+        <name>toDict</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.toDict</qualifiedname>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_provenance_1ad2aaad409a3888aa95a31d012974bff0">toDict</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1ac171ee67c64e5dcfb0b9b7a4bab1f148">toDict</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1defects_1_1_defects_1acb09e5498f75a4b373501b095e8ad044">toDict</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_calib_1a77ee3028f47cee4b04983a1d224c9589">toDict</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearizer_1a07615c1dadabee58e29f98e13b2cf408">toDict</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1ae414d0126d5bdce22d7e638d3f3898d2">toDict</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a5c693cd3a6a5809e97af357bfd5bcd9d">toDict</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a91cad8492ce14a356061fca7e7d19278">toDict</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a dictionary containing the calibration properties.
+
+The dictionary should be able to be round-tripped through
+`fromDict`.
+
+Returns
+-------
+dictionary : `dict`
+    Dictionary of properties.
+
+Raises
+------
+NotImplementedError
+    Raised if not implemented.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="589" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="589" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a1403d6fec5026193600341be1a426533" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.fromTable</definition>
+        <argsstring>(cls, tableList, **kwargs)</argsstring>
+        <name>fromTable</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.fromTable</qualifiedname>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_provenance_1a756e716ca6a51aa01eb1cbbddcc9ebfb">fromTable</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a6d0b40b56e95815d70b32375ced6d40b">fromTable</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_calib_1a8c8ba26b9aff62b863cd7ac4190805b6">fromTable</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearizer_1a8eafe7bba57e9a30503911fbcdc3f0bd">fromTable</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a132bfd6ce138a20d08c3f443dfcdb4c9">fromTable</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a7822ba431133dfa056b1620a7c268f91">fromTable</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1ab0f2581a5659abaa2a38b56a8e5338c3">fromTable</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a2a3d4213c2caeb26c55cd97d61f38c9a">fromTable</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1defects_1_1_defects_1a8b85ede5ec52b0e945cb11477d235d0e">fromTable</reimplementedby>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>tableList</type>
+          <defname>tableList</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a calibration from a dictionary of properties.
+
+Must be implemented by the specific calibration subclasses.
+
+Parameters
+----------
+tableList : `list` [`lsst.afw.table.Table`]
+    List of tables of properties.
+kwargs : `dict` or collections.abc.Mapping`, optional
+    Set of key=value options.
+
+Returns
+-------
+calib : `lsst.ip.isr.CalibType`
+    Constructed calibration.
+
+Raises
+------
+NotImplementedError
+    Raised if not implemented.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="608" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="608" bodyend="631"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a247f0c08c122d6c0da72f764b5e4c466" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.toTable</definition>
+        <argsstring>(self)</argsstring>
+        <name>toTable</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.toTable</qualifiedname>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_provenance_1a71fd0bf7f4ed41ed2f51fe2b379b57c8">toTable</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a834d7e19e82bb372218b9e440636347d">toTable</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1defects_1_1_defects_1a589aa3c22a9e50b73564c10e460f8afa">toTable</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_calib_1ab2ebc0f188669a0d6f7700f6fc12bc71">toTable</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearizer_1afea3e860672de822d9f47febf0402698">toTable</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib_1a9780cf01710c2538455424d1d153f166">toTable</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1aa32ddf8411a808e09b3c6dbb6d7088d4">toTable</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1aa8538a05fc2c5845b0f65c9885851b72">toTable</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a list of tables containing the calibration properties.
+
+The table list should be able to be round-tripped through
+`fromDict`.
+
+Returns
+-------
+tableList : `list` [`lsst.afw.table.Table`]
+    List of tables of properties.
+
+Raises
+------
+NotImplementedError
+    Raised if not implemented.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="632" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="632" bodyend="649"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a21399d7c477e8126bb3e93736125eacf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.validate</definition>
+        <argsstring>(self, other=None)</argsstring>
+        <name>validate</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.validate</qualifiedname>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a18d137912ad507a1b784a19136d6125c">validate</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearizer_1a26004523c92f710282c06f26ed35b220">validate</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>other</type>
+          <defname>other</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Validate that this calibration is defined and can be used.
+
+Parameters
+----------
+other : `object`, optional
+    Thing to validate against.
+
+Returns
+-------
+valid : `bool`
+    Returns true if the calibration is valid and appropriate.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="650" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="650" bodyend="664"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1ab2a19133010c7eeff3bc456e9f4e36f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.calibType.IsrCalib.apply</definition>
+        <argsstring>(self, target)</argsstring>
+        <name>apply</name>
+        <qualifiedname>lsst::ip::isr.calibType.IsrCalib.apply</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="_base_column_view_8cc_1a33a50ea78c8f78d88e8c56f7582103bc" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">target</ref></type>
+          <defname>target</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Method to apply the calibration to the target object.
+
+Parameters
+----------
+target : `object`
+    Thing to validate against.
+
+Returns
+-------
+valid : `bool`
+    Returns true if the calibration was applied correctly.
+
+Raises
+------
+NotImplementedError
+    Raised if not implemented.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/calibType.py" line="665" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="665" bodyend="685"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Generic calibration type.
+
+Subclasses must implement the toDict, fromDict, toTable, fromTable
+methods that allow the calibration information to be converted
+from dictionaries and afw tables.  This will allow the calibration
+to be persisted using the base class read/write methods.
+
+The validate method is intended to provide a common way to check
+that the calibration is valid (internally consistent) and
+appropriate (usable with the intended data).  The apply method is
+intended to allow the calibration to be applied in a consistent
+manner.
+
+Parameters
+----------
+camera : `lsst.afw.cameraGeom.Camera`, optional
+    Camera to extract metadata from.
+detector : `lsst.afw.cameraGeom.Detector`, optional
+    Detector to extract metadata from.
+log : `logging.Logger`, optional
+    Log for messages.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>abc::ABC</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.calibType.IsrCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lsst.ip.isr.calibType.IsrProvenance</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_provenance"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lsst.ip.isr.crosstalk.CrosstalkCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lsst.ip.isr.defects.Defects</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1defects_1_1_defects"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lsst.ip.isr.deferredCharge.DeferredChargeCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_calib"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lsst.ip.isr.linearize.Linearizer</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearizer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lsst.ip.isr.photodiode.PhotodiodeCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1photodiode_1_1_photodiode_calib"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lsst.ip.isr.photodiodeCorrection.PhotodiodeCorrection</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lsst.ip.isr.straylight.StrayLightData</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_data"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateAtmosphereTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_atmosphere_transmission_curve"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateFilterTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_filter_transmission_curve"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateOpticsTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_optics_transmission_curve"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateSensorTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_sensor_transmission_curve"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateSystemTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_system_transmission_curve"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>abc::ABC</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.calibType.IsrCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/calibType.py" line="39" column="1" bodyfile="python/lsst/ip/isr/calibType.py" bodystart="39" bodyend="685"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a04d9cc62ad2ccb747e13ed5a5a728b8b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>__eq__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a8b0c7d628ed5e5b429f66ec5b2b4f25b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a0a4c5fe4f28180e3d63b49553d7a99af" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>__str__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a7928d49d95e7c13dc21b91d77a4ac522" prot="private" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>_calibId</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a97f2f0d2c3de7c039afc341db5bccd91" prot="private" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>_detectorId</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a8133fc3d4ddd7d9ded66402f810f4509" prot="private" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>_detectorName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a0ea3e170a2ebd7b288a6191b96e7fe0a" prot="private" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>_detectorSerial</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a0f6bd6659a6535b96550b68b41313b64" prot="private" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>_filter</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a2adf004aff0b846eae08323d6f112bee" prot="private" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>_instrument</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a0fa10b71ca6efd8a637aa5a3ecdbc9a4" prot="private" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>_metadata</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a345f21f0d5f074b5f054077522b6ab49" prot="private" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>_OBSTYPE</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a951a779b54e696ec11aafc09eeb15827" prot="private" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>_raftName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a8e57af3da3a3008c659d3a5cd7d7addd" prot="private" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>_requiredAttributes</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1ad3755fb78a5e8274f683f2d1626f22f6" prot="private" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>_SCHEMA</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a1a80c0912c4aea0c9c262bc9b4678b34" prot="private" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>_seqcksum</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a7868dd16e662bc2828911a267f30fcf5" prot="private" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>_seqfile</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a80e6d74f163617b5fcebde495e6d9db6" prot="private" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>_seqname</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a6ad2bb484a0bb972ea31fdcd19f72818" prot="private" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>_slotName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a5585d8f286afc033997e137fb269dffc" prot="private" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>_VERSION</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1ab2a19133010c7eeff3bc456e9f4e36f4" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>apply</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a0846c91fc9b0a56d69e2d06f54dad7c1" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>calibInfoFromDict</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a9ad7e92a8ec5aa41b0decbdacdefb56b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>determineCalibClass</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1aa4a68997772b1898843219a8d078e228" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>fromDetector</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a817599a7eef2221ba3908296dab05347" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>fromDict</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a1403d6fec5026193600341be1a426533" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>fromTable</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a5aa43aac89d3efd55adb897b148fddc0" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>getMetadata</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a1a64908430e0e0c48dde22a7b41d8bc2" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>log</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1af0f95932440966465d3ec18d4151b73c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>readFits</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a4ec8ec80fee792bd1db50a3321668b54" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>readText</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1ad3476abba40729c58801cd853baa64f7" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>requiredAttributes</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1aafa57ec8ed72627506866d39e7903637" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>requiredAttributes</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a3bd634ef75e3710c93d50f7c1829961f" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>requiredAttributes</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a30a14c069ad836831726f303585ace41" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>setMetadata</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1aab4a381103b94dbea2acb727184db72f" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>toDict</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a247f0c08c122d6c0da72f764b5e4c466" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>toTable</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a800537ed1777875f9f9fd973a83c3809" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>updateMetadata</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1ac77ee543a5e374c0a58c67ae7be2cce3" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>updateMetadataFromExposures</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a21399d7c477e8126bb3e93736125eacf" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>validate</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a33534b44aa3f134f809840472667631e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>writeFits</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a2557cf1d40d43b856c12b4cd4147621c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::calibType::IsrCalib</scope><name>writeText</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

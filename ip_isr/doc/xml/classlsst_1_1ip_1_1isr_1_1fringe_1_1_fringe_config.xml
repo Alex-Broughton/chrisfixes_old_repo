@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::fringe::FringeConfig</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Config</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1a613abaad5d2544ae0a97f07432debe7d" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.fringe.FringeConfig::filters</definition>
+        <argsstring></argsstring>
+        <name>filters</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeConfig.filters</qualifiedname>
+        <initializer>=  ListField(dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>, default=[], doc=&quot;Only fringe-subtract these filters&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="61" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1a73013308b1defe456a1ff74b14b85cac" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.fringe.FringeConfig::useFilterAliases</definition>
+        <argsstring></argsstring>
+        <name>useFilterAliases</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeConfig.useFilterAliases</qualifiedname>
+        <initializer>=  Field(dtype=bool, default=False, doc=&quot;Search filter aliases during check.&quot;,
+                             deprecated=(&quot;Removed with no replacement (FilterLabel has no aliases).&quot;
+                                         &quot;Will be removed after v22.&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="63" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1a5a6e548f240b0a85cdceff80e5f3ed78" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.fringe.FringeConfig::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeConfig.num</qualifiedname>
+        <initializer>=  Field(dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>, default=30000, doc=&quot;Number of fringe measurements&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="66" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1a77f1d59f2f7e14ffa5964cc19e26c20c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.fringe.FringeConfig::small</definition>
+        <argsstring></argsstring>
+        <name>small</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeConfig.small</qualifiedname>
+        <initializer>=  Field(dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>, default=3, doc=&quot;Half-size of small (fringe) measurements (pixels)&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="67" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1a1eb9da7ef2f11c210dca67e4f3a4b706" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.fringe.FringeConfig::large</definition>
+        <argsstring></argsstring>
+        <name>large</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeConfig.large</qualifiedname>
+        <initializer>=  Field(dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>, default=30, doc=&quot;Half-size of large (background) measurements (pixels)&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="68" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1aae52520070ac316786f6aa35e0009d6c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.fringe.FringeConfig::iterations</definition>
+        <argsstring></argsstring>
+        <name>iterations</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeConfig.iterations</qualifiedname>
+        <initializer>=  Field(dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>, default=20, doc=&quot;Number of fitting iterations&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="69" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1af811c65d041061074192863cfcbc5783" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.fringe.FringeConfig::clip</definition>
+        <argsstring></argsstring>
+        <name>clip</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeConfig.clip</qualifiedname>
+        <initializer>=  Field(dtype=float, default=3.0, doc=&quot;Sigma clip threshold&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="70" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1a63e56003bf93d2363adea69337373b6e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.fringe.FringeConfig::stats</definition>
+        <argsstring></argsstring>
+        <name>stats</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeConfig.stats</qualifiedname>
+        <initializer>=  ConfigField(dtype=<ref refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_statistics_config" kindref="compound">FringeStatisticsConfig</ref>, doc=&quot;Statistics for measuring fringes&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="71" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1afb406673a50ef64b19658e1e9b483ec5" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.fringe.FringeConfig::pedestal</definition>
+        <argsstring></argsstring>
+        <name>pedestal</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeConfig.pedestal</qualifiedname>
+        <initializer>=  Field(dtype=bool, default=False, doc=&quot;Remove fringe pedestal?&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="72" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Fringe subtraction options</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.fringe.FringeConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Config</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.fringe.FringeConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Config</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/fringe.py" line="58" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="58" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1af811c65d041061074192863cfcbc5783" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeConfig</scope><name>clip</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1a613abaad5d2544ae0a97f07432debe7d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeConfig</scope><name>filters</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1aae52520070ac316786f6aa35e0009d6c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeConfig</scope><name>iterations</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1a1eb9da7ef2f11c210dca67e4f3a4b706" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeConfig</scope><name>large</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1a5a6e548f240b0a85cdceff80e5f3ed78" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeConfig</scope><name>num</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1afb406673a50ef64b19658e1e9b483ec5" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeConfig</scope><name>pedestal</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1a77f1d59f2f7e14ffa5964cc19e26c20c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeConfig</scope><name>small</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1a63e56003bf93d2363adea69337373b6e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeConfig</scope><name>stats</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config_1a73013308b1defe456a1ff74b14b85cac" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeConfig</scope><name>useFilterAliases</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

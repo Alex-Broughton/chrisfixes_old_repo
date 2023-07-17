@@ -1,0 +1,806 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::isrMock::IsrMockConfig</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pexConfig.Config</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a9953702dd4338c096d109f48c72bc2a7" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::isLsstLike</definition>
+        <argsstring></argsstring>
+        <name>isLsstLike</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.isLsstLike</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;If <ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>, products have one raw image per amplifier, otherwise, one raw image per detector.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="53" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ae16967f2ddb7c829158a025f0c63d453" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::plateScale</definition>
+        <argsstring></argsstring>
+        <name>plateScale</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.plateScale</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        default=20.0,
+        doc=&quot;Plate <ref refid="namespacelsst_1_1afw_1_1display_1_1ds9_1a7523e1cf2b89c74e636a088cb35a93aa" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">scale</ref> used in constructing mock camera.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="58" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a714f3819b1ab4f5dcbde1adbd0ebfa50" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::radialDistortion</definition>
+        <argsstring></argsstring>
+        <name>radialDistortion</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.radialDistortion</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        default=0.925,
+        doc=&quot;Radial distortion term used in constructing mock camera.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="63" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a9d9dee99ff1c8d7e792358515c5d0480" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::isTrimmed</definition>
+        <argsstring></argsstring>
+        <name>isTrimmed</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.isTrimmed</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;If <ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>, amplifiers have been trimmed and mosaicked <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> remove regions outside the <ref refid="_base_record_8cc_1a91a70b77df95bd8b0830b49a094c2acb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">data</ref> BBox.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="68" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a707b32c6938d3a8ef2125e090b549cf0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::detectorIndex</definition>
+        <argsstring></argsstring>
+        <name>detectorIndex</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.detectorIndex</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        default=20,
+        doc=&quot;Index for the <ref refid="_detector_collection_8cc_1a6b9c564255ea8f8ae53bf14d81234de7" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">detector</ref> <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> use. The default value uses <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> standard 2x4 array of amps.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="73" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a887e4885834dedd872bc44185d33bd99" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::rngSeed</definition>
+        <argsstring></argsstring>
+        <name>rngSeed</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.rngSeed</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        default=20000913,
+        doc=&quot;Seed for random number generator used <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> add noise.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="78" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a4aad70dddc5c611679b17a7b1d73f8b5" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.gain</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        default=1.0,
+        doc=&quot;Gain for simulated <ref refid="_base_record_8cc_1a91a70b77df95bd8b0830b49a094c2acb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">data</ref> in e^-/DN.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="84" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ad19206a9fdcaf1d7fcb0ac2513bdfd24" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::readNoise</definition>
+        <argsstring></argsstring>
+        <name>readNoise</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.readNoise</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        default=5.0,
+        doc=&quot;Read noise of the <ref refid="_detector_collection_8cc_1a6b9c564255ea8f8ae53bf14d81234de7" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">detector</ref> in e-.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="89" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a29967ab577abcaf3b0669634bbcab034" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::expTime</definition>
+        <argsstring></argsstring>
+        <name>expTime</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.expTime</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        default=5.0,
+        doc=&quot;Exposure time for simulated data.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="94" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1adfac2193b298af6deb85863bec4cd8a3" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::skyLevel</definition>
+        <argsstring></argsstring>
+        <name>skyLevel</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.skyLevel</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        default=1000.0,
+        doc=&quot;Background contribution <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> be generated <ref refid="_transform_map_8cc_1a302c2cce96a9eb2cb1d89356b89a84bd" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">from</ref> &apos;the sky&apos; in DN.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="101" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a3449a073f3c55bac1642a1f7b0fc9d52" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::sourceFlux</definition>
+        <argsstring></argsstring>
+        <name>sourceFlux</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.sourceFlux</qualifiedname>
+        <initializer>=  pexConfig.ListField(
+        dtype=float,
+        default=[45000.0],
+        doc=&quot;Peak flux level (in DN) of simulated &apos;astronomical sources&apos;.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="106" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a6b1789ac931e8360dab44fb21ab241eb" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::sourceAmp</definition>
+        <argsstring></argsstring>
+        <name>sourceAmp</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.sourceAmp</qualifiedname>
+        <initializer>=  pexConfig.ListField(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        default=[0],
+        doc=&quot;Amplifier <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> place simulated &apos;astronomical sources&apos;.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="111" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a4da9310d9cb6dae78d8dcd53476a3263" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::sourceX</definition>
+        <argsstring></argsstring>
+        <name>sourceX</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.sourceX</qualifiedname>
+        <initializer>=  pexConfig.ListField(
+        dtype=float,
+        default=[50.0],
+        doc=&quot;Peak position (in amplifier coordinates) of simulated &apos;astronomical sources&apos;.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="116" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a9cd2161eedc239b6938c626c5a81da62" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::sourceY</definition>
+        <argsstring></argsstring>
+        <name>sourceY</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.sourceY</qualifiedname>
+        <initializer>=  pexConfig.ListField(
+        dtype=float,
+        default=[25.0],
+        doc=&quot;Peak position (in amplifier coordinates) of simulated &apos;astronomical sources&apos;.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="121" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a4658ec4575af64f4548f66d787b230c7" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::overscanScale</definition>
+        <argsstring></argsstring>
+        <name>overscanScale</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.overscanScale</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        default=100.0,
+        doc=&quot;Amplitude (in DN) of the ramp function <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> add <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> overscan data.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="126" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ac7267ac1d021b8f35429793a957b37de" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::biasLevel</definition>
+        <argsstring></argsstring>
+        <name>biasLevel</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.biasLevel</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        default=8000.0,
+        doc=&quot;Background contribution <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> be generated <ref refid="_transform_map_8cc_1a302c2cce96a9eb2cb1d89356b89a84bd" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">from</ref> the bias offset in DN.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="131" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a29f7b353a1555b340b413cf0185aefb7" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::darkRate</definition>
+        <argsstring></argsstring>
+        <name>darkRate</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.darkRate</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        default=5.0,
+        doc=&quot;Background level contribution (in e-/s) <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> be generated <ref refid="_transform_map_8cc_1a302c2cce96a9eb2cb1d89356b89a84bd" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">from</ref> dark current.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="136" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a9c74d95cd2601867e29dcdc35826e467" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::darkTime</definition>
+        <argsstring></argsstring>
+        <name>darkTime</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.darkTime</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        default=5.0,
+        doc=&quot;Exposure time for the dark current contribution.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="141" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ac35d0d4b6d5ce87d6391327a5238029b" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::flatDrop</definition>
+        <argsstring></argsstring>
+        <name>flatDrop</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.flatDrop</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        default=0.1,
+        doc=&quot;Fractional flux drop due <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> flat <ref refid="_transform_map_8cc_1a302c2cce96a9eb2cb1d89356b89a84bd" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">from</ref> center <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> edge of <ref refid="_detector_collection_8cc_1a6b9c564255ea8f8ae53bf14d81234de7" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">detector</ref> along <ref refid="_chebyshev_bounded_field_8cc_1af88b946fb90d5f08b5fb740c70e98c10" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">x</ref>-axis.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="146" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1aa04cded1a0f0c83253576ab496086d0b" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::fringeScale</definition>
+        <argsstring></argsstring>
+        <name>fringeScale</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.fringeScale</qualifiedname>
+        <initializer>=  pexConfig.ListField(
+        dtype=float,
+        default=[200.0],
+        doc=&quot;Peak fluxes for the <ref refid="_linear_combination_kernel_8cc_1a1ff4318039abf769028c347a41c10edb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">components</ref> of the fringe ripple in DN.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="151" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ae4a7a41dd2a72e1ca880aa188aea8b9e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::fringeX0</definition>
+        <argsstring></argsstring>
+        <name>fringeX0</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.fringeX0</qualifiedname>
+        <initializer>=  pexConfig.ListField(
+        dtype=float,
+        default=[-100],
+        doc=&quot;Center position for the fringe ripples.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="156" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ade0b0a801c044924e7a5992d3c6abc97" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::fringeY0</definition>
+        <argsstring></argsstring>
+        <name>fringeY0</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.fringeY0</qualifiedname>
+        <initializer>=  pexConfig.ListField(
+        dtype=float,
+        default=[-0],
+        doc=&quot;Center position for the fringe ripples.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="161" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a4bc7e001c45f69e1d6b47aba86fb88ae" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::doAddSky</definition>
+        <argsstring></argsstring>
+        <name>doAddSky</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.doAddSky</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;Apply &apos;sky&apos; signal <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> output image.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="168" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ae60f157de867076af7fa9d0012ae2587" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::doAddSource</definition>
+        <argsstring></argsstring>
+        <name>doAddSource</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.doAddSource</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;Add simulated <ref refid="namespaceast_1_1detail_1a6f315992f3942c79238bf138cf454fd1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/astshim/g1011452fe8+91250f09a0/doc/astshim.tag">source</ref> <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> output image.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="173" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ac4c4b7fd611adf74e7b971bbfbd71219" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::doAddCrosstalk</definition>
+        <argsstring></argsstring>
+        <name>doAddCrosstalk</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.doAddCrosstalk</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Apply simulated crosstalk <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> output image. This cannot be corrected by ISR, &quot;
+        &quot;as detector.hasCrosstalk()==False.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="178" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a11f5486a31216ebc51741af934ef51df" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::doAddOverscan</definition>
+        <argsstring></argsstring>
+        <name>doAddOverscan</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.doAddOverscan</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;If untrimmed, add overscan ramp <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> overscan and <ref refid="_base_record_8cc_1a91a70b77df95bd8b0830b49a094c2acb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">data</ref> regions.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="184" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a60aee660b6c1b7195dd4eb5579c2a8a9" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::doAddBias</definition>
+        <argsstring></argsstring>
+        <name>doAddBias</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.doAddBias</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;Add bias signal <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> data.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="189" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a3c07b98f3dc3ff97c5e173175e6ee99e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::doAddDark</definition>
+        <argsstring></argsstring>
+        <name>doAddDark</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.doAddDark</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;Add dark signal <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> data.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="194" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a6b87b599116991f2982cac0a2b83796c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::doAddFlat</definition>
+        <argsstring></argsstring>
+        <name>doAddFlat</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.doAddFlat</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;Add flat signal <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> data.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="199" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a2f804a07624cf36c885d484b17a50947" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::doAddFringe</definition>
+        <argsstring></argsstring>
+        <name>doAddFringe</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.doAddFringe</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;Add fringe signal <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> data.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="204" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ab476b0b614c2440a00fcb47e42ccf036" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::doTransmissionCurve</definition>
+        <argsstring></argsstring>
+        <name>doTransmissionCurve</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.doTransmissionCurve</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Return <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> simulated <ref refid="_coadd_transmission_curve_8cc_1a9cedee22794a735ab853969f79857041" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_algorithms/gf28172b03b+14260db065/doc/meas_algorithms.tag">transmission</ref> curve.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="211" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ad975019a641b28e90bde56c98bee8535" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::doDefects</definition>
+        <argsstring></argsstring>
+        <name>doDefects</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.doDefects</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Return <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> simulated defect list.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="216" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1acb2426e89c9e4e251c097246195488f3" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::doBrighterFatter</definition>
+        <argsstring></argsstring>
+        <name>doBrighterFatter</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.doBrighterFatter</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Return <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> simulated brighter-fatter kernel.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="221" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a7ce5918a368137b9154a89d200fcbedc" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::doCrosstalkCoeffs</definition>
+        <argsstring></argsstring>
+        <name>doCrosstalkCoeffs</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.doCrosstalkCoeffs</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Return the matrix of crosstalk coefficients.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="226" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a8191ed4365fcbce968380d1d5422a4c3" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::doDataRef</definition>
+        <argsstring></argsstring>
+        <name>doDataRef</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.doDataRef</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Return <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> simulated gen2 butler dataRef.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="231" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a807cadbd5700f0a504c875d9bd16d02a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::doGenerateImage</definition>
+        <argsstring></argsstring>
+        <name>doGenerateImage</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.doGenerateImage</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Return the generated output image if True.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="236" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a01f36667853fb6857492e55eed5356e5" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::doGenerateData</definition>
+        <argsstring></argsstring>
+        <name>doGenerateData</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.doGenerateData</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Return <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> non-image <ref refid="_base_record_8cc_1a91a70b77df95bd8b0830b49a094c2acb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">data</ref> structure if True.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="241" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a284bf5a4defea7fd3cd716676333013a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMockConfig::doGenerateAmpDict</definition>
+        <argsstring></argsstring>
+        <name>doGenerateAmpDict</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMockConfig.doGenerateAmpDict</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Return <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> dict of exposure amplifiers instead of an afwImage.Exposure.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="246" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Configuration parameters for isrMock.
+
+These parameters produce generic fixed position signals from
+various sources, and combine them in a way that matches how those
+signals are combined to create real data. The camera used is the
+test camera defined by the afwUtils code.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrMock.IsrMockConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pexConfig.Config</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrMock.IsrMockConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pexConfig.Config</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/isrMock.py" line="44" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="44" bodyend="252"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ac7267ac1d021b8f35429793a957b37de" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>biasLevel</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a29f7b353a1555b340b413cf0185aefb7" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>darkRate</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a9c74d95cd2601867e29dcdc35826e467" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>darkTime</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a707b32c6938d3a8ef2125e090b549cf0" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>detectorIndex</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a60aee660b6c1b7195dd4eb5579c2a8a9" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>doAddBias</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ac4c4b7fd611adf74e7b971bbfbd71219" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>doAddCrosstalk</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a3c07b98f3dc3ff97c5e173175e6ee99e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>doAddDark</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a6b87b599116991f2982cac0a2b83796c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>doAddFlat</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a2f804a07624cf36c885d484b17a50947" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>doAddFringe</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a11f5486a31216ebc51741af934ef51df" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>doAddOverscan</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a4bc7e001c45f69e1d6b47aba86fb88ae" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>doAddSky</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ae60f157de867076af7fa9d0012ae2587" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>doAddSource</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1acb2426e89c9e4e251c097246195488f3" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>doBrighterFatter</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a7ce5918a368137b9154a89d200fcbedc" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>doCrosstalkCoeffs</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a8191ed4365fcbce968380d1d5422a4c3" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>doDataRef</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ad975019a641b28e90bde56c98bee8535" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>doDefects</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a284bf5a4defea7fd3cd716676333013a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>doGenerateAmpDict</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a01f36667853fb6857492e55eed5356e5" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>doGenerateData</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a807cadbd5700f0a504c875d9bd16d02a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>doGenerateImage</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ab476b0b614c2440a00fcb47e42ccf036" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>doTransmissionCurve</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a29967ab577abcaf3b0669634bbcab034" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>expTime</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ac35d0d4b6d5ce87d6391327a5238029b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>flatDrop</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1aa04cded1a0f0c83253576ab496086d0b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>fringeScale</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ae4a7a41dd2a72e1ca880aa188aea8b9e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>fringeX0</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ade0b0a801c044924e7a5992d3c6abc97" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>fringeY0</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a4aad70dddc5c611679b17a7b1d73f8b5" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>gain</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a9953702dd4338c096d109f48c72bc2a7" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>isLsstLike</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a9d9dee99ff1c8d7e792358515c5d0480" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>isTrimmed</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a4658ec4575af64f4548f66d787b230c7" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>overscanScale</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ae16967f2ddb7c829158a025f0c63d453" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>plateScale</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a714f3819b1ab4f5dcbde1adbd0ebfa50" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>radialDistortion</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1ad19206a9fdcaf1d7fcb0ac2513bdfd24" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>readNoise</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a887e4885834dedd872bc44185d33bd99" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>rngSeed</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1adfac2193b298af6deb85863bec4cd8a3" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>skyLevel</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a6b1789ac931e8360dab44fb21ab241eb" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>sourceAmp</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a3449a073f3c55bac1642a1f7b0fc9d52" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>sourceFlux</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a4da9310d9cb6dae78d8dcd53476a3263" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>sourceX</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config_1a9cd2161eedc239b6938c626c5a81da62" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMockConfig</scope><name>sourceY</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

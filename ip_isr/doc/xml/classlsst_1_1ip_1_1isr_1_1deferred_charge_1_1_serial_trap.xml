@@ -1,0 +1,411 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::deferredCharge::SerialTrap</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a4f6e55eb525bbde08adc23dd254e9aec" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.deferredCharge.SerialTrap::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.SerialTrap.size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="65" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a101194e2b65cd2aa34e89394934bc514" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.deferredCharge.SerialTrap::emission_time</definition>
+        <argsstring></argsstring>
+        <name>emission_time</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.SerialTrap.emission_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="71" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1ac74b19b33c071983a5125b934574066e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.deferredCharge.SerialTrap::pixel</definition>
+        <argsstring></argsstring>
+        <name>pixel</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.SerialTrap.pixel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="75" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a6b38b37922991e1076dcb6bb83b2fba4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.deferredCharge.SerialTrap::trap_type</definition>
+        <argsstring></argsstring>
+        <name>trap_type</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.SerialTrap.trap_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="77" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a07b5264158642057f080a9d2c5fd7a31" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.deferredCharge.SerialTrap::coeffs</definition>
+        <argsstring></argsstring>
+        <name>coeffs</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.SerialTrap.coeffs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="78" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1ab2ff12299f27f3bf2f3afc35d994074e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.deferredCharge.SerialTrap::interp</definition>
+        <argsstring></argsstring>
+        <name>interp</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.SerialTrap.interp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="90" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a5ae2ddea016673f59f1d7c2b7236c1c6" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.deferredCharge.SerialTrap::_trap_array</definition>
+        <argsstring></argsstring>
+        <name>_trap_array</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.SerialTrap._trap_array</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="92" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a810167113099280ff7f348eca8defa3d" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.deferredCharge.SerialTrap::_trapped_charge</definition>
+        <argsstring></argsstring>
+        <name>_trapped_charge</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.SerialTrap._trapped_charge</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="93" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a9bb2e5fb3f7fcacff320b511e8918226" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.deferredCharge.SerialTrap.__init__</definition>
+        <argsstring>(self, size, emission_time, pixel, trap_type, coeffs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.SerialTrap.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a4f6e55eb525bbde08adc23dd254e9aec" kindref="member">size</ref></type>
+          <defname>size</defname>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a101194e2b65cd2aa34e89394934bc514" kindref="member">emission_time</ref></type>
+          <defname>emission_time</defname>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1ac74b19b33c071983a5125b934574066e" kindref="member">pixel</ref></type>
+          <defname>pixel</defname>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a6b38b37922991e1076dcb6bb83b2fba4" kindref="member">trap_type</ref></type>
+          <defname>trap_type</defname>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a07b5264158642057f080a9d2c5fd7a31" kindref="member">coeffs</ref></type>
+          <defname>coeffs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="62" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="62" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a41c15369f9421e1ca9ff35f2531c0663" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.deferredCharge.SerialTrap.__eq__</definition>
+        <argsstring>(self, other)</argsstring>
+        <name>__eq__</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.SerialTrap.__eq__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>other</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="95" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="95" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1ae3efebf9ecdfc38b3ce215b491f7b805" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.deferredCharge.SerialTrap.trap_array</definition>
+        <argsstring>(self)</argsstring>
+        <name>trap_array</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.SerialTrap.trap_array</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="112" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a840e81dca39e8fb8ca2973df071a9ed5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.deferredCharge.SerialTrap.trapped_charge</definition>
+        <argsstring>(self)</argsstring>
+        <name>trapped_charge</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.SerialTrap.trapped_charge</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="116" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a0bf91e7bf5c6537c61140b3a774e2aad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.deferredCharge.SerialTrap.initialize</definition>
+        <argsstring>(self, ny, nx, prescan_width)</argsstring>
+        <name>initialize</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.SerialTrap.initialize</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ny</type>
+          <defname>ny</defname>
+        </param>
+        <param>
+          <type>nx</type>
+          <defname>nx</defname>
+        </param>
+        <param>
+          <type>prescan_width</type>
+          <defname>prescan_width</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialize trapping arrays for simulated readout.
+
+Parameters
+----------
+ny : `int`
+    Number of rows to simulate.
+nx : `int`
+    Number of columns to simulate.
+prescan_width : `int`
+    Additional transfers due to prescan.
+
+Raises
+------
+ValueError
+    Raised if the trap falls outside of the image.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="119" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="119" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1ac44b6ec2364c74d892701a74babacba8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.deferredCharge.SerialTrap.release_charge</definition>
+        <argsstring>(self)</argsstring>
+        <name>release_charge</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.SerialTrap.release_charge</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Release charge through exponential decay.
+
+Returns
+-------
+released_charge : `float`
+    Charge released.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="144" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="144" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a30b164716956fa9dbaad4adea2a215aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.deferredCharge.SerialTrap.trap_charge</definition>
+        <argsstring>(self, free_charge)</argsstring>
+        <name>trap_charge</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.SerialTrap.trap_charge</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>free_charge</type>
+          <defname>free_charge</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Perform charge capture using a logistic function.
+
+Parameters
+----------
+free_charge : `float`
+    Charge available to be trapped.
+
+Returns
+-------
+captured_charge : `float`
+    Amount of charge actually trapped.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="157" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="157" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1af43c806713a3b13476a9b5dc89afe66d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.deferredCharge.SerialTrap.capture</definition>
+        <argsstring>(self, pixel_signals)</argsstring>
+        <name>capture</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.SerialTrap.capture</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pixel_signals</type>
+          <defname>pixel_signals</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Trap capture function.
+
+Parameters
+----------
+pixel_signals : `list` [`float`]
+    Input pixel values.
+
+Returns
+-------
+captured_charge : `list` [`float`]
+    Amount of charge captured from each pixel.
+
+Raises
+------
+RuntimeError
+    Raised if the trap type is invalid.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="176" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="176" bodyend="205"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Represents a serial register trap.
+
+Parameters
+----------
+size : `float`
+    Size of the charge trap, in electrons.
+emission_time : `float`
+    Trap emission time constant, in inverse transfers.
+pixel : `int`
+    Serial pixel location of the trap, including the prescan.
+trap_type : `str`
+    Type of trap capture to use.  Should be one of ``linear``,
+    ``logistic``, or ``spline``.
+coeffs : `list` [`float`]
+    Coefficients for the capture process.  Linear traps need one
+    coefficient, logistic traps need two, and spline based traps
+    need to have an even number of coefficients that can be split
+    into their spline locations and values.
+
+Raises
+------
+ValueError
+    Raised if the specified parameters are out of expected range.
+</verbatim> </para>
+    </detaileddescription>
+    <location file="python/lsst/ip/isr/deferredCharge.py" line="36" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="36" bodyend="205"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a41c15369f9421e1ca9ff35f2531c0663" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::SerialTrap</scope><name>__eq__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a9bb2e5fb3f7fcacff320b511e8918226" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::SerialTrap</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a5ae2ddea016673f59f1d7c2b7236c1c6" prot="private" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::SerialTrap</scope><name>_trap_array</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a810167113099280ff7f348eca8defa3d" prot="private" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::SerialTrap</scope><name>_trapped_charge</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1af43c806713a3b13476a9b5dc89afe66d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::SerialTrap</scope><name>capture</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a07b5264158642057f080a9d2c5fd7a31" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::SerialTrap</scope><name>coeffs</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a101194e2b65cd2aa34e89394934bc514" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::SerialTrap</scope><name>emission_time</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a0bf91e7bf5c6537c61140b3a774e2aad" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::SerialTrap</scope><name>initialize</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1ab2ff12299f27f3bf2f3afc35d994074e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::SerialTrap</scope><name>interp</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1ac74b19b33c071983a5125b934574066e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::SerialTrap</scope><name>pixel</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1ac44b6ec2364c74d892701a74babacba8" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::SerialTrap</scope><name>release_charge</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a4f6e55eb525bbde08adc23dd254e9aec" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::SerialTrap</scope><name>size</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1ae3efebf9ecdfc38b3ce215b491f7b805" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::SerialTrap</scope><name>trap_array</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a30b164716956fa9dbaad4adea2a215aa" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::SerialTrap</scope><name>trap_charge</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a6b38b37922991e1076dcb6bb83b2fba4" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::SerialTrap</scope><name>trap_type</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap_1a840e81dca39e8fb8ca2973df071a9ed5" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::SerialTrap</scope><name>trapped_charge</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

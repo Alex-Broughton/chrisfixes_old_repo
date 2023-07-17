@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_lookup_table" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::linearize::LinearizeLookupTable</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base" prot="public" virt="non-virtual">lsst.ip.isr.linearize.LinearizeBase</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_lookup_table_1a777461328e738d691f4d2a116b02deb1" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.linearize.LinearizeLookupTable::LinearityType</definition>
+        <argsstring></argsstring>
+        <name>LinearityType</name>
+        <qualifiedname>lsst::ip::isr.linearize.LinearizeLookupTable.LinearityType</qualifiedname>
+        <initializer>=  &quot;LookupTable&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/linearize.py" line="564" column="1" bodyfile="python/lsst/ip/isr/linearize.py" bodystart="564" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_lookup_table_1a8656a54c7da82ae9ceebc9c1205bbf69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.linearize.LinearizeLookupTable.__call__</definition>
+        <argsstring>(self, image, **kwargs)</argsstring>
+        <name>__call__</name>
+        <qualifiedname>lsst::ip::isr.linearize.LinearizeLookupTable.__call__</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base_1a35a6c652513da5918c41f9b7ea91764d">__call__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>image</type>
+          <defname>image</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Correct for non-linearity.
+
+Parameters
+----------
+image : `lsst.afw.image.Image`
+    Image to be corrected
+kwargs : `dict`
+    Dictionary of parameter keywords:
+
+    ``coeffs``
+        Columnation vector (`list` or `numpy.array`).
+    ``table``
+        Lookup table data (`numpy.array`).
+    ``log``
+        Logger to handle messages (`logging.Logger`).
+
+Returns
+-------
+output : `tuple` [`bool`, `int`]
+    If true, a correction was applied successfully.  The
+    integer indicates the number of pixels that were
+    uncorrectable by being out of range.
+
+Raises
+------
+RuntimeError:
+    Raised if the requested row index is out of the table
+    bounds.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/linearize.py" line="566" column="1" bodyfile="python/lsst/ip/isr/linearize.py" bodystart="566" bodyend="619"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Correct non-linearity with a persisted lookup table.
+
+The lookup table consists of entries such that given
+&quot;coefficients&quot; c0, c1:
+
+for each i,j of image:
+    rowInd = int(c0)
+    colInd = int(c1 + uncorrImage[i,j])
+    corrImage[i,j] = uncorrImage[i,j] + table[rowInd, colInd]
+
+- c0: row index; used to identify which row of the table to use
+        (typically one per amplifier, though one can have multiple
+        amplifiers use the same table)
+- c1: column index offset; added to the uncorrected image value
+        before truncation; this supports tables that can handle
+        negative image values; also, if the c1 ends with .5 then
+        the nearest index is used instead of truncating to the
+        next smaller index
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>abc::ABCMeta</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.linearize.LinearizeLookupTable</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_lookup_table"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.linearize.LinearizeBase</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>metaclass</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>abc::ABCMeta</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.linearize.LinearizeLookupTable</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_lookup_table"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.linearize.LinearizeBase</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>metaclass</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/linearize.py" line="544" column="1" bodyfile="python/lsst/ip/isr/linearize.py" bodystart="544" bodyend="619"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_lookup_table_1a8656a54c7da82ae9ceebc9c1205bbf69" prot="public" virt="non-virtual"><scope>lsst::ip::isr::linearize::LinearizeLookupTable</scope><name>__call__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_lookup_table_1a777461328e738d691f4d2a116b02deb1" prot="public" virt="non-virtual"><scope>lsst::ip::isr::linearize::LinearizeLookupTable</scope><name>LinearityType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

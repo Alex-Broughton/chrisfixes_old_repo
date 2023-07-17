@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacelsst_1_1ip_1_1isr_1_1ptc_dataset" kind="namespace" language="Python">
+    <compoundname>lsst::ip::isr::ptcDataset</compoundname>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset" prot="public">lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelsst_1_1ip_1_1isr_1_1ptc_dataset_1a78e5ae098fc3f3be6db882d708bfcb33" prot="private" static="no" mutable="no">
+        <type><ref refid="fits_8cc_1a1fbc6c4766fd22cd31bc6972d5d6c14f" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">list</ref></type>
+        <definition>list lsst::ip::isr::ptcDataset.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.__all__</qualifiedname>
+        <initializer>=  [&apos;<ref refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset" kindref="compound">PhotonTransferCurveDataset</ref>&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="26" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="python/lsst/ip/isr/ptcDataset.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

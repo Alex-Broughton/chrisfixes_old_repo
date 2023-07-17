@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_bf_kernel_mock" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::isrMock::BfKernelMock</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock" prot="public" virt="non-virtual">lsst.ip.isr.isrMock.IsrMock</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_bf_kernel_mock_1a24b386fac64bbbd0f891cbe19f9b85f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.BfKernelMock.__init__</definition>
+        <argsstring>(self, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.isrMock.BfKernelMock.__init__</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a35068086855cf36162cc91bbb69602a2">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="888" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="888" bodyend="897"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Simulated brighter-fatter kernel.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrMock.BfKernelMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_bf_kernel_mock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.isrMock.IsrMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pipeBase.Task</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrMock.BfKernelMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_bf_kernel_mock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.isrMock.IsrMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pipeBase.Task</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/isrMock.py" line="885" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="885" bodyend="897"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_bf_kernel_mock_1a24b386fac64bbbd0f891cbe19f9b85f4" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::BfKernelMock</scope><name>__init__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

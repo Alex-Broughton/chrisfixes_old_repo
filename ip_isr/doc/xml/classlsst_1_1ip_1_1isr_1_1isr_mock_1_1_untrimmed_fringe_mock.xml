@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_untrimmed_fringe_mock" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::isrMock::UntrimmedFringeMock</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_fringe_mock" prot="public" virt="non-virtual">lsst.ip.isr.isrMock.FringeMock</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_untrimmed_fringe_mock_1a66a419c7cdb6bdfb534488fef1445cf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.UntrimmedFringeMock.__init__</definition>
+        <argsstring>(self, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.isrMock.UntrimmedFringeMock.__init__</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_fringe_mock_1aedf04c00ad398d6e289d104525839842">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="880" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="880" bodyend="884"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Simulated untrimmed master fringe calibration.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrMock.UntrimmedFringeMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_untrimmed_fringe_mock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.isrMock.FringeMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_fringe_mock"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lsst.ip.isr.isrMock.IsrMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lsst.ip.isr.isrMock.MasterMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_master_mock"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>pipeBase.Task</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrMock.UntrimmedFringeMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_untrimmed_fringe_mock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.isrMock.FringeMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_fringe_mock"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lsst.ip.isr.isrMock.IsrMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lsst.ip.isr.isrMock.MasterMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_master_mock"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>pipeBase.Task</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/isrMock.py" line="877" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="877" bodyend="884"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_untrimmed_fringe_mock_1a66a419c7cdb6bdfb534488fef1445cf2" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::UntrimmedFringeMock</scope><name>__init__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

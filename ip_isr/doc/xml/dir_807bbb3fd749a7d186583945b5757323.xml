@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_807bbb3fd749a7d186583945b5757323" kind="dir">
+    <compoundname>include/lsst</compoundname>
+    <innerdir refid="dir_4cf0246c09f2a1ecbfbddac74a3e2521">include/lsst/ip</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/lsst/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="vignette_8py" kind="file" language="Python">
+    <compoundname>vignette.py</compoundname>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config" prot="public">lsst::ip::isr::vignette::VignetteConfig</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task" prot="public">lsst::ip::isr::vignette::VignetteTask</innerclass>
+    <innernamespace refid="namespacelsst">lsst</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip">lsst::ip</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr">lsst::ip::isr</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1vignette">lsst::ip::isr::vignette</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacelsst_1_1ip_1_1isr_1_1vignette" refkind="compound"><highlight class="comment">#<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>ip_isr.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Developed<sp/>for<sp/>the<sp/>LSST<sp/>Data<sp/>Management<sp/>System.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>product<sp/>includes<sp/>software<sp/>developed<sp/>by<sp/>the<sp/>LSST<sp/>Project</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#<sp/>(https://www.lsst.org).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#<sp/>See<sp/>the<sp/>COPYRIGHT<sp/>file<sp/>at<sp/>the<sp/>top-level<sp/>directory<sp/>of<sp/>this<sp/>distribution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/>for<sp/>details<sp/>of<sp/>code<sp/>ownership.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">#<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">#<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">#<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">#<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;https://www.gnu.org/licenses/&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">__all__<sp/>=<sp/>(</highlight><highlight class="stringliteral">&apos;VignetteConfig&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;VignetteTask&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;setValidPolygonCcdIntersect&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;maskVignettedRegion&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacelsst_1_1geom" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">lsst.geom</ref><sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>geom</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacelsst_1_1afw_1_1camera_geom" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">lsst.afw.cameraGeom</ref><sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>cameraGeom</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacelsst_1_1afw_1_1geom" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">lsst.afw.geom</ref><sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>afwGeom</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="classlsst_1_1pex_1_1config_1_1config_1_1__PexConfigGenericAlias" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/pex_config/g4f1969f4e1+b66847d792/doc/pex_config.tag">lsst.pex.config</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Config,<sp/>Field</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>lsst.pipe.base<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Task</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config" kindref="compound">VignetteConfig</ref>(Config):</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Settings<sp/>to<sp/>define<sp/>vignetting<sp/>pattern.</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="39" refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config_1ae8bbde7a81e066c923aca2ed2185b365" refkind="member"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>xCenter<sp/>=<sp/>Field(</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=float,</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=&quot;Center<sp/>of<sp/>vignetting<sp/>pattern,<sp/>in<sp/>focal<sp/>plane<sp/>x<sp/>coordinates.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=0.0,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="44" refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config_1a3dfed1f1321266fbf55b0e3ab2ed1104" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>yCenter<sp/>=<sp/>Field(</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=float,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Center<sp/>of<sp/>vignetting<sp/>pattern,<sp/>in<sp/>focal<sp/>plane<sp/>y<sp/>coordinates.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=0.0,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="49" refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config_1a2b22163b2a84bd2f8e507d0bf34e2458" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>radius<sp/>=<sp/>Field(</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=float,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Radius<sp/>of<sp/>vignetting<sp/>pattern,<sp/>in<sp/>focal<sp/>plane<sp/>coordinates.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=100.0,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>check=</highlight><highlight class="keyword">lambda</highlight><highlight class="normal"><sp/>x:<sp/>x<sp/>&gt;=<sp/>0</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="55" refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config_1a132e720b10cfacd6b9324c78dbe23b0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>numPolygonPoints<sp/>=<sp/>Field(</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=int,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Number<sp/>of<sp/>points<sp/>used<sp/>to<sp/>define<sp/>the<sp/>vignette<sp/>polygon.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=100,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="60" refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config_1a240448ee8122fddf5680d8c3f3ff473a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>doWriteVignettePolygon<sp/>=<sp/>Field(</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=bool,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Persist<sp/>polygon<sp/>used<sp/>to<sp/>define<sp/>vignetted<sp/>region?&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>deprecated=(</highlight><highlight class="stringliteral">&quot;Vignetted<sp/>polygon<sp/>is<sp/>added<sp/>to<sp/>the<sp/>exposure<sp/>by<sp/>default.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/>This<sp/>option<sp/>is<sp/>no<sp/>longer<sp/>used,<sp/>and<sp/>will<sp/>be<sp/>removed<sp/>after<sp/>v24.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task" kindref="compound">VignetteTask</ref>(Task):</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Define<sp/>a<sp/>simple<sp/>circular<sp/>vignette<sp/>pattern<sp/>and<sp/>optionally<sp/>update<sp/>mask</highlight></codeline>
+<codeline lineno="71"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>plane.</highlight></codeline>
+<codeline lineno="72"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="73" refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task_1aefeb79d2c2d8d09667984b2081b89f5e" refkind="member"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>ConfigClass<sp/>=<sp/>VignetteConfig</highlight></codeline>
+<codeline lineno="74"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>_DefaultName<sp/>=<sp/>&quot;isrVignette&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task_1ae727f264ba8e30efe540ee268d18b285" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task_1ae727f264ba8e30efe540ee268d18b285" kindref="member">run</ref>(self,<sp/>exposure=None,<sp/>doUpdateMask=True,<sp/>maskPlane=&quot;NO_DATA&quot;,<sp/>vignetteValue=None,<sp/>log=None):</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Generate<sp/>circular<sp/>vignette<sp/>pattern.</highlight></codeline>
+<codeline lineno="78"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="79"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Parameters</highlight></codeline>
+<codeline lineno="80"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>----------</highlight></codeline>
+<codeline lineno="81"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exposure<sp/>:<sp/>`<ref refid="classlsst_1_1afw_1_1image_1_1_exposure" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">lsst.afw.image.Exposure</ref>`,<sp/>optional</highlight></codeline>
+<codeline lineno="82"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Exposure<sp/>to<sp/>construct,<sp/>apply,<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>optionally<sp/>mask<sp/>vignette<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">.</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doUpdateMask<sp/>:<sp/>`bool`,<sp/>optional</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>If<sp/>true,<sp/>the<sp/>mask<sp/>will<sp/>be<sp/>updated<sp/>to<sp/>mask<sp/>the<sp/>vignetted<sp/>region.</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maskPlane<sp/>:<sp/>`str`,<sp/>optional</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mask<sp/>plane<sp/>to<sp/>assign<sp/>vignetted<sp/>pixels<sp/>to.</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vignetteValue<sp/>:<sp/>`float`<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>`</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">`,<sp/>optional</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Value<sp/>to<sp/>assign<sp/>to<sp/>the<sp/>image<sp/>array<sp/>pixels<sp/>within<sp/>the<sp/>``polygon``</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>region.<sp/><sp/>If<sp/>`</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">`,<sp/>image<sp/>pixel<sp/>values<sp/>are<sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>replaced.</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log<sp/>:<sp/>`logging.Logger`,<sp/>optional</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Log<sp/>object<sp/>to<sp/>write<sp/>to.</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Returns</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-------</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>polygon<sp/>:<sp/>`lsst.afw.geom.Polygon`</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Polygon<sp/>defining<sp/>the<sp/>boundary<sp/>of<sp/>the<sp/>vignetted<sp/>region.</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="98"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theta<sp/>=<sp/>np.linspace(0,<sp/>2*np.pi,<sp/>num=self.config.numPolygonPoints,<sp/>endpoint=</highlight><highlight class="keyword">False</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>self.config.radius*np.cos(theta)<sp/>+<sp/>self.config.xCenter</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>=<sp/>self.config.radius*np.sin(theta)<sp/>+<sp/>self.config.yCenter</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>points<sp/>=<sp/>np.array([x,<sp/>y]).transpose()</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fpPolygon<sp/>=<sp/>afwGeom.Polygon([<ref refid="classlsst_1_1geom_1_1_point" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">geom.Point2D</ref>(x1,<sp/>y1)<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>x1,<sp/>y1<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>reversed(points)])</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>exposure<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fpPolygon</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Exposure<sp/>was<sp/>provided,<sp/>so<sp/>attach<sp/>the<sp/>validPolygon<sp/>associated<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>vignetted<sp/>region.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacelsst_1_1ip_1_1isr_1_1vignette_1a471c82633723eeb86fd037b273581ccb" kindref="member">setValidPolygonCcdIntersect</ref>(exposure,<sp/>fpPolygon,<sp/>log=log)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>doUpdateMask:</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>polygon<sp/>=<sp/>exposure.getInfo().getValidPolygon()</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespacelsst_1_1ip_1_1isr_1_1vignette_1a259dc1c093a723d7111c55320a7aa9f1" kindref="member">maskVignettedRegion</ref>(exposure,<sp/>polygon,<sp/>maskPlane=</highlight><highlight class="stringliteral">&quot;NO_DATA&quot;</highlight><highlight class="normal">,<sp/>vignetteValue=vignetteValue,<sp/>log=log)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fpPolygon</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="namespacelsst_1_1ip_1_1isr_1_1vignette_1a471c82633723eeb86fd037b273581ccb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacelsst_1_1ip_1_1isr_1_1vignette_1a471c82633723eeb86fd037b273581ccb" kindref="member">setValidPolygonCcdIntersect</ref>(ccdExposure,<sp/>fpPolygon,<sp/>log=None):</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Set<sp/>valid<sp/>polygon<sp/>on<sp/>ccdExposure<sp/>associated<sp/>with<sp/>focal<sp/>plane<sp/>polygon.</highlight></codeline>
+<codeline lineno="118"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="119"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>The<sp/>ccd<sp/>exposure&apos;s<sp/>valid<sp/>polygon<sp/>is<sp/>the<sp/>intersection<sp/>of<sp/>fpPolygon,</highlight></codeline>
+<codeline lineno="120"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>a<sp/>valid<sp/>polygon<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>focal<sp/>plane<sp/>coordinates,<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>the<sp/>ccd<sp/>corners,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>ccd<sp/>pixel<sp/>coordinates.</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>Parameters</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>----------</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>ccdExposure<sp/>:<sp/>`<ref refid="classlsst_1_1afw_1_1image_1_1_exposure" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">lsst.afw.image.Exposure</ref>`</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Exposure<sp/>to<sp/>process.</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>fpPolygon<sp/>:<sp/>`lsst.afw.geom.Polygon`</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Polygon<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>focal<sp/>plane<sp/>coordinates.</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>log<sp/>:<sp/>`logging.Logger`,<sp/>optional</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Log<sp/>object<sp/>to<sp/>write<sp/>to.</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="132"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Get<sp/>ccd<sp/>corners<sp/>in<sp/>focal<sp/>plane<sp/>coordinates</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>ccd<sp/>=<sp/>ccdExposure.getDetector()</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>fpCorners<sp/>=<sp/>ccd.getCorners(cameraGeom.FOCAL_PLANE)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>ccdPolygon<sp/>=<sp/>afwGeom.Polygon(fpCorners)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Get<sp/>intersection<sp/>of<sp/>ccd<sp/>corners<sp/>with<sp/>fpPolygon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>intersect<sp/>=<sp/>ccdPolygon.intersectionSingle(fpPolygon)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>afwGeom.SinglePolygonException:</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>intersect<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>intersect<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Transform<sp/>back<sp/>to<sp/>pixel<sp/>positions<sp/>and<sp/>build<sp/>new<sp/>polygon</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ccdPoints<sp/>=<sp/>ccd.transform(intersect,<sp/>cameraGeom.FOCAL_PLANE,<sp/>cameraGeom.PIXELS)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>validPolygon<sp/>=<sp/>afwGeom.Polygon(ccdPoints)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ccdExposure.getInfo().setValidPolygon(validPolygon)</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>log<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log.info(</highlight><highlight class="stringliteral">&quot;Ccd<sp/>exposure<sp/>does<sp/>not<sp/>overlap<sp/>with<sp/>focal<sp/>plane<sp/>polygon.<sp/><sp/>Not<sp/>setting<sp/>validPolygon.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="namespacelsst_1_1ip_1_1isr_1_1vignette_1a259dc1c093a723d7111c55320a7aa9f1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacelsst_1_1ip_1_1isr_1_1vignette_1a259dc1c093a723d7111c55320a7aa9f1" kindref="member">maskVignettedRegion</ref>(exposure,<sp/>polygon,<sp/>maskPlane=&quot;NO_DATA&quot;,<sp/>vignetteValue=None,<sp/>log=None):</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Add<sp/>mask<sp/>bit<sp/>to<sp/>image<sp/>pixels<sp/>according<sp/>to<sp/>vignetted<sp/>polygon<sp/>region.</highlight></codeline>
+<codeline lineno="153"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="154"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>NOTE:<sp/>this<sp/>function<sp/>could<sp/>be<sp/>used<sp/>to<sp/>mask<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>replace<sp/>pixels<sp/>associated</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>any<sp/>polygon<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>the<sp/>exposure<sp/>pixel<sp/>coordinates.</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>Parameters</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>----------</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>exposure<sp/>:<sp/>`<ref refid="classlsst_1_1afw_1_1image_1_1_exposure" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">lsst.afw.image.Exposure</ref>`</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Image<sp/>whose<sp/>mask<sp/>plane<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/>to<sp/>be<sp/>updated.</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>polygon<sp/>:<sp/>`lsst.afw.geom.Polygon`</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Polygon<sp/>region<sp/>defining<sp/>the<sp/>vignetted<sp/>region<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>the<sp/>pixel<sp/>coordinates</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>of<sp/>``exposure``.</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>maskPlane<sp/>:<sp/>`str`,<sp/>optional</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Mask<sp/>plane<sp/>to<sp/>assign<sp/>vignetted<sp/>pixels<sp/>to.</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>vignetteValue<sp/>:<sp/>`float`<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>`</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">`,<sp/>optional</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Value<sp/>to<sp/>assign<sp/>to<sp/>the<sp/>image<sp/>array<sp/>pixels<sp/>within<sp/>the<sp/>``polygon``</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>region.<sp/><sp/>If<sp/>`</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">`,<sp/>image<sp/>pixel<sp/>values<sp/>are<sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>replaced.</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>log<sp/>:<sp/>`logging.Logger`,<sp/>optional</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Log<sp/>object<sp/>to<sp/>write<sp/>to.</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>Raises</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>------</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>RuntimeError</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Raised<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>no<sp/>valid<sp/>polygon<sp/>exists.</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="177"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>log<sp/>=<sp/>log<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>log<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>logging.getLogger(__name__)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>polygon:</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log.info(</highlight><highlight class="stringliteral">&quot;No<sp/>polygon<sp/>provided.<sp/><sp/>Masking<sp/>nothing.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>fullyIlluminated<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>all(polygon.contains(exposure.getBBox().getCorners())):</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fullyIlluminated<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>log.info(</highlight><highlight class="stringliteral">&quot;Exposure<sp/>is<sp/>fully<sp/>illuminated?<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>fullyIlluminated)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>fullyIlluminated:</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Scan<sp/>pixels.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mask<sp/>=<sp/>exposure.getMask()</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xx,<sp/>yy<sp/>=<sp/>np.meshgrid(np.arange(0,<sp/>mask.getWidth(),<sp/>dtype=float),</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>np.arange(0,<sp/>mask.getHeight(),<sp/>dtype=float))</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vignMask<sp/>=<sp/>~(polygon.contains(xx,<sp/>yy))</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bitMask<sp/>=<sp/>mask.getPlaneBitMask(maskPlane)</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maskArray<sp/>=<sp/>mask.getArray()</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maskArray[vignMask]<sp/>|=<sp/>bitMask</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log.info(</highlight><highlight class="stringliteral">&quot;Exposure<sp/>contains<sp/>{}<sp/>vignetted<sp/>pixels<sp/>which<sp/>are<sp/>now<sp/>masked<sp/>with<sp/>mask<sp/>plane<sp/>{}.&quot;</highlight><highlight class="normal">.</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>format(np.count_nonzero(vignMask),<sp/>maskPlane))</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>vignetteValue<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageArray<sp/>=<sp/>exposure.getImage().getArray()</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageArray[vignMask]<sp/>=<sp/>vignetteValue</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>log.info(</highlight><highlight class="stringliteral">&quot;Vignetted<sp/>pixels<sp/>in<sp/>image<sp/>array<sp/>have<sp/>been<sp/>replaced<sp/>with<sp/>{}.&quot;</highlight><highlight class="normal">.format(vignetteValue))</highlight></codeline>
+    </programlisting>
+    <location file="python/lsst/ip/isr/vignette.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_config" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::assembleCcdTask::AssembleCcdConfig</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pexConfig.Config</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_config_1ab29c83c6e1fa129aeeb47a88762465c0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.assembleCcdTask.AssembleCcdConfig::doTrim</definition>
+        <argsstring></argsstring>
+        <name>doTrim</name>
+        <qualifiedname>lsst::ip::isr.assembleCcdTask.AssembleCcdConfig.doTrim</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        doc=&quot;trim out non-<ref refid="_base_record_8cc_1a91a70b77df95bd8b0830b49a094c2acb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">data</ref> regions?&quot;,
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/assembleCcdTask.py" line="34" column="1" bodyfile="python/lsst/ip/isr/assembleCcdTask.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_config_1a1f712a9af18a268c5c2a5bb6589cd9c5" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.assembleCcdTask.AssembleCcdConfig::keysToRemove</definition>
+        <argsstring></argsstring>
+        <name>keysToRemove</name>
+        <qualifiedname>lsst::ip::isr.assembleCcdTask.AssembleCcdConfig.keysToRemove</qualifiedname>
+        <initializer>=  pexConfig.ListField(
+        doc=&quot;FITS headers <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> remove (in addition <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> DATASEC, BIASSEC, TRIMSEC and perhaps GAIN)&quot;,
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        default=(),
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/assembleCcdTask.py" line="39" column="1" bodyfile="python/lsst/ip/isr/assembleCcdTask.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.assembleCcdTask.AssembleCcdConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pexConfig.Config</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.assembleCcdTask.AssembleCcdConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pexConfig.Config</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/assembleCcdTask.py" line="33" column="1" bodyfile="python/lsst/ip/isr/assembleCcdTask.py" bodystart="33" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_config_1ab29c83c6e1fa129aeeb47a88762465c0" prot="public" virt="non-virtual"><scope>lsst::ip::isr::assembleCcdTask::AssembleCcdConfig</scope><name>doTrim</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_config_1a1f712a9af18a268c5c2a5bb6589cd9c5" prot="public" virt="non-virtual"><scope>lsst::ip::isr::assembleCcdTask::AssembleCcdConfig</scope><name>keysToRemove</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

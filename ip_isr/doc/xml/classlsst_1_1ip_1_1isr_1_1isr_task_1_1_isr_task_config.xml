@@ -1,0 +1,2102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::isrTask::IsrTaskConfig</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pipeBase.PipelineTaskConfig</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">pipelineConnections</basecompoundref>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections" prot="public" virt="non-virtual">lsst.ip.isr.isrTask.IsrTaskConnections</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a88964149346d8090b3a331f81276642c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::datasetType</definition>
+        <argsstring></argsstring>
+        <name>datasetType</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.datasetType</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;Dataset <ref refid="_detector_8cc_1ab37e382f4a6dc8e92d68ffd983a3f959" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">type</ref> for input <ref refid="_base_record_8cc_1a91a70b77df95bd8b0830b49a094c2acb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">data</ref>; users will typically leave this alone, &quot;
+        &quot;but <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ac897acd5e27857a6f23d597b68c37fc9" kindref="member">camera</ref>-specific ISR tasks will override it&quot;,
+        default=&quot;raw&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="349" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a6b8d9dbdc2a20c5d1c309b387a70d722" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::fallbackFilterName</definition>
+        <argsstring></argsstring>
+        <name>fallbackFilterName</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.fallbackFilterName</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;Fallback default filter <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref> for calibrations.&quot;,
+        optional=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="356" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a6c4e9fcd19bad87248fa602a4c33dd8b" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::useFallbackDate</definition>
+        <argsstring></argsstring>
+        <name>useFallbackDate</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.useFallbackDate</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Pass observation date when using fallback filter.&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="361" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a32afa82f16f70a4af08d15b8bf601af5" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::expectWcs</definition>
+        <argsstring></argsstring>
+        <name>expectWcs</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.expectWcs</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;Expect input science images <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> have <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> WCS (<ref refid="fits_8cc_1a35ebf07010c76ad3be0af622f438897e" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">set</ref> False for e.g. spectrographs).&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="366" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a1df2b5925cb0eaa47082bf6ba7a984aa" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::fwhm</definition>
+        <argsstring></argsstring>
+        <name>fwhm</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.fwhm</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        doc=&quot;FWHM of PSF in arcseconds.&quot;,
+        default=1.0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="371" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a814ace3439e39e33d73db9dda7432d7c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::qa</definition>
+        <argsstring></argsstring>
+        <name>qa</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.qa</qualifiedname>
+        <initializer>=  pexConfig.ConfigField(
+        dtype=<ref refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config" kindref="compound">isrQa.IsrQaConfig</ref>,
+        doc=&quot;QA related configuration options.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="376" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ac25d4af3a4cbb8c6a95e155ed91b4404" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doHeaderProvenance</definition>
+        <argsstring></argsstring>
+        <name>doHeaderProvenance</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doHeaderProvenance</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;Write calibration identifiers into output exposure header?&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="380" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a8649b35a0813ddf60ee4f2158af4ee42" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doRaiseOnCalibMismatch</definition>
+        <argsstring></argsstring>
+        <name>doRaiseOnCalibMismatch</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doRaiseOnCalibMismatch</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Should <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task" kindref="compound">IsrTask</ref> halt if exposure and calibration header values do not match?&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="387" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1abe72f2889193cceb76fbbe2e54dc92ea" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::cameraKeywordsToCompare</definition>
+        <argsstring></argsstring>
+        <name>cameraKeywordsToCompare</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.cameraKeywordsToCompare</qualifiedname>
+        <initializer>=  pexConfig.ListField(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;List of header keywords <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> compare <ref refid="namespacelsst_1_1ip_1_1isr_1afa41dacbfb489ee7cad58a4d212c139a" kindref="member">between</ref> exposure and calibrations.&quot;,
+        default=[],
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="392" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a071e86636c705df00d9d27779a050482" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doConvertIntToFloat</definition>
+        <argsstring></argsstring>
+        <name>doConvertIntToFloat</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doConvertIntToFloat</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Convert integer raw images <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> floating point values?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="399" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a72561e9148e7b8f5f9826e72a0f06378" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doSaturation</definition>
+        <argsstring></argsstring>
+        <name>doSaturation</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doSaturation</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Mask saturated pixels? NB: this is totally independent of the&quot;
+        &quot; interpolation option - this is ONLY setting the bits in the mask.&quot;
+        &quot; To have them interpolated make sure <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a4b9753153c90f41c06bd144af41779c3" kindref="member">doSaturationInterpolation</ref>=True&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="406" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a1d37f285ee07b66b9d78f0cf6ca3253b" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::saturatedMaskName</definition>
+        <argsstring></argsstring>
+        <name>saturatedMaskName</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.saturatedMaskName</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;Name of <ref refid="_heavy_footprint_8cc_1ab686a106d56d24e934338431811799aa" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">mask</ref> plane <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> use in <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a4ca25a67dc6a3f2ff2ecc3310c99b135" kindref="member">saturation</ref> detection and interpolation&quot;,
+        default=&quot;SAT&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="413" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a4ca25a67dc6a3f2ff2ecc3310c99b135" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::saturation</definition>
+        <argsstring></argsstring>
+        <name>saturation</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.saturation</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        doc=&quot;The saturation level <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> use if no Detector is present in the Exposure (ignored if NaN)&quot;,
+        default=float(&quot;NaN&quot;),
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="418" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ab632e51d37d28420afbe3b6599a5b138" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::growSaturationFootprintSize</definition>
+        <argsstring></argsstring>
+        <name>growSaturationFootprintSize</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.growSaturationFootprintSize</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=&quot;Number of pixels by which <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> grow the <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a4ca25a67dc6a3f2ff2ecc3310c99b135" kindref="member">saturation</ref> footprints&quot;,
+        default=1,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="423" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a782d7365f82c2032f04e0e82f172f5f7" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doSuspect</definition>
+        <argsstring></argsstring>
+        <name>doSuspect</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doSuspect</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Mask suspect pixels?&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="430" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a9cb2b5ac85b8d4271e921df4815880eb" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::suspectMaskName</definition>
+        <argsstring></argsstring>
+        <name>suspectMaskName</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.suspectMaskName</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;Name of <ref refid="_heavy_footprint_8cc_1ab686a106d56d24e934338431811799aa" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">mask</ref> plane <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> use for suspect pixels&quot;,
+        default=&quot;SUSPECT&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="435" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a8c829f9777cdcbdcb7c79097620f1536" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::numEdgeSuspect</definition>
+        <argsstring></argsstring>
+        <name>numEdgeSuspect</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.numEdgeSuspect</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=&quot;Number of edge pixels <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> be flagged as untrustworthy.&quot;,
+        default=0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="440" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1aec04502b684c3a9049dead94b2fe3107" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::edgeMaskLevel</definition>
+        <argsstring></argsstring>
+        <name>edgeMaskLevel</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.edgeMaskLevel</qualifiedname>
+        <initializer>=  pexConfig.ChoiceField(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;Mask edge pixels in which coordinate frame: DETECTOR or AMP?&quot;,
+        default=&quot;DETECTOR&quot;,
+        allowed={
+            &apos;DETECTOR&apos;: &apos;Mask only the edges of the full detector.&apos;,
+            &apos;AMP&apos;: &apos;Mask edges of each amplifier.&apos;,
+        },
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="445" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a06fd4c6175e6296b0cc09e49f9058e49" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doSetBadRegions</definition>
+        <argsstring></argsstring>
+        <name>doSetBadRegions</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doSetBadRegions</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Should we <ref refid="fits_8cc_1a35ebf07010c76ad3be0af622f438897e" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">set</ref> the level of <ref refid="namespacelsst_1_1geom_1a944b5845e347c8a246cf285b0c24ec51" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">all</ref> BAD patches of the chip <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> the chip&apos;s average value?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="456" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ada2c7db4aaee5b0f51e91c9bbf741d45" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::badStatistic</definition>
+        <argsstring></argsstring>
+        <name>badStatistic</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.badStatistic</qualifiedname>
+        <initializer>=  pexConfig.ChoiceField(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;How <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> estimate the average value for BAD regions.&quot;,
+        default=&apos;<ref refid="namespacelsst_1_1afw_1_1math_1a60dcc8ebfa435e65f612394b88b8b923add39b92be61f0f457264fb21efdb8a03" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">MEANCLIP</ref>&apos;,
+        allowed={
+            &quot;MEANCLIP&quot;: &quot;Correct using the (clipped) mean of good data&quot;,
+            &quot;MEDIAN&quot;: &quot;Correct using the median of the good data&quot;,
+        },
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="461" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a61399a3220f9a98b9eb410b897ff61e8" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doOverscan</definition>
+        <argsstring></argsstring>
+        <name>doOverscan</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doOverscan</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Do <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a804d9485bd092291f8e75bd3581a0810" kindref="member">overscan</ref> subtraction?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="472" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a804d9485bd092291f8e75bd3581a0810" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::overscan</definition>
+        <argsstring></argsstring>
+        <name>overscan</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.overscan</qualifiedname>
+        <initializer>=  pexConfig.ConfigurableField(
+        <ref refid="_base_column_view_8cc_1a33a50ea78c8f78d88e8c56f7582103bc" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">target</ref>=<ref refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task" kindref="compound">OverscanCorrectionTask</ref>,
+        doc=&quot;Overscan subtraction task for image segments.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="477" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a943af08910d179fcb34e4ba3ef35f30f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doAssembleCcd</definition>
+        <argsstring></argsstring>
+        <name>doAssembleCcd</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doAssembleCcd</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;Assemble amp-level exposures into <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> ccd-level exposure?&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="483" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a0a8dbee8bc73beea6f048aa3924fdf83" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::assembleCcd</definition>
+        <argsstring></argsstring>
+        <name>assembleCcd</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.assembleCcd</qualifiedname>
+        <initializer>=  pexConfig.ConfigurableField(
+        <ref refid="_base_column_view_8cc_1a33a50ea78c8f78d88e8c56f7582103bc" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">target</ref>=<ref refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task" kindref="compound">AssembleCcdTask</ref>,
+        doc=&quot;CCD assembly task&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="488" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ab97b31560f25957b3e6a02a7ff0f8dcd" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doAssembleIsrExposures</definition>
+        <argsstring></argsstring>
+        <name>doAssembleIsrExposures</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doAssembleIsrExposures</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Assemble amp-level calibration exposures into ccd-level exposure?&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="494" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="494" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a5070b7981556d9ad27c80ef4cc771c8d" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doTrimToMatchCalib</definition>
+        <argsstring></argsstring>
+        <name>doTrimToMatchCalib</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doTrimToMatchCalib</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Trim raw <ref refid="_base_record_8cc_1a91a70b77df95bd8b0830b49a094c2acb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">data</ref> <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> match calibration bounding boxes?&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="499" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="499" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1acdf1f9d65a031762ca18c04b648b7346" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doBias</definition>
+        <argsstring></argsstring>
+        <name>doBias</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doBias</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Apply <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ac9bebcf126b28d9c8f3f11e44332f10f" kindref="member">bias</ref> <ref refid="namespacelsst_1_1ip_1_1isr_1_1fringe_1a4dd3acd77e3af679edf74f7641b46f81" kindref="member">frame</ref> correction?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="506" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1afc41115637d5f3276d640d4855f0c159" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::biasDataProductName</definition>
+        <argsstring></argsstring>
+        <name>biasDataProductName</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.biasDataProductName</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;Name of the <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ac9bebcf126b28d9c8f3f11e44332f10f" kindref="member">bias</ref> <ref refid="_base_record_8cc_1a91a70b77df95bd8b0830b49a094c2acb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">data</ref> product&quot;,
+        default=&quot;bias&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="511" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1aa32ca3b2c44095fbf62baa7d7769308a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doBiasBeforeOverscan</definition>
+        <argsstring></argsstring>
+        <name>doBiasBeforeOverscan</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doBiasBeforeOverscan</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Reverse <ref refid="warp_exposure_8cc_1aa396b69239221c40f74ebb8833f77166" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">order</ref> of <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a804d9485bd092291f8e75bd3581a0810" kindref="member">overscan</ref> and <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ac9bebcf126b28d9c8f3f11e44332f10f" kindref="member">bias</ref> correction.&quot;,
+        default=False
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="516" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a86967fbe0addd1c46f9020afdb5c67a7" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doDeferredCharge</definition>
+        <argsstring></argsstring>
+        <name>doDeferredCharge</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doDeferredCharge</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Apply deferred charge correction?&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="523" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a605e0fca268b1997331a8aaad809b0ea" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::deferredChargeCorrection</definition>
+        <argsstring></argsstring>
+        <name>deferredChargeCorrection</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.deferredChargeCorrection</qualifiedname>
+        <initializer>=  pexConfig.ConfigurableField(
+        <ref refid="_base_column_view_8cc_1a33a50ea78c8f78d88e8c56f7582103bc" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">target</ref>=<ref refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task" kindref="compound">DeferredChargeTask</ref>,
+        doc=&quot;Deferred charge correction task.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="528" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a1020dc31d430a574fefeb0686e511e52" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doVariance</definition>
+        <argsstring></argsstring>
+        <name>doVariance</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doVariance</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Calculate <ref refid="_heavy_footprint_8cc_1acc0bd44c4d875bfc45c262028228bba3" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">variance</ref>?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="534" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a28e32774bac37cc51e29a7cb705f4f7e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.gain</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        doc=&quot;The gain <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> use if no Detector is present in the Exposure (ignored if NaN)&quot;,
+        default=float(&quot;NaN&quot;),
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="539" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a2e5e001593e6efa044f98d460084b3a2" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::readNoise</definition>
+        <argsstring></argsstring>
+        <name>readNoise</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.readNoise</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        doc=&quot;The <ref refid="warp_exposure_8cc_1a70bbfb989b9d6eebf3c5606d5d7170ed" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">read</ref> noise <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> use if no Detector is present in the Exposure&quot;,
+        default=0.0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="544" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="544" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a65016e95c56a79df590ba5dfea5781fa" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doEmpiricalReadNoise</definition>
+        <argsstring></argsstring>
+        <name>doEmpiricalReadNoise</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doEmpiricalReadNoise</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Calculate empirical <ref refid="warp_exposure_8cc_1a70bbfb989b9d6eebf3c5606d5d7170ed" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">read</ref> noise instead of value <ref refid="_transform_map_8cc_1a302c2cce96a9eb2cb1d89356b89a84bd" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">from</ref> AmpInfo <ref refid="_base_record_8cc_1a91a70b77df95bd8b0830b49a094c2acb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">data</ref>?&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="549" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="549" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a08e976007d1aa3705dfcf5a4d0538fdc" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::usePtcReadNoise</definition>
+        <argsstring></argsstring>
+        <name>usePtcReadNoise</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.usePtcReadNoise</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Use readnoise values <ref refid="_transform_map_8cc_1a302c2cce96a9eb2cb1d89356b89a84bd" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">from</ref> the Photon Transfer Curve?&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="554" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1acd289f0090b84154dbee2c5446785a72" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::maskNegativeVariance</definition>
+        <argsstring></argsstring>
+        <name>maskNegativeVariance</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.maskNegativeVariance</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;Mask pixels that claim <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> negative <ref refid="_heavy_footprint_8cc_1acc0bd44c4d875bfc45c262028228bba3" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">variance</ref>?  This likely indicates <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> failure &quot;
+        &quot;in the measurement of the <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a804d9485bd092291f8e75bd3581a0810" kindref="member">overscan</ref> at an edge due <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> the <ref refid="_base_record_8cc_1a91a70b77df95bd8b0830b49a094c2acb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">data</ref> falling off faster &quot;
+        &quot;than the <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a804d9485bd092291f8e75bd3581a0810" kindref="member">overscan</ref> model can account for it.&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="559" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="559" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a112aca344d4a32c06436237be32347da" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::negativeVarianceMaskName</definition>
+        <argsstring></argsstring>
+        <name>negativeVarianceMaskName</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.negativeVarianceMaskName</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        default=&quot;BAD&quot;,
+        doc=&quot;Mask plane <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> use <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> mark pixels with negative <ref refid="_heavy_footprint_8cc_1acc0bd44c4d875bfc45c262028228bba3" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">variance</ref>, if `<ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1acd289f0090b84154dbee2c5446785a72" kindref="member">maskNegativeVariance</ref>` is True.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="566" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a9691ef58685de545cd2d55ea35746be0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doLinearize</definition>
+        <argsstring></argsstring>
+        <name>doLinearize</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doLinearize</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Correct for nonlinearity of the <ref refid="_detector_collection_8cc_1a6b9c564255ea8f8ae53bf14d81234de7" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">detector</ref>&apos;s response?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="572" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="572" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a208971bc4934edbe04ad50f67daefd64" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doCrosstalk</definition>
+        <argsstring></argsstring>
+        <name>doCrosstalk</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doCrosstalk</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Apply intra-CCD <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1abf6c22dc193d307ada71fa2bcbcbc77e" kindref="member">crosstalk</ref> correction?&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="579" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1af60c4b032551a1b6959e66d60d157c98" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doCrosstalkBeforeAssemble</definition>
+        <argsstring></argsstring>
+        <name>doCrosstalkBeforeAssemble</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doCrosstalkBeforeAssemble</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Apply <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1abf6c22dc193d307ada71fa2bcbcbc77e" kindref="member">crosstalk</ref> correction before CCD assembly, and before trimming?&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="584" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="584" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1abf6c22dc193d307ada71fa2bcbcbc77e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::crosstalk</definition>
+        <argsstring></argsstring>
+        <name>crosstalk</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.crosstalk</qualifiedname>
+        <initializer>=  pexConfig.ConfigurableField(
+        <ref refid="_base_column_view_8cc_1a33a50ea78c8f78d88e8c56f7582103bc" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">target</ref>=<ref refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_task" kindref="compound">CrosstalkTask</ref>,
+        doc=&quot;Intra-CCD crosstalk correction&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="589" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="589" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1adacacedd5636b555f7f5f8e1f750ab62" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doDefect</definition>
+        <argsstring></argsstring>
+        <name>doDefect</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doDefect</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Apply correction for CCD <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a6ee274f75db97785f58a6479773df0ce" kindref="member">defects</ref>, e.g. hot pixels?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="595" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="595" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a479a8f0dde5998bf1f2e8a5cdc6a27b8" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doNanMasking</definition>
+        <argsstring></argsstring>
+        <name>doNanMasking</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doNanMasking</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Mask non-finite (NAN, inf) pixels?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="600" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="600" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ad9373cf2e9b49b47a67e2adbe162bc63" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doWidenSaturationTrails</definition>
+        <argsstring></argsstring>
+        <name>doWidenSaturationTrails</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doWidenSaturationTrails</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Widen bleed trails based on their width?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="605" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="605" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a9bfa42140f66223583b26716f1e5ecd1" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doBrighterFatter</definition>
+        <argsstring></argsstring>
+        <name>doBrighterFatter</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doBrighterFatter</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Apply the brighter-fatter correction?&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="612" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="612" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1af1e57d6968d8b3f18b750d430f5ccb1a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doFluxConservingBrighterFatterCorrection</definition>
+        <argsstring></argsstring>
+        <name>doFluxConservingBrighterFatterCorrection</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doFluxConservingBrighterFatterCorrection</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Apply the flux-conserving BFE correction by Miller et al.?&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="617" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ad7a90eb83aee83d22466704803138acc" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::brighterFatterLevel</definition>
+        <argsstring></argsstring>
+        <name>brighterFatterLevel</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.brighterFatterLevel</qualifiedname>
+        <initializer>=  pexConfig.ChoiceField(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        default=&quot;DETECTOR&quot;,
+        doc=&quot;The level at which <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> correct for brighter-fatter.&quot;,
+        allowed={
+            &quot;AMP&quot;: &quot;Every amplifier treated separately.&quot;,
+            &quot;DETECTOR&quot;: &quot;One kernel per detector&quot;,
+        }
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="622" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="622" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a25a09d1a795fd189774427c5b9162871" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::brighterFatterMaxIter</definition>
+        <argsstring></argsstring>
+        <name>brighterFatterMaxIter</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.brighterFatterMaxIter</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        default=10,
+        doc=&quot;Maximum number of iterations for the brighter-fatter correction&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="631" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ad6dfcfa7bd3320a53ac3b170966fc4ae" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::brighterFatterThreshold</definition>
+        <argsstring></argsstring>
+        <name>brighterFatterThreshold</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.brighterFatterThreshold</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        default=1000,
+        doc=&quot;Threshold used <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> stop iterating the brighter-fatter correction.  It is the &quot;
+        &quot;absolute value of the difference <ref refid="namespacelsst_1_1ip_1_1isr_1afa41dacbfb489ee7cad58a4d212c139a" kindref="member">between</ref> the current corrected image and the one &quot;
+        &quot;<ref refid="_transform_map_8cc_1a302c2cce96a9eb2cb1d89356b89a84bd" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">from</ref> the previous iteration summed over <ref refid="namespacelsst_1_1geom_1a944b5845e347c8a246cf285b0c24ec51" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">all</ref> the pixels.&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="636" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="636" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a059c462ea4cb0cb68a83d032b857fdb7" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::brighterFatterApplyGain</definition>
+        <argsstring></argsstring>
+        <name>brighterFatterApplyGain</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.brighterFatterApplyGain</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;Should the <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a28e32774bac37cc51e29a7cb705f4f7e" kindref="member">gain</ref> be applied when applying the brighter-fatter correction?&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="643" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="643" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a5f342d7e188ebcd4b3573af4e164cbfa" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::brighterFatterMaskListToInterpolate</definition>
+        <argsstring></argsstring>
+        <name>brighterFatterMaskListToInterpolate</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.brighterFatterMaskListToInterpolate</qualifiedname>
+        <initializer>=  pexConfig.ListField(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;List of <ref refid="_heavy_footprint_8cc_1ab686a106d56d24e934338431811799aa" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">mask</ref> planes that should be interpolated over when applying the brighter-fatter &quot;
+        &quot;correction.&quot;,
+        default=[&quot;SAT&quot;, &quot;BAD&quot;, &quot;NO_DATA&quot;, &quot;UNMASKEDNAN&quot;],
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="648" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="648" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a3d89c024debfcf9d80f9375f98bbf37f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::brighterFatterMaskGrowSize</definition>
+        <argsstring></argsstring>
+        <name>brighterFatterMaskGrowSize</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.brighterFatterMaskGrowSize</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        default=0,
+        doc=&quot;Number of pixels <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> grow the masks listed in config.brighterFatterMaskListToInterpolate &quot;
+        &quot;when brighter-fatter correction is applied.&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="654" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="654" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a8404650859be055d7faf89eb3c716f2d" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doDark</definition>
+        <argsstring></argsstring>
+        <name>doDark</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doDark</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Apply <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a51c2f23638e36405af1f547e24895883" kindref="member">dark</ref> <ref refid="namespacelsst_1_1ip_1_1isr_1_1fringe_1a4dd3acd77e3af679edf74f7641b46f81" kindref="member">frame</ref> correction?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="662" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="662" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a1a8c55650e5f88da7aaeda59ee429f0e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::darkDataProductName</definition>
+        <argsstring></argsstring>
+        <name>darkDataProductName</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.darkDataProductName</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;Name of the <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a51c2f23638e36405af1f547e24895883" kindref="member">dark</ref> <ref refid="_base_record_8cc_1a91a70b77df95bd8b0830b49a094c2acb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">data</ref> product&quot;,
+        default=&quot;dark&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="667" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a90e933e13afe935134fc72b41ab2c4e1" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doStrayLight</definition>
+        <argsstring></argsstring>
+        <name>doStrayLight</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doStrayLight</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Subtract stray light in the <ref refid="_span_set_8cc_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">y</ref>-<ref refid="_filter_label_8cc_1ae15d4022e26989a2925befaf4dc13747" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">band</ref> (due <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> encoder LEDs)?&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="674" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="674" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a06e024663dac67e990386d0b4acd1f69" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::strayLight</definition>
+        <argsstring></argsstring>
+        <name>strayLight</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.strayLight</qualifiedname>
+        <initializer>=  pexConfig.ConfigurableField(
+        <ref refid="_base_column_view_8cc_1a33a50ea78c8f78d88e8c56f7582103bc" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">target</ref>=<ref refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task" kindref="compound">StrayLightTask</ref>,
+        doc=&quot;y-<ref refid="_filter_label_8cc_1ae15d4022e26989a2925befaf4dc13747" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">band</ref> stray light correction&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="679" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1aef3c5d7a334be1dd218f8929be971c3e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doFlat</definition>
+        <argsstring></argsstring>
+        <name>doFlat</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doFlat</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Apply <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a9ef258783af732a30730f40dcf7cd820" kindref="member">flat</ref> <ref refid="_ap_corr_map_8cc_1af1a38599a6d58153b21859d743bc56e9" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">field</ref> correction?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="685" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a678a7664f9f7529094d3eae48309fdeb" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::flatDataProductName</definition>
+        <argsstring></argsstring>
+        <name>flatDataProductName</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.flatDataProductName</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;Name of the <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a9ef258783af732a30730f40dcf7cd820" kindref="member">flat</ref> <ref refid="_base_record_8cc_1a91a70b77df95bd8b0830b49a094c2acb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">data</ref> product&quot;,
+        default=&quot;flat&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="690" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a9b033651d794ac00bb2257ed50768c58" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::flatScalingType</definition>
+        <argsstring></argsstring>
+        <name>flatScalingType</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.flatScalingType</qualifiedname>
+        <initializer>=  pexConfig.ChoiceField(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;The method for <ref refid="_pixel_area_bounded_field_8cc_1a18189aa6f2f065fe9f71a659b52cb4d2" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">scaling</ref> the <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a9ef258783af732a30730f40dcf7cd820" kindref="member">flat</ref> on the fly.&quot;,
+        default=&apos;USER&apos;,
+        allowed={
+            &quot;USER&quot;: &quot;Scale by flatUserScale&quot;,
+            &quot;MEAN&quot;: &quot;Scale by the inverse of the mean&quot;,
+            &quot;MEDIAN&quot;: &quot;Scale by the inverse of the median&quot;,
+        },
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="695" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="695" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a7bf6d4da1ca8fe7bd9299b3c4be0cf62" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::flatUserScale</definition>
+        <argsstring></argsstring>
+        <name>flatUserScale</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.flatUserScale</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        doc=&quot;If <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a9b033651d794ac00bb2257ed50768c58" kindref="member">flatScalingType</ref> is &apos;USER&apos; <ref refid="namespacelsst_1_1afw_1_1geom_1_1__python_1_1__transform_1aee33fbecaf096e389fb79c4543925c66" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">then</ref> <ref refid="namespacelsst_1_1afw_1_1display_1_1ds9_1a7523e1cf2b89c74e636a088cb35a93aa" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">scale</ref> <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a9ef258783af732a30730f40dcf7cd820" kindref="member">flat</ref> by this amount; ignored otherwise&quot;,
+        default=1.0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="705" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="705" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ae9e639cf6663e986d73a4aff9e05dc28" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doTweakFlat</definition>
+        <argsstring></argsstring>
+        <name>doTweakFlat</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doTweakFlat</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Tweak flats <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> match observed amplifier ratios?&quot;,
+        default=False
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="710" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="710" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a91d02d7a5fd6c3ca9737fab3cd007c94" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doApplyGains</definition>
+        <argsstring></argsstring>
+        <name>doApplyGains</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doApplyGains</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Correct the amplifiers for their gains instead of applying <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a9ef258783af732a30730f40dcf7cd820" kindref="member">flat</ref> correction&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="718" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="718" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a06bd3c22c78ded10e3a0379eff6d93c3" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::usePtcGains</definition>
+        <argsstring></argsstring>
+        <name>usePtcGains</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.usePtcGains</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Use the <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a28e32774bac37cc51e29a7cb705f4f7e" kindref="member">gain</ref> values <ref refid="_transform_map_8cc_1a302c2cce96a9eb2cb1d89356b89a84bd" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">from</ref> the Photon Transfer Curve?&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="723" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="723" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a91c904f5bde827f00d5741ad4c173f40" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::normalizeGains</definition>
+        <argsstring></argsstring>
+        <name>normalizeGains</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.normalizeGains</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Normalize <ref refid="namespacelsst_1_1geom_1a944b5845e347c8a246cf285b0c24ec51" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">all</ref> the amplifiers in each CCD <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> have the same median value.&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="728" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="728" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a55f8ff46a56d6e5a6775337d2b801361" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doFringe</definition>
+        <argsstring></argsstring>
+        <name>doFringe</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doFringe</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Apply <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a6349943234e1651e037d867f3fd7de3a" kindref="member">fringe</ref> correction?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="735" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="735" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a6349943234e1651e037d867f3fd7de3a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::fringe</definition>
+        <argsstring></argsstring>
+        <name>fringe</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.fringe</qualifiedname>
+        <initializer>=  pexConfig.ConfigurableField(
+        <ref refid="_base_column_view_8cc_1a33a50ea78c8f78d88e8c56f7582103bc" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">target</ref>=<ref refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task" kindref="compound">FringeTask</ref>,
+        doc=&quot;Fringe subtraction task&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="740" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="740" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a9151c03f28b0e52e702c9d50f576990a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::fringeAfterFlat</definition>
+        <argsstring></argsstring>
+        <name>fringeAfterFlat</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.fringeAfterFlat</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Do <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a6349943234e1651e037d867f3fd7de3a" kindref="member">fringe</ref> subtraction after <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a9ef258783af732a30730f40dcf7cd820" kindref="member">flat</ref>-fielding?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="744" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="744" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a7761784a57628c9a0b44b45035c48b79" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doAmpOffset</definition>
+        <argsstring></argsstring>
+        <name>doAmpOffset</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doAmpOffset</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        doc=&quot;Calculate and apply amp offset corrections?&quot;,
+        dtype=bool,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="751" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="751" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ad9156bb1ab6392a59a348fa88da779fe" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::ampOffset</definition>
+        <argsstring></argsstring>
+        <name>ampOffset</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.ampOffset</qualifiedname>
+        <initializer>=  pexConfig.ConfigurableField(
+        doc=&quot;Amp offset correction task.&quot;,
+        <ref refid="_base_column_view_8cc_1a33a50ea78c8f78d88e8c56f7582103bc" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">target</ref>=<ref refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_task" kindref="compound">AmpOffsetTask</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="756" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="756" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a0af6154026673f653fbd453267f95d26" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doMeasureBackground</definition>
+        <argsstring></argsstring>
+        <name>doMeasureBackground</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doMeasureBackground</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Measure the background level on the reduced image?&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="762" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="762" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1af62cb7a68e0a0cc8ec9550b111e4a17c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doCameraSpecificMasking</definition>
+        <argsstring></argsstring>
+        <name>doCameraSpecificMasking</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doCameraSpecificMasking</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Mask <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ac897acd5e27857a6f23d597b68c37fc9" kindref="member">camera</ref>-specific bad regions?&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="769" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="769" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a5e9b84a3c6f8f442ffb04e37fecadcd0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::masking</definition>
+        <argsstring></argsstring>
+        <name>masking</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.masking</qualifiedname>
+        <initializer>=  pexConfig.ConfigurableField(
+        <ref refid="_base_column_view_8cc_1a33a50ea78c8f78d88e8c56f7582103bc" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">target</ref>=<ref refid="classlsst_1_1ip_1_1isr_1_1masking_1_1_masking_task" kindref="compound">MaskingTask</ref>,
+        doc=&quot;Masking task.&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="774" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="774" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a4b275a211526374b6e84a8980f65ccef" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doInterpolate</definition>
+        <argsstring></argsstring>
+        <name>doInterpolate</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doInterpolate</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Interpolate masked pixels?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="780" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="780" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a4b9753153c90f41c06bd144af41779c3" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doSaturationInterpolation</definition>
+        <argsstring></argsstring>
+        <name>doSaturationInterpolation</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doSaturationInterpolation</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Perform interpolation over pixels masked as saturated?&quot;
+        &quot; NB: This is independent of <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a72561e9148e7b8f5f9826e72a0f06378" kindref="member">doSaturation</ref>; if that is False this plane&quot;
+        &quot; will likely be blank, resulting in <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> no-op here.&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="785" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="785" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1aacf492842edfe90c8868ea0a3db1e605" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doNanInterpolation</definition>
+        <argsstring></argsstring>
+        <name>doNanInterpolation</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doNanInterpolation</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Perform interpolation over pixels masked as NaN?&quot;
+        &quot; NB: This is independent of <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a479a8f0dde5998bf1f2e8a5cdc6a27b8" kindref="member">doNanMasking</ref>; if that is False this plane&quot;
+        &quot; will likely be blank, resulting in <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> no-op here.&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="792" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="792" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ace8fda56dc881f416047a351e3bc64f5" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doNanInterpAfterFlat</definition>
+        <argsstring></argsstring>
+        <name>doNanInterpAfterFlat</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doNanInterpAfterFlat</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=(&quot;If <ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>, ensure we interpolate NaNs after <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a9ef258783af732a30730f40dcf7cd820" kindref="member">flat</ref>-fielding, even if we &quot;
+             &quot;also have <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> interpolate them before <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a9ef258783af732a30730f40dcf7cd820" kindref="member">flat</ref>-fielding.&quot;),
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="799" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="799" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a143b4830ffd74631f10f3e03faeff9c0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::maskListToInterpolate</definition>
+        <argsstring></argsstring>
+        <name>maskListToInterpolate</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.maskListToInterpolate</qualifiedname>
+        <initializer>=  pexConfig.ListField(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;List of <ref refid="_heavy_footprint_8cc_1ab686a106d56d24e934338431811799aa" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">mask</ref> planes that should be interpolated.&quot;,
+        default=[&apos;SAT&apos;, &apos;BAD&apos;],
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="805" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="805" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a455db7bf7b03bb053a53a6d8eeb4d806" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doSaveInterpPixels</definition>
+        <argsstring></argsstring>
+        <name>doSaveInterpPixels</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doSaveInterpPixels</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Save <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> copy of the pre-interpolated <ref refid="_delta_function_kernel_8cc_1ae2a8d974644a75bdf33c1a72e76bd562" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">pixel</ref> values?&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="810" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="810" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a04aedf8399a731237c59aae36d6fcedf" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::fluxMag0T1</definition>
+        <argsstring></argsstring>
+        <name>fluxMag0T1</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.fluxMag0T1</qualifiedname>
+        <initializer>=  pexConfig.DictField(
+        keytype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        itemtype=float,
+        doc=&quot;The approximate flux of <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> zero-magnitude <ref refid="_visit_info_8cc_1aae80e3830d1a466f271c67ed0f0e0026" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">object</ref> in <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> one-<ref refid="namespacelsst_1_1afw_1_1table_1_1__match_1a88f15cdc56b97c922476dca4be3bf459" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">second</ref> exposure, per filter.&quot;,
+        default=dict((f, pow(10.0, 0.4*<ref refid="_span_set_8cc_1a742204794ea328ba293fe59cec79b990" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">m</ref>)) for f, <ref refid="_span_set_8cc_1a742204794ea328ba293fe59cec79b990" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">m</ref> in ((&quot;Unknown&quot;, 28.0),
+                                                        ))
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="817" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="817" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1aa39d64387d0a085cbcdcbde83c72b64f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::defaultFluxMag0T1</definition>
+        <argsstring></argsstring>
+        <name>defaultFluxMag0T1</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.defaultFluxMag0T1</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        doc=&quot;Default value for <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a04aedf8399a731237c59aae36d6fcedf" kindref="member">fluxMag0T1</ref> (for an unrecognized filter).&quot;,
+        default=pow(10.0, 0.4*28.0)
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="824" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="824" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a581e9bec6d572bb191cd2803cd4e320e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doVignette</definition>
+        <argsstring></argsstring>
+        <name>doVignette</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doVignette</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=(&quot;Compute and attach the <ref refid="table_2_exposure_8cc_1a820812e80bb98101f225374fd0cf5768" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">validPolygon</ref> defining the unvignetted region <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> the exposure &quot;
+             &quot;according <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> vignetting parameters?&quot;),
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="831" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="831" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1abe63469958a055a9afeb08d6efaf142b" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doMaskVignettePolygon</definition>
+        <argsstring></argsstring>
+        <name>doMaskVignettePolygon</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doMaskVignettePolygon</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=(&quot;Add <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> <ref refid="_heavy_footprint_8cc_1ab686a106d56d24e934338431811799aa" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">mask</ref> bit for pixels within the vignetted region.  Ignored if <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a581e9bec6d572bb191cd2803cd4e320e" kindref="member">doVignette</ref> &quot;
+             &quot;is False&quot;),
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="837" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="837" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1aa27c62f17935a5f614ebacadf5a28adc" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::vignetteValue</definition>
+        <argsstring></argsstring>
+        <name>vignetteValue</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.vignetteValue</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        doc=&quot;Value <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> replace image array pixels with in the vignetted region?  Ignored if None.&quot;,
+        optional=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        default=None,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="843" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="843" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a63d220f8917cd82dd64acf45348ca408" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::vignette</definition>
+        <argsstring></argsstring>
+        <name>vignette</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.vignette</qualifiedname>
+        <initializer>=  pexConfig.ConfigurableField(
+        <ref refid="_base_column_view_8cc_1a33a50ea78c8f78d88e8c56f7582103bc" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">target</ref>=<ref refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task" kindref="compound">VignetteTask</ref>,
+        doc=&quot;Vignetting task.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="849" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="849" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a0ca432221813dc2a2f0459880e9f47ba" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doAttachTransmissionCurve</definition>
+        <argsstring></argsstring>
+        <name>doAttachTransmissionCurve</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doAttachTransmissionCurve</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Construct and attach <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> wavelength-dependent throughput curve for this CCD image?&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="855" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="855" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a777429698681a5bf2959f660085ad641" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doUseOpticsTransmission</definition>
+        <argsstring></argsstring>
+        <name>doUseOpticsTransmission</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doUseOpticsTransmission</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;Load and use transmission_optics (if <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a0ca432221813dc2a2f0459880e9f47ba" kindref="member">doAttachTransmissionCurve</ref> is <ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>)?&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="860" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="860" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ab325bdea3483ede1465639f7f8ed1b69" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doUseFilterTransmission</definition>
+        <argsstring></argsstring>
+        <name>doUseFilterTransmission</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doUseFilterTransmission</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;Load and use transmission_filter (if <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a0ca432221813dc2a2f0459880e9f47ba" kindref="member">doAttachTransmissionCurve</ref> is <ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>)?&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="865" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="865" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a19aafacffcbac9e26a35a8fc1c5273c5" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doUseSensorTransmission</definition>
+        <argsstring></argsstring>
+        <name>doUseSensorTransmission</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doUseSensorTransmission</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;Load and use transmission_sensor (if <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a0ca432221813dc2a2f0459880e9f47ba" kindref="member">doAttachTransmissionCurve</ref> is <ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>)?&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="870" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="870" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1af1ed456f680b6dd87e61da488c70eb12" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doUseAtmosphereTransmission</definition>
+        <argsstring></argsstring>
+        <name>doUseAtmosphereTransmission</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doUseAtmosphereTransmission</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        doc=&quot;Load and use transmission_atmosphere (if <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a0ca432221813dc2a2f0459880e9f47ba" kindref="member">doAttachTransmissionCurve</ref> is <ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>)?&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="875" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="875" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a8014bca389a08724931a58d4fb6d3c57" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doIlluminationCorrection</definition>
+        <argsstring></argsstring>
+        <name>doIlluminationCorrection</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doIlluminationCorrection</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        default=False,
+        doc=&quot;Perform illumination correction?&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="882" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="882" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a6bf385342d931a094e35d90b1baaa361" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::illuminationCorrectionDataProductName</definition>
+        <argsstring></argsstring>
+        <name>illuminationCorrectionDataProductName</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.illuminationCorrectionDataProductName</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;Name of the illumination correction <ref refid="_base_record_8cc_1a91a70b77df95bd8b0830b49a094c2acb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">data</ref> product.&quot;,
+        default=&quot;illumcor&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="887" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="887" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a2800933b09c63d11004dad9ca6b95318" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::illumScale</definition>
+        <argsstring></argsstring>
+        <name>illumScale</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.illumScale</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        doc=&quot;Scale factor for the illumination correction.&quot;,
+        default=1.0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="892" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="892" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a7d407abf17cb0a25a865f06f835b6b49" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::illumFilters</definition>
+        <argsstring></argsstring>
+        <name>illumFilters</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.illumFilters</qualifiedname>
+        <initializer>=  pexConfig.ListField(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        default=[],
+        doc=&quot;Only perform illumination correction for these filters.&quot;
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="897" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="897" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a9e2a36e90d029f7b534b32841748e8ee" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doStandardStatistics</definition>
+        <argsstring></argsstring>
+        <name>doStandardStatistics</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doStandardStatistics</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Should standard image quality statistics be calculated?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="904" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="904" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a0e2a062fd09c0910159b9f39c8af9e9c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doCalculateStatistics</definition>
+        <argsstring></argsstring>
+        <name>doCalculateStatistics</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doCalculateStatistics</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Should additional ISR statistics be calculated?&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="910" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="910" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a8c7a1601b879cd6097feff875ebab8d0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::isrStats</definition>
+        <argsstring></argsstring>
+        <name>isrStats</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.isrStats</qualifiedname>
+        <initializer>=  pexConfig.ConfigurableField(
+        <ref refid="_base_column_view_8cc_1a33a50ea78c8f78d88e8c56f7582103bc" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">target</ref>=<ref refid="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task" kindref="compound">IsrStatisticsTask</ref>,
+        doc=&quot;Task <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> calculate additional statistics.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="915" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="915" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1aeb7c03de00573d58680e31a219da2611" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConfig::doWrite</definition>
+        <argsstring></argsstring>
+        <name>doWrite</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.doWrite</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Persist postISRCCD?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="922" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="922" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ab3c6e74f1d4d9e542bdee2fb7a177c52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTaskConfig.validate</definition>
+        <argsstring>(self)</argsstring>
+        <name>validate</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConfig.validate</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="928" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="928" bodyend="941"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Configuration parameters for IsrTask.
+
+Items are grouped in the order in which they are executed by the task.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>defaultTemplates</label>
+      </node>
+      <node id="6">
+        <label>dimensions</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.isrTask.IsrTaskConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lsst.ip.isr.isrTask.IsrTaskConnections</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pipeBase::PipelineTaskConfig</label>
+      </node>
+      <node id="5">
+        <label>pipeBase::PipelineTaskConnections</label>
+      </node>
+      <node id="3">
+        <label>pipelineConnections</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>defaultTemplates</label>
+      </node>
+      <node id="6">
+        <label>dimensions</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.isrTask.IsrTaskConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lsst.ip.isr.isrTask.IsrTaskConnections</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pipeBase::PipelineTaskConfig</label>
+      </node>
+      <node id="5">
+        <label>pipeBase::PipelineTaskConnections</label>
+      </node>
+      <node id="3">
+        <label>pipelineConnections</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/isrTask.py" line="343" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="344" bodyend="941"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ad9156bb1ab6392a59a348fa88da779fe" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>ampOffset</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a0a8dbee8bc73beea6f048aa3924fdf83" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>assembleCcd</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ada2c7db4aaee5b0f51e91c9bbf741d45" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>badStatistic</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1afc41115637d5f3276d640d4855f0c159" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>biasDataProductName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a059c462ea4cb0cb68a83d032b857fdb7" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>brighterFatterApplyGain</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ad7a90eb83aee83d22466704803138acc" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>brighterFatterLevel</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a3d89c024debfcf9d80f9375f98bbf37f" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>brighterFatterMaskGrowSize</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a5f342d7e188ebcd4b3573af4e164cbfa" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>brighterFatterMaskListToInterpolate</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a25a09d1a795fd189774427c5b9162871" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>brighterFatterMaxIter</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ad6dfcfa7bd3320a53ac3b170966fc4ae" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>brighterFatterThreshold</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1abe72f2889193cceb76fbbe2e54dc92ea" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>cameraKeywordsToCompare</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1abf6c22dc193d307ada71fa2bcbcbc77e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>crosstalk</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a1a8c55650e5f88da7aaeda59ee429f0e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>darkDataProductName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a88964149346d8090b3a331f81276642c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>datasetType</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1aa39d64387d0a085cbcdcbde83c72b64f" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>defaultFluxMag0T1</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a605e0fca268b1997331a8aaad809b0ea" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>deferredChargeCorrection</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a7761784a57628c9a0b44b45035c48b79" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doAmpOffset</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a91d02d7a5fd6c3ca9737fab3cd007c94" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doApplyGains</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a943af08910d179fcb34e4ba3ef35f30f" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doAssembleCcd</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ab97b31560f25957b3e6a02a7ff0f8dcd" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doAssembleIsrExposures</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a0ca432221813dc2a2f0459880e9f47ba" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doAttachTransmissionCurve</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1acdf1f9d65a031762ca18c04b648b7346" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doBias</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1aa32ca3b2c44095fbf62baa7d7769308a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doBiasBeforeOverscan</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a9bfa42140f66223583b26716f1e5ecd1" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doBrighterFatter</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a0e2a062fd09c0910159b9f39c8af9e9c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doCalculateStatistics</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1af62cb7a68e0a0cc8ec9550b111e4a17c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doCameraSpecificMasking</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a071e86636c705df00d9d27779a050482" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doConvertIntToFloat</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a208971bc4934edbe04ad50f67daefd64" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doCrosstalk</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1af60c4b032551a1b6959e66d60d157c98" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doCrosstalkBeforeAssemble</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a8404650859be055d7faf89eb3c716f2d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doDark</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1adacacedd5636b555f7f5f8e1f750ab62" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doDefect</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a86967fbe0addd1c46f9020afdb5c67a7" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doDeferredCharge</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a65016e95c56a79df590ba5dfea5781fa" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doEmpiricalReadNoise</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1aef3c5d7a334be1dd218f8929be971c3e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doFlat</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1af1e57d6968d8b3f18b750d430f5ccb1a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doFluxConservingBrighterFatterCorrection</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a55f8ff46a56d6e5a6775337d2b801361" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doFringe</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ac25d4af3a4cbb8c6a95e155ed91b4404" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doHeaderProvenance</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a8014bca389a08724931a58d4fb6d3c57" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doIlluminationCorrection</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a4b275a211526374b6e84a8980f65ccef" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doInterpolate</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a9691ef58685de545cd2d55ea35746be0" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doLinearize</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1abe63469958a055a9afeb08d6efaf142b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doMaskVignettePolygon</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a0af6154026673f653fbd453267f95d26" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doMeasureBackground</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ace8fda56dc881f416047a351e3bc64f5" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doNanInterpAfterFlat</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1aacf492842edfe90c8868ea0a3db1e605" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doNanInterpolation</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a479a8f0dde5998bf1f2e8a5cdc6a27b8" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doNanMasking</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a61399a3220f9a98b9eb410b897ff61e8" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doOverscan</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a8649b35a0813ddf60ee4f2158af4ee42" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doRaiseOnCalibMismatch</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a72561e9148e7b8f5f9826e72a0f06378" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doSaturation</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a4b9753153c90f41c06bd144af41779c3" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doSaturationInterpolation</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a455db7bf7b03bb053a53a6d8eeb4d806" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doSaveInterpPixels</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a06fd4c6175e6296b0cc09e49f9058e49" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doSetBadRegions</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a9e2a36e90d029f7b534b32841748e8ee" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doStandardStatistics</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a90e933e13afe935134fc72b41ab2c4e1" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doStrayLight</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a782d7365f82c2032f04e0e82f172f5f7" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doSuspect</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a5070b7981556d9ad27c80ef4cc771c8d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doTrimToMatchCalib</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ae9e639cf6663e986d73a4aff9e05dc28" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doTweakFlat</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1af1ed456f680b6dd87e61da488c70eb12" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doUseAtmosphereTransmission</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ab325bdea3483ede1465639f7f8ed1b69" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doUseFilterTransmission</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a777429698681a5bf2959f660085ad641" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doUseOpticsTransmission</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a19aafacffcbac9e26a35a8fc1c5273c5" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doUseSensorTransmission</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a1020dc31d430a574fefeb0686e511e52" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doVariance</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a581e9bec6d572bb191cd2803cd4e320e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doVignette</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ad9373cf2e9b49b47a67e2adbe162bc63" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doWidenSaturationTrails</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1aeb7c03de00573d58680e31a219da2611" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>doWrite</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1aec04502b684c3a9049dead94b2fe3107" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>edgeMaskLevel</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a32afa82f16f70a4af08d15b8bf601af5" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>expectWcs</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a6b8d9dbdc2a20c5d1c309b387a70d722" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>fallbackFilterName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a678a7664f9f7529094d3eae48309fdeb" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>flatDataProductName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a9b033651d794ac00bb2257ed50768c58" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>flatScalingType</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a7bf6d4da1ca8fe7bd9299b3c4be0cf62" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>flatUserScale</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a04aedf8399a731237c59aae36d6fcedf" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>fluxMag0T1</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a6349943234e1651e037d867f3fd7de3a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>fringe</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a9151c03f28b0e52e702c9d50f576990a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>fringeAfterFlat</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a1df2b5925cb0eaa47082bf6ba7a984aa" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>fwhm</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a28e32774bac37cc51e29a7cb705f4f7e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>gain</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ab632e51d37d28420afbe3b6599a5b138" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>growSaturationFootprintSize</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a7d407abf17cb0a25a865f06f835b6b49" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>illumFilters</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a6bf385342d931a094e35d90b1baaa361" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>illuminationCorrectionDataProductName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a2800933b09c63d11004dad9ca6b95318" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>illumScale</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a8c7a1601b879cd6097feff875ebab8d0" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>isrStats</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a5e9b84a3c6f8f442ffb04e37fecadcd0" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>masking</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a143b4830ffd74631f10f3e03faeff9c0" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>maskListToInterpolate</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1acd289f0090b84154dbee2c5446785a72" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>maskNegativeVariance</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a112aca344d4a32c06436237be32347da" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>negativeVarianceMaskName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a91c904f5bde827f00d5741ad4c173f40" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>normalizeGains</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a8c829f9777cdcbdcb7c79097620f1536" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>numEdgeSuspect</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a804d9485bd092291f8e75bd3581a0810" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>overscan</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a814ace3439e39e33d73db9dda7432d7c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>qa</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a2e5e001593e6efa044f98d460084b3a2" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>readNoise</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a1d37f285ee07b66b9d78f0cf6ca3253b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>saturatedMaskName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a4ca25a67dc6a3f2ff2ecc3310c99b135" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>saturation</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a06e024663dac67e990386d0b4acd1f69" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>strayLight</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a9cb2b5ac85b8d4271e921df4815880eb" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>suspectMaskName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a6c4e9fcd19bad87248fa602a4c33dd8b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>useFallbackDate</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a06bd3c22c78ded10e3a0379eff6d93c3" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>usePtcGains</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a08e976007d1aa3705dfcf5a4d0538fdc" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>usePtcReadNoise</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1ab3c6e74f1d4d9e542bdee2fb7a177c52" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>validate</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1a63d220f8917cd82dd64acf45348ca408" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>vignette</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config_1aa27c62f17935a5f614ebacadf5a28adc" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConfig</scope><name>vignetteValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

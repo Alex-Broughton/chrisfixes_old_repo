@@ -1,0 +1,24 @@
+file /sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/sconsUtils/gf2e9181d9f/python/lsst/sconsUtils/state.py,line 402:
+	Configure(confdir = .sconf_temp)
+scons: Configure: Checking who built the CC compiler...
+/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/bin/x86_64-conda-linux-gnu-cc --version > .sconf_temp/conftest_42f5afd5b433a3411e6c62b2fd281213
+scons: Configure: gcc=11.3.0
+
+
+file /sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/sconsUtils/gf2e9181d9f/python/lsst/sconsUtils/state.py,line 464:
+	Configure(confdir = .sconf_temp)
+scons: Configure: Checking whether the C++ compiler works... 
+.sconf_temp/conftest_737c003a897167642b70f8cdde8a0eaf_0.cpp <-
+  |
+  |int main(void)
+  |{
+  |    return 0;
+  |}
+  |
+/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/bin/x86_64-conda-linux-gnu-c++ -o .sconf_temp/conftest_737c003a897167642b70f8cdde8a0eaf_0_2af86cf15c5e9613bfbd15a4c24b0fb3.o -c -fvisibility-inlines-hidden -fmessage-length=0 -std=c++17 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/include -g .sconf_temp/conftest_737c003a897167642b70f8cdde8a0eaf_0.cpp
+scons: Configure: yes
+
+
+file /sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/sconsUtils/gf2e9181d9f/python/lsst/sconsUtils/dependencies.py,line 577:
+	Configure(confdir = .sconf_temp)
+

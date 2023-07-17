@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_config" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::deferredCharge::DeferredChargeConfig</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Config</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_config_1aa5cd8c12aac08716d246b66fa3dc1d88" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.deferredCharge.DeferredChargeConfig::nPixelOffsetCorrection</definition>
+        <argsstring></argsstring>
+        <name>nPixelOffsetCorrection</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.DeferredChargeConfig.nPixelOffsetCorrection</qualifiedname>
+        <initializer>=  Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=&quot;Number of prior pixels <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> use for local offset correction.&quot;,
+        default=15,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="504" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_config_1a80be8a6495fa8054cfdb3dbc04b215f4" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.deferredCharge.DeferredChargeConfig::nPixelTrapCorrection</definition>
+        <argsstring></argsstring>
+        <name>nPixelTrapCorrection</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.DeferredChargeConfig.nPixelTrapCorrection</qualifiedname>
+        <initializer>=  Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=&quot;Number of prior pixels <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> use for trap correction.&quot;,
+        default=6,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="509" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="509" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_config_1aef0bb067f1e61bd43297a499f3095ef3" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.deferredCharge.DeferredChargeConfig::useGains</definition>
+        <argsstring></argsstring>
+        <name>useGains</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.DeferredChargeConfig.useGains</qualifiedname>
+        <initializer>=  Field(
+        dtype=bool,
+        doc=&quot;If true, <ref refid="namespacelsst_1_1afw_1_1display_1_1ds9_1a7523e1cf2b89c74e636a088cb35a93aa" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">scale</ref> by the gain.&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="514" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="514" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_config_1aa16f002e4f91274661aa3ca3e24de0bf" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.deferredCharge.DeferredChargeConfig::zeroUnusedPixels</definition>
+        <argsstring></argsstring>
+        <name>zeroUnusedPixels</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.DeferredChargeConfig.zeroUnusedPixels</qualifiedname>
+        <initializer>=  Field(
+        dtype=bool,
+        doc=&quot;If true, <ref refid="fits_8cc_1a35ebf07010c76ad3be0af622f438897e" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">set</ref> <ref refid="_detector_8cc_1af2e79c66b1c1e4c3db7b71d8f2d04422" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">serial</ref> prescan and parallel overscan <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> zero before correction.&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="519" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="519" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Settings for deferred charge correction.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.deferredCharge.DeferredChargeConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Config</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.deferredCharge.DeferredChargeConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Config</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/deferredCharge.py" line="501" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="501" bodyend="525"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_config_1aa5cd8c12aac08716d246b66fa3dc1d88" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::DeferredChargeConfig</scope><name>nPixelOffsetCorrection</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_config_1a80be8a6495fa8054cfdb3dbc04b215f4" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::DeferredChargeConfig</scope><name>nPixelTrapCorrection</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_config_1aef0bb067f1e61bd43297a499f3095ef3" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::DeferredChargeConfig</scope><name>useGains</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_config_1aa16f002e4f91274661aa3ca3e24de0bf" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::DeferredChargeConfig</scope><name>zeroUnusedPixels</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

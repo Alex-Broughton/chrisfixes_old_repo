@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1masking_1_1_masking_task" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::masking::MaskingTask</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Task</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1masking_1_1_masking_task_1a6632f1234eab709c4b6c33d502d4dc57" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.masking.MaskingTask::ConfigClass</definition>
+        <argsstring></argsstring>
+        <name>ConfigClass</name>
+        <qualifiedname>lsst::ip::isr.masking.MaskingTask.ConfigClass</qualifiedname>
+        <initializer>=  <ref refid="classlsst_1_1ip_1_1isr_1_1masking_1_1_masking_config" kindref="compound">MaskingConfig</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/masking.py" line="40" column="1" bodyfile="python/lsst/ip/isr/masking.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1masking_1_1_masking_task_1a247313dc23371291b6ca8fcb16ce19cb" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.masking.MaskingTask::_DefaultName</definition>
+        <argsstring></argsstring>
+        <name>_DefaultName</name>
+        <qualifiedname>lsst::ip::isr.masking.MaskingTask._DefaultName</qualifiedname>
+        <initializer>=  &quot;isrMasking&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/masking.py" line="41" column="1" bodyfile="python/lsst/ip/isr/masking.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1masking_1_1_masking_task_1a0b108e2592dbddbf513894fe9211af97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.masking.MaskingTask.run</definition>
+        <argsstring>(self, exposure)</argsstring>
+        <name>run</name>
+        <qualifiedname>lsst::ip::isr.masking.MaskingTask.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Mask a known bad region of an exposure.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to construct detector-specific masks for.
+
+Returns
+-------
+status : scalar
+    This task is currently not implemented, and should be
+    retargeted by a camera specific version.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/masking.py" line="43" column="1" bodyfile="python/lsst/ip/isr/masking.py" bodystart="43" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Perform extra masking for detector issues such as ghosts and glints.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.masking.MaskingTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1masking_1_1_masking_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Task</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.masking.MaskingTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1masking_1_1_masking_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Task</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/masking.py" line="37" column="1" bodyfile="python/lsst/ip/isr/masking.py" bodystart="37" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1masking_1_1_masking_task_1a247313dc23371291b6ca8fcb16ce19cb" prot="private" virt="non-virtual"><scope>lsst::ip::isr::masking::MaskingTask</scope><name>_DefaultName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1masking_1_1_masking_task_1a6632f1234eab709c4b6c33d502d4dc57" prot="public" virt="non-virtual"><scope>lsst::ip::isr::masking::MaskingTask</scope><name>ConfigClass</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1masking_1_1_masking_task_1a0b108e2592dbddbf513894fe9211af97" prot="public" virt="non-virtual"><scope>lsst::ip::isr::masking::MaskingTask</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

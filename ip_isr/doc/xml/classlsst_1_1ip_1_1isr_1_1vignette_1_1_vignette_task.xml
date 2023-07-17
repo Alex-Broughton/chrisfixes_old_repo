@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::vignette::VignetteTask</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Task</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task_1aefeb79d2c2d8d09667984b2081b89f5e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.vignette.VignetteTask::ConfigClass</definition>
+        <argsstring></argsstring>
+        <name>ConfigClass</name>
+        <qualifiedname>lsst::ip::isr.vignette.VignetteTask.ConfigClass</qualifiedname>
+        <initializer>=  <ref refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config" kindref="compound">VignetteConfig</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/vignette.py" line="73" column="1" bodyfile="python/lsst/ip/isr/vignette.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task_1a34ba3872c81bbb9a80c2b0ab416aaa6d" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.vignette.VignetteTask::_DefaultName</definition>
+        <argsstring></argsstring>
+        <name>_DefaultName</name>
+        <qualifiedname>lsst::ip::isr.vignette.VignetteTask._DefaultName</qualifiedname>
+        <initializer>=  &quot;isrVignette&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/vignette.py" line="74" column="1" bodyfile="python/lsst/ip/isr/vignette.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task_1ae727f264ba8e30efe540ee268d18b285" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.vignette.VignetteTask.run</definition>
+        <argsstring>(self, exposure=None, doUpdateMask=True, maskPlane=&quot;NO_DATA&quot;, vignetteValue=None, log=None)</argsstring>
+        <name>run</name>
+        <qualifiedname>lsst::ip::isr.vignette.VignetteTask.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>doUpdateMask</type>
+          <defname>doUpdateMask</defname>
+          <defval><ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref></defval>
+        </param>
+        <param>
+          <type>maskPlane</type>
+          <defname>maskPlane</defname>
+          <defval>&quot;NO_DATA&quot;</defval>
+        </param>
+        <param>
+          <type>vignetteValue</type>
+          <defname>vignetteValue</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1ip_1_1isr_1_1defects_1a1bb91a40156f1994d55da947ded68fab" kindref="member">log</ref></type>
+          <defname>log</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generate circular vignette pattern.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`, optional
+    Exposure to construct, apply, and optionally mask vignette for.
+doUpdateMask : `bool`, optional
+    If true, the mask will be updated to mask the vignetted region.
+maskPlane : `str`, optional
+    Mask plane to assign vignetted pixels to.
+vignetteValue : `float` or `None`, optional
+    Value to assign to the image array pixels within the ``polygon``
+    region.  If `None`, image pixel values are not replaced.
+log : `logging.Logger`, optional
+    Log object to write to.
+
+Returns
+-------
+polygon : `lsst.afw.geom.Polygon`
+    Polygon defining the boundary of the vignetted region.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/vignette.py" line="76" column="1" bodyfile="python/lsst/ip/isr/vignette.py" bodystart="76" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Define a simple circular vignette pattern and optionally update mask
+plane.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.vignette.VignetteTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Task</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.vignette.VignetteTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Task</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/vignette.py" line="69" column="1" bodyfile="python/lsst/ip/isr/vignette.py" bodystart="69" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task_1a34ba3872c81bbb9a80c2b0ab416aaa6d" prot="private" virt="non-virtual"><scope>lsst::ip::isr::vignette::VignetteTask</scope><name>_DefaultName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task_1aefeb79d2c2d8d09667984b2081b89f5e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::vignette::VignetteTask</scope><name>ConfigClass</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task_1ae727f264ba8e30efe540ee268d18b285" prot="public" virt="non-virtual"><scope>lsst::ip::isr::vignette::VignetteTask</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

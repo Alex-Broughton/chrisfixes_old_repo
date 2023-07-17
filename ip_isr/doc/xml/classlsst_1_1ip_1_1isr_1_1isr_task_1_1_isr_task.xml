@@ -1,0 +1,1456 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::isrTask::IsrTask</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pipeBase.PipelineTask</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a4855a6fe925b7d5a00adb92c963f5111" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTask::ConfigClass</definition>
+        <argsstring></argsstring>
+        <name>ConfigClass</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.ConfigClass</qualifiedname>
+        <initializer>=  <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config" kindref="compound">IsrTaskConfig</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="966" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="966" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a8e1925290446bee08b0fca4a7a2039a3" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.isrTask.IsrTask::_DefaultName</definition>
+        <argsstring></argsstring>
+        <name>_DefaultName</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask._DefaultName</qualifiedname>
+        <initializer>=  &quot;isr&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="967" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="967" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a3a07ffee85e1dc9883151e5670cb4704" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTask::vignettePolygon</definition>
+        <argsstring></argsstring>
+        <name>vignettePolygon</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.vignettePolygon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="1597" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="1597" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a64fb94201cae32fe3c4bfae9b287e771" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.__init__</definition>
+        <argsstring>(self, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="969" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="969" bodyend="981"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a6c089fc54ab807a516209c83e7750139" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.runQuantum</definition>
+        <argsstring>(self, butlerQC, inputRefs, outputRefs)</argsstring>
+        <name>runQuantum</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.runQuantum</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>butlerQC</type>
+          <defname>butlerQC</defname>
+        </param>
+        <param>
+          <type>inputRefs</type>
+          <defname>inputRefs</defname>
+        </param>
+        <param>
+          <type>outputRefs</type>
+          <defname>outputRefs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="982" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="982" bodyend="1107"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a81c925b5597c53f5fe16e0ca7ad33601" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.run</definition>
+        <argsstring>(self, ccdExposure, *camera=None, bias=None, linearizer=None, crosstalk=None, crosstalkSources=None, dark=None, flat=None, ptc=None, bfKernel=None, bfGains=None, defects=None, fringes=pipeBase.Struct(fringes=None), opticsTransmission=None, filterTransmission=None, sensorTransmission=None, atmosphereTransmission=None, detectorNum=None, strayLightData=None, illumMaskedImage=None, deferredChargeCalib=None)</argsstring>
+        <name>run</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ccdExposure</type>
+          <defname>ccdExposure</defname>
+        </param>
+        <param>
+          <type>*</type>
+          <declname>camera</declname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>bias</type>
+          <defname>bias</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>linearizer</type>
+          <defname>linearizer</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>crosstalk</type>
+          <defname>crosstalk</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>crosstalkSources</type>
+          <defname>crosstalkSources</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>dark</type>
+          <defname>dark</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>flat</type>
+          <defname>flat</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>ptc</type>
+          <defname>ptc</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>bfKernel</type>
+          <defname>bfKernel</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>bfGains</type>
+          <defname>bfGains</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>defects</type>
+          <defname>defects</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>fringes</type>
+          <defname>fringes</defname>
+          <defval>pipeBase.Struct(fringes=None)</defval>
+        </param>
+        <param>
+          <type>opticsTransmission</type>
+          <defname>opticsTransmission</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>filterTransmission</type>
+          <defname>filterTransmission</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>sensorTransmission</type>
+          <defname>sensorTransmission</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>atmosphereTransmission</type>
+          <defname>atmosphereTransmission</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>detectorNum</type>
+          <defname>detectorNum</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>strayLightData</type>
+          <defname>strayLightData</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>illumMaskedImage</type>
+          <defname>illumMaskedImage</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>deferredChargeCalib</type>
+          <defname>deferredChargeCalib</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Perform instrument signature removal on an exposure.
+
+Steps included in the ISR processing, in order performed, are:
+
+- saturation and suspect pixel masking
+- overscan subtraction
+- CCD assembly of individual amplifiers
+- bias subtraction
+- variance image construction
+- linearization of non-linear response
+- crosstalk masking
+- brighter-fatter correction
+- dark subtraction
+- fringe correction
+- stray light subtraction
+- flat correction
+- masking of known defects and camera specific features
+- vignette calculation
+- appending transmission curve and distortion model
+
+Parameters
+----------
+ccdExposure : `lsst.afw.image.Exposure`
+    The raw exposure that is to be run through ISR.  The
+    exposure is modified by this method.
+camera : `lsst.afw.cameraGeom.Camera`, optional
+    The camera geometry for this exposure. Required if
+    one or more of ``ccdExposure``, ``bias``, ``dark``, or
+    ``flat`` does not have an associated detector.
+bias : `lsst.afw.image.Exposure`, optional
+    Bias calibration frame.
+linearizer : `lsst.ip.isr.linearize.LinearizeBase`, optional
+    Functor for linearization.
+crosstalk : `lsst.ip.isr.crosstalk.CrosstalkCalib`, optional
+    Calibration for crosstalk.
+crosstalkSources : `list`, optional
+    List of possible crosstalk sources.
+dark : `lsst.afw.image.Exposure`, optional
+    Dark calibration frame.
+flat : `lsst.afw.image.Exposure`, optional
+    Flat calibration frame.
+ptc : `lsst.ip.isr.PhotonTransferCurveDataset`, optional
+    Photon transfer curve dataset, with, e.g., gains
+    and read noise.
+bfKernel : `numpy.ndarray`, optional
+    Brighter-fatter kernel.
+bfGains : `dict` of `float`, optional
+    Gains used to override the detector&apos;s nominal gains for the
+    brighter-fatter correction. A dict keyed by amplifier name for
+    the detector in question.
+defects : `lsst.ip.isr.Defects`, optional
+    List of defects.
+fringes : `lsst.pipe.base.Struct`, optional
+    Struct containing the fringe correction data, with
+    elements:
+
+    ``fringes``
+        fringe calibration frame (`lsst.afw.image.Exposure`)
+    ``seed``
+        random seed derived from the ``ccdExposureId`` for random
+        number generator (`numpy.uint32`)
+opticsTransmission: `lsst.afw.image.TransmissionCurve`, optional
+    A ``TransmissionCurve`` that represents the throughput of the,
+    optics, to be evaluated in focal-plane coordinates.
+filterTransmission : `lsst.afw.image.TransmissionCurve`
+    A ``TransmissionCurve`` that represents the throughput of the
+    filter itself, to be evaluated in focal-plane coordinates.
+sensorTransmission : `lsst.afw.image.TransmissionCurve`
+    A ``TransmissionCurve`` that represents the throughput of the
+    sensor itself, to be evaluated in post-assembly trimmed detector
+    coordinates.
+atmosphereTransmission : `lsst.afw.image.TransmissionCurve`
+    A ``TransmissionCurve`` that represents the throughput of the
+    atmosphere, assumed to be spatially constant.
+detectorNum : `int`, optional
+    The integer number for the detector to process.
+strayLightData : `object`, optional
+    Opaque object containing calibration information for stray-light
+    correction.  If `None`, no correction will be performed.
+illumMaskedImage : `lsst.afw.image.MaskedImage`, optional
+    Illumination correction image.
+
+Returns
+-------
+result : `lsst.pipe.base.Struct`
+    Result struct with component:
+
+    ``exposure``
+        The fully ISR corrected exposure.
+        (`lsst.afw.image.Exposure`)
+    ``outputExposure``
+        An alias for ``exposure``. (`lsst.afw.image.Exposure`)
+    ``ossThumb``
+        Thumbnail image of the exposure after overscan subtraction.
+        (`numpy.ndarray`)
+    ``flattenedThumb``
+        Thumbnail image of the exposure after flat-field correction.
+        (`numpy.ndarray`)
+    ``outputStatistics``
+        Values of the additional statistics calculated.
+
+Raises
+------
+RuntimeError
+    Raised if a configuration option is set to `True`, but the
+    required calibration data has not been specified.
+
+Notes
+-----
+The current processed exposure can be viewed by setting the
+appropriate `lsstDebug` entries in the ``debug.display``
+dictionary.  The names of these entries correspond to some of
+the `IsrTaskConfig` Boolean options, with the value denoting the
+frame to use.  The exposure is shown inside the matching
+option check and after the processing of that step has
+finished.  The steps with debug points are:
+
+* doAssembleCcd
+* doBias
+* doCrosstalk
+* doBrighterFatter
+* doDark
+* doFringe
+* doStrayLight
+* doFlat
+
+In addition, setting the ``postISRCCD`` entry displays the
+exposure after all ISR processing has finished.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="1109" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="1116" bodyend="1719"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a2e22275ea13ff008c0571b525361086e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.ensureExposure</definition>
+        <argsstring>(self, inputExp, camera=None, detectorNum=None)</argsstring>
+        <name>ensureExposure</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.ensureExposure</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>inputExp</type>
+          <defname>inputExp</defname>
+        </param>
+        <param>
+          <type>camera</type>
+          <defname>camera</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>detectorNum</type>
+          <defname>detectorNum</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Ensure that the data returned by Butler is a fully constructed exp.
+
+ISR requires exposure-level image data for historical reasons, so if we
+did not recieve that from Butler, construct it from what we have,
+modifying the input in place.
+
+Parameters
+----------
+inputExp : `lsst.afw.image` image-type.
+    The input data structure obtained from Butler.
+    Can be  `lsst.afw.image.Exposure`,
+    `lsst.afw.image.DecoratedImageU`,
+    or `lsst.afw.image.ImageF`
+camera : `lsst.afw.cameraGeom.camera`, optional
+    The camera associated with the image.  Used to find the appropriate
+    detector if detector is not already set.
+detectorNum : `int`, optional
+    The detector in the camera to attach, if the detector is not
+    already set.
+
+Returns
+-------
+inputExp : `lsst.afw.image.Exposure`
+    The re-constructed exposure, with appropriate detector parameters.
+
+Raises
+------
+TypeError
+    Raised if the input data cannot be used to construct an exposure.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="1720" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="1720" bodyend="1773"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a387e35ffedf794b27bbafe9ce0133852" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.compareCameraKeywords</definition>
+        <argsstring>(self, exposureMetadata, calib, calibName)</argsstring>
+        <name>compareCameraKeywords</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.compareCameraKeywords</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposureMetadata</type>
+          <defname>exposureMetadata</defname>
+        </param>
+        <param>
+          <type><ref refid="table_2_exposure_8cc_1aa8090837a9a267e19315ee5bf5f111af" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">calib</ref></type>
+          <defname>calib</defname>
+        </param>
+        <param>
+          <type>calibName</type>
+          <defname>calibName</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Compare header keywords to confirm camera states match.
+
+Parameters
+----------
+exposureMetadata : `lsst.daf.base.PropertySet`
+    Header for the exposure being processed.
+calib : `lsst.afw.image.Exposure` or `lsst.ip.isr.IsrCalib`
+    Calibration to be applied.
+calibName : `str`
+    Calib type for log message.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="1799" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="1799" bodyend="1828"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1af19ee4c3968c0547354a8565a0b2b9c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.convertIntToFloat</definition>
+        <argsstring>(self, exposure)</argsstring>
+        <name>convertIntToFloat</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.convertIntToFloat</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Convert exposure image from uint16 to float.
+
+If the exposure does not need to be converted, the input is
+immediately returned.  For exposures that are converted to use
+floating point pixels, the variance is set to unity and the
+mask to zero.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+   The raw exposure to be converted.
+
+Returns
+-------
+newexposure : `lsst.afw.image.Exposure`
+   The input ``exposure``, converted to floating point pixels.
+
+Raises
+------
+RuntimeError
+    Raised if the exposure type cannot be converted to float.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="1829" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="1829" bodyend="1865"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a1fbe228781b88578a748e544895f5c76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.maskAmplifier</definition>
+        <argsstring>(self, ccdExposure, amp, defects)</argsstring>
+        <name>maskAmplifier</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.maskAmplifier</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ccdExposure</type>
+          <defname>ccdExposure</defname>
+        </param>
+        <param>
+          <type>amp</type>
+          <defname>amp</defname>
+        </param>
+        <param>
+          <type>defects</type>
+          <defname>defects</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Identify bad amplifiers, saturated and suspect pixels.
+
+Parameters
+----------
+ccdExposure : `lsst.afw.image.Exposure`
+    Input exposure to be masked.
+amp : `lsst.afw.cameraGeom.Amplifier`
+    Catalog of parameters defining the amplifier on this
+    exposure to mask.
+defects : `lsst.ip.isr.Defects`
+    List of defects.  Used to determine if the entire
+    amplifier is bad.
+
+Returns
+-------
+badAmp : `Bool`
+    If this is true, the entire amplifier area is covered by
+    defects and unusable.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="1866" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="1866" bodyend="1940"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a7c209f32a8b7764739b5f0e921d6c1b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.overscanCorrection</definition>
+        <argsstring>(self, ccdExposure, amp)</argsstring>
+        <name>overscanCorrection</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.overscanCorrection</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ccdExposure</type>
+          <defname>ccdExposure</defname>
+        </param>
+        <param>
+          <type>amp</type>
+          <defname>amp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Apply overscan correction in place.
+
+This method does initial pixel rejection of the overscan
+region.  The overscan can also be optionally segmented to
+allow for discontinuous overscan responses to be fit
+separately.  The actual overscan subtraction is performed by
+the `lsst.ip.isr.overscan.OverscanTask`, which is called here
+after the amplifier is preprocessed.
+
+Parameters
+----------
+ccdExposure : `lsst.afw.image.Exposure`
+    Exposure to have overscan correction performed.
+amp : `lsst.afw.cameraGeom.Amplifer`
+    The amplifier to consider while correcting the overscan.
+
+Returns
+-------
+overscanResults : `lsst.pipe.base.Struct`
+    Result struct with components:
+
+    ``imageFit``
+        Value or fit subtracted from the amplifier image data.
+        (scalar or `lsst.afw.image.Image`)
+    ``overscanFit``
+        Value or fit subtracted from the overscan image data.
+        (scalar or `lsst.afw.image.Image`)
+    ``overscanImage``
+        Image of the overscan region with the overscan
+        correction applied. This quantity is used to estimate
+        the amplifier read noise empirically.
+        (`lsst.afw.image.Image`)
+    ``edgeMask``
+        Mask of the suspect pixels. (`lsst.afw.image.Mask`)
+    ``overscanMean``
+        Median overscan fit value. (`float`)
+    ``overscanSigma``
+        Clipped standard deviation of the overscan after
+        correction. (`float`)
+
+Raises
+------
+RuntimeError
+    Raised if the ``amp`` does not contain raw pixel information.
+
+See Also
+--------
+lsst.ip.isr.overscan.OverscanTask
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="1941" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="1941" bodyend="2033"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1af6c2cd99d6ad95fcbb560a3e1ea04e09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.updateVariance</definition>
+        <argsstring>(self, ampExposure, amp, overscanImage=None, ptcDataset=None)</argsstring>
+        <name>updateVariance</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.updateVariance</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ampExposure</type>
+          <defname>ampExposure</defname>
+        </param>
+        <param>
+          <type>amp</type>
+          <defname>amp</defname>
+        </param>
+        <param>
+          <type>overscanImage</type>
+          <defname>overscanImage</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>ptcDataset</type>
+          <defname>ptcDataset</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the variance plane using the gain and read noise
+
+The read noise is calculated from the ``overscanImage`` if the
+``doEmpiricalReadNoise`` option is set in the configuration; otherwise
+the value from the amplifier data is used.
+
+Parameters
+----------
+ampExposure : `lsst.afw.image.Exposure`
+    Exposure to process.
+amp : `lsst.afw.cameraGeom.Amplifier` or `FakeAmp`
+    Amplifier detector data.
+overscanImage : `lsst.afw.image.MaskedImage`, optional.
+    Image of overscan, required only for empirical read noise.
+ptcDataset : `lsst.ip.isr.PhotonTransferCurveDataset`, optional
+    PTC dataset containing the gains and read noise.
+
+Raises
+------
+RuntimeError
+    Raised if either ``usePtcGains`` of ``usePtcReadNoise``
+    are ``True``, but ptcDataset is not provided.
+
+    Raised if ```doEmpiricalReadNoise`` is ``True`` but
+    ``overscanImage`` is ``None``.
+
+See also
+--------
+lsst.ip.isr.isrFunctions.updateVariance
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2034" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2034" bodyend="2122"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a308b03414ae1f86ad64ed49269dc3d46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.maskNegativeVariance</definition>
+        <argsstring>(self, exposure)</argsstring>
+        <name>maskNegativeVariance</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.maskNegativeVariance</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Identify and mask pixels with negative variance values.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to process.
+
+See Also
+--------
+lsst.ip.isr.isrFunctions.updateVariance
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2123" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2123" bodyend="2138"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1af87bb5014c8d463dc2dc176fb72dd055" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.darkCorrection</definition>
+        <argsstring>(self, exposure, darkExposure, invert=False)</argsstring>
+        <name>darkCorrection</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.darkCorrection</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>darkExposure</type>
+          <defname>darkExposure</defname>
+        </param>
+        <param>
+          <type><ref refid="Relationship_8h_1ac55a13fa08cbe004788e81ba48fb38af" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/sphgeom/gd5d1ca8e18+f0a1800e64/doc/sphgeom.tag">invert</ref></type>
+          <defname>invert</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Apply dark correction in place.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to process.
+darkExposure : `lsst.afw.image.Exposure`
+    Dark exposure of the same size as ``exposure``.
+invert : `Bool`, optional
+    If True, re-add the dark to an already corrected image.
+
+Raises
+------
+RuntimeError
+    Raised if either ``exposure`` or ``darkExposure`` do not
+    have their dark time defined.
+
+See Also
+--------
+lsst.ip.isr.isrFunctions.darkCorrection
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2139" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2139" bodyend="2181"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1ae1d9cfa05d23a42e47fadd036ce6efdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.doLinearize</definition>
+        <argsstring>(self, detector)</argsstring>
+        <name>doLinearize</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.doLinearize</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="_detector_collection_8cc_1a6b9c564255ea8f8ae53bf14d81234de7" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">detector</ref></type>
+          <defname>detector</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Check if linearization is needed for the detector cameraGeom.
+
+Checks config.doLinearize and the linearity type of the first
+amplifier.
+
+Parameters
+----------
+detector : `lsst.afw.cameraGeom.Detector`
+    Detector to get linearity type from.
+
+Returns
+-------
+doLinearize : `Bool`
+    If True, linearization should be performed.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2182" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2182" bodyend="2200"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a0c87f0fe937e933c328276ef4779c364" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.flatCorrection</definition>
+        <argsstring>(self, exposure, flatExposure, invert=False)</argsstring>
+        <name>flatCorrection</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.flatCorrection</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>flatExposure</type>
+          <defname>flatExposure</defname>
+        </param>
+        <param>
+          <type><ref refid="Relationship_8h_1ac55a13fa08cbe004788e81ba48fb38af" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/sphgeom/gd5d1ca8e18+f0a1800e64/doc/sphgeom.tag">invert</ref></type>
+          <defname>invert</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Apply flat correction in place.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to process.
+flatExposure : `lsst.afw.image.Exposure`
+    Flat exposure of the same size as ``exposure``.
+invert : `Bool`, optional
+    If True, unflatten an already flattened image.
+
+See Also
+--------
+lsst.ip.isr.isrFunctions.flatCorrection
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2201" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2201" bodyend="2225"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a43cf6f6b05557ae8853f32f5f5268d57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.saturationDetection</definition>
+        <argsstring>(self, exposure, amp)</argsstring>
+        <name>saturationDetection</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.saturationDetection</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>amp</type>
+          <defname>amp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Detect and mask saturated pixels in config.saturatedMaskName.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to process.  Only the amplifier DataSec is processed.
+amp : `lsst.afw.cameraGeom.Amplifier`
+    Amplifier detector data.
+
+See Also
+--------
+lsst.ip.isr.isrFunctions.makeThresholdMask
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2226" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2226" bodyend="2249"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a15b3be57c137f20858a538f351266325" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.saturationInterpolation</definition>
+        <argsstring>(self, exposure)</argsstring>
+        <name>saturationInterpolation</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.saturationInterpolation</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Interpolate over saturated pixels, in place.
+
+This method should be called after `saturationDetection`, to
+ensure that the saturated pixels have been identified in the
+SAT mask.  It should also be called after `assembleCcd`, since
+saturated regions may cross amplifier boundaries.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to process.
+
+See Also
+--------
+lsst.ip.isr.isrTask.saturationDetection
+lsst.ip.isr.isrFunctions.interpolateFromMask
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2250" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2250" bodyend="2274"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1af4f017f73e31d46d2f3916b5dd618272" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.suspectDetection</definition>
+        <argsstring>(self, exposure, amp)</argsstring>
+        <name>suspectDetection</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.suspectDetection</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>amp</type>
+          <defname>amp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Detect and mask suspect pixels in config.suspectMaskName.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to process.  Only the amplifier DataSec is processed.
+amp : `lsst.afw.cameraGeom.Amplifier`
+    Amplifier detector data.
+
+See Also
+--------
+lsst.ip.isr.isrFunctions.makeThresholdMask
+
+Notes
+-----
+Suspect pixels are pixels whose value is greater than
+amp.getSuspectLevel(). This is intended to indicate pixels that may be
+affected by unknown systematics; for example if non-linearity
+corrections above a certain level are unstable then that would be a
+useful value for suspectLevel. A value of `nan` indicates that no such
+level exists and no pixels are to be masked as suspicious.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2275" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2275" bodyend="2310"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a546c2ef985e91ffcaac9ff20ba55193c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.maskDefect</definition>
+        <argsstring>(self, exposure, defectBaseList)</argsstring>
+        <name>maskDefect</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.maskDefect</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>defectBaseList</type>
+          <defname>defectBaseList</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Mask defects using mask plane &quot;BAD&quot;, in place.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to process.
+defectBaseList : defect-type
+    List of defects to mask. Can be of type  `lsst.ip.isr.Defects`
+    or `list` of `lsst.afw.image.DefectBase`.
+
+Notes
+-----
+Call this after CCD assembly, since defects may cross amplifier
+boundaries.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2311" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2311" bodyend="2334"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a6ece1520f887ac2cbf163272887abc2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.maskEdges</definition>
+        <argsstring>(self, exposure, numEdgePixels=0, maskPlane=&quot;SUSPECT&quot;, level=&apos;DETECTOR&apos;)</argsstring>
+        <name>maskEdges</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.maskEdges</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>numEdgePixels</type>
+          <defname>numEdgePixels</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>maskPlane</type>
+          <defname>maskPlane</defname>
+          <defval>&quot;SUSPECT&quot;</defval>
+        </param>
+        <param>
+          <type>level</type>
+          <defname>level</defname>
+          <defval>&apos;DETECTOR&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Mask edge pixels with applicable mask plane.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to process.
+numEdgePixels : `int`, optional
+    Number of edge pixels to mask.
+maskPlane : `str`, optional
+    Mask plane name to use.
+level : `str`, optional
+    Level at which to mask edges.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2335" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2335" bodyend="2368"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a9dc2ffc4cab86b418102cacabdd69b04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.maskAndInterpolateDefects</definition>
+        <argsstring>(self, exposure, defectBaseList)</argsstring>
+        <name>maskAndInterpolateDefects</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.maskAndInterpolateDefects</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>defectBaseList</type>
+          <defname>defectBaseList</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Mask and interpolate defects using mask plane &quot;BAD&quot;, in place.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to process.
+defectBaseList : defects-like
+    List of defects to mask and interpolate. Can be
+    `lsst.ip.isr.Defects` or `list` of `lsst.afw.image.DefectBase`.
+
+See Also
+--------
+lsst.ip.isr.isrTask.maskDefect
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2369" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2369" bodyend="2393"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a17a1d1683687f4b17104b6044f7d9cb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.maskNan</definition>
+        <argsstring>(self, exposure)</argsstring>
+        <name>maskNan</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.maskNan</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Mask NaNs using mask plane &quot;UNMASKEDNAN&quot;, in place.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to process.
+
+Notes
+-----
+We mask over all non-finite values (NaN, inf), including those
+that are masked with other bits (because those may or may not be
+interpolated over later, and we want to remove all NaN/infs).
+Despite this behaviour, the &quot;UNMASKEDNAN&quot; mask plane is used to
+preserve the historical name.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2394" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2394" bodyend="2419"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a15269bd85c3a1afd14674411514f1a95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.maskAndInterpolateNan</definition>
+        <argsstring>(self, exposure)</argsstring>
+        <name>maskAndInterpolateNan</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.maskAndInterpolateNan</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>&quot;Mask and interpolate NaN/infs using mask plane &quot;UNMASKEDNAN&quot;,
+in place.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to process.
+
+See Also
+--------
+lsst.ip.isr.isrTask.maskNan
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2420" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2420" bodyend="2440"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a9ba0dc17724cdf8d082cf206d2401d07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.measureBackground</definition>
+        <argsstring>(self, exposure, IsrQaConfig=None)</argsstring>
+        <name>measureBackground</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.measureBackground</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config" kindref="compound">IsrQaConfig</ref></type>
+          <defname>IsrQaConfig</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Measure the image background in subgrids, for quality control.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to process.
+IsrQaConfig : `lsst.ip.isr.isrQa.IsrQaConfig`
+    Configuration object containing parameters on which background
+    statistics and subgrids to use.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2441" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2441" bodyend="2504"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a9d1216991813d78c0d468ba4bbd7f63a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.roughZeroPoint</definition>
+        <argsstring>(self, exposure)</argsstring>
+        <name>roughZeroPoint</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.roughZeroPoint</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set an approximate magnitude zero point for the exposure.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to process.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2505" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2505" bodyend="2530"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1aeb7c52db9dcb0d0fec7b66d4030c9ec2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.flatContext</definition>
+        <argsstring>(self, exp, flat, dark=None)</argsstring>
+        <name>flatContext</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.flatContext</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exp</type>
+          <defname>exp</defname>
+        </param>
+        <param>
+          <type>flat</type>
+          <defname>flat</defname>
+        </param>
+        <param>
+          <type>dark</type>
+          <defname>dark</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Context manager that applies and removes flats and darks,
+if the task is configured to apply them.
+
+Parameters
+----------
+exp : `lsst.afw.image.Exposure`
+    Exposure to process.
+flat : `lsst.afw.image.Exposure`
+    Flat exposure the same size as ``exp``.
+dark : `lsst.afw.image.Exposure`, optional
+    Dark exposure the same size as ``exp``.
+
+Yields
+------
+exp : `lsst.afw.image.Exposure`
+    The flat and dark corrected exposure.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2532" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2532" bodyend="2561"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a254dc8f35fc152b2bafa9bbeaba07432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.debugView</definition>
+        <argsstring>(self, exposure, stepname)</argsstring>
+        <name>debugView</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.debugView</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>stepname</type>
+          <defname>stepname</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Utility function to examine ISR exposure at different stages.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to view.
+stepname : `str`
+    State of processing to view.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2562" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2562" bodyend="2583"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a25e99eef787a98e033c61e4451d765f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTask.extractCalibDate</definition>
+        <argsstring>(calib)</argsstring>
+        <name>extractCalibDate</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTask.extractCalibDate</qualifiedname>
+        <param>
+          <type><ref refid="table_2_exposure_8cc_1aa8090837a9a267e19315ee5bf5f111af" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">calib</ref></type>
+          <defname>calib</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Extract common calibration metadata values that will be written to
+output header.
+
+Parameters
+----------
+calib : `lsst.afw.image.Exposure` or `lsst.ip.isr.IsrCalib`
+    Calibration to pull date information from.
+
+Returns
+-------
+dateString : `str`
+    Calibration creation date string to add to header.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="1775" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="1775" bodyend="1798"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Apply common instrument signature correction algorithms to a raw frame.
+
+The process for correcting imaging data is very similar from
+camera to camera.  This task provides a vanilla implementation of
+doing these corrections, including the ability to turn certain
+corrections off if they are not needed.  The inputs to the primary
+method, `run()`, are a raw exposure to be corrected and the
+calibration data products. The raw input is a single chip sized
+mosaic of all amps including overscans and other non-science
+pixels.
+
+The __init__ method sets up the subtasks for ISR processing, using
+the defaults from `lsst.ip.isr`.
+
+Parameters
+----------
+args : `list`
+    Positional arguments passed to the Task constructor.
+    None used at this time.
+kwargs : `dict`, optional
+    Keyword arguments passed on to the Task constructor.
+    None used at this time.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrTask.IsrTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pipeBase::PipelineTask</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrTask.IsrTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pipeBase::PipelineTask</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/isrTask.py" line="942" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="942" bodyend="2583"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a64fb94201cae32fe3c4bfae9b287e771" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a8e1925290446bee08b0fca4a7a2039a3" prot="private" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>_DefaultName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a387e35ffedf794b27bbafe9ce0133852" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>compareCameraKeywords</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a4855a6fe925b7d5a00adb92c963f5111" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>ConfigClass</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1af19ee4c3968c0547354a8565a0b2b9c3" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>convertIntToFloat</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1af87bb5014c8d463dc2dc176fb72dd055" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>darkCorrection</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a254dc8f35fc152b2bafa9bbeaba07432" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>debugView</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1ae1d9cfa05d23a42e47fadd036ce6efdd" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>doLinearize</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a2e22275ea13ff008c0571b525361086e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>ensureExposure</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a25e99eef787a98e033c61e4451d765f1" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>extractCalibDate</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1aeb7c52db9dcb0d0fec7b66d4030c9ec2" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>flatContext</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a0c87f0fe937e933c328276ef4779c364" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>flatCorrection</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a1fbe228781b88578a748e544895f5c76" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>maskAmplifier</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a9dc2ffc4cab86b418102cacabdd69b04" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>maskAndInterpolateDefects</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a15269bd85c3a1afd14674411514f1a95" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>maskAndInterpolateNan</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a546c2ef985e91ffcaac9ff20ba55193c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>maskDefect</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a6ece1520f887ac2cbf163272887abc2c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>maskEdges</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a17a1d1683687f4b17104b6044f7d9cb6" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>maskNan</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a308b03414ae1f86ad64ed49269dc3d46" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>maskNegativeVariance</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a9ba0dc17724cdf8d082cf206d2401d07" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>measureBackground</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a7c209f32a8b7764739b5f0e921d6c1b1" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>overscanCorrection</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a9d1216991813d78c0d468ba4bbd7f63a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>roughZeroPoint</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a81c925b5597c53f5fe16e0ca7ad33601" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>run</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a6c089fc54ab807a516209c83e7750139" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>runQuantum</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a43cf6f6b05557ae8853f32f5f5268d57" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>saturationDetection</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a15b3be57c137f20858a538f351266325" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>saturationInterpolation</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1af4f017f73e31d46d2f3916b5dd618272" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>suspectDetection</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1af6c2cd99d6ad95fcbb560a3e1ea04e09" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>updateVariance</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_1a3a07ffee85e1dc9883151e5670cb4704" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTask</scope><name>vignettePolygon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

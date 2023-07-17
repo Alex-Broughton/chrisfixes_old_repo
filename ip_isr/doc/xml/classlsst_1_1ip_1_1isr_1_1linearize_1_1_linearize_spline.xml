@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_spline" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::linearize::LinearizeSpline</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base" prot="public" virt="non-virtual">lsst.ip.isr.linearize.LinearizeBase</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_spline_1ad24df6739bcb62f1eee28dd94e438256" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.linearize.LinearizeSpline::LinearityType</definition>
+        <argsstring></argsstring>
+        <name>LinearityType</name>
+        <qualifiedname>lsst::ip::isr.linearize.LinearizeSpline.LinearityType</qualifiedname>
+        <initializer>=  &quot;Spline&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/linearize.py" line="733" column="1" bodyfile="python/lsst/ip/isr/linearize.py" bodystart="733" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_spline_1a9af66d7cf10ad3133ab37731eb706c9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.linearize.LinearizeSpline.__call__</definition>
+        <argsstring>(self, image, **kwargs)</argsstring>
+        <name>__call__</name>
+        <qualifiedname>lsst::ip::isr.linearize.LinearizeSpline.__call__</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base_1a35a6c652513da5918c41f9b7ea91764d">__call__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>image</type>
+          <defname>image</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Correct for non-linearity.
+
+Parameters
+----------
+image : `lsst.afw.image.Image`
+    Image to be corrected
+kwargs : `dict`
+    Dictionary of parameter keywords:
+
+    ``coeffs``
+        Coefficient vector (`list` or `numpy.array`).
+    ``log``
+        Logger to handle messages (`logging.Logger`).
+
+Returns
+-------
+output : `tuple` [`bool`, `int`]
+    If true, a correction was applied successfully.  The
+    integer indicates the number of pixels that were
+    uncorrectable by being out of range.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/linearize.py" line="735" column="1" bodyfile="python/lsst/ip/isr/linearize.py" bodystart="735" bodyend="778"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Correct non-linearity with a spline model.
+
+corrImage = uncorrImage - Spline(coeffs, uncorrImage)
+
+Notes
+-----
+
+The spline fit calculates a correction as a function of the
+expected linear flux term.  Because of this, the correction needs
+to be subtracted from the observed flux.</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>abc::ABCMeta</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.linearize.LinearizeSpline</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_spline"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.linearize.LinearizeBase</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>metaclass</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>abc::ABCMeta</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.linearize.LinearizeSpline</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_spline"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.linearize.LinearizeBase</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>metaclass</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/linearize.py" line="720" column="1" bodyfile="python/lsst/ip/isr/linearize.py" bodystart="720" bodyend="778"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_spline_1a9af66d7cf10ad3133ab37731eb706c9e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::linearize::LinearizeSpline</scope><name>__call__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_spline_1ad24df6739bcb62f1eee28dd94e438256" prot="public" virt="non-virtual"><scope>lsst::ip::isr::linearize::LinearizeSpline</scope><name>LinearityType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

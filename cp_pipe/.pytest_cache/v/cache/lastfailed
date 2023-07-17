@@ -1,0 +1,6 @@
+{
+  "python/lsst/cp/pipe/makeBrighterFatterKernel.py::flake-8::FLAKE8": true,
+  "tests/test_brighterFatterKernel.py::BfkSolveTaskTestCase::test_aMatrix": true,
+  "tests/test_brighterFatterKernel.py::BfkSolveTaskTestCase::test_averaged": true,
+  "tests/test_brighterFatterKernel.py::BfkSolveTaskTestCase::test_quadratic": true
+}

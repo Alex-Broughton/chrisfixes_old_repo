@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacelsst_1_1ip_1_1isr_1_1linearize" kind="namespace" language="Python">
+    <compoundname>lsst::ip::isr::linearize</compoundname>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base" prot="public">lsst::ip::isr::linearize::LinearizeBase</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_lookup_table" prot="public">lsst::ip::isr::linearize::LinearizeLookupTable</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_none" prot="public">lsst::ip::isr::linearize::LinearizeNone</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_polynomial" prot="public">lsst::ip::isr::linearize::LinearizePolynomial</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_proportional" prot="public">lsst::ip::isr::linearize::LinearizeProportional</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearizer" prot="public">lsst::ip::isr::linearize::Linearizer</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_spline" prot="public">lsst::ip::isr::linearize::LinearizeSpline</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_squared" prot="public">lsst::ip::isr::linearize::LinearizeSquared</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelsst_1_1ip_1_1isr_1_1linearize_1ab247a775a2f9f1e061af05a2182627bf" prot="private" static="no" mutable="no">
+        <type><ref refid="fits_8cc_1a1fbc6c4766fd22cd31bc6972d5d6c14f" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">list</ref></type>
+        <definition>list lsst::ip::isr::linearize.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>lsst::ip::isr.linearize.__all__</qualifiedname>
+        <initializer>=  [&quot;Linearizer&quot;,
+           &quot;LinearizeBase&quot;, &quot;LinearizeLookupTable&quot;, &quot;LinearizeSquared&quot;,
+           &quot;LinearizeProportional&quot;, &quot;LinearizePolynomial&quot;, &quot;LinearizeSpline&quot;, &quot;LinearizeNone&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/linearize.py" line="23" column="1" bodyfile="python/lsst/ip/isr/linearize.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="python/lsst/ip/isr/linearize.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

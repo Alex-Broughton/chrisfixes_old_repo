@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::vignette::VignetteConfig</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Config</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config_1ae8bbde7a81e066c923aca2ed2185b365" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.vignette.VignetteConfig::xCenter</definition>
+        <argsstring></argsstring>
+        <name>xCenter</name>
+        <qualifiedname>lsst::ip::isr.vignette.VignetteConfig.xCenter</qualifiedname>
+        <initializer>=  Field(
+        dtype=float,
+        doc=&quot;Center of vignetting pattern, in focal plane <ref refid="_chebyshev_bounded_field_8cc_1af88b946fb90d5f08b5fb740c70e98c10" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">x</ref> coordinates.&quot;,
+        default=0.0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/vignette.py" line="39" column="1" bodyfile="python/lsst/ip/isr/vignette.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config_1a3dfed1f1321266fbf55b0e3ab2ed1104" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.vignette.VignetteConfig::yCenter</definition>
+        <argsstring></argsstring>
+        <name>yCenter</name>
+        <qualifiedname>lsst::ip::isr.vignette.VignetteConfig.yCenter</qualifiedname>
+        <initializer>=  Field(
+        dtype=float,
+        doc=&quot;Center of vignetting pattern, in focal plane <ref refid="_span_set_8cc_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">y</ref> coordinates.&quot;,
+        default=0.0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/vignette.py" line="44" column="1" bodyfile="python/lsst/ip/isr/vignette.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config_1a2b22163b2a84bd2f8e507d0bf34e2458" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.vignette.VignetteConfig::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <qualifiedname>lsst::ip::isr.vignette.VignetteConfig.radius</qualifiedname>
+        <initializer>=  Field(
+        dtype=float,
+        doc=&quot;Radius of vignetting pattern, in focal plane coordinates.&quot;,
+        default=100.0,
+        check=lambda x: <ref refid="_chebyshev_bounded_field_8cc_1af88b946fb90d5f08b5fb740c70e98c10" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">x</ref> &gt;= 0
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/vignette.py" line="49" column="1" bodyfile="python/lsst/ip/isr/vignette.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config_1a132e720b10cfacd6b9324c78dbe23b0e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.vignette.VignetteConfig::numPolygonPoints</definition>
+        <argsstring></argsstring>
+        <name>numPolygonPoints</name>
+        <qualifiedname>lsst::ip::isr.vignette.VignetteConfig.numPolygonPoints</qualifiedname>
+        <initializer>=  Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=&quot;Number of points used <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> define the vignette polygon.&quot;,
+        default=100,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/vignette.py" line="55" column="1" bodyfile="python/lsst/ip/isr/vignette.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config_1a240448ee8122fddf5680d8c3f3ff473a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.vignette.VignetteConfig::doWriteVignettePolygon</definition>
+        <argsstring></argsstring>
+        <name>doWriteVignettePolygon</name>
+        <qualifiedname>lsst::ip::isr.vignette.VignetteConfig.doWriteVignettePolygon</qualifiedname>
+        <initializer>=  Field(
+        dtype=bool,
+        doc=&quot;Persist polygon used <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> define vignetted region?&quot;,
+        default=False,
+        deprecated=(&quot;Vignetted polygon is added <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> the exposure by default.&quot;
+                    &quot; This option is no longer used, and will be removed after v24.&quot;)
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/vignette.py" line="60" column="1" bodyfile="python/lsst/ip/isr/vignette.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Settings to define vignetting pattern.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.vignette.VignetteConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Config</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.vignette.VignetteConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Config</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/vignette.py" line="36" column="1" bodyfile="python/lsst/ip/isr/vignette.py" bodystart="36" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config_1a240448ee8122fddf5680d8c3f3ff473a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::vignette::VignetteConfig</scope><name>doWriteVignettePolygon</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config_1a132e720b10cfacd6b9324c78dbe23b0e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::vignette::VignetteConfig</scope><name>numPolygonPoints</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config_1a2b22163b2a84bd2f8e507d0bf34e2458" prot="public" virt="non-virtual"><scope>lsst::ip::isr::vignette::VignetteConfig</scope><name>radius</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config_1ae8bbde7a81e066c923aca2ed2185b365" prot="public" virt="non-virtual"><scope>lsst::ip::isr::vignette::VignetteConfig</scope><name>xCenter</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config_1a3dfed1f1321266fbf55b0e3ab2ed1104" prot="public" virt="non-virtual"><scope>lsst::ip::isr::vignette::VignetteConfig</scope><name>yCenter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

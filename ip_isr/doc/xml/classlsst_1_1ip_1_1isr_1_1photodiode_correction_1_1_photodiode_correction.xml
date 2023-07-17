@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::photodiodeCorrection::PhotodiodeCorrection</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib" prot="public" virt="non-virtual">lsst.ip.isr.calibType.IsrCalib</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a9b7ff1e270b1854de9dd23c65c100be0" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection::_OBSTYPE</definition>
+        <argsstring></argsstring>
+        <name>_OBSTYPE</name>
+        <qualifiedname>lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection._OBSTYPE</qualifiedname>
+        <initializer>=  &quot;PHOTODIODE_CORRECTION&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiodeCorrection.py" line="65" column="1" bodyfile="python/lsst/ip/isr/photodiodeCorrection.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a31e50dde2aa568ac579c8fbcb1e3f42d" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection::_SCHEMA</definition>
+        <argsstring></argsstring>
+        <name>_SCHEMA</name>
+        <qualifiedname>lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection._SCHEMA</qualifiedname>
+        <initializer>=  &apos;<ref refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction" kindref="compound">PhotodiodeCorrection</ref>&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiodeCorrection.py" line="66" column="1" bodyfile="python/lsst/ip/isr/photodiodeCorrection.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a94771a22f67a1010fc064f98f2acd635" prot="private" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection::_VERSION</definition>
+        <argsstring></argsstring>
+        <name>_VERSION</name>
+        <qualifiedname>lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection._VERSION</qualifiedname>
+        <initializer>=  1.1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiodeCorrection.py" line="67" column="1" bodyfile="python/lsst/ip/isr/photodiodeCorrection.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a1b0a3aeb5d5e3d4c2d43250efbf5b6a7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection::abscissaCorrections</definition>
+        <argsstring></argsstring>
+        <name>abscissaCorrections</name>
+        <qualifiedname>lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection.abscissaCorrections</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiodeCorrection.py" line="70" column="1" bodyfile="python/lsst/ip/isr/photodiodeCorrection.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a557dceb526edf284caefdf11f0d6e4fd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection::tableData</definition>
+        <argsstring></argsstring>
+        <name>tableData</name>
+        <qualifiedname>lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection.tableData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiodeCorrection.py" line="71" column="1" bodyfile="python/lsst/ip/isr/photodiodeCorrection.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a7ed343e7544bc1b538ddb043fc57d25b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiodeCorrection.PhotodiodeCorrection.__init__</definition>
+        <argsstring>(self, table=None, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection.__init__</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a8b0c7d628ed5e5b429f66ec5b2b4f25b">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>table</type>
+          <defname>table</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiodeCorrection.py" line="69" column="1" bodyfile="python/lsst/ip/isr/photodiodeCorrection.py" bodystart="69" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1ac536822e36fd963148a9cd03faac45dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiodeCorrection.PhotodiodeCorrection.updateMetadata</definition>
+        <argsstring>(self, setDate=False, **kwargs)</argsstring>
+        <name>updateMetadata</name>
+        <qualifiedname>lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection.updateMetadata</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a800537ed1777875f9f9fd973a83c3809">updateMetadata</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>setDate</type>
+          <defname>setDate</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update metadata keywords with new values.
+
+This calls the base class&apos;s method after ensuring the required
+calibration keywords will be saved.
+
+Parameters
+----------
+setDate : `bool`, optional
+    Update the CALIBDATE fields in the metadata to the current
+    time. Defaults to False.
+kwargs :
+    Other keyword parameters to set in the metadata.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiodeCorrection.py" line="82" column="1" bodyfile="python/lsst/ip/isr/photodiodeCorrection.py" bodystart="82" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a69213bd418285258384f5f70d52b6fa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiodeCorrection.PhotodiodeCorrection.fromDict</definition>
+        <argsstring>(cls, dictionary)</argsstring>
+        <name>fromDict</name>
+        <qualifiedname>lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection.fromDict</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a817599a7eef2221ba3908296dab05347">fromDict</reimplements>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>dictionary</type>
+          <defname>dictionary</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a PhotodiodeCorrection from a dictionary of properties.
+
+Parameters
+----------
+dictionary : `dict`
+    Dictionary of properties.
+
+Returns
+-------
+calib : `lsst.ip.isr.PhotodiodeCorrection`
+    Constructed photodiode data.
+
+Raises
+------
+RuntimeError
+    Raised if the supplied dictionary is for a different
+    calibration type.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiodeCorrection.py" line="100" column="1" bodyfile="python/lsst/ip/isr/photodiodeCorrection.py" bodystart="100" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a5c693cd3a6a5809e97af357bfd5bcd9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiodeCorrection.PhotodiodeCorrection.toDict</definition>
+        <argsstring>(self)</argsstring>
+        <name>toDict</name>
+        <qualifiedname>lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection.toDict</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1aab4a381103b94dbea2acb727184db72f">toDict</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a dictionary containing the photodiode correction properties.
+
+The dictionary should be able to be round-tripped through.
+`fromDict`.
+
+Returns
+-------
+dictionary : `dict`
+    Dictionary of properties.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiodeCorrection.py" line="136" column="1" bodyfile="python/lsst/ip/isr/photodiodeCorrection.py" bodystart="136" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a7822ba431133dfa056b1620a7c268f91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiodeCorrection.PhotodiodeCorrection.fromTable</definition>
+        <argsstring>(cls, tableList)</argsstring>
+        <name>fromTable</name>
+        <qualifiedname>lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection.fromTable</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a1403d6fec5026193600341be1a426533">fromTable</reimplements>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>tableList</type>
+          <defname>tableList</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct calibration from a list of tables.
+
+This method uses the `fromDict` method to create the
+calibration after constructing an appropriate dictionary from
+the input tables.
+
+Parameters
+----------
+tableList : `list` [`astropy.table.Table`]
+    List of tables to use to construct the crosstalk
+    calibration.
+
+Returns
+-------
+calib : `lsst.ip.isr.PhotodiodeCorrection`
+    The calibration defined in the tables.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiodeCorrection.py" line="161" column="1" bodyfile="python/lsst/ip/isr/photodiodeCorrection.py" bodystart="161" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1aa32ddf8411a808e09b3c6dbb6d7088d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiodeCorrection.PhotodiodeCorrection.toTable</definition>
+        <argsstring>(self)</argsstring>
+        <name>toTable</name>
+        <qualifiedname>lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection.toTable</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a247f0c08c122d6c0da72f764b5e4c466">toTable</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a list of tables containing the information in this
+calibration.
+
+The list of tables should create an identical calibration
+after being passed to this class&apos;s fromTable method.
+
+Returns
+-------
+tableList : `list` [`astropy.table.Table`]
+    List of tables containing the photodiode correction
+    information.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiodeCorrection.py" line="196" column="1" bodyfile="python/lsst/ip/isr/photodiodeCorrection.py" bodystart="196" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a18d137912ad507a1b784a19136d6125c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.photodiodeCorrection.PhotodiodeCorrection.validate</definition>
+        <argsstring>(self)</argsstring>
+        <name>validate</name>
+        <qualifiedname>lsst::ip::isr.photodiodeCorrection.PhotodiodeCorrection.validate</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a21399d7c477e8126bb3e93736125eacf">validate</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Validate photodiode correction</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/photodiodeCorrection.py" line="223" column="1" bodyfile="python/lsst/ip/isr/photodiodeCorrection.py" bodystart="223" bodyend="226"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Parameter set for photodiode correction.
+
+These parameters are included in cameraGeom.Amplifier, but
+should be accessible externally to allow for testing.
+
+Parameters
+----------
+table : `numpy.array`, optional
+    Lookup table; a 2-dimensional array of floats:
+
+    - one row for each row index (value of coef[0] in the amplifier)
+    - one column for each image value.
+
+    To avoid copying the table the last index should vary fastest
+    (numpy default &quot;C&quot; order)
+log : `logging.Logger`, optional
+    Logger to handle messages.
+kwargs : `dict`, optional
+    Other keyword arguments to pass to the parent init.
+
+Raises
+------
+RuntimeError
+    Raised if the supplied table is not 2D, or if the table has fewer
+    columns than rows (indicating that the indices are swapped).
+
+Notes
+-----
+The photodiode correction attributes stored are:
+abscissaCorrections : `dict` : [`str`, `float`]
+Correction value indexed by exposure pair
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>abc::ABC</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.photodiodeCorrection.PhotodiodeCorrection</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.calibType.IsrCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>abc::ABC</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.photodiodeCorrection.PhotodiodeCorrection</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.calibType.IsrCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/photodiodeCorrection.py" line="32" column="1" bodyfile="python/lsst/ip/isr/photodiodeCorrection.py" bodystart="32" bodyend="226"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a7ed343e7544bc1b538ddb043fc57d25b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiodeCorrection::PhotodiodeCorrection</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a9b7ff1e270b1854de9dd23c65c100be0" prot="private" virt="non-virtual"><scope>lsst::ip::isr::photodiodeCorrection::PhotodiodeCorrection</scope><name>_OBSTYPE</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a31e50dde2aa568ac579c8fbcb1e3f42d" prot="private" virt="non-virtual"><scope>lsst::ip::isr::photodiodeCorrection::PhotodiodeCorrection</scope><name>_SCHEMA</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a94771a22f67a1010fc064f98f2acd635" prot="private" virt="non-virtual"><scope>lsst::ip::isr::photodiodeCorrection::PhotodiodeCorrection</scope><name>_VERSION</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a1b0a3aeb5d5e3d4c2d43250efbf5b6a7" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiodeCorrection::PhotodiodeCorrection</scope><name>abscissaCorrections</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a69213bd418285258384f5f70d52b6fa1" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiodeCorrection::PhotodiodeCorrection</scope><name>fromDict</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a7822ba431133dfa056b1620a7c268f91" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiodeCorrection::PhotodiodeCorrection</scope><name>fromTable</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a557dceb526edf284caefdf11f0d6e4fd" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiodeCorrection::PhotodiodeCorrection</scope><name>tableData</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a5c693cd3a6a5809e97af357bfd5bcd9d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiodeCorrection::PhotodiodeCorrection</scope><name>toDict</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1aa32ddf8411a808e09b3c6dbb6d7088d4" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiodeCorrection::PhotodiodeCorrection</scope><name>toTable</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1ac536822e36fd963148a9cd03faac45dc" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiodeCorrection::PhotodiodeCorrection</scope><name>updateMetadata</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1photodiode_correction_1_1_photodiode_correction_1a18d137912ad507a1b784a19136d6125c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::photodiodeCorrection::PhotodiodeCorrection</scope><name>validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

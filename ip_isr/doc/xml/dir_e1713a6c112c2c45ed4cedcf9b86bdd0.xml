@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_e1713a6c112c2c45ed4cedcf9b86bdd0" kind="dir">
+    <compoundname>python/lsst/ip/isr</compoundname>
+    <innerfile refid="ip_2isr_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="amp_offset_8py">ampOffset.py</innerfile>
+    <innerfile refid="assemble_ccd_task_8py">assembleCcdTask.py</innerfile>
+    <innerfile refid="brighter_fatter_kernel_8py">brighterFatterKernel.py</innerfile>
+    <innerfile refid="calib_type_8py">calibType.py</innerfile>
+    <innerfile refid="crosstalk_8py">crosstalk.py</innerfile>
+    <innerfile refid="defects_8py">defects.py</innerfile>
+    <innerfile refid="deferred_charge_8py">deferredCharge.py</innerfile>
+    <innerfile refid="fringe_8py">fringe.py</innerfile>
+    <innerfile refid="isr_functions_8py">isrFunctions.py</innerfile>
+    <innerfile refid="isr_mock_8py">isrMock.py</innerfile>
+    <innerfile refid="isr_qa_8py">isrQa.py</innerfile>
+    <innerfile refid="isr_statistics_8py">isrStatistics.py</innerfile>
+    <innerfile refid="isr_task_8py">isrTask.py</innerfile>
+    <innerfile refid="linearize_8py">linearize.py</innerfile>
+    <innerfile refid="masking_8py">masking.py</innerfile>
+    <innerfile refid="overscan_8py">overscan.py</innerfile>
+    <innerfile refid="photodiode_8py">photodiode.py</innerfile>
+    <innerfile refid="photodiode_correction_8py">photodiodeCorrection.py</innerfile>
+    <innerfile refid="ptc_dataset_8py">ptcDataset.py</innerfile>
+    <innerfile refid="straylight_8py">straylight.py</innerfile>
+    <innerfile refid="transmission_curve_8py">transmissionCurve.py</innerfile>
+    <innerfile refid="version_8py">version.py</innerfile>
+    <innerfile refid="vignette_8py">vignette.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="python/lsst/ip/isr/"/>
+  </compounddef>
+</doxygen>

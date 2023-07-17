@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacelsst" kind="namespace" language="C++">
+    <compoundname>lsst</compoundname>
+    <innernamespace refid="namespacelsst_1_1afw">lsst::afw</innernamespace>
+    <innernamespace refid="namespacelsst_1_1base">lsst::base</innernamespace>
+    <innernamespace refid="namespacelsst_1_1cpputils">lsst::cpputils</innernamespace>
+    <innernamespace refid="namespacelsst_1_1daf">lsst::daf</innernamespace>
+    <innernamespace refid="namespacelsst_1_1gdb">lsst::gdb</innernamespace>
+    <innernamespace refid="namespacelsst_1_1geom">lsst::geom</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip">lsst::ip</innernamespace>
+    <innernamespace refid="classlsst_1_1log_1_1callable__wrapper">lsst::log</innernamespace>
+    <innernamespace refid="namespacelsst_1_1meas">lsst::meas</innernamespace>
+    <innernamespace refid="namespacelsst_1_1pex">lsst::pex</innernamespace>
+    <innernamespace refid="classlsst_1_1sphgeom_1_1Angle">lsst::sphgeom</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelsst_1a7c0ed53c027562027a446b4e8229182c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::__path__</definition>
+        <argsstring></argsstring>
+        <name>__path__</name>
+        <qualifiedname>lsst.__path__</qualifiedname>
+        <initializer>=  pkgutil.extend_path(__path__, __name__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/__init__.py" line="2" column="1" bodyfile="python/lsst/__init__.py" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/base.tag" line="205" column="1"/>
+  </compounddef>
+</doxygen>

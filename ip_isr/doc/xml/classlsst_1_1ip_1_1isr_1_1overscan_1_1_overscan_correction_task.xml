@@ -1,0 +1,980 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::overscan::OverscanCorrectionTask</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pipeBase.Task</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1af6e01ccd810dabe685ad8febf8b798ce" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.overscan.OverscanCorrectionTask::ConfigClass</definition>
+        <argsstring></argsstring>
+        <name>ConfigClass</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.ConfigClass</qualifiedname>
+        <initializer>=  <ref refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config" kindref="compound">OverscanCorrectionTaskConfig</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="136" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a0875358dec15415e7cc16124448f6dc4" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.overscan.OverscanCorrectionTask::_DefaultName</definition>
+        <argsstring></argsstring>
+        <name>_DefaultName</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask._DefaultName</qualifiedname>
+        <initializer>=  &quot;overscan&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="137" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a7d2ca09243024455d913b63978451f1b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.overscan.OverscanCorrectionTask::allowDebug</definition>
+        <argsstring></argsstring>
+        <name>allowDebug</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.allowDebug</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="141" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a664c89f70708610500ac5d4bb8b17f19" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.overscan.OverscanCorrectionTask::statControl</definition>
+        <argsstring></argsstring>
+        <name>statControl</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.statControl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="144" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a356aa50d885bb0d0b3d581cd6a1d0e0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.__init__</definition>
+        <argsstring>(self, statControl=None, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a664c89f70708610500ac5d4bb8b17f19" kindref="member">statControl</ref></type>
+          <defname>statControl</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="139" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="139" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1ad455461efcc85c4b19714e17369c3a82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.run</definition>
+        <argsstring>(self, exposure, amp, isTransposed=False)</argsstring>
+        <name>run</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>amp</type>
+          <defname>amp</defname>
+        </param>
+        <param>
+          <type>isTransposed</type>
+          <defname>isTransposed</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Measure and remove an overscan from an amplifier image.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Image data that will have the overscan corrections applied.
+amp : `lsst.afw.cameraGeom.Amplifier`
+    Amplifier to use for debugging purposes.
+isTransposed : `bool`, optional
+    Is the image transposed, such that serial and parallel
+    overscan regions are reversed?  Default is False.
+
+Returns
+-------
+overscanResults : `lsst.pipe.base.Struct`
+    Result struct with components:
+
+    ``imageFit``
+        Value or fit subtracted from the amplifier image data
+        (scalar or `lsst.afw.image.Image`).
+    ``overscanFit``
+        Value or fit subtracted from the serial overscan image
+        data (scalar or `lsst.afw.image.Image`).
+    ``overscanImage``
+        Image of the serial overscan region with the serial
+        overscan correction applied
+        (`lsst.afw.image.Image`). This quantity is used to
+        estimate the amplifier read noise empirically.
+    ``parallelOverscanFit``
+        Value or fit subtracted from the parallel overscan
+        image data (scalar, `lsst.afw.image.Image`, or None).
+    ``parallelOverscanImage``
+        Image of the parallel overscan region with the
+        parallel overscan correction applied
+        (`lsst.afw.image.Image` or None).
+
+Raises
+------
+RuntimeError
+    Raised if an invalid overscan type is set.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="150" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="150" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1aacb5915f65e305e5fab331c463cba507" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.correctOverscan</definition>
+        <argsstring>(self, exposure, amp, imageBBox, overscanBBox, isTransposed=True)</argsstring>
+        <name>correctOverscan</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.correctOverscan</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>amp</type>
+          <defname>amp</defname>
+        </param>
+        <param>
+          <type>imageBBox</type>
+          <defname>imageBBox</defname>
+        </param>
+        <param>
+          <type>overscanBBox</type>
+          <defname>overscanBBox</defname>
+        </param>
+        <param>
+          <type>isTransposed</type>
+          <defname>isTransposed</defname>
+          <defval><ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Trim the exposure, fit the overscan, subtract the fit, and
+calculate statistics.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure containing the data.
+amp : `lsst.afw.cameraGeom.Amplifier`
+    The amplifier that is to be corrected.
+imageBBox: `lsst.geom.Box2I`
+    Bounding box of the image data that will have the overscan
+    subtracted.  If parallel overscan will be performed, that
+    area is added to the image bounding box during serial
+    overscan correction.
+overscanBBox: `lsst.geom.Box2I`
+    Bounding box for the overscan data.
+isTransposed: `bool`
+    If true, then the data will be transposed before fitting
+    the overscan.
+
+Returns
+-------
+results : `lsst.pipe.base.Struct`
+    ``ampOverscanModel``
+        Overscan model broadcast to the full image size.
+        (`lsst.afw.image.Exposure`)
+    ``overscanOverscanModel``
+        Overscan model broadcast to the full overscan image
+        size. (`lsst.afw.image.Exposure`)
+    ``overscanImage``
+        Overscan image with the overscan fit subtracted.
+        (`lsst.afw.image.Exposure`)
+    ``overscanValue``
+        Overscan model. (`float` or `np.array`)
+    ``overscanMean``
+        Mean value of the overscan fit. (`float`)
+    ``overscanMedian``
+        Median value of the overscan fit. (`float`)
+    ``overscanSigma``
+        Standard deviation of the overscan fit. (`float`)
+    ``overscanMeanResidual``
+        Mean value of the overscan region after overscan
+        subtraction. (`float`)
+    ``overscanMedianResidual``
+        Median value of the overscan region after overscan
+        subtraction. (`float`)
+    ``overscanSigmaResidual``
+        Standard deviation of the overscan region after
+        overscan subtraction. (`float`)
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="262" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="262" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a9eb3da4c035a05efe2bc82fa62b5f436" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.broadcastFitToImage</definition>
+        <argsstring>(self, overscanValue, imageArray, transpose=False)</argsstring>
+        <name>broadcastFitToImage</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.broadcastFitToImage</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>overscanValue</type>
+          <defname>overscanValue</defname>
+        </param>
+        <param>
+          <type>imageArray</type>
+          <defname>imageArray</defname>
+        </param>
+        <param>
+          <type>transpose</type>
+          <defname>transpose</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Broadcast 0 or 1 dimension fit to appropriate shape.
+
+Parameters
+----------
+overscanValue : `numpy.ndarray`, (Nrows, ) or scalar
+    Overscan fit to broadcast.
+imageArray : `numpy.ndarray`, (Nrows, Ncols)
+    Image array that we want to match.
+transpose : `bool`, optional
+    Switch order to broadcast along the other axis.
+
+Returns
+-------
+overscanModel : `numpy.ndarray`, (Nrows, Ncols) or scalar
+    Expanded overscan fit.
+
+Raises
+------
+RuntimeError
+    Raised if no axis has the appropriate dimension.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="368" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="368" bodyend="417"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1ac3d89c0c215d6e77e93b7c86b56aae72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.trimOverscan</definition>
+        <argsstring>(self, exposure, amp, bbox, skipLeading, skipTrailing, transpose=False)</argsstring>
+        <name>trimOverscan</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.trimOverscan</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>amp</type>
+          <defname>amp</defname>
+        </param>
+        <param>
+          <type><ref refid="_amplifier_8cc_1a2337e0f0d64ee97c1eb2aca20fe79870" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">bbox</ref></type>
+          <defname>bbox</defname>
+        </param>
+        <param>
+          <type>skipLeading</type>
+          <defname>skipLeading</defname>
+        </param>
+        <param>
+          <type>skipTrailing</type>
+          <defname>skipTrailing</defname>
+        </param>
+        <param>
+          <type>transpose</type>
+          <defname>transpose</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Trim overscan region to remove edges.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure containing data.
+amp : `lsst.afw.cameraGeom.Amplifier`
+    Amplifier containing geometry information.
+bbox : `lsst.geom.Box2I`
+    Bounding box of the overscan region.
+skipLeading : `int`
+    Number of leading (towards data region) rows/columns to skip.
+skipTrailing : `int`
+    Number of trailing (away from data region) rows/columns to skip.
+transpose : `bool`, optional
+    Operate on the transposed array.
+
+Returns
+-------
+overscanArray : `numpy.array`, (N, M)
+    Data array to fit.
+overscanMask : `numpy.array`, (N, M)
+    Data mask.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="418" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="418" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a129fdddd2750902197af49c7230c23d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.fitOverscan</definition>
+        <argsstring>(self, overscanImage, isTransposed=False)</argsstring>
+        <name>fitOverscan</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.fitOverscan</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>overscanImage</type>
+          <defname>overscanImage</defname>
+        </param>
+        <param>
+          <type>isTransposed</type>
+          <defname>isTransposed</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="465" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="465" bodyend="494"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a2777020116a6ccf794f95a3239474a66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.maskParallelOverscan</definition>
+        <argsstring>(self, exposure, detector)</argsstring>
+        <name>maskParallelOverscan</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.maskParallelOverscan</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type><ref refid="_detector_collection_8cc_1a6b9c564255ea8f8ae53bf14d81234de7" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">detector</ref></type>
+          <defname>detector</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Mask the union of high values on all amplifiers in the parallel
+overscan.
+
+This operates on the image in-place.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    An untrimmed raw exposure.
+detector : `lsst.afw.cameraGeom.Detector`
+    The detetor to use for amplifier geometry.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="529" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="529" bodyend="563"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1af73e77c07a4c0664c7dae69cf71f5035" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.measureConstantOverscan</definition>
+        <argsstring>(self, image)</argsstring>
+        <name>measureConstantOverscan</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.measureConstantOverscan</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>image</type>
+          <defname>image</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Measure a constant overscan value.
+
+Parameters
+----------
+image : `lsst.afw.image.Image` or `lsst.afw.image.MaskedImage`
+    Image data to measure the overscan from.
+
+Returns
+-------
+results : `lsst.pipe.base.Struct`
+    Overscan result with entries:
+    - ``overscanValue``: Overscan value to subtract (`float`)
+    - ``isTransposed``: Orientation of the overscan (`bool`)
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="565" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="565" bodyend="585"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a7a23272dd40e32d58956d89e6969e0e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.getImageArray</definition>
+        <argsstring>(self, image)</argsstring>
+        <name>getImageArray</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.getImageArray</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>image</type>
+          <defname>image</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Extract the numpy array from the input image.
+
+Parameters
+----------
+image : `lsst.afw.image.Image` or `lsst.afw.image.MaskedImage`
+    Image data to pull array from.
+
+calcImage : `numpy.ndarray`
+    Image data array for numpy operating.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="587" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="587" bodyend="605"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a5eaa65d0835223d814f491980b9bb006" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.maskOutliers</definition>
+        <argsstring>(self, imageArray)</argsstring>
+        <name>maskOutliers</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.maskOutliers</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>imageArray</type>
+          <defname>imageArray</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Mask  outliers in  a  row  of overscan  data  from  a robust  sigma
+clipping procedure.
+
+Parameters
+----------
+imageArray : `numpy.ndarray`
+    Image to filter along numpy axis=1.
+
+Returns
+-------
+maskedArray : `numpy.ma.masked_array`
+    Masked image marking outliers.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="606" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="606" bodyend="637"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1ae2291d99e7a9034c9aa9b26e90f94a8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.fillMaskedPixels</definition>
+        <argsstring>(self, overscanVector)</argsstring>
+        <name>fillMaskedPixels</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.fillMaskedPixels</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>overscanVector</type>
+          <defname>overscanVector</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Fill masked/NaN pixels in the overscan.
+
+Parameters
+----------
+overscanVector : `np.array` or `np.ma.masked_array`
+    Overscan vector to fill.
+
+Returns
+-------
+overscanVector : `np.ma.masked_array`
+    Filled vector.
+
+Notes
+-----
+Each maskSlice is a section of overscan with contiguous masks.
+Ideally this adds 5 pixels from the left and right of that
+mask slice, and takes the median of those values to fill the
+slice.  If this isn&apos;t possible, the median of all non-masked
+values is used.  The mask is removed for the pixels filled.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="638" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="638" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a5c82211b860652eb4cb8d70d4113fd34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.collapseArray</definition>
+        <argsstring>(self, maskedArray, fillMasked=True)</argsstring>
+        <name>collapseArray</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.collapseArray</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>maskedArray</type>
+          <defname>maskedArray</defname>
+        </param>
+        <param>
+          <type>fillMasked</type>
+          <defname>fillMasked</defname>
+          <defval><ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Collapse overscan array (and mask) to a 1-D vector of values.
+
+Parameters
+----------
+maskedArray : `numpy.ma.masked_array`
+    Masked array of input overscan data.
+fillMasked : `bool`, optional
+    If true, fill any pixels that are masked with a median of
+    neighbors.
+
+Returns
+-------
+collapsed : `numpy.ma.masked_array`
+    Single dimensional overscan data, combined with the mean.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="679" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="679" bodyend="701"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a02cf1935f7f598855645b5569ebb1ea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.collapseArrayMedian</definition>
+        <argsstring>(self, maskedArray)</argsstring>
+        <name>collapseArrayMedian</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.collapseArrayMedian</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>maskedArray</type>
+          <defname>maskedArray</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Collapse overscan array (and mask) to a 1-D vector of using the
+correct integer median of row-values.
+
+Parameters
+----------
+maskedArray : `numpy.ma.masked_array`
+    Masked array of input overscan data.
+
+Returns
+-------
+collapsed : `numpy.ma.masked_array`
+    Single dimensional overscan data, combined with the afwMath median.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="702" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="702" bodyend="729"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a92359feb352600513afd414fc94f744d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.splineFit</definition>
+        <argsstring>(self, indices, collapsed, numBins)</argsstring>
+        <name>splineFit</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.splineFit</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>indices</type>
+          <defname>indices</defname>
+        </param>
+        <param>
+          <type>collapsed</type>
+          <defname>collapsed</defname>
+        </param>
+        <param>
+          <type>numBins</type>
+          <defname>numBins</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Wrapper function to match spline fit API to polynomial fit API.
+
+Parameters
+----------
+indices : `numpy.ndarray`
+    Locations to evaluate the spline.
+collapsed : `numpy.ndarray`
+    Collapsed overscan values corresponding to the spline
+    evaluation points.
+numBins : `int`
+    Number of bins to use in constructing the spline.
+
+Returns
+-------
+interp : `lsst.afw.math.Interpolate`
+    Interpolation object for later evaluation.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="730" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="730" bodyend="774"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a20f0e85c6d6fe83cf3e1b95cfd10e88c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.measureVectorOverscan</definition>
+        <argsstring>(self, image, isTransposed=False)</argsstring>
+        <name>measureVectorOverscan</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.measureVectorOverscan</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>image</type>
+          <defname>image</defname>
+        </param>
+        <param>
+          <type>isTransposed</type>
+          <defname>isTransposed</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Calculate the 1-d vector overscan from the input overscan image.
+
+Parameters
+----------
+image : `lsst.afw.image.MaskedImage`
+    Image containing the overscan data.
+isTransposed : `bool`
+    If true, the image has been transposed.
+
+Returns
+-------
+results : `lsst.pipe.base.Struct`
+    Overscan result with entries:
+
+    ``overscanValue``
+        Overscan value to subtract (`float`)
+    ``maskArray``
+        List of rows that should be masked as ``SUSPECT`` when the
+        overscan solution is applied. (`list` [ `bool` ])
+    ``isTransposed``
+       Indicates if the overscan data was transposed during
+       calcuation, noting along which axis the overscan should be
+       subtracted. (`bool`)
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="824" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="824" bodyend="902"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1acd21ca0a1bd3ded1976da79d4de7e5d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.debugView</definition>
+        <argsstring>(self, image, model, amp=None, isTransposed=True)</argsstring>
+        <name>debugView</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.debugView</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>image</type>
+          <defname>image</defname>
+        </param>
+        <param>
+          <type>model</type>
+          <defname>model</defname>
+        </param>
+        <param>
+          <type>amp</type>
+          <defname>amp</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>isTransposed</type>
+          <defname>isTransposed</defname>
+          <defval><ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Debug display for the final overscan solution.
+
+Parameters
+----------
+image : `lsst.afw.image.Image`
+    Input image the overscan solution was determined from.
+model : `numpy.ndarray` or `float`
+    Overscan model determined for the image.
+amp : `lsst.afw.cameraGeom.Amplifier`, optional
+    Amplifier to extract diagnostic information.
+isTransposed : `bool`, optional
+    Does the data need to be transposed before display?
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="903" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="903" bodyend="977"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a7f7ca82153cc7933f50e2d1f8748a376" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.integerConvert</definition>
+        <argsstring>(image)</argsstring>
+        <name>integerConvert</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.integerConvert</qualifiedname>
+        <param>
+          <type>image</type>
+          <defname>image</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return an integer version of the input image.
+
+Parameters
+----------
+image : `numpy.ndarray`, `lsst.afw.image.Image` or `MaskedImage`
+    Image to convert to integers.
+
+Returns
+-------
+outI : `numpy.ndarray`, `lsst.afw.image.Image` or `MaskedImage`
+    The integer converted image.
+
+Raises
+------
+RuntimeError
+    Raised if the input image could not be converted.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="496" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="496" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1aedbf07718f6621669e4a85e700d239e0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.splineEval</definition>
+        <argsstring>(indices, interp)</argsstring>
+        <name>splineEval</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.splineEval</qualifiedname>
+        <param>
+          <type>indices</type>
+          <defname>indices</defname>
+        </param>
+        <param>
+          <type>interp</type>
+          <defname>interp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Wrapper function to match spline evaluation API to polynomial fit
+API.
+
+Parameters
+----------
+indices : `numpy.ndarray`
+    Locations to evaluate the spline.
+interp : `lsst.afw.math.interpolate`
+    Interpolation object to use.
+
+Returns
+-------
+values : `numpy.ndarray`
+    Evaluated spline values at each index.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="776" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="776" bodyend="794"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a0f701e89c2cc6ecf3a2029edc82b668c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.overscan.OverscanCorrectionTask.maskExtrapolated</definition>
+        <argsstring>(collapsed)</argsstring>
+        <name>maskExtrapolated</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTask.maskExtrapolated</qualifiedname>
+        <param>
+          <type>collapsed</type>
+          <defname>collapsed</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create mask if edges are extrapolated.
+
+Parameters
+----------
+collapsed : `numpy.ma.masked_array`
+    Masked array to check the edges of.
+
+Returns
+-------
+maskArray : `numpy.ndarray`
+    Boolean numpy array of pixels to mask.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="796" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="796" bodyend="823"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Correction task for overscan.
+
+This class contains a number of utilities that are easier to
+understand and use when they are not embedded in nested if/else
+loops.
+
+Parameters
+----------
+statControl : `lsst.afw.math.StatisticsControl`, optional
+    Statistics control object.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.overscan.OverscanCorrectionTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pipeBase.Task</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.overscan.OverscanCorrectionTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pipeBase.Task</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/overscan.py" line="124" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="124" bodyend="977"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a356aa50d885bb0d0b3d581cd6a1d0e0d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a0875358dec15415e7cc16124448f6dc4" prot="private" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>_DefaultName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a7d2ca09243024455d913b63978451f1b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>allowDebug</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a9eb3da4c035a05efe2bc82fa62b5f436" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>broadcastFitToImage</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a5c82211b860652eb4cb8d70d4113fd34" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>collapseArray</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a02cf1935f7f598855645b5569ebb1ea8" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>collapseArrayMedian</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1af6e01ccd810dabe685ad8febf8b798ce" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>ConfigClass</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1aacb5915f65e305e5fab331c463cba507" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>correctOverscan</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1acd21ca0a1bd3ded1976da79d4de7e5d7" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>debugView</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1ae2291d99e7a9034c9aa9b26e90f94a8e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>fillMaskedPixels</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a129fdddd2750902197af49c7230c23d8" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>fitOverscan</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a7a23272dd40e32d58956d89e6969e0e5" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>getImageArray</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a7f7ca82153cc7933f50e2d1f8748a376" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>integerConvert</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a0f701e89c2cc6ecf3a2029edc82b668c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>maskExtrapolated</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a5eaa65d0835223d814f491980b9bb006" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>maskOutliers</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a2777020116a6ccf794f95a3239474a66" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>maskParallelOverscan</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1af73e77c07a4c0664c7dae69cf71f5035" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>measureConstantOverscan</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a20f0e85c6d6fe83cf3e1b95cfd10e88c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>measureVectorOverscan</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1ad455461efcc85c4b19714e17369c3a82" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>run</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1aedbf07718f6621669e4a85e700d239e0" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>splineEval</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a92359feb352600513afd414fc94f744d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>splineFit</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1a664c89f70708610500ac5d4bb8b17f19" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>statControl</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_1ac3d89c0c215d6e77e93b7c86b56aae72" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTask</scope><name>trimOverscan</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

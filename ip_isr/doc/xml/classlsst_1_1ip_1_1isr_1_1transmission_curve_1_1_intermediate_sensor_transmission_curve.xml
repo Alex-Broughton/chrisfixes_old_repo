@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_sensor_transmission_curve" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::transmissionCurve::IntermediateSensorTransmissionCurve</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve" prot="public" virt="non-virtual">lsst.ip.isr.transmissionCurve.IntermediateTransmissionCurve</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_sensor_transmission_curve_1ad1b5452f02247d61b4f99fb6c0ad9cd4" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.transmissionCurve.IntermediateSensorTransmissionCurve::_OBSTYPE</definition>
+        <argsstring></argsstring>
+        <name>_OBSTYPE</name>
+        <qualifiedname>lsst::ip::isr.transmissionCurve.IntermediateSensorTransmissionCurve._OBSTYPE</qualifiedname>
+        <initializer>=  &apos;transmission_sensor&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/transmissionCurve.py" line="198" column="1" bodyfile="python/lsst/ip/isr/transmissionCurve.py" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>abc::ABC</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateSensorTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_sensor_transmission_curve"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lsst.ip.isr.calibType.IsrCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>abc::ABC</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateSensorTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_sensor_transmission_curve"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lsst.ip.isr.calibType.IsrCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/transmissionCurve.py" line="197" column="1" bodyfile="python/lsst/ip/isr/transmissionCurve.py" bodystart="197" bodyend="200"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_sensor_transmission_curve_1ad1b5452f02247d61b4f99fb6c0ad9cd4" prot="private" virt="non-virtual"><scope>lsst::ip::isr::transmissionCurve::IntermediateSensorTransmissionCurve</scope><name>_OBSTYPE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

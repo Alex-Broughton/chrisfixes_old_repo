@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacelsst_1_1ip_1_1isr_1_1transmission_curve" kind="namespace" language="Python">
+    <compoundname>lsst::ip::isr::transmissionCurve</compoundname>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_atmosphere_transmission_curve" prot="public">lsst::ip::isr::transmissionCurve::IntermediateAtmosphereTransmissionCurve</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_filter_transmission_curve" prot="public">lsst::ip::isr::transmissionCurve::IntermediateFilterTransmissionCurve</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_optics_transmission_curve" prot="public">lsst::ip::isr::transmissionCurve::IntermediateOpticsTransmissionCurve</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_sensor_transmission_curve" prot="public">lsst::ip::isr::transmissionCurve::IntermediateSensorTransmissionCurve</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_system_transmission_curve" prot="public">lsst::ip::isr::transmissionCurve::IntermediateSystemTransmissionCurve</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve" prot="public">lsst::ip::isr::transmissionCurve::IntermediateTransmissionCurve</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelsst_1_1ip_1_1isr_1_1transmission_curve_1a18893feafc3de560a98d878d1512676b" prot="private" static="no" mutable="no">
+        <type><ref refid="fits_8cc_1a1fbc6c4766fd22cd31bc6972d5d6c14f" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">list</ref></type>
+        <definition>list lsst::ip::isr::transmissionCurve.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>lsst::ip::isr.transmissionCurve.__all__</qualifiedname>
+        <initializer>=  [&quot;IntermediateTransmissionCurve&quot;,
+           &quot;IntermediateOpticsTransmissionCurve&quot;,
+           &quot;IntermediateFilterTransmissionCurve&quot;,
+           &quot;IntermediateSensorTransmissionCurve&quot;,
+           &quot;IntermediateAtmosphereTransmissionCurve&quot;,
+           &quot;IntermediateSystemTransmissionCurve&quot;, ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/transmissionCurve.py" line="22" column="1" bodyfile="python/lsst/ip/isr/transmissionCurve.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="python/lsst/ip/isr/transmissionCurve.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

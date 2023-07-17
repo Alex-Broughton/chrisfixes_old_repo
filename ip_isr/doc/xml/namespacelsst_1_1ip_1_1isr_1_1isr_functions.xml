@@ -1,0 +1,1298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacelsst_1_1ip_1_1isr_1_1isr_functions" kind="namespace" language="Python">
+    <compoundname>lsst::ip::isr::isrFunctions</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1aca08dc3b693a976708822622e8973fb9" prot="private" static="no" mutable="no">
+        <type><ref refid="fits_8cc_1a1fbc6c4766fd22cd31bc6972d5d6c14f" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">list</ref></type>
+        <definition>list lsst::ip::isr::isrFunctions.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.__all__</qualifiedname>
+        <initializer>=  [
+    &quot;applyGains&quot;,
+    &quot;attachTransmissionCurve&quot;,
+    &quot;biasCorrection&quot;,
+    &quot;brighterFatterCorrection&quot;,
+    &quot;checkFilter&quot;,
+    &quot;countMaskedPixels&quot;,
+    &quot;createPsf&quot;,
+    &quot;darkCorrection&quot;,
+    &quot;flatCorrection&quot;,
+    &quot;fluxConservingBrighterFatterCorrection&quot;,
+    &quot;gainContext&quot;,
+    &quot;getPhysicalFilter&quot;,
+    &quot;growMasks&quot;,
+    &quot;illuminationCorrection&quot;,
+    &quot;interpolateDefectList&quot;,
+    &quot;interpolateFromMask&quot;,
+    &quot;makeThresholdMask&quot;,
+    &quot;saturationCorrection&quot;,
+    &quot;setBadRegions&quot;,
+    &quot;transferFlux&quot;,
+    &quot;transposeMaskedImage&quot;,
+    &quot;trimToMatchCalibBBox&quot;,
+    &quot;updateVariance&quot;,
+    &quot;widenSaturationTrails&quot;,
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="23" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1a9308e20b72c5e5ce6310fd3780b3cb38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.createPsf</definition>
+        <argsstring>(fwhm)</argsstring>
+        <name>createPsf</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.createPsf</qualifiedname>
+        <param>
+          <type>fwhm</type>
+          <defname>fwhm</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Make a double Gaussian PSF.
+
+Parameters
+----------
+fwhm : scalar
+    FWHM of double Gaussian smoothing kernel.
+
+Returns
+-------
+psf : `lsst.meas.algorithms.DoubleGaussianPsf`
+    The created smoothing kernel.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="67" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="67" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1ad9a59b7ad1bed0e1048bd1e4ca6dfb5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.transposeMaskedImage</definition>
+        <argsstring>(maskedImage)</argsstring>
+        <name>transposeMaskedImage</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.transposeMaskedImage</qualifiedname>
+        <param>
+          <type>maskedImage</type>
+          <defname>maskedImage</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Make a transposed copy of a masked image.
+
+Parameters
+----------
+maskedImage : `lsst.afw.image.MaskedImage`
+    Image to process.
+
+Returns
+-------
+transposed : `lsst.afw.image.MaskedImage`
+    The transposed copy of the input image.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="84" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="84" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1a3da23947a7ecd2ef895d6cb23bd8c36f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.interpolateDefectList</definition>
+        <argsstring>(maskedImage, defectList, fwhm, fallbackValue=None)</argsstring>
+        <name>interpolateDefectList</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.interpolateDefectList</qualifiedname>
+        <param>
+          <type>maskedImage</type>
+          <defname>maskedImage</defname>
+        </param>
+        <param>
+          <type>defectList</type>
+          <defname>defectList</defname>
+        </param>
+        <param>
+          <type>fwhm</type>
+          <defname>fwhm</defname>
+        </param>
+        <param>
+          <type>fallbackValue</type>
+          <defname>fallbackValue</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Interpolate over defects specified in a defect list.
+
+Parameters
+----------
+maskedImage : `lsst.afw.image.MaskedImage`
+    Image to process.
+defectList : `lsst.meas.algorithms.Defects`
+    List of defects to interpolate over.
+fwhm : scalar
+    FWHM of double Gaussian smoothing kernel.
+fallbackValue : scalar, optional
+    Fallback value if an interpolated value cannot be determined.
+    If None, then the clipped mean of the image is used.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="104" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="104" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1a9e6fabc7749219c7be18eb6fe3420dd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.makeThresholdMask</definition>
+        <argsstring>(maskedImage, threshold, growFootprints=1, maskName=&apos;SAT&apos;)</argsstring>
+        <name>makeThresholdMask</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.makeThresholdMask</qualifiedname>
+        <param>
+          <type>maskedImage</type>
+          <defname>maskedImage</defname>
+        </param>
+        <param>
+          <type>threshold</type>
+          <defname>threshold</defname>
+        </param>
+        <param>
+          <type>growFootprints</type>
+          <defname>growFootprints</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>maskName</type>
+          <defname>maskName</defname>
+          <defval>&apos;SAT&apos;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Mask pixels based on threshold detection.
+
+Parameters
+----------
+maskedImage : `lsst.afw.image.MaskedImage`
+    Image to process.  Only the mask plane is updated.
+threshold : scalar
+    Detection threshold.
+growFootprints : scalar, optional
+    Number of pixels to grow footprints of detected regions.
+maskName : str, optional
+    Mask plane name, or list of names to convert
+
+Returns
+-------
+defectList : `lsst.meas.algorithms.Defects`
+    Defect list constructed from pixels above the threshold.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="128" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="128" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1a30095386969ceb03c705b1e6fa22c70d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.growMasks</definition>
+        <argsstring>(mask, radius=0, maskNameList=[&apos;BAD&apos;], maskValue=&quot;BAD&quot;)</argsstring>
+        <name>growMasks</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.growMasks</qualifiedname>
+        <param>
+          <type><ref refid="_heavy_footprint_8cc_1ab686a106d56d24e934338431811799aa" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">mask</ref></type>
+          <defname>mask</defname>
+        </param>
+        <param>
+          <type>radius</type>
+          <defname>radius</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>maskNameList</type>
+          <defname>maskNameList</defname>
+          <defval>[&apos;BAD&apos;]</defval>
+        </param>
+        <param>
+          <type>maskValue</type>
+          <defname>maskValue</defname>
+          <defval>&quot;BAD&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Grow a mask by an amount and add to the requested plane.
+
+Parameters
+----------
+mask : `lsst.afw.image.Mask`
+    Mask image to process.
+radius : scalar
+    Amount to grow the mask.
+maskNameList : `str` or `list` [`str`]
+    Mask names that should be grown.
+maskValue : `str`
+    Mask plane to assign the newly masked pixels to.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="163" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="163" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1ad1e338da868ef16756b6c221e64691ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.interpolateFromMask</definition>
+        <argsstring>(maskedImage, fwhm, growSaturatedFootprints=1, maskNameList=[&apos;SAT&apos;], fallbackValue=None)</argsstring>
+        <name>interpolateFromMask</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.interpolateFromMask</qualifiedname>
+        <param>
+          <type>maskedImage</type>
+          <defname>maskedImage</defname>
+        </param>
+        <param>
+          <type>fwhm</type>
+          <defname>fwhm</defname>
+        </param>
+        <param>
+          <type>growSaturatedFootprints</type>
+          <defname>growSaturatedFootprints</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>maskNameList</type>
+          <defname>maskNameList</defname>
+          <defval>[&apos;SAT&apos;]</defval>
+        </param>
+        <param>
+          <type>fallbackValue</type>
+          <defname>fallbackValue</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Interpolate over defects identified by a particular set of mask planes.
+
+Parameters
+----------
+maskedImage : `lsst.afw.image.MaskedImage`
+    Image to process.
+fwhm : scalar
+    FWHM of double Gaussian smoothing kernel.
+growSaturatedFootprints : scalar, optional
+    Number of pixels to grow footprints for saturated pixels.
+maskNameList : `List` of `str`, optional
+    Mask plane name.
+fallbackValue : scalar, optional
+    Value of last resort for interpolation.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="184" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="185" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1a37ab3d18909c2c12013cf5c16b28ca85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.saturationCorrection</definition>
+        <argsstring>(maskedImage, saturation, fwhm, growFootprints=1, interpolate=True, maskName=&apos;SAT&apos;, fallbackValue=None)</argsstring>
+        <name>saturationCorrection</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.saturationCorrection</qualifiedname>
+        <param>
+          <type>maskedImage</type>
+          <defname>maskedImage</defname>
+        </param>
+        <param>
+          <type><ref refid="_amplifier_8cc_1a83cb9f9224668420ce391f77f77fbd5e" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">saturation</ref></type>
+          <defname>saturation</defname>
+        </param>
+        <param>
+          <type>fwhm</type>
+          <defname>fwhm</defname>
+        </param>
+        <param>
+          <type>growFootprints</type>
+          <defname>growFootprints</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>interpolate</type>
+          <defname>interpolate</defname>
+          <defval><ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref></defval>
+        </param>
+        <param>
+          <type>maskName</type>
+          <defname>maskName</defname>
+          <defval>&apos;SAT&apos;</defval>
+        </param>
+        <param>
+          <type>fallbackValue</type>
+          <defname>fallbackValue</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Mark saturated pixels and optionally interpolate over them
+
+Parameters
+----------
+maskedImage : `lsst.afw.image.MaskedImage`
+    Image to process.
+saturation  : scalar
+    Saturation level used as the detection threshold.
+fwhm : scalar
+    FWHM of double Gaussian smoothing kernel.
+growFootprints : scalar, optional
+    Number of pixels to grow footprints of detected regions.
+interpolate : Bool, optional
+    If True, saturated pixels are interpolated over.
+maskName : str, optional
+    Mask plane name.
+fallbackValue : scalar, optional
+    Value of last resort for interpolation.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="218" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="219" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1ab0bcdeb1e2dd956b34e4d96c3743d6e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.trimToMatchCalibBBox</definition>
+        <argsstring>(rawMaskedImage, calibMaskedImage)</argsstring>
+        <name>trimToMatchCalibBBox</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.trimToMatchCalibBBox</qualifiedname>
+        <param>
+          <type>rawMaskedImage</type>
+          <defname>rawMaskedImage</defname>
+        </param>
+        <param>
+          <type>calibMaskedImage</type>
+          <defname>calibMaskedImage</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Compute number of edge trim pixels to match the calibration data.
+
+Use the dimension difference between the raw exposure and the
+calibration exposure to compute the edge trim pixels.  This trim
+is applied symmetrically, with the same number of pixels masked on
+each side.
+
+Parameters
+----------
+rawMaskedImage : `lsst.afw.image.MaskedImage`
+    Image to trim.
+calibMaskedImage : `lsst.afw.image.MaskedImage`
+    Calibration image to draw new bounding box from.
+
+Returns
+-------
+replacementMaskedImage : `lsst.afw.image.MaskedImage`
+    ``rawMaskedImage`` trimmed to the appropriate size.
+
+Raises
+------
+RuntimeError
+   Raised if ``rawMaskedImage`` cannot be symmetrically trimmed to
+   match ``calibMaskedImage``.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="251" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="251" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1a1e15ff015a0ebbf57114e8cd3d20d5ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.biasCorrection</definition>
+        <argsstring>(maskedImage, biasMaskedImage, trimToFit=False)</argsstring>
+        <name>biasCorrection</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.biasCorrection</qualifiedname>
+        <param>
+          <type>maskedImage</type>
+          <defname>maskedImage</defname>
+        </param>
+        <param>
+          <type>biasMaskedImage</type>
+          <defname>biasMaskedImage</defname>
+        </param>
+        <param>
+          <type>trimToFit</type>
+          <defname>trimToFit</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Apply bias correction in place.
+
+Parameters
+----------
+maskedImage : `lsst.afw.image.MaskedImage`
+   Image to process.  The image is modified by this method.
+biasMaskedImage : `lsst.afw.image.MaskedImage`
+    Bias image of the same size as ``maskedImage``
+trimToFit : `Bool`, optional
+    If True, raw data is symmetrically trimmed to match
+    calibration size.
+
+Raises
+------
+RuntimeError
+    Raised if ``maskedImage`` and ``biasMaskedImage`` do not have
+    the same size.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="299" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="299" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1a37a205858f440f4bc245ec87cf1dc38a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.darkCorrection</definition>
+        <argsstring>(maskedImage, darkMaskedImage, expScale, darkScale, invert=False, trimToFit=False)</argsstring>
+        <name>darkCorrection</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.darkCorrection</qualifiedname>
+        <param>
+          <type>maskedImage</type>
+          <defname>maskedImage</defname>
+        </param>
+        <param>
+          <type>darkMaskedImage</type>
+          <defname>darkMaskedImage</defname>
+        </param>
+        <param>
+          <type>expScale</type>
+          <defname>expScale</defname>
+        </param>
+        <param>
+          <type>darkScale</type>
+          <defname>darkScale</defname>
+        </param>
+        <param>
+          <type><ref refid="Relationship_8h_1ac55a13fa08cbe004788e81ba48fb38af" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/sphgeom/gd5d1ca8e18+f0a1800e64/doc/sphgeom.tag">invert</ref></type>
+          <defname>invert</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>trimToFit</type>
+          <defname>trimToFit</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Apply dark correction in place.
+
+Parameters
+----------
+maskedImage : `lsst.afw.image.MaskedImage`
+   Image to process.  The image is modified by this method.
+darkMaskedImage : `lsst.afw.image.MaskedImage`
+    Dark image of the same size as ``maskedImage``.
+expScale : scalar
+    Dark exposure time for ``maskedImage``.
+darkScale : scalar
+    Dark exposure time for ``darkMaskedImage``.
+invert : `Bool`, optional
+    If True, re-add the dark to an already corrected image.
+trimToFit : `Bool`, optional
+    If True, raw data is symmetrically trimmed to match
+    calibration size.
+
+Raises
+------
+RuntimeError
+    Raised if ``maskedImage`` and ``darkMaskedImage`` do not have
+    the same size.
+
+Notes
+-----
+The dark correction is applied by calculating:
+    maskedImage -= dark * expScaling / darkScaling
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="328" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="328" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1ac190b76df1f722c0b3a9bcf738bdc62e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.updateVariance</definition>
+        <argsstring>(maskedImage, gain, readNoise)</argsstring>
+        <name>updateVariance</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.updateVariance</qualifiedname>
+        <param>
+          <type>maskedImage</type>
+          <defname>maskedImage</defname>
+        </param>
+        <param>
+          <type><ref refid="_amplifier_8cc_1a451e62ec8e33873c8792e7df647c7b27" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">gain</ref></type>
+          <defname>gain</defname>
+        </param>
+        <param>
+          <type><ref refid="_amplifier_8cc_1a9bd24b09334af887fc0fe76cd5fbf1fe" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">readNoise</ref></type>
+          <defname>readNoise</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the variance plane based on the image plane.
+
+Parameters
+----------
+maskedImage : `lsst.afw.image.MaskedImage`
+    Image to process.  The variance plane is modified.
+gain : scalar
+    The amplifier gain in electrons/ADU.
+readNoise : scalar
+    The amplifier read nmoise in ADU/pixel.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="372" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="372" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1ae01e57d680a6f89c73f01e9ccf822963" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.flatCorrection</definition>
+        <argsstring>(maskedImage, flatMaskedImage, scalingType, userScale=1.0, invert=False, trimToFit=False)</argsstring>
+        <name>flatCorrection</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.flatCorrection</qualifiedname>
+        <param>
+          <type>maskedImage</type>
+          <defname>maskedImage</defname>
+        </param>
+        <param>
+          <type>flatMaskedImage</type>
+          <defname>flatMaskedImage</defname>
+        </param>
+        <param>
+          <type>scalingType</type>
+          <defname>scalingType</defname>
+        </param>
+        <param>
+          <type>userScale</type>
+          <defname>userScale</defname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type><ref refid="Relationship_8h_1ac55a13fa08cbe004788e81ba48fb38af" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/sphgeom/gd5d1ca8e18+f0a1800e64/doc/sphgeom.tag">invert</ref></type>
+          <defname>invert</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>trimToFit</type>
+          <defname>trimToFit</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Apply flat correction in place.
+
+Parameters
+----------
+maskedImage : `lsst.afw.image.MaskedImage`
+    Image to process.  The image is modified.
+flatMaskedImage : `lsst.afw.image.MaskedImage`
+    Flat image of the same size as ``maskedImage``
+scalingType : str
+    Flat scale computation method.  Allowed values are &apos;MEAN&apos;,
+    &apos;MEDIAN&apos;, or &apos;USER&apos;.
+userScale : scalar, optional
+    Scale to use if ``scalingType=&apos;USER&apos;``.
+invert : `Bool`, optional
+    If True, unflatten an already flattened image.
+trimToFit : `Bool`, optional
+    If True, raw data is symmetrically trimmed to match
+    calibration size.
+
+Raises
+------
+RuntimeError
+    Raised if ``maskedImage`` and ``flatMaskedImage`` do not have
+    the same size or if ``scalingType`` is not an allowed value.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="390" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="390" bodyend="440"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1a4f1beae07a4d7e91b76549c7616b7477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.illuminationCorrection</definition>
+        <argsstring>(maskedImage, illumMaskedImage, illumScale, trimToFit=True)</argsstring>
+        <name>illuminationCorrection</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.illuminationCorrection</qualifiedname>
+        <param>
+          <type>maskedImage</type>
+          <defname>maskedImage</defname>
+        </param>
+        <param>
+          <type>illumMaskedImage</type>
+          <defname>illumMaskedImage</defname>
+        </param>
+        <param>
+          <type>illumScale</type>
+          <defname>illumScale</defname>
+        </param>
+        <param>
+          <type>trimToFit</type>
+          <defname>trimToFit</defname>
+          <defval><ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Apply illumination correction in place.
+
+Parameters
+----------
+maskedImage : `lsst.afw.image.MaskedImage`
+    Image to process.  The image is modified.
+illumMaskedImage : `lsst.afw.image.MaskedImage`
+    Illumination correction image of the same size as ``maskedImage``.
+illumScale : scalar
+    Scale factor for the illumination correction.
+trimToFit : `Bool`, optional
+    If True, raw data is symmetrically trimmed to match
+    calibration size.
+
+Raises
+------
+RuntimeError
+    Raised if ``maskedImage`` and ``illumMaskedImage`` do not have
+    the same size.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="441" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="441" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1a6c3e2c188a3f6a0eb683179524b84540" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.brighterFatterCorrection</definition>
+        <argsstring>(exposure, kernel, maxIter, threshold, applyGain, gains=None)</argsstring>
+        <name>brighterFatterCorrection</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.brighterFatterCorrection</qualifiedname>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>kernel</type>
+          <defname>kernel</defname>
+        </param>
+        <param>
+          <type>maxIter</type>
+          <defname>maxIter</defname>
+        </param>
+        <param>
+          <type>threshold</type>
+          <defname>threshold</defname>
+        </param>
+        <param>
+          <type>applyGain</type>
+          <defname>applyGain</defname>
+        </param>
+        <param>
+          <type>gains</type>
+          <defname>gains</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Apply brighter fatter correction in place for the image.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to have brighter-fatter correction applied.  Modified
+    by this method.
+kernel : `numpy.ndarray`
+    Brighter-fatter kernel to apply.
+maxIter : scalar
+    Number of correction iterations to run.
+threshold : scalar
+    Convergence threshold in terms of the sum of absolute
+    deviations between an iteration and the previous one.
+applyGain : `Bool`
+    If True, then the exposure values are scaled by the gain prior
+    to correction.
+gains : `dict` [`str`, `float`]
+    A dictionary, keyed by amplifier name, of the gains to use.
+    If gains is None, the nominal gains in the amplifier object are used.
+
+Returns
+-------
+diff : `float`
+    Final difference between iterations achieved in correction.
+iteration : `int`
+    Number of iterations used to calculate correction.
+
+Notes
+-----
+This correction takes a kernel that has been derived from flat
+field images to redistribute the charge.  The gradient of the
+kernel is the deflection field due to the accumulated charge.
+
+Given the original image I(x) and the kernel K(x) we can compute
+the corrected image Ic(x) using the following equation:
+
+Ic(x) = I(x) + 0.5*d/dx(I(x)*d/dx(int( dy*K(x-y)*I(y))))
+
+To evaluate the derivative term we expand it as follows:
+
+0.5 * ( d/dx(I(x))*d/dx(int(dy*K(x-y)*I(y)))
+    + I(x)*d^2/dx^2(int(dy* K(x-y)*I(y))) )
+
+Because we use the measured counts instead of the incident counts
+we apply the correction iteratively to reconstruct the original
+counts and the correction.  We stop iterating when the summed
+difference between the current corrected image and the one from
+the previous iteration is below the threshold.  We do not require
+convergence because the number of iterations is too large a
+computational cost.  How we define the threshold still needs to be
+evaluated, the current default was shown to work reasonably well
+on a small set of images.  For more information on the method see
+DocuShare Document-19407.
+
+The edges as defined by the kernel are not corrected because they
+have spurious values due to the convolution.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="472" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="472" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1ad396d96de11e9d7247b0b95e5e0964a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.transferFlux</definition>
+        <argsstring>(cFunc, fStep, correctionMode=True)</argsstring>
+        <name>transferFlux</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.transferFlux</qualifiedname>
+        <param>
+          <type>cFunc</type>
+          <defname>cFunc</defname>
+        </param>
+        <param>
+          <type>fStep</type>
+          <defname>fStep</defname>
+        </param>
+        <param>
+          <type>correctionMode</type>
+          <defname>correctionMode</defname>
+          <defval><ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Take the input convolved deflection potential and the flux array
+to compute and apply the flux transfer into the correction array.
+
+Parameters
+----------
+cFunc: `numpy.array`
+    Deflection potential, being the convolution of the flux F with the
+    kernel K.
+fStep: `numpy.array`
+    The array of flux values which act as the source of the flux transfer.
+correctionMode: `bool`
+    Defines if applying correction (True) or generating sims (False).
+
+Returns
+-------
+corr:
+    BFE correction array
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="597" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="597" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1a55ab08c7bf0d38771cb5b4f1dcffb86b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.fluxConservingBrighterFatterCorrection</definition>
+        <argsstring>(exposure, kernel, maxIter, threshold, applyGain, gains=None, correctionMode=True)</argsstring>
+        <name>fluxConservingBrighterFatterCorrection</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.fluxConservingBrighterFatterCorrection</qualifiedname>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>kernel</type>
+          <defname>kernel</defname>
+        </param>
+        <param>
+          <type>maxIter</type>
+          <defname>maxIter</defname>
+        </param>
+        <param>
+          <type>threshold</type>
+          <defname>threshold</defname>
+        </param>
+        <param>
+          <type>applyGain</type>
+          <defname>applyGain</defname>
+        </param>
+        <param>
+          <type>gains</type>
+          <defname>gains</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>correctionMode</type>
+          <defname>correctionMode</defname>
+          <defval><ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Apply brighter fatter correction in place for the image.
+
+This version presents a modified version of the algorithm
+found in ``lsst.ip.isr.isrFunctions.brighterFatterCorrection``
+which conserves the image flux, resulting in improved
+correction of the cores of stars. The convolution has also been
+modified to mitigate edge effects.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to have brighter-fatter correction applied.  Modified
+    by this method.
+kernel : `numpy.ndarray`
+    Brighter-fatter kernel to apply.
+maxIter : scalar
+    Number of correction iterations to run.
+threshold : scalar
+    Convergence threshold in terms of the sum of absolute
+    deviations between an iteration and the previous one.
+applyGain : `Bool`
+    If True, then the exposure values are scaled by the gain prior
+    to correction.
+gains : `dict` [`str`, `float`]
+    A dictionary, keyed by amplifier name, of the gains to use.
+    If gains is None, the nominal gains in the amplifier object are used.
+correctionMode : `Bool`
+    If True (default) the function applies correction for BFE.  If False,
+    the code can instead be used to generate a simulation of BFE (sign
+    change in the direction of the effect)
+
+Returns
+-------
+diff : `float`
+    Final difference between iterations achieved in correction.
+iteration : `int`
+    Number of iterations used to calculate correction.
+
+Notes
+-----
+Modified version of ``lsst.ip.isr.isrFunctions.brighterFatterCorrection``.
+
+This correction takes a kernel that has been derived from flat
+field images to redistribute the charge.  The gradient of the
+kernel is the deflection field due to the accumulated charge.
+
+Given the original image I(x) and the kernel K(x) we can compute
+the corrected image Ic(x) using the following equation:
+
+Ic(x) = I(x) + 0.5*d/dx(I(x)*d/dx(int( dy*K(x-y)*I(y))))
+
+Improved algorithm at this step applies the divergence theorem to
+obtain a pixelised correction.
+
+Because we use the measured counts instead of the incident counts
+we apply the correction iteratively to reconstruct the original
+counts and the correction.  We stop iterating when the summed
+difference between the current corrected image and the one from
+the previous iteration is below the threshold.  We do not require
+convergence because the number of iterations is too large a
+computational cost.  How we define the threshold still needs to be
+evaluated, the current default was shown to work reasonably well
+on a small set of images.
+
+Edges are handled in the convolution by padding.  This is still not
+a physical model for the edge, but avoids discontinuity in the correction.
+
+Author of modified version: Lance.Miller@physics.ox.ac.uk
+(see DM-38555).
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="681" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="682" bodyend="830"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1a68f9aea92c7714bdcbedb80be2eea463" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.gainContext</definition>
+        <argsstring>(exp, image, apply, gains=None)</argsstring>
+        <name>gainContext</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.gainContext</qualifiedname>
+        <param>
+          <type>exp</type>
+          <defname>exp</defname>
+        </param>
+        <param>
+          <type>image</type>
+          <defname>image</defname>
+        </param>
+        <param>
+          <type>apply</type>
+          <defname>apply</defname>
+        </param>
+        <param>
+          <type>gains</type>
+          <defname>gains</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Context manager that applies and removes gain.
+
+Parameters
+----------
+exp : `lsst.afw.image.Exposure`
+    Exposure to apply/remove gain.
+image : `lsst.afw.image.Image`
+    Image to apply/remove gain.
+apply : `Bool`
+    If True, apply and remove the amplifier gain.
+gains : `dict` [`str`, `float`]
+    A dictionary, keyed by amplifier name, of the gains to use.
+    If gains is None, the nominal gains in the amplifier object are used.
+
+Yields
+------
+exp : `lsst.afw.image.Exposure`
+    Exposure with the gain applied.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="831" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="831" bodyend="882"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1ae76982bb89eecf98e9a74970ceb5ce00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.attachTransmissionCurve</definition>
+        <argsstring>(exposure, opticsTransmission=None, filterTransmission=None, sensorTransmission=None, atmosphereTransmission=None)</argsstring>
+        <name>attachTransmissionCurve</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.attachTransmissionCurve</qualifiedname>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>opticsTransmission</type>
+          <defname>opticsTransmission</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>filterTransmission</type>
+          <defname>filterTransmission</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>sensorTransmission</type>
+          <defname>sensorTransmission</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>atmosphereTransmission</type>
+          <defname>atmosphereTransmission</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Attach a TransmissionCurve to an Exposure, given separate curves for
+different components.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure object to modify by attaching the product of all given
+    ``TransmissionCurves`` in post-assembly trimmed detector coordinates.
+    Must have a valid ``Detector`` attached that matches the detector
+    associated with sensorTransmission.
+opticsTransmission : `lsst.afw.image.TransmissionCurve`
+    A ``TransmissionCurve`` that represents the throughput of the optics,
+    to be evaluated in focal-plane coordinates.
+filterTransmission : `lsst.afw.image.TransmissionCurve`
+    A ``TransmissionCurve`` that represents the throughput of the filter
+    itself, to be evaluated in focal-plane coordinates.
+sensorTransmission : `lsst.afw.image.TransmissionCurve`
+    A ``TransmissionCurve`` that represents the throughput of the sensor
+    itself, to be evaluated in post-assembly trimmed detector coordinates.
+atmosphereTransmission : `lsst.afw.image.TransmissionCurve`
+    A ``TransmissionCurve`` that represents the throughput of the
+    atmosphere, assumed to be spatially constant.
+
+Returns
+-------
+combined : `lsst.afw.image.TransmissionCurve`
+    The TransmissionCurve attached to the exposure.
+
+Notes
+-----
+All ``TransmissionCurve`` arguments are optional; if none are provided, the
+attached ``TransmissionCurve`` will have unit transmission everywhere.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="883" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="884" bodyend="934"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1aa9f18cd526ed4f855647ce890b552c67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.applyGains</definition>
+        <argsstring>(exposure, normalizeGains=False, ptcGains=None)</argsstring>
+        <name>applyGains</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.applyGains</qualifiedname>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>normalizeGains</type>
+          <defname>normalizeGains</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>ptcGains</type>
+          <defname>ptcGains</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Scale an exposure by the amplifier gains.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to process.  The image is modified.
+normalizeGains : `Bool`, optional
+    If True, then amplifiers are scaled to force the median of
+    each amplifier to equal the median of those medians.
+ptcGains : `dict`[`str`], optional
+    Dictionary keyed by amp name containing the PTC gains.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="935" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="935" bodyend="969"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1af5547ddf356c6164ceea5306190dc65d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.widenSaturationTrails</definition>
+        <argsstring>(mask)</argsstring>
+        <name>widenSaturationTrails</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.widenSaturationTrails</qualifiedname>
+        <param>
+          <type><ref refid="_heavy_footprint_8cc_1ab686a106d56d24e934338431811799aa" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">mask</ref></type>
+          <defname>mask</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Grow the saturation trails by an amount dependent on the width of the
+trail.
+
+Parameters
+----------
+mask : `lsst.afw.image.Mask`
+    Mask which will have the saturated areas grown.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="970" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="970" bodyend="1017"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1aa34867352c694fb36fb792678db3115c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.setBadRegions</definition>
+        <argsstring>(exposure, badStatistic=&quot;MEDIAN&quot;)</argsstring>
+        <name>setBadRegions</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.setBadRegions</qualifiedname>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>badStatistic</type>
+          <defname>badStatistic</defname>
+          <defval>&quot;MEDIAN&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set all BAD areas of the chip to the average of the rest of the exposure
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to mask.  The exposure mask is modified.
+badStatistic : `str`, optional
+    Statistic to use to generate the replacement value from the
+    image data.  Allowed values are &apos;MEDIAN&apos; or &apos;MEANCLIP&apos;.
+
+Returns
+-------
+badPixelCount : scalar
+    Number of bad pixels masked.
+badPixelValue : scalar
+    Value substituted for bad pixels.
+
+Raises
+------
+RuntimeError
+    Raised if `badStatistic` is not an allowed value.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="1018" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="1018" bodyend="1064"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1a603f151e1e2a485deab5ab1636192bdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.checkFilter</definition>
+        <argsstring>(exposure, filterList, log)</argsstring>
+        <name>checkFilter</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.checkFilter</qualifiedname>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>filterList</type>
+          <defname>filterList</defname>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1ip_1_1isr_1_1defects_1a1bb91a40156f1994d55da947ded68fab" kindref="member">log</ref></type>
+          <defname>log</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Check to see if an exposure is in a filter specified by a list.
+
+The goal of this is to provide a unified filter checking interface
+for all filter dependent stages.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to examine.
+filterList : `list` [`str`]
+    List of physical_filter names to check.
+log : `logging.Logger`
+    Logger to handle messages.
+
+Returns
+-------
+result : `bool`
+    True if the exposure&apos;s filter is contained in the list.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="1065" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="1065" bodyend="1103"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1aabb1332b191223c8a8f3caa62c8f3df0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.getPhysicalFilter</definition>
+        <argsstring>(filterLabel, log)</argsstring>
+        <name>getPhysicalFilter</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.getPhysicalFilter</qualifiedname>
+        <param>
+          <type>filterLabel</type>
+          <defname>filterLabel</defname>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1ip_1_1isr_1_1defects_1a1bb91a40156f1994d55da947ded68fab" kindref="member">log</ref></type>
+          <defname>log</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the physical filter label associated with the given filterLabel.
+
+If ``filterLabel`` is `None` or there is no physicalLabel attribute
+associated with the given ``filterLabel``, the returned label will be
+&quot;Unknown&quot;.
+
+Parameters
+----------
+filterLabel : `lsst.afw.image.FilterLabel`
+    The `lsst.afw.image.FilterLabel` object from which to derive the
+    physical filter label.
+log : `logging.Logger`
+    Logger to handle messages.
+
+Returns
+-------
+physicalFilter : `str`
+    The value returned by the physicalLabel attribute of ``filterLabel`` if
+    it exists, otherwise set to \&quot;Unknown\&quot;.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="1104" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="1104" bodyend="1136"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_functions_1a333a6da67635c4b1563e75a8d3c2930a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrFunctions.countMaskedPixels</definition>
+        <argsstring>(maskedIm, maskPlane)</argsstring>
+        <name>countMaskedPixels</name>
+        <qualifiedname>lsst::ip::isr.isrFunctions.countMaskedPixels</qualifiedname>
+        <param>
+          <type>maskedIm</type>
+          <defname>maskedIm</defname>
+        </param>
+        <param>
+          <type>maskPlane</type>
+          <defname>maskPlane</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Count the number of pixels in a given mask plane.
+
+Parameters
+----------
+maskedIm : `~lsst.afw.image.MaskedImage`
+    Masked image to examine.
+maskPlane : `str`
+    Name of the mask plane to examine.
+
+Returns
+-------
+nPix : `int`
+    Number of pixels in the requested mask plane.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrFunctions.py" line="1137" column="1" bodyfile="python/lsst/ip/isr/isrFunctions.py" bodystart="1137" bodyend="1155"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="python/lsst/ip/isr/isrFunctions.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

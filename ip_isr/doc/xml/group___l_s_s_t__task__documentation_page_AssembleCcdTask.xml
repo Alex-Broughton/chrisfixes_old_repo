@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="group___l_s_s_t__task__documentation_page_AssembleCcdTask" kind="page">
+    <compoundname>page_AssembleCcdTask</compoundname>
+    <title>AssembleCcdTask</title>
+    <briefdescription>
+<para><ref refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1AssembleCcdTask_" kindref="member">AssembleCcdTask</ref>  <anchor id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1AssembleCcdTask_"/>  </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="python/lsst/ip/isr/assembleCcdTask.py"/>
+  </compounddef>
+</doxygen>

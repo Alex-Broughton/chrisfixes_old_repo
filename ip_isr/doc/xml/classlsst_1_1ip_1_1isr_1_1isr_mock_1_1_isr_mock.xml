@@ -1,0 +1,939 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::isrMock::IsrMock</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pipeBase.Task</basecompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_bf_kernel_mock" prot="public" virt="non-virtual">lsst.ip.isr.isrMock.BfKernelMock</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_crosstalk_coeff_mock" prot="public" virt="non-virtual">lsst.ip.isr.isrMock.CrosstalkCoeffMock</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_defect_mock" prot="public" virt="non-virtual">lsst.ip.isr.isrMock.DefectMock</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_master_mock" prot="public" virt="non-virtual">lsst.ip.isr.isrMock.MasterMock</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_mock" prot="public" virt="non-virtual">lsst.ip.isr.isrMock.RawMock</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_transmission_mock" prot="public" virt="non-virtual">lsst.ip.isr.isrMock.TransmissionMock</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a4ff9533a387afad634e78ac2b9b61d61" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMock::ConfigClass</definition>
+        <argsstring></argsstring>
+        <name>ConfigClass</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.ConfigClass</qualifiedname>
+        <initializer>=  <ref refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config" kindref="compound">IsrMockConfig</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="262" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a88cadc357bd0a1b6cf8c2f8fae867948" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.isrMock.IsrMock::_DefaultName</definition>
+        <argsstring></argsstring>
+        <name>_DefaultName</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock._DefaultName</qualifiedname>
+        <initializer>=  &quot;isrMock&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="263" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a4c4005b783d069f14c987546a7eec0ab" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMock::rng</definition>
+        <argsstring></argsstring>
+        <name>rng</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.rng</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="267" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a1994c56c28e66a4b2efff308bec4c432" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMock::crosstalkCoeffs</definition>
+        <argsstring></argsstring>
+        <name>crosstalkCoeffs</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.crosstalkCoeffs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="268" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1accd4ff45da0aa6ad6e8c0ca8ac9fbe59" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.IsrMock::bfKernel</definition>
+        <argsstring></argsstring>
+        <name>bfKernel</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.bfKernel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="277" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a35068086855cf36162cc91bbb69602a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.__init__</definition>
+        <argsstring>(self, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.__init__</qualifiedname>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_mock_1af7fcf38a46a0c8aae00878cdff6c0406">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_trimmed_raw_mock_1a1e2370e9095000d5f440cb6fc6cb18ce">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_calibrated_raw_mock_1af909640d9aac7d2ae9f8b65c3ca7edf9">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_dict_mock_1a5f36e1dcdb83a4fd555d455cdc2ae12d">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_master_mock_1a44faff0d6e6d81b6bac1737867c3f566">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_bias_mock_1a5c4bf452043e13239a112dcff326df6f">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_dark_mock_1aeea1789e7ae70c7b649c43483f1a823d">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_flat_mock_1ac68f63719f254edea247ca6b4eaa187d">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_fringe_mock_1aedf04c00ad398d6e289d104525839842">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_untrimmed_fringe_mock_1a66a419c7cdb6bdfb534488fef1445cf2">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_bf_kernel_mock_1a24b386fac64bbbd0f891cbe19f9b85f4">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_defect_mock_1afdb99a87722901b32d5d743f95d9c38f">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_crosstalk_coeff_mock_1a374e8753ee6a66be7027ed5595cdeb4b">__init__</reimplementedby>
+        <reimplementedby refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_transmission_mock_1af0731e59a312b31b95f7821eaa4ccb2c">__init__</reimplementedby>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="265" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="265" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a28d5b0cdfba788aae8214673ce2524f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.run</definition>
+        <argsstring>(self)</argsstring>
+        <name>run</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generate a mock ISR product, and return it.
+
+Returns
+-------
+image : `lsst.afw.image.Exposure`
+    Simulated ISR image with signals added.
+dataProduct :
+    Simulated ISR data products.
+None :
+    Returned if no valid configuration was found.
+
+Raises
+------
+RuntimeError
+    Raised if both doGenerateImage and doGenerateData are specified.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="283" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="283" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1aadd1d9a86582a115c1730942f8ad4c7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.makeData</definition>
+        <argsstring>(self)</argsstring>
+        <name>makeData</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.makeData</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generate simulated ISR data.
+
+Currently, only the class defined crosstalk coefficient
+matrix, brighter-fatter kernel, a constant unity transmission
+curve, or a simple single-entry defect list can be generated.
+
+Returns
+-------
+dataProduct :
+    Simulated ISR data product.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="309" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="309" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1ad4a1a26432de47d97e4d4783d7521df1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.makeBfKernel</definition>
+        <argsstring>(self)</argsstring>
+        <name>makeBfKernel</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.makeBfKernel</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generate a simple Gaussian brighter-fatter kernel.
+
+Returns
+-------
+kernel : `numpy.ndarray`
+    Simulated brighter-fatter kernel.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="337" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="337" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a487c11d6f2f0dc3e3e05563e92ca2dd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.makeDefectList</definition>
+        <argsstring>(self)</argsstring>
+        <name>makeDefectList</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.makeDefectList</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generate a simple single-entry defect list.
+
+Returns
+-------
+defectList : `lsst.meas.algorithms.Defects`
+    Simulated defect list
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="347" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="347" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1aaafa0a2bf5ca7c8ca1a2550f320a8238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.makeCrosstalkCoeff</definition>
+        <argsstring>(self)</argsstring>
+        <name>makeCrosstalkCoeff</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.makeCrosstalkCoeff</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generate the simulated crosstalk coefficients.
+
+Returns
+-------
+coeffs : `numpy.ndarray`
+    Simulated crosstalk coefficients.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="358" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="358" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a7382b2e2dadc7ad68a563afbb64e6420" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.makeTransmissionCurve</definition>
+        <argsstring>(self)</argsstring>
+        <name>makeTransmissionCurve</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.makeTransmissionCurve</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generate a simulated flat transmission curve.
+
+Returns
+-------
+transmission : `lsst.afw.image.TransmissionCurve`
+    Simulated transmission curve.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="369" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="369" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a8afcd5dc6aa295a975091df3a3641985" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.makeImage</definition>
+        <argsstring>(self)</argsstring>
+        <name>makeImage</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.makeImage</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generate a simulated ISR image.
+
+Returns
+-------
+exposure : `lsst.afw.image.Exposure` or `dict`
+    Simulated ISR image data.
+
+Notes
+-----
+This method currently constructs a &quot;raw&quot; data image by:
+
+* Generating a simulated sky with noise
+* Adding a single Gaussian &quot;star&quot;
+* Adding the fringe signal
+* Multiplying the frame by the simulated flat
+* Adding dark current (and noise)
+* Adding a bias offset (and noise)
+* Adding an overscan gradient parallel to the pixel y-axis
+* Simulating crosstalk by adding a scaled version of each
+  amplifier to each other amplifier.
+
+The exposure with image data constructed this way is in one of
+three formats.
+
+* A single image, with overscan and prescan regions retained
+* A single image, with overscan and prescan regions trimmed
+* A `dict`, containing the amplifer data indexed by the
+  amplifier name.
+
+The nonlinearity, CTE, and brighter fatter are currently not
+implemented.
+
+Note that this method generates an image in the reverse
+direction as the ISR processing, as the output image here has
+had a series of instrument effects added to an idealized
+exposure.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="380" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="380" bodyend="499"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a8c5a04e070b73b12acb9c2489fca7fd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.getCamera</definition>
+        <argsstring>(self)</argsstring>
+        <name>getCamera</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.getCamera</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a test camera object.
+
+Returns
+-------
+camera : `lsst.afw.cameraGeom.camera`
+    Test camera.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="501" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="501" bodyend="516"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1aab21ebd5e911e58e6d4f6790b30b1341" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.getExposure</definition>
+        <argsstring>(self)</argsstring>
+        <name>getExposure</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.getExposure</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a test exposure.
+
+The test exposure has a simple WCS set, as well as a list of
+unlikely header keywords that can be removed during ISR
+processing to exercise that code.
+
+Returns
+-------
+exposure : `lsst.afw.exposure.Exposure`
+    Construct exposure containing masked image of the
+    appropriate size.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="517" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="517" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1aaa3166d7bc28246f70a9b9fad22bbc2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.getWcs</definition>
+        <argsstring>(self)</argsstring>
+        <name>getWcs</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.getWcs</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a dummy WCS object.
+
+Taken from the deprecated ip_isr/examples/exampleUtils.py.
+
+This is not guaranteed, given the distortion and pixel scale
+listed in the afwTestUtils camera definition.
+
+Returns
+-------
+wcs : `lsst.afw.geom.SkyWcs`
+    Test WCS transform.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="575" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="575" bodyend="591"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1aeebfe64ec49d891019af414f2f89c239" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.localCoordToExpCoord</definition>
+        <argsstring>(self, ampData, x, y)</argsstring>
+        <name>localCoordToExpCoord</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.localCoordToExpCoord</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ampData</type>
+          <defname>ampData</defname>
+        </param>
+        <param>
+          <type><ref refid="_chebyshev_bounded_field_8cc_1af88b946fb90d5f08b5fb740c70e98c10" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">x</ref></type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type><ref refid="_span_set_8cc_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">y</ref></type>
+          <defname>y</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Convert between a local amplifier coordinate and the full
+exposure coordinate.
+
+Parameters
+----------
+ampData : `lsst.afw.image.ImageF`
+    Amplifier image to use for conversions.
+x : `int`
+    X-coordinate of the point to transform.
+y : `int`
+    Y-coordinate of the point to transform.
+
+Returns
+-------
+u : `int`
+    Transformed x-coordinate.
+v : `int`
+    Transformed y-coordinate.
+
+Notes
+-----
+The output is transposed intentionally here, to match the
+internal transpose between numpy and afw.image coordinates.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="592" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="592" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a4ff44115091597d7cf33d72c01fe4346" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.amplifierAddNoise</definition>
+        <argsstring>(self, ampData, mean, sigma)</argsstring>
+        <name>amplifierAddNoise</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.amplifierAddNoise</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ampData</type>
+          <defname>ampData</defname>
+        </param>
+        <param>
+          <type>mean</type>
+          <defname>mean</defname>
+        </param>
+        <param>
+          <type><ref refid="_gaussian_psf_8cc_1a4e16839fa273d5b6d34598933d29fa67" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">sigma</ref></type>
+          <defname>sigma</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Add Gaussian noise to an amplifier&apos;s image data.
+
+ This method operates in the amplifier coordinate frame.
+
+Parameters
+----------
+ampData : `lsst.afw.image.ImageF`
+    Amplifier image to operate on.
+mean : `float`
+    Mean value of the Gaussian noise.
+sigma : `float`
+    Sigma of the Gaussian noise.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="623" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="623" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a52f38ab793b65f16d628f1425b4cd388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.amplifierAddYGradient</definition>
+        <argsstring>(self, ampData, start, end)</argsstring>
+        <name>amplifierAddYGradient</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.amplifierAddYGradient</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ampData</type>
+          <defname>ampData</defname>
+        </param>
+        <param>
+          <type>start</type>
+          <defname>start</defname>
+        </param>
+        <param>
+          <type><ref refid="_bounded_field_8cc_1abce9f5dc9c83f2639b72024fdee5d388" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">end</ref></type>
+          <defname>end</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Add a y-axis linear gradient to an amplifier&apos;s image data.
+
+ This method operates in the amplifier coordinate frame.
+
+Parameters
+----------
+ampData : `lsst.afw.image.ImageF`
+    Amplifier image to operate on.
+start : `float`
+    Start value of the gradient (at y=0).
+end : `float`
+    End value of the gradient (at y=ymax).
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="641" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="641" bodyend="659"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a208219385859843f4d0baccb72359ef0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.amplifierAddSource</definition>
+        <argsstring>(self, ampData, scale, x0, y0)</argsstring>
+        <name>amplifierAddSource</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.amplifierAddSource</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ampData</type>
+          <defname>ampData</defname>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1afw_1_1display_1_1ds9_1a7523e1cf2b89c74e636a088cb35a93aa" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">scale</ref></type>
+          <defname>scale</defname>
+        </param>
+        <param>
+          <type>x0</type>
+          <defname>x0</defname>
+        </param>
+        <param>
+          <type>y0</type>
+          <defname>y0</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Add a single Gaussian source to an amplifier.
+
+ This method operates in the amplifier coordinate frame.
+
+Parameters
+----------
+ampData : `lsst.afw.image.ImageF`
+    Amplifier image to operate on.
+scale : `float`
+    Peak flux of the source to add.
+x0 : `float`
+    X-coordinate of the source peak.
+y0 : `float`
+    Y-coordinate of the source peak.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="660" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="660" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a8d3729cdce29f489f0ddf28c5ed20087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.amplifierAddCT</definition>
+        <argsstring>(self, ampDataSource, ampDataTarget, scale)</argsstring>
+        <name>amplifierAddCT</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.amplifierAddCT</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ampDataSource</type>
+          <defname>ampDataSource</defname>
+        </param>
+        <param>
+          <type>ampDataTarget</type>
+          <defname>ampDataTarget</defname>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1afw_1_1display_1_1ds9_1a7523e1cf2b89c74e636a088cb35a93aa" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">scale</ref></type>
+          <defname>scale</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Add a scaled copy of an amplifier to another, simulating crosstalk.
+
+ This method operates in the amplifier coordinate frame.
+
+Parameters
+----------
+ampDataSource : `lsst.afw.image.ImageF`
+    Amplifier image to add scaled copy from.
+ampDataTarget : `lsst.afw.image.ImageF`
+    Amplifier image to add scaled copy to.
+scale : `float`
+    Flux scale of the copy to add to the target.
+
+Notes
+-----
+This simulates simple crosstalk between amplifiers.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="681" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="681" bodyend="701"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1abe47753cee501bef4f9b6336130ffb93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.amplifierAddFringe</definition>
+        <argsstring>(self, amp, ampData, scale, x0=100, y0=0)</argsstring>
+        <name>amplifierAddFringe</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.amplifierAddFringe</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>amp</type>
+          <defname>amp</defname>
+        </param>
+        <param>
+          <type>ampData</type>
+          <defname>ampData</defname>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1afw_1_1display_1_1ds9_1a7523e1cf2b89c74e636a088cb35a93aa" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">scale</ref></type>
+          <defname>scale</defname>
+        </param>
+        <param>
+          <type>x0</type>
+          <defname>x0</defname>
+          <defval>100</defval>
+        </param>
+        <param>
+          <type>y0</type>
+          <defname>y0</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Add a fringe-like ripple pattern to an amplifier&apos;s image data.
+
+Parameters
+----------
+amp : `~lsst.afw.ampInfo.AmpInfoRecord`
+    Amplifier to operate on. Needed for amp&lt;-&gt;exp coordinate
+    transforms.
+ampData : `lsst.afw.image.ImageF`
+    Amplifier image to operate on.
+scale : `numpy.array` or `float`
+    Peak intensity scaling for the ripple.
+x0 : `numpy.array` or `float`, optional
+    Fringe center
+y0 : `numpy.array` or `float`, optional
+    Fringe center
+
+Notes
+-----
+This uses an offset sinc function to generate a ripple
+pattern. True fringes have much finer structure, but this
+pattern should be visually identifiable. The (x, y)
+coordinates are in the frame of the amplifier, and (u, v) in
+the frame of the full trimmed image.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="703" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="703" bodyend="734"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1aaa1e5c24fa6529ffb6b2ed91419060ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.IsrMock.amplifierMultiplyFlat</definition>
+        <argsstring>(self, amp, ampData, fracDrop, u0=100.0, v0=100.0)</argsstring>
+        <name>amplifierMultiplyFlat</name>
+        <qualifiedname>lsst::ip::isr.isrMock.IsrMock.amplifierMultiplyFlat</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>amp</type>
+          <defname>amp</defname>
+        </param>
+        <param>
+          <type>ampData</type>
+          <defname>ampData</defname>
+        </param>
+        <param>
+          <type>fracDrop</type>
+          <defname>fracDrop</defname>
+        </param>
+        <param>
+          <type>u0</type>
+          <defname>u0</defname>
+          <defval>100.0</defval>
+        </param>
+        <param>
+          <type>v0</type>
+          <defname>v0</defname>
+          <defval>100.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Multiply an amplifier&apos;s image data by a flat-like pattern.
+
+Parameters
+----------
+amp : `lsst.afw.ampInfo.AmpInfoRecord`
+    Amplifier to operate on. Needed for amp&lt;-&gt;exp coordinate
+    transforms.
+ampData : `lsst.afw.image.ImageF`
+    Amplifier image to operate on.
+fracDrop : `float`
+    Fractional drop from center to edge of detector along x-axis.
+u0 : `float`
+    Peak location in detector coordinates.
+v0 : `float`
+    Peak location in detector coordinates.
+
+Notes
+-----
+This uses a 2-d Gaussian to simulate an illumination pattern
+that falls off towards the edge of the detector. The (x, y)
+coordinates are in the frame of the amplifier, and (u, v) in
+the frame of the full trimmed image.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="735" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="735" bodyend="770"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class to generate consistent mock images for ISR testing.
+
+ISR testing currently relies on one-off fake images that do not
+accurately mimic the full set of detector effects. This class
+uses the test camera/detector/amplifier structure defined in
+`lsst.afw.cameraGeom.testUtils` to avoid making the test data
+dependent on any of the actual obs package formats.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrMock.IsrMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lsst.ip.isr.isrMock.BfKernelMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_bf_kernel_mock"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lsst.ip.isr.isrMock.BiasMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_bias_mock"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>lsst.ip.isr.isrMock.CalibratedRawMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_calibrated_raw_mock"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lsst.ip.isr.isrMock.CrosstalkCoeffMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_crosstalk_coeff_mock"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lsst.ip.isr.isrMock.DarkMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_dark_mock"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lsst.ip.isr.isrMock.DefectMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_defect_mock"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>lsst.ip.isr.isrMock.FlatMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_flat_mock"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>lsst.ip.isr.isrMock.FringeMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_fringe_mock"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lsst.ip.isr.isrMock.MasterMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_master_mock"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>lsst.ip.isr.isrMock.RawDictMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_dict_mock"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>lsst.ip.isr.isrMock.RawMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_mock"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>lsst.ip.isr.isrMock.TransmissionMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_transmission_mock"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>lsst.ip.isr.isrMock.TrimmedRawMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_trimmed_raw_mock"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>lsst.ip.isr.isrMock.UntrimmedFringeMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_untrimmed_fringe_mock"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pipeBase.Task</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrMock.IsrMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pipeBase.Task</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/isrMock.py" line="253" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="253" bodyend="770"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a35068086855cf36162cc91bbb69602a2" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a88cadc357bd0a1b6cf8c2f8fae867948" prot="private" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>_DefaultName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a8d3729cdce29f489f0ddf28c5ed20087" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>amplifierAddCT</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1abe47753cee501bef4f9b6336130ffb93" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>amplifierAddFringe</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a4ff44115091597d7cf33d72c01fe4346" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>amplifierAddNoise</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a208219385859843f4d0baccb72359ef0" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>amplifierAddSource</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a52f38ab793b65f16d628f1425b4cd388" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>amplifierAddYGradient</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1aaa1e5c24fa6529ffb6b2ed91419060ad" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>amplifierMultiplyFlat</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1accd4ff45da0aa6ad6e8c0ca8ac9fbe59" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>bfKernel</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a4ff9533a387afad634e78ac2b9b61d61" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>ConfigClass</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a1994c56c28e66a4b2efff308bec4c432" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>crosstalkCoeffs</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a8c5a04e070b73b12acb9c2489fca7fd5" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>getCamera</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1aab21ebd5e911e58e6d4f6790b30b1341" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>getExposure</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1aaa3166d7bc28246f70a9b9fad22bbc2c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>getWcs</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1aeebfe64ec49d891019af414f2f89c239" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>localCoordToExpCoord</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1ad4a1a26432de47d97e4d4783d7521df1" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>makeBfKernel</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1aaafa0a2bf5ca7c8ca1a2550f320a8238" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>makeCrosstalkCoeff</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1aadd1d9a86582a115c1730942f8ad4c7c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>makeData</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a487c11d6f2f0dc3e3e05563e92ca2dd6" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>makeDefectList</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a8afcd5dc6aa295a975091df3a3641985" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>makeImage</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a7382b2e2dadc7ad68a563afbb64e6420" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>makeTransmissionCurve</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a4c4005b783d069f14c987546a7eec0ab" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>rng</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a28d5b0cdfba788aae8214673ce2524f7" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::IsrMock</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

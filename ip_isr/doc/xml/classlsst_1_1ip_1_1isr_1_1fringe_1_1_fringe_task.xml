@@ -1,0 +1,493 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::fringe::FringeTask</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Task</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1a08071142638e1e3456d813499d66069f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.fringe.FringeTask::ConfigClass</definition>
+        <argsstring></argsstring>
+        <name>ConfigClass</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeTask.ConfigClass</qualifiedname>
+        <initializer>=  <ref refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config" kindref="compound">FringeConfig</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="82" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1a06ee4652d47d1c7529a1dd364479f56f" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.fringe.FringeTask::_DefaultName</definition>
+        <argsstring></argsstring>
+        <name>_DefaultName</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeTask._DefaultName</qualifiedname>
+        <initializer>=  &apos;isrFringe&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="83" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1a7a128f2d84fb2a00dab9aa11eda74936" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.fringe.FringeTask.loadFringes</definition>
+        <argsstring>(self, fringeExp, expId=None, assembler=None)</argsstring>
+        <name>loadFringes</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeTask.loadFringes</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fringeExp</type>
+          <defname>fringeExp</defname>
+        </param>
+        <param>
+          <type>expId</type>
+          <defname>expId</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>assembler</type>
+          <defname>assembler</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Pack the fringe data into a Struct.
+
+This method moves the struct parsing code into a butler
+generation agnostic handler.
+
+Parameters
+----------
+fringeExp : `lsst.afw.exposure.Exposure`
+    The exposure containing the fringe data.
+expId : `int`, optional
+    Exposure id to be fringe corrected, used to set RNG seed.
+assembler : `lsst.ip.isr.AssembleCcdTask`, optional
+    An instance of AssembleCcdTask (for assembling fringe
+    frames).
+
+Returns
+-------
+fringeData : `pipeBase.Struct`
+    Struct containing fringe data:
+
+    ``fringes``
+        Calibration fringe files containing master fringe frames.
+        ( : `lsst.afw.image.Exposure` or `list` thereof)
+    ``seed``
+        Seed for random number generation. (`int`, optional)
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="85" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="85" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1aa6a015cc5bc6941efb8fd62bacaa7571" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.fringe.FringeTask.run</definition>
+        <argsstring>(self, exposure, fringes, seed=None)</argsstring>
+        <name>run</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeTask.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>fringes</type>
+          <defname>fringes</defname>
+        </param>
+        <param>
+          <type>seed</type>
+          <defname>seed</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Remove fringes from the provided science exposure.
+
+Primary method of FringeTask.  Fringes are only subtracted if the
+science exposure has a filter listed in the configuration.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Science exposure from which to remove fringes.
+fringes : `lsst.afw.image.Exposure` or `list` thereof
+    Calibration fringe files containing master fringe frames.
+seed : `int`, optional
+    Seed for random number generation.
+
+Returns
+-------
+solution : `np.array`
+    Fringe solution amplitudes for each input fringe frame.
+rms : `float`
+    RMS error for the fit solution for this exposure.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="129" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="129" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1adb6d5a7d6f04ca4fefd19b445655f0a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.fringe.FringeTask.checkFilter</definition>
+        <argsstring>(self, exposure)</argsstring>
+        <name>checkFilter</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeTask.checkFilter</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Check whether we should fringe-subtract the science exposure.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to check the filter of.
+
+Returns
+-------
+needsFringe : `bool`
+    If True, then the exposure has a filter listed in the
+    configuration, and should have the fringe applied.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="183" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="183" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1a80477faf0f826f254089bfbbb3e001d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.fringe.FringeTask.removePedestal</definition>
+        <argsstring>(self, fringe)</argsstring>
+        <name>removePedestal</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeTask.removePedestal</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fringe</type>
+          <defname>fringe</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Remove pedestal from fringe exposure.
+
+Parameters
+----------
+fringe : `lsst.afw.image.Exposure`
+    Fringe data to subtract the pedestal value from.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="199" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="199" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1a9079289402152269f05c333ab76bdc72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.fringe.FringeTask.generatePositions</definition>
+        <argsstring>(self, exposure, rng)</argsstring>
+        <name>generatePositions</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeTask.generatePositions</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>rng</type>
+          <defname>rng</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generate a random distribution of positions for measuring fringe
+amplitudes.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to measure the positions on.
+rng : `numpy.random.RandomState`
+    Random number generator to use.
+
+Returns
+-------
+positions : `numpy.array`
+    Two-dimensional array containing the positions to sample
+    for fringe amplitudes.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="215" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="215" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1a480c19087f08cea512177970f26411b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.fringe.FringeTask.measureExposure</definition>
+        <argsstring>(self, exposure, positions, title=&quot;Fringe&quot;)</argsstring>
+        <name>measureExposure</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeTask.measureExposure</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>positions</type>
+          <defname>positions</defname>
+        </param>
+        <param>
+          <type>title</type>
+          <defname>title</defname>
+          <defval>&quot;Fringe&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Measure fringe amplitudes for an exposure
+
+The fringe amplitudes are measured as the statistic within a square
+aperture.  The statistic within a larger aperture are subtracted so
+as to remove the background.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to measure the positions on.
+positions : `numpy.array`
+    Two-dimensional array containing the positions to sample
+    for fringe amplitudes.
+title : `str`, optional
+    Title used for debug out plots.
+
+Returns
+-------
+fringes : `numpy.array`
+    Array of measured exposure values at each of the positions
+    supplied.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="240" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="240" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1a21044ad44b973fcafb52358901294754" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.fringe.FringeTask.solve</definition>
+        <argsstring>(self, science, fringes)</argsstring>
+        <name>solve</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeTask.solve</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>science</type>
+          <defname>science</defname>
+        </param>
+        <param>
+          <type>fringes</type>
+          <defname>fringes</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Solve for the scale factors with iterative clipping.
+
+Parameters
+----------
+science : `numpy.array`
+    Array of measured science image values at each of the
+    positions supplied.
+fringes : `numpy.array`
+    Array of measured fringe values at each of the positions
+    supplied.
+
+Returns
+-------
+solution : `np.array`
+    Fringe solution amplitudes for each input fringe frame.
+rms : `float`
+    RMS error for the fit solution for this exposure.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="292" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="292" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1a7a97be64ff3d0a1d4786a95332f53cc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.fringe.FringeTask.subtract</definition>
+        <argsstring>(self, science, fringes, solution)</argsstring>
+        <name>subtract</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeTask.subtract</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>science</type>
+          <defname>science</defname>
+        </param>
+        <param>
+          <type>fringes</type>
+          <defname>fringes</defname>
+        </param>
+        <param>
+          <type>solution</type>
+          <defname>solution</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Subtract the fringes.
+
+Parameters
+----------
+science : `lsst.afw.image.Exposure`
+    Science exposure from which to remove fringes.
+fringes : `lsst.afw.image.Exposure` or `list` thereof
+    Calibration fringe files containing master fringe frames.
+solution : `np.array`
+    Fringe solution amplitudes for each input fringe frame.
+
+Raises
+------
+RuntimeError
+    Raised if the number of fringe frames does not match the
+    number of measured amplitudes.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="427" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="427" bodyend="454"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1ac0a6331a47aa1b33430bdfaf08e5dd6c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.fringe.FringeTask._solve</definition>
+        <argsstring>(self, science, fringes)</argsstring>
+        <name>_solve</name>
+        <qualifiedname>lsst::ip::isr.fringe.FringeTask._solve</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>science</type>
+          <defname>science</defname>
+        </param>
+        <param>
+          <type>fringes</type>
+          <defname>fringes</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Solve for the scale factors.
+
+Parameters
+----------
+science : `numpy.array`
+    Array of measured science image values at each of the
+    positions supplied.
+fringes : `numpy.array`
+    Array of measured fringe values at each of the positions
+    supplied.
+
+Returns
+-------
+solution : `np.array`
+    Fringe solution amplitudes for each input fringe frame.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="407" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="407" bodyend="426"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Task to remove fringes from a science exposure
+
+We measure fringe amplitudes at random positions on the science exposure
+and at the same positions on the (potentially multiple) fringe frames
+and solve for the scales simultaneously.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.fringe.FringeTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Task</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.fringe.FringeTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Task</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/fringe.py" line="75" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="75" bodyend="454"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1a06ee4652d47d1c7529a1dd364479f56f" prot="private" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeTask</scope><name>_DefaultName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1ac0a6331a47aa1b33430bdfaf08e5dd6c" prot="private" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeTask</scope><name>_solve</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1adb6d5a7d6f04ca4fefd19b445655f0a2" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeTask</scope><name>checkFilter</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1a08071142638e1e3456d813499d66069f" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeTask</scope><name>ConfigClass</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1a9079289402152269f05c333ab76bdc72" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeTask</scope><name>generatePositions</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1a7a128f2d84fb2a00dab9aa11eda74936" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeTask</scope><name>loadFringes</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1a480c19087f08cea512177970f26411b8" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeTask</scope><name>measureExposure</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1a80477faf0f826f254089bfbbb3e001d2" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeTask</scope><name>removePedestal</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1aa6a015cc5bc6941efb8fd62bacaa7571" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeTask</scope><name>run</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1a21044ad44b973fcafb52358901294754" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeTask</scope><name>solve</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task_1a7a97be64ff3d0a1d4786a95332f53cc8" prot="public" virt="non-virtual"><scope>lsst::ip::isr::fringe::FringeTask</scope><name>subtract</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

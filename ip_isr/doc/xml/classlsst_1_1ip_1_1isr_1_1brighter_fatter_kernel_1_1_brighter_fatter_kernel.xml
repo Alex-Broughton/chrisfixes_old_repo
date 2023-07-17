@@ -1,0 +1,806 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IsrCalib</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1af3e814be2f14469c29e8338be34dbcdc" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::_OBSTYPE</definition>
+        <argsstring></argsstring>
+        <name>_OBSTYPE</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel._OBSTYPE</qualifiedname>
+        <initializer>=  &apos;bfk&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="98" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a5a0bfc048ee4dd4226ae3b3acdb927af" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::_SCHEMA</definition>
+        <argsstring></argsstring>
+        <name>_SCHEMA</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel._SCHEMA</qualifiedname>
+        <initializer>=  &apos;Brighter-fatter kernel&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="99" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a620e706f0be17dbf1bb96f9d64d9f846" prot="private" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::_VERSION</definition>
+        <argsstring></argsstring>
+        <name>_VERSION</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel._VERSION</qualifiedname>
+        <initializer>=  1.1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="100" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a920ed06bb5bf961100470d899d848dc5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.level</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="103" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a54889ad029f8c4e7058d416beafd0ecb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::expIdMask</definition>
+        <argsstring></argsstring>
+        <name>expIdMask</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.expIdMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="106" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1af7cadcb6255a1a6e76a46d09adbd2d3f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::rawMeans</definition>
+        <argsstring></argsstring>
+        <name>rawMeans</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.rawMeans</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="107" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a2873bccff855be875c1d9f7f7f779273" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::rawVariances</definition>
+        <argsstring></argsstring>
+        <name>rawVariances</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.rawVariances</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="108" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a6ff85a572f6470e3bd07c6fdd1116ebf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::rawXcorrs</definition>
+        <argsstring></argsstring>
+        <name>rawXcorrs</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.rawXcorrs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="109" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a74ab11e88ea7ac530cb7cd379f534c74" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::badAmps</definition>
+        <argsstring></argsstring>
+        <name>badAmps</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.badAmps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="110" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1afc7512a3402778014de25b200b2a6c8d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.shape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="111" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1ade5cd0955be01d8864a5883bf6917849" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.gain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="112" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a6023047780897e147f15c01182cd17fe" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::noise</definition>
+        <argsstring></argsstring>
+        <name>noise</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.noise</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="113" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a7c777594c6034307524d893e992d6594" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::meanXcorrs</definition>
+        <argsstring></argsstring>
+        <name>meanXcorrs</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.meanXcorrs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="116" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1adde3ce23227897c603c9a15f7e43256c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::valid</definition>
+        <argsstring></argsstring>
+        <name>valid</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.valid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="117" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a4cd7df8e30c23eabad61c6e99d095c69" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::ampKernels</definition>
+        <argsstring></argsstring>
+        <name>ampKernels</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.ampKernels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="120" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a3f500e8b80af1049b474592c6c2cf2cb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::detKernels</definition>
+        <argsstring></argsstring>
+        <name>detKernels</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.detKernels</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="121" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a026591f262dc28fcfe4c4ac16be15c67" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::_instrument</definition>
+        <argsstring></argsstring>
+        <name>_instrument</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel._instrument</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="173" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a711ea1585bcdad5c2f4f09e63f240b21" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::_detectorId</definition>
+        <argsstring></argsstring>
+        <name>_detectorId</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel._detectorId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="177" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1ab5ca2b8672ebf66d81754186797f62a3" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::_detectorName</definition>
+        <argsstring></argsstring>
+        <name>_detectorName</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel._detectorName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="178" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a53fffac4f92afbebf056009cf2340c96" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel::_detectorSerial</definition>
+        <argsstring></argsstring>
+        <name>_detectorSerial</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel._detectorSerial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="179" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a1c096ce9fa01a675e551117f6c3ff3a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.brighterFatterKernel.BrighterFatterKernel.__init__</definition>
+        <argsstring>(self, camera=None, level=None, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>camera</type>
+          <defname>camera</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a920ed06bb5bf961100470d899d848dc5" kindref="member">level</ref></type>
+          <defname>level</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="102" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="102" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a6a485d3c51f279846f636ac507554aa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.brighterFatterKernel.BrighterFatterKernel.updateMetadata</definition>
+        <argsstring>(self, setDate=False, **kwargs)</argsstring>
+        <name>updateMetadata</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.updateMetadata</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>setDate</type>
+          <defname>setDate</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update calibration metadata.
+
+This calls the base class&apos;s method after ensuring the required
+calibration keywords will be saved.
+
+Parameters
+----------
+setDate : `bool`, optional
+    Update the CALIBDATE fields in the metadata to the current
+    time. Defaults to False.
+kwargs :
+    Other keyword parameters to set in the metadata.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="132" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="132" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a5dceaeea5d5c2dcfb0968e836c9a2cfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.brighterFatterKernel.BrighterFatterKernel.initFromCamera</definition>
+        <argsstring>(self, camera, detectorId=None)</argsstring>
+        <name>initFromCamera</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.initFromCamera</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>camera</type>
+          <defname>camera</defname>
+        </param>
+        <param>
+          <type>detectorId</type>
+          <defname>detectorId</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialize kernel structure from camera.
+
+Parameters
+----------
+camera : `lsst.afw.cameraGeom.Camera`
+    Camera to use to define geometry.
+detectorId : `int`, optional
+    Index of the detector to generate.
+
+Returns
+-------
+calib : `lsst.ip.isr.BrighterFatterKernel`
+    The initialized calibration.
+
+Raises
+------
+RuntimeError
+    Raised if no detectorId is supplied for a calibration with
+    ``level=&apos;AMP&apos;``.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="152" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="152" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a8e652cf6ffca80e05c53906270f41b14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.brighterFatterKernel.BrighterFatterKernel.getLengths</definition>
+        <argsstring>(self)</argsstring>
+        <name>getLengths</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.getLengths</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the set of lengths needed for reshaping components.
+
+Returns
+-------
+kernelLength : `int`
+    Product of the elements of self.shape.
+smallLength : `int`
+    Size of an untiled covariance.
+nObs : `int`
+    Number of observation pairs used in the kernel.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="208" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="208" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1adafc0c9517f6d06a482e0e7741b38f4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.brighterFatterKernel.BrighterFatterKernel.fromDict</definition>
+        <argsstring>(cls, dictionary)</argsstring>
+        <name>fromDict</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.fromDict</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>dictionary</type>
+          <defname>dictionary</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a calibration from a dictionary of properties.
+
+Parameters
+----------
+dictionary : `dict`
+    Dictionary of properties.
+
+Returns
+-------
+calib : `lsst.ip.isr.BrighterFatterKernel`
+    Constructed calibration.
+
+Raises
+------
+RuntimeError
+    Raised if the supplied dictionary is for a different
+    calibration.
+    Raised if the version of the supplied dictionary is 1.0.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="233" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="233" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a6cb3d79c7cabd21e7fe3191841f029dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.brighterFatterKernel.BrighterFatterKernel.toDict</definition>
+        <argsstring>(self)</argsstring>
+        <name>toDict</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.toDict</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a dictionary containing the calibration properties.
+
+The dictionary should be able to be round-tripped through
+`fromDict`.
+
+Returns
+-------
+dictionary : `dict`
+    Dictionary of properties.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="312" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="312" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a4e4ebf58c4aa4805b95a21c13d375ee5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.brighterFatterKernel.BrighterFatterKernel.fromTable</definition>
+        <argsstring>(cls, tableList)</argsstring>
+        <name>fromTable</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.fromTable</qualifiedname>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>tableList</type>
+          <defname>tableList</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct calibration from a list of tables.
+
+This method uses the `fromDict` method to create the
+calibration, after constructing an appropriate dictionary from
+the input tables.
+
+Parameters
+----------
+tableList : `list` [`astropy.table.Table`]
+    List of tables to use to construct the brighter-fatter
+    calibration.
+
+Returns
+-------
+calib : `lsst.ip.isr.BrighterFatterKernel`
+    The calibration defined in the tables.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="366" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="366" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1ac22696207edaf553ef7ae51f6c106fd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.brighterFatterKernel.BrighterFatterKernel.toTable</definition>
+        <argsstring>(self)</argsstring>
+        <name>toTable</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.toTable</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a list of tables containing the information in this
+calibration.
+
+The list of tables should create an identical calibration
+after being passed to this class&apos;s fromTable method.
+
+Returns
+-------
+tableList : `list` [`lsst.afw.table.Table`]
+    List of tables containing the crosstalk calibration
+    information.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="445" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="445" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a89e6511f5b175629f4376aa17499ea3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.brighterFatterKernel.BrighterFatterKernel.repackCorrelations</definition>
+        <argsstring>(self, amp, correlationShape)</argsstring>
+        <name>repackCorrelations</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.repackCorrelations</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>amp</type>
+          <defname>amp</defname>
+        </param>
+        <param>
+          <type>correlationShape</type>
+          <defname>correlationShape</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>If the correlations were masked, they need to be repacked into the
+correct shape.
+
+Parameters
+----------
+amp : `str`
+    Amplifier needing repacked.
+correlationShape : `tuple` [`int`], (3, )
+    Shape the correlations are expected to take.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="531" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="531" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1aec9d62cc7ddbaa872d006dbce6042a01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.brighterFatterKernel.BrighterFatterKernel.makeDetectorKernelFromAmpwiseKernels</definition>
+        <argsstring>(self, detectorName, ampsToExclude=[])</argsstring>
+        <name>makeDetectorKernelFromAmpwiseKernels</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.makeDetectorKernelFromAmpwiseKernels</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="_transform_map_8cc_1ae66f8083328e65061fea1b106dfe2287" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">detectorName</ref></type>
+          <defname>detectorName</defname>
+        </param>
+        <param>
+          <type>ampsToExclude</type>
+          <defname>ampsToExclude</defname>
+          <defval>[]</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Average the amplifier level kernels to create a detector level
+kernel.  There is no change in index ordering/orientation from
+this averaging.
+
+Parameters
+----------
+detectorName : `str`
+    Detector for which the averaged kernel will be used.
+ampsToExclude : `list` [`str`], optional
+    Amps that should not be included in the average.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="553" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="553" bodyend="576"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a76929064fe3c55ad9d961cb650b12d8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.brighterFatterKernel.BrighterFatterKernel.replaceDetectorKernelWithAmpKernel</definition>
+        <argsstring>(self, ampName, detectorName)</argsstring>
+        <name>replaceDetectorKernelWithAmpKernel</name>
+        <qualifiedname>lsst::ip::isr.brighterFatterKernel.BrighterFatterKernel.replaceDetectorKernelWithAmpKernel</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ampName</type>
+          <defname>ampName</defname>
+        </param>
+        <param>
+          <type><ref refid="_transform_map_8cc_1ae66f8083328e65061fea1b106dfe2287" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">detectorName</ref></type>
+          <defname>detectorName</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="577" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="577" bodyend="579"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Calibration of brighter-fatter kernels for an instrument.
+
+ampKernels are the kernels for each amplifier in a detector, as
+generated by having ``level == &apos;AMP&apos;``.
+
+detectorKernel is the kernel generated for a detector as a
+whole, as generated by having ``level == &apos;DETECTOR&apos;``.
+
+makeDetectorKernelFromAmpwiseKernels is a method to generate the
+kernel for a detector, constructed by averaging together the
+ampwise kernels in the detector.  The existing application code is
+only defined for kernels with ``level == &apos;DETECTOR&apos;``, so this method
+is used if the supplied kernel was built with ``level == &apos;AMP&apos;``.
+
+Parameters
+----------
+camera : `lsst.afw.cameraGeom.Camera`
+    Camera describing detector geometry.
+level : `str`
+    Level the kernels will be generated for.
+log : `logging.Logger`, optional
+    Log to write messages to.
+**kwargs :
+    Parameters to pass to parent constructor.
+
+Notes
+-----
+Version 1.1 adds the `expIdMask` property, and substitutes
+`means` and `variances` for `rawMeans` and `rawVariances`
+from the PTC dataset.
+
+expIdMask : `dict`, [`str`,`numpy.ndarray`]
+    Dictionary keyed by amp names containing the mask produced after
+    outlier rejection.
+rawMeans : `dict`, [`str`, `numpy.ndarray`]
+    Dictionary keyed by amp names containing the unmasked average of the
+    means of the exposures in each flat pair.
+rawVariances : `dict`, [`str`, `numpy.ndarray`]
+    Dictionary keyed by amp names containing the variance of the
+    difference image of the exposures in each flat pair.
+    Corresponds to rawVars of PTC.
+rawXcorrs : `dict`, [`str`, `numpy.ndarray`]
+    Dictionary keyed by amp names containing an array of measured
+    covariances per mean flux.
+    Corresponds to covariances of PTC.
+badAmps : `list`
+    List of bad amplifiers names.
+shape : `tuple`
+    Tuple of the shape of the BFK kernels.
+gain : `dict`, [`str`,`float`]
+    Dictionary keyed by amp names containing the fitted gains.
+noise : `dict`, [`str`,`float`]
+    Dictionary keyed by amp names containing the fitted noise.
+meanXcorrs : `dict`, [`str`,`numpy.ndarray`]
+    Dictionary keyed by amp names containing the averaged
+    cross-correlations.
+valid : `dict`, [`str`,`bool`]
+    Dictionary keyed by amp names containing validity of data.
+ampKernels : `dict`, [`str`, `numpy.ndarray`]
+    Dictionary keyed by amp names containing the BF kernels.
+detKernels : `dict`
+    Dictionary keyed by detector names containing the BF kernels.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IsrCalib</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.brighterFatterKernel.BrighterFatterKernel</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IsrCalib</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.brighterFatterKernel.BrighterFatterKernel</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/brighterFatterKernel.py" line="34" column="1" bodyfile="python/lsst/ip/isr/brighterFatterKernel.py" bodystart="34" bodyend="579"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a1c096ce9fa01a675e551117f6c3ff3a5" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a711ea1585bcdad5c2f4f09e63f240b21" prot="private" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>_detectorId</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1ab5ca2b8672ebf66d81754186797f62a3" prot="private" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>_detectorName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a53fffac4f92afbebf056009cf2340c96" prot="private" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>_detectorSerial</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a026591f262dc28fcfe4c4ac16be15c67" prot="private" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>_instrument</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1af3e814be2f14469c29e8338be34dbcdc" prot="private" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>_OBSTYPE</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a5a0bfc048ee4dd4226ae3b3acdb927af" prot="private" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>_SCHEMA</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a620e706f0be17dbf1bb96f9d64d9f846" prot="private" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>_VERSION</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a4cd7df8e30c23eabad61c6e99d095c69" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>ampKernels</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a74ab11e88ea7ac530cb7cd379f534c74" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>badAmps</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a3f500e8b80af1049b474592c6c2cf2cb" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>detKernels</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a54889ad029f8c4e7058d416beafd0ecb" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>expIdMask</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1adafc0c9517f6d06a482e0e7741b38f4f" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>fromDict</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a4e4ebf58c4aa4805b95a21c13d375ee5" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>fromTable</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1ade5cd0955be01d8864a5883bf6917849" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>gain</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a8e652cf6ffca80e05c53906270f41b14" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>getLengths</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a5dceaeea5d5c2dcfb0968e836c9a2cfd" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>initFromCamera</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a920ed06bb5bf961100470d899d848dc5" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>level</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1aec9d62cc7ddbaa872d006dbce6042a01" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>makeDetectorKernelFromAmpwiseKernels</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a7c777594c6034307524d893e992d6594" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>meanXcorrs</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a6023047780897e147f15c01182cd17fe" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>noise</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1af7cadcb6255a1a6e76a46d09adbd2d3f" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>rawMeans</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a2873bccff855be875c1d9f7f7f779273" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>rawVariances</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a6ff85a572f6470e3bd07c6fdd1116ebf" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>rawXcorrs</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a89e6511f5b175629f4376aa17499ea3d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>repackCorrelations</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a76929064fe3c55ad9d961cb650b12d8d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>replaceDetectorKernelWithAmpKernel</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1afc7512a3402778014de25b200b2a6c8d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>shape</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a6cb3d79c7cabd21e7fe3191841f029dd" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>toDict</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1ac22696207edaf553ef7ae51f6c106fd0" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>toTable</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1a6a485d3c51f279846f636ac507554aa0" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>updateMetadata</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1brighter_fatter_kernel_1_1_brighter_fatter_kernel_1adde3ce23227897c603c9a15f7e43256c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::brighterFatterKernel::BrighterFatterKernel</scope><name>valid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacelsst_1_1ip_1_1isr_1_1deferred_charge" kind="namespace" language="Python">
+    <compoundname>lsst::ip::isr::deferredCharge</compoundname>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_calib" prot="public">lsst::ip::isr::deferredCharge::DeferredChargeCalib</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_config" prot="public">lsst::ip::isr::deferredCharge::DeferredChargeConfig</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task" prot="public">lsst::ip::isr::deferredCharge::DeferredChargeTask</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap" prot="public">lsst::ip::isr::deferredCharge::SerialTrap</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelsst_1_1ip_1_1isr_1_1deferred_charge_1a8363f5594013869019dca614d51f6100" prot="private" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lsst::ip::isr::deferredCharge.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.__all__</qualifiedname>
+        <initializer>=  (&apos;<ref refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_config" kindref="compound">DeferredChargeConfig</ref>&apos;, &apos;<ref refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task" kindref="compound">DeferredChargeTask</ref>&apos;, &apos;<ref refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_serial_trap" kindref="compound">SerialTrap</ref>&apos;, &apos;<ref refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_calib" kindref="compound">DeferredChargeCalib</ref>&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="22" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="python/lsst/ip/isr/deferredCharge.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

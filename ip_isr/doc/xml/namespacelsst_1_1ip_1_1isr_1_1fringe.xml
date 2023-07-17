@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacelsst_1_1ip_1_1isr_1_1fringe" kind="namespace" language="Python">
+    <compoundname>lsst::ip::isr::fringe</compoundname>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_config" prot="public">lsst::ip::isr::fringe::FringeConfig</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_statistics_config" prot="public">lsst::ip::isr::fringe::FringeStatisticsConfig</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1fringe_1_1_fringe_task" prot="public">lsst::ip::isr::fringe::FringeTask</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelsst_1_1ip_1_1isr_1_1fringe_1a36d8f7f38ef89cba122b90ec9f2dcd8f" prot="private" static="no" mutable="no">
+        <type><ref refid="fits_8cc_1a1fbc6c4766fd22cd31bc6972d5d6c14f" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">list</ref></type>
+        <definition>list lsst::ip::isr::fringe.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>lsst::ip::isr.fringe.__all__</qualifiedname>
+        <initializer>=  [&quot;FringeStatisticsConfig&quot;, &quot;FringeConfig&quot;, &quot;FringeTask&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="22" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelsst_1_1ip_1_1isr_1_1fringe_1a4dd3acd77e3af679edf74f7641b46f81" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr::fringe.frame</definition>
+        <argsstring></argsstring>
+        <name>frame</name>
+        <qualifiedname>lsst::ip::isr.fringe.frame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="45" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1fringe_1ab88b1b916a306ecc3666cbf9239e4d40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.fringe.getFrame</definition>
+        <argsstring>()</argsstring>
+        <name>getFrame</name>
+        <qualifiedname>lsst::ip::isr.fringe.getFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Produce a new frame number each time</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="39" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="39" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1fringe_1a6616a92148634a881a0c2b5aa25e80c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.fringe.measure</definition>
+        <argsstring>(mi, x, y, size, statistic, stats)</argsstring>
+        <name>measure</name>
+        <qualifiedname>lsst::ip::isr.fringe.measure</qualifiedname>
+        <param>
+          <type>mi</type>
+          <defname>mi</defname>
+        </param>
+        <param>
+          <type><ref refid="_chebyshev_bounded_field_8cc_1af88b946fb90d5f08b5fb740c70e98c10" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">x</ref></type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type><ref refid="_span_set_8cc_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">y</ref></type>
+          <defname>y</defname>
+        </param>
+        <param>
+          <type>size</type>
+          <defname>size</defname>
+        </param>
+        <param>
+          <type>statistic</type>
+          <defname>statistic</defname>
+        </param>
+        <param>
+          <type>stats</type>
+          <defname>stats</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Measure a statistic within an aperture
+
+@param mi          MaskedImage to measure
+@param x, y        Center for aperture
+@param size        Size of aperture
+@param statistic   Statistic to measure
+@param stats       StatisticsControl object
+@return Value of statistic within aperture
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="455" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="455" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1fringe_1a1c4df1020b27f19e7a1e8bf6510cd7ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.fringe.stdev</definition>
+        <argsstring>(vector)</argsstring>
+        <name>stdev</name>
+        <qualifiedname>lsst::ip::isr.fringe.stdev</qualifiedname>
+        <param>
+          <type>vector</type>
+          <defname>vector</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Calculate a robust standard deviation of an array of values
+
+@param vector  Array of values
+@return Standard deviation
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="471" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="471" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1fringe_1a64c7f9e8f4c181ff6a80c458ceaa104f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.fringe.select</definition>
+        <argsstring>(vector, clip)</argsstring>
+        <name>select</name>
+        <qualifiedname>lsst::ip::isr.fringe.select</qualifiedname>
+        <param>
+          <type>vector</type>
+          <defname>vector</defname>
+        </param>
+        <param>
+          <type>clip</type>
+          <defname>clip</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Select values within &apos;clip&apos; standard deviations of the median
+
+Returns a boolean array.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/fringe.py" line="481" column="1" bodyfile="python/lsst/ip/isr/fringe.py" bodystart="481" bodyend="488"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="python/lsst/ip/isr/fringe.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,647 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::isrTask::IsrTaskConnections</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pipeBase.PipelineTaskConnections</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">dimensions</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">defaultTemplates</basecompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config" prot="public" virt="non-virtual">lsst.ip.isr.isrTask.IsrTaskConfig</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1aee8d0acbf624e5bebca9ee447031e17d" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::ccdExposure</definition>
+        <argsstring></argsstring>
+        <name>ccdExposure</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.ccdExposure</qualifiedname>
+        <initializer>=  cT.Input(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;raw&quot;,
+        doc=&quot;Input exposure <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> process.&quot;,
+        storageClass=&quot;Exposure&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;exposure&quot;, &quot;detector&quot;],
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="100" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ac897acd5e27857a6f23d597b68c37fc9" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::camera</definition>
+        <argsstring></argsstring>
+        <name>camera</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.camera</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;camera&quot;,
+        storageClass=&quot;Camera&quot;,
+        doc=&quot;Input camera <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> construct complete exposures.&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="106" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a3084e777f69bdb2a4bb554c7bb92bc18" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::crosstalk</definition>
+        <argsstring></argsstring>
+        <name>crosstalk</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.crosstalk</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;crosstalk&quot;,
+        doc=&quot;Input crosstalk object&quot;,
+        storageClass=&quot;CrosstalkCalib&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;detector&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        minimum=0,  # can fall back <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> cameraGeom
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="114" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1afc312d37f0369ff81afe18839c60c573" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::crosstalkSources</definition>
+        <argsstring></argsstring>
+        <name>crosstalkSources</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.crosstalkSources</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;isrOverscanCorrected&quot;,
+        doc=&quot;Overscan corrected input images.&quot;,
+        storageClass=&quot;Exposure&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;exposure&quot;, &quot;detector&quot;],
+        deferLoad=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        multiple=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        lookupFunction=<ref refid="namespacelsst_1_1ip_1_1isr_1_1isr_task_1ac48582206c788a5153f18f31546b0d79" kindref="member">crosstalkSourceLookup</ref>,
+        minimum=0,  # not needed for <ref refid="namespacelsst_1_1geom_1a944b5845e347c8a246cf285b0c24ec51" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">all</ref> instruments, no config <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> control this
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="122" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ac9bebcf126b28d9c8f3f11e44332f10f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::bias</definition>
+        <argsstring></argsstring>
+        <name>bias</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.bias</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;bias&quot;,
+        doc=&quot;Input bias calibration.&quot;,
+        storageClass=&quot;ExposureF&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;detector&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="132" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a51c2f23638e36405af1f547e24895883" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::dark</definition>
+        <argsstring></argsstring>
+        <name>dark</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.dark</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&apos;dark&apos;,
+        doc=&quot;Input dark calibration.&quot;,
+        storageClass=&quot;ExposureF&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;detector&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="139" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a9ef258783af732a30730f40dcf7cd820" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::flat</definition>
+        <argsstring></argsstring>
+        <name>flat</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.flat</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;flat&quot;,
+        doc=&quot;Input flat calibration.&quot;,
+        storageClass=&quot;ExposureF&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;physical_filter&quot;, &quot;detector&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="146" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1aac1e7e58476e226ad4447e3f323a1bad" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::ptc</definition>
+        <argsstring></argsstring>
+        <name>ptc</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.ptc</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;ptc&quot;,
+        doc=&quot;Input Photon Transfer Curve dataset&quot;,
+        storageClass=&quot;PhotonTransferCurveDataset&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;detector&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="153" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1af2274deb2d4492b7b84ac2751b237bce" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::fringes</definition>
+        <argsstring></argsstring>
+        <name>fringes</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.fringes</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;fringe&quot;,
+        doc=&quot;Input fringe calibration.&quot;,
+        storageClass=&quot;ExposureF&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;physical_filter&quot;, &quot;detector&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        minimum=0,  # only needed for some bands, even when enabled
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="160" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a75265cdaafeb7dd2e6069b44287b03b8" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::strayLightData</definition>
+        <argsstring></argsstring>
+        <name>strayLightData</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.strayLightData</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&apos;yBackground&apos;,
+        doc=&quot;Input stray light calibration.&quot;,
+        storageClass=&quot;StrayLightData&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;physical_filter&quot;, &quot;detector&quot;],
+        deferLoad=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        minimum=0,  # only needed for some bands, even when enabled
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="168" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ac60dc82eaa4d5e46e70789446e073049" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::bfKernel</definition>
+        <argsstring></argsstring>
+        <name>bfKernel</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.bfKernel</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&apos;bfKernel&apos;,
+        doc=&quot;Input brighter-fatter kernel.&quot;,
+        storageClass=&quot;NumpyArray&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        minimum=0,  # can use either bfKernel or <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a4ce4e869e8566e2acb8dbebab59f6404" kindref="member">newBFKernel</ref>
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="177" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a4ce4e869e8566e2acb8dbebab59f6404" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::newBFKernel</definition>
+        <argsstring></argsstring>
+        <name>newBFKernel</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.newBFKernel</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&apos;brighterFatterKernel&apos;,
+        doc=&quot;Newer complete kernel + <ref refid="_amplifier_8cc_1a451e62ec8e33873c8792e7df647c7b27" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">gain</ref> solutions.&quot;,
+        storageClass=&quot;BrighterFatterKernel&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;detector&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        minimum=0,  # can use either <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ac60dc82eaa4d5e46e70789446e073049" kindref="member">bfKernel</ref> or newBFKernel
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="185" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a6ee274f75db97785f58a6479773df0ce" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::defects</definition>
+        <argsstring></argsstring>
+        <name>defects</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.defects</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&apos;defects&apos;,
+        doc=&quot;Input defect tables.&quot;,
+        storageClass=&quot;Defects&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;detector&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="193" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a9ea5d1e3c8c3e4831b8588e89989e047" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::linearizer</definition>
+        <argsstring></argsstring>
+        <name>linearizer</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.linearizer</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&apos;linearizer&apos;,
+        storageClass=&quot;Linearizer&quot;,
+        doc=&quot;Linearity correction calibration.&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;detector&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+        minimum=0,  # can fall back <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> cameraGeom
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="200" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a47f2d2b897947350e808e75e66f2d931" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::opticsTransmission</definition>
+        <argsstring></argsstring>
+        <name>opticsTransmission</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.opticsTransmission</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;transmission_optics&quot;,
+        storageClass=&quot;TransmissionCurve&quot;,
+        doc=&quot;Transmission curve due <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> the optics.&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="208" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a8be21e38df1c5f66522d4780927e3000" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::filterTransmission</definition>
+        <argsstring></argsstring>
+        <name>filterTransmission</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.filterTransmission</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;transmission_filter&quot;,
+        storageClass=&quot;TransmissionCurve&quot;,
+        doc=&quot;Transmission curve due <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> the filter.&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;physical_filter&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="215" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a13fdbfc6350a18312db1b105ac9df4bc" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::sensorTransmission</definition>
+        <argsstring></argsstring>
+        <name>sensorTransmission</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.sensorTransmission</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;transmission_sensor&quot;,
+        storageClass=&quot;TransmissionCurve&quot;,
+        doc=&quot;Transmission curve due <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> the sensor.&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;detector&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="222" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a39729f0a712f06c6318077162b22e3e8" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::atmosphereTransmission</definition>
+        <argsstring></argsstring>
+        <name>atmosphereTransmission</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.atmosphereTransmission</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;transmission_atmosphere&quot;,
+        storageClass=&quot;TransmissionCurve&quot;,
+        doc=&quot;Transmission curve due <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> the atmosphere.&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="229" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a5a36ba9b6028296685768c69b113aa0b" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::illumMaskedImage</definition>
+        <argsstring></argsstring>
+        <name>illumMaskedImage</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.illumMaskedImage</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;illum&quot;,
+        doc=&quot;Input illumination correction.&quot;,
+        storageClass=&quot;MaskedImageF&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;physical_filter&quot;, &quot;detector&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="236" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a5d35fd33164118ee4e7bdc9ee5d6cc0c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::deferredChargeCalib</definition>
+        <argsstring></argsstring>
+        <name>deferredChargeCalib</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.deferredChargeCalib</qualifiedname>
+        <initializer>=  cT.PrerequisiteInput(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;cpCtiCalib&quot;,
+        doc=&quot;Deferred charge/CTI correction dataset.&quot;,
+        storageClass=&quot;IsrCalib&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;detector&quot;],
+        isCalibration=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="243" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ab2167233891b55a65429c6271c2a7364" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::outputExposure</definition>
+        <argsstring></argsstring>
+        <name>outputExposure</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.outputExposure</qualifiedname>
+        <initializer>=  cT.Output(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&apos;postISRCCD&apos;,
+        doc=&quot;Output ISR processed exposure.&quot;,
+        storageClass=&quot;Exposure&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;exposure&quot;, &quot;detector&quot;],
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="251" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ab74a09a8ebe86d0844d64eb9f3ddc088" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::preInterpExposure</definition>
+        <argsstring></argsstring>
+        <name>preInterpExposure</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.preInterpExposure</qualifiedname>
+        <initializer>=  cT.Output(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&apos;preInterpISRCCD&apos;,
+        doc=&quot;Output ISR processed exposure, with pixels left uninterpolated.&quot;,
+        storageClass=&quot;ExposureF&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;exposure&quot;, &quot;detector&quot;],
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="257" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a7f26a3429c995035b550d77908f0df0e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::outputOssThumbnail</definition>
+        <argsstring></argsstring>
+        <name>outputOssThumbnail</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.outputOssThumbnail</qualifiedname>
+        <initializer>=  cT.Output(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;OssThumb&quot;,
+        doc=&quot;Output Overscan-subtracted thumbnail image.&quot;,
+        storageClass=&quot;Thumbnail&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;exposure&quot;, &quot;detector&quot;],
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="263" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a06eba3849f8884e721016ba87154c8bf" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::outputFlattenedThumbnail</definition>
+        <argsstring></argsstring>
+        <name>outputFlattenedThumbnail</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.outputFlattenedThumbnail</qualifiedname>
+        <initializer>=  cT.Output(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;FlattenedThumb&quot;,
+        doc=&quot;Output <ref refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a9ef258783af732a30730f40dcf7cd820" kindref="member">flat</ref>-corrected thumbnail image.&quot;,
+        storageClass=&quot;Thumbnail&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;exposure&quot;, &quot;detector&quot;],
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="269" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ad2fdc29df25b8f3e15efb8a88237fb20" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.IsrTaskConnections::outputStatistics</definition>
+        <argsstring></argsstring>
+        <name>outputStatistics</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.outputStatistics</qualifiedname>
+        <initializer>=  cT.Output(
+        <ref refid="_amplifier_8cc_1a069fe1892ead37418805abec363ac33d" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">name</ref>=&quot;isrStatistics&quot;,
+        doc=&quot;Output of additional statistics table.&quot;,
+        storageClass=&quot;StructuredDataDict&quot;,
+        <ref refid="_gaussian_psf_8cc_1a83a84e8df1f40682096f21c0f36c8af1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">dimensions</ref>=[&quot;instrument&quot;, &quot;exposure&quot;, &quot;detector&quot;],
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="275" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a21a81b8c955907a1a39210daa75e395c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.IsrTaskConnections.__init__</definition>
+        <argsstring>(self, *config=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.isrTask.IsrTaskConnections.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>*</type>
+          <declname>config</declname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="282" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="282" bodyend="342"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>defaultTemplates</label>
+      </node>
+      <node id="3">
+        <label>dimensions</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.isrTask.IsrTaskConnections</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lsst.ip.isr.isrTask.IsrTaskConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pipeBase::PipelineTaskConnections</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>defaultTemplates</label>
+      </node>
+      <node id="3">
+        <label>dimensions</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.isrTask.IsrTaskConnections</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pipeBase::PipelineTaskConnections</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/isrTask.py" line="97" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="99" bodyend="342"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a21a81b8c955907a1a39210daa75e395c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a39729f0a712f06c6318077162b22e3e8" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>atmosphereTransmission</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ac60dc82eaa4d5e46e70789446e073049" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>bfKernel</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ac9bebcf126b28d9c8f3f11e44332f10f" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>bias</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ac897acd5e27857a6f23d597b68c37fc9" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>camera</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1aee8d0acbf624e5bebca9ee447031e17d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>ccdExposure</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a3084e777f69bdb2a4bb554c7bb92bc18" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>crosstalk</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1afc312d37f0369ff81afe18839c60c573" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>crosstalkSources</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a51c2f23638e36405af1f547e24895883" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>dark</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a6ee274f75db97785f58a6479773df0ce" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>defects</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a5d35fd33164118ee4e7bdc9ee5d6cc0c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>deferredChargeCalib</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a8be21e38df1c5f66522d4780927e3000" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>filterTransmission</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a9ef258783af732a30730f40dcf7cd820" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>flat</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1af2274deb2d4492b7b84ac2751b237bce" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>fringes</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a5a36ba9b6028296685768c69b113aa0b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>illumMaskedImage</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a9ea5d1e3c8c3e4831b8588e89989e047" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>linearizer</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a4ce4e869e8566e2acb8dbebab59f6404" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>newBFKernel</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a47f2d2b897947350e808e75e66f2d931" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>opticsTransmission</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ab2167233891b55a65429c6271c2a7364" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>outputExposure</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a06eba3849f8884e721016ba87154c8bf" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>outputFlattenedThumbnail</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a7f26a3429c995035b550d77908f0df0e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>outputOssThumbnail</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ad2fdc29df25b8f3e15efb8a88237fb20" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>outputStatistics</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1ab74a09a8ebe86d0844d64eb9f3ddc088" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>preInterpExposure</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1aac1e7e58476e226ad4447e3f323a1bad" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>ptc</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a13fdbfc6350a18312db1b105ac9df4bc" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>sensorTransmission</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections_1a75265cdaafeb7dd2e6069b44287b03b8" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::IsrTaskConnections</scope><name>strayLightData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

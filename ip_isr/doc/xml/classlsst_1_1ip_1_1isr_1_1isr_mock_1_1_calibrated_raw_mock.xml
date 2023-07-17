@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_calibrated_raw_mock" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::isrMock::CalibratedRawMock</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_mock" prot="public" virt="non-virtual">lsst.ip.isr.isrMock.RawMock</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_calibrated_raw_mock_1af909640d9aac7d2ae9f8b65c3ca7edf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.CalibratedRawMock.__init__</definition>
+        <argsstring>(self, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.isrMock.CalibratedRawMock.__init__</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_mock_1af7fcf38a46a0c8aae00878cdff6c0406">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="799" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="799" bodyend="816"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Generate a trimmed raw exposure.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrMock.CalibratedRawMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_calibrated_raw_mock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lsst.ip.isr.isrMock.IsrMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.isrMock.RawMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_mock"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>pipeBase.Task</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrMock.CalibratedRawMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_calibrated_raw_mock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lsst.ip.isr.isrMock.IsrMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.isrMock.RawMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_mock"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>pipeBase.Task</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/isrMock.py" line="796" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="796" bodyend="816"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_calibrated_raw_mock_1af909640d9aac7d2ae9f8b65c3ca7edf9" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::CalibratedRawMock</scope><name>__init__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

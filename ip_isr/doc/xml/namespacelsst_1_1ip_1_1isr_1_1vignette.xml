@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacelsst_1_1ip_1_1isr_1_1vignette" kind="namespace" language="Python">
+    <compoundname>lsst::ip::isr::vignette</compoundname>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config" prot="public">lsst::ip::isr::vignette::VignetteConfig</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task" prot="public">lsst::ip::isr::vignette::VignetteTask</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelsst_1_1ip_1_1isr_1_1vignette_1abcef3ad69f7753a3791fbc4e87903332" prot="private" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lsst::ip::isr::vignette.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>lsst::ip::isr.vignette.__all__</qualifiedname>
+        <initializer>=  (&apos;<ref refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_config" kindref="compound">VignetteConfig</ref>&apos;, &apos;<ref refid="classlsst_1_1ip_1_1isr_1_1vignette_1_1_vignette_task" kindref="compound">VignetteTask</ref>&apos;, &apos;<ref refid="namespacelsst_1_1ip_1_1isr_1_1vignette_1a471c82633723eeb86fd037b273581ccb" kindref="member">setValidPolygonCcdIntersect</ref>&apos;,
+           &apos;<ref refid="namespacelsst_1_1ip_1_1isr_1_1vignette_1a259dc1c093a723d7111c55320a7aa9f1" kindref="member">maskVignettedRegion</ref>&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/vignette.py" line="22" column="1" bodyfile="python/lsst/ip/isr/vignette.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1vignette_1a471c82633723eeb86fd037b273581ccb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.vignette.setValidPolygonCcdIntersect</definition>
+        <argsstring>(ccdExposure, fpPolygon, log=None)</argsstring>
+        <name>setValidPolygonCcdIntersect</name>
+        <qualifiedname>lsst::ip::isr.vignette.setValidPolygonCcdIntersect</qualifiedname>
+        <param>
+          <type>ccdExposure</type>
+          <defname>ccdExposure</defname>
+        </param>
+        <param>
+          <type>fpPolygon</type>
+          <defname>fpPolygon</defname>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1ip_1_1isr_1_1defects_1a1bb91a40156f1994d55da947ded68fab" kindref="member">log</ref></type>
+          <defname>log</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set valid polygon on ccdExposure associated with focal plane polygon.
+
+The ccd exposure&apos;s valid polygon is the intersection of fpPolygon,
+a valid polygon in focal plane coordinates, and the ccd corners,
+in ccd pixel coordinates.
+
+Parameters
+----------
+ccdExposure : `lsst.afw.image.Exposure`
+    Exposure to process.
+fpPolygon : `lsst.afw.geom.Polygon`
+    Polygon in focal plane coordinates.
+log : `logging.Logger`, optional
+    Log object to write to.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/vignette.py" line="116" column="1" bodyfile="python/lsst/ip/isr/vignette.py" bodystart="116" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1vignette_1a259dc1c093a723d7111c55320a7aa9f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.vignette.maskVignettedRegion</definition>
+        <argsstring>(exposure, polygon, maskPlane=&quot;NO_DATA&quot;, vignetteValue=None, log=None)</argsstring>
+        <name>maskVignettedRegion</name>
+        <qualifiedname>lsst::ip::isr.vignette.maskVignettedRegion</qualifiedname>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>polygon</type>
+          <defname>polygon</defname>
+        </param>
+        <param>
+          <type>maskPlane</type>
+          <defname>maskPlane</defname>
+          <defval>&quot;NO_DATA&quot;</defval>
+        </param>
+        <param>
+          <type>vignetteValue</type>
+          <defname>vignetteValue</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1ip_1_1isr_1_1defects_1a1bb91a40156f1994d55da947ded68fab" kindref="member">log</ref></type>
+          <defname>log</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Add mask bit to image pixels according to vignetted polygon region.
+
+NOTE: this function could be used to mask and replace pixels associated
+with any polygon in the exposure pixel coordinates.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Image whose mask plane is to be updated.
+polygon : `lsst.afw.geom.Polygon`
+    Polygon region defining the vignetted region in the pixel coordinates
+    of ``exposure``.
+maskPlane : `str`, optional
+    Mask plane to assign vignetted pixels to.
+vignetteValue : `float` or `None`, optional
+    Value to assign to the image array pixels within the ``polygon``
+    region.  If `None`, image pixel values are not replaced.
+log : `logging.Logger`, optional
+    Log object to write to.
+
+Raises
+------
+RuntimeError
+    Raised if no valid polygon exists.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/vignette.py" line="151" column="1" bodyfile="python/lsst/ip/isr/vignette.py" bodystart="151" bodyend="205"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="python/lsst/ip/isr/vignette.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

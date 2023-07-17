@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_crosstalk_coeff_mock" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::isrMock::CrosstalkCoeffMock</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock" prot="public" virt="non-virtual">lsst.ip.isr.isrMock.IsrMock</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_crosstalk_coeff_mock_1a374e8753ee6a66be7027ed5595cdeb4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.CrosstalkCoeffMock.__init__</definition>
+        <argsstring>(self, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.isrMock.CrosstalkCoeffMock.__init__</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_1a35068086855cf36162cc91bbb69602a2">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="914" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="914" bodyend="923"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Simulated crosstalk coefficient matrix.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrMock.CrosstalkCoeffMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_crosstalk_coeff_mock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.isrMock.IsrMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pipeBase.Task</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrMock.CrosstalkCoeffMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_crosstalk_coeff_mock"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.isrMock.IsrMock</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>pipeBase.Task</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/isrMock.py" line="911" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="911" bodyend="923"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_crosstalk_coeff_mock_1a374e8753ee6a66be7027ed5595cdeb4b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::CrosstalkCoeffMock</scope><name>__init__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,257 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::isrQa::IsrQaConfig</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pexConfig.Config</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1ae1207ff1867818d8d3635bd07bb17410" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrQa.IsrQaConfig::saveStats</definition>
+        <argsstring></argsstring>
+        <name>saveStats</name>
+        <qualifiedname>lsst::ip::isr.isrQa.IsrQaConfig.saveStats</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Calculate ISR statistics while processing?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="59" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a9e1869e604bae45b4fa47b249ac3811f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrQa.IsrQaConfig::flatness</definition>
+        <argsstring></argsstring>
+        <name>flatness</name>
+        <qualifiedname>lsst::ip::isr.isrQa.IsrQaConfig.flatness</qualifiedname>
+        <initializer>=  pexConfig.ConfigField(
+        dtype=<ref refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config" kindref="compound">IsrQaFlatnessConfig</ref>,
+        doc=&quot;Flatness statistics configuration.&quot;,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="65" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a1d6d55700c7462c671abdf2b477f72bc" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrQa.IsrQaConfig::doWriteOss</definition>
+        <argsstring></argsstring>
+        <name>doWriteOss</name>
+        <qualifiedname>lsst::ip::isr.isrQa.IsrQaConfig.doWriteOss</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Write overscan subtracted image?&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="70" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1ac23257165048bd3919c1315219e94ae0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrQa.IsrQaConfig::doThumbnailOss</definition>
+        <argsstring></argsstring>
+        <name>doThumbnailOss</name>
+        <qualifiedname>lsst::ip::isr.isrQa.IsrQaConfig.doThumbnailOss</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Write overscan subtracted thumbnail?&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="75" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a8b7fd648b61a6dc385a93b3648e91b4f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrQa.IsrQaConfig::doWriteFlattened</definition>
+        <argsstring></argsstring>
+        <name>doWriteFlattened</name>
+        <qualifiedname>lsst::ip::isr.isrQa.IsrQaConfig.doWriteFlattened</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Write image after flat-<ref refid="_ap_corr_map_8cc_1af1a38599a6d58153b21859d743bc56e9" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">field</ref> correction?&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="81" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a0347806d049f65311e4db70d589574b4" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrQa.IsrQaConfig::doThumbnailFlattened</definition>
+        <argsstring></argsstring>
+        <name>doThumbnailFlattened</name>
+        <qualifiedname>lsst::ip::isr.isrQa.IsrQaConfig.doThumbnailFlattened</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Write thumbnail after flat-<ref refid="_ap_corr_map_8cc_1af1a38599a6d58153b21859d743bc56e9" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">field</ref> correction?&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="86" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1af1c74f8c7a6629e7339840bd54409841" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrQa.IsrQaConfig::thumbnailBinning</definition>
+        <argsstring></argsstring>
+        <name>thumbnailBinning</name>
+        <qualifiedname>lsst::ip::isr.isrQa.IsrQaConfig.thumbnailBinning</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=&quot;Thumbnail binning factor.&quot;,
+        default=4,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="92" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a623af0d124748566fcf0a0e87dadcbef" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrQa.IsrQaConfig::thumbnailStdev</definition>
+        <argsstring></argsstring>
+        <name>thumbnailStdev</name>
+        <qualifiedname>lsst::ip::isr.isrQa.IsrQaConfig.thumbnailStdev</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        doc=&quot;Number of <ref refid="_gaussian_psf_8cc_1a4e16839fa273d5b6d34598933d29fa67" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">sigma</ref> below the background <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> <ref refid="fits_8cc_1a35ebf07010c76ad3be0af622f438897e" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">set</ref> the thumbnail minimum.&quot;,
+        default=3.0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="97" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a8795d8ff3c3100a5e0070e85aa5e3f53" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrQa.IsrQaConfig::thumbnailRange</definition>
+        <argsstring></argsstring>
+        <name>thumbnailRange</name>
+        <qualifiedname>lsst::ip::isr.isrQa.IsrQaConfig.thumbnailRange</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        doc=&quot;Total range in <ref refid="_gaussian_psf_8cc_1a4e16839fa273d5b6d34598933d29fa67" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">sigma</ref> for thumbnail mapping.&quot;,
+        default=5.0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="102" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a8ce97eba2d1243027ce9bb90a0dfa75e" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrQa.IsrQaConfig::thumbnailQ</definition>
+        <argsstring></argsstring>
+        <name>thumbnailQ</name>
+        <qualifiedname>lsst::ip::isr.isrQa.IsrQaConfig.thumbnailQ</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        doc=&quot;Softening parameter for thumbnail mapping.&quot;,
+        default=20.0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="107" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1ac58bde95a09ec09078b159097fc357f8" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrQa.IsrQaConfig::thumbnailSatBorder</definition>
+        <argsstring></argsstring>
+        <name>thumbnailSatBorder</name>
+        <qualifiedname>lsst::ip::isr.isrQa.IsrQaConfig.thumbnailSatBorder</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=&quot;Width of border around saturated pixels in thumbnail.&quot;,
+        default=2,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="112" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrQa.IsrQaConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pexConfig.Config</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrQa.IsrQaConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pexConfig.Config</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/isrQa.py" line="58" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="58" bodyend="118"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a0347806d049f65311e4db70d589574b4" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrQa::IsrQaConfig</scope><name>doThumbnailFlattened</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1ac23257165048bd3919c1315219e94ae0" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrQa::IsrQaConfig</scope><name>doThumbnailOss</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a8b7fd648b61a6dc385a93b3648e91b4f" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrQa::IsrQaConfig</scope><name>doWriteFlattened</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a1d6d55700c7462c671abdf2b477f72bc" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrQa::IsrQaConfig</scope><name>doWriteOss</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a9e1869e604bae45b4fa47b249ac3811f" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrQa::IsrQaConfig</scope><name>flatness</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1ae1207ff1867818d8d3635bd07bb17410" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrQa::IsrQaConfig</scope><name>saveStats</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1af1c74f8c7a6629e7339840bd54409841" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrQa::IsrQaConfig</scope><name>thumbnailBinning</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a8ce97eba2d1243027ce9bb90a0dfa75e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrQa::IsrQaConfig</scope><name>thumbnailQ</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a8795d8ff3c3100a5e0070e85aa5e3f53" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrQa::IsrQaConfig</scope><name>thumbnailRange</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1ac58bde95a09ec09078b159097fc357f8" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrQa::IsrQaConfig</scope><name>thumbnailSatBorder</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a623af0d124748566fcf0a0e87dadcbef" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrQa::IsrQaConfig</scope><name>thumbnailStdev</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_data" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::straylight::StrayLightData</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib" prot="public" virt="non-virtual">lsst.ip.isr.calibType.IsrCalib</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_data_1a2136ea0e5f74ace92d46a51e4ffedc56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.straylight.StrayLightData.evaluate</definition>
+        <argsstring>(self, Angle angle_start, Optional[Angle] angle_end=None)</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>lsst::ip::isr.straylight.StrayLightData.evaluate</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1geom_1_1_angle" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">Angle</ref></type>
+          <declname>angle_start</declname>
+        </param>
+        <param>
+          <type>Optional</type>
+          <declname>angle_end</declname>
+          <array>[Angle]</array>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get a stray light array for a range of rotator angles.
+
+Parameters
+----------
+angle_begin : `float`
+    Instrument rotation angle at the start of the exposure.
+angle_end : `float`, optional
+    Instrument rotation angle at the end of the exposure.
+    If not provided, the returned array will reflect a snapshot at
+    `angle_start`.
+
+Returns
+-------
+array : `numpy.ndarray`
+    A stray-light background image for this exposure.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/straylight.py" line="101" column="1" bodyfile="python/lsst/ip/isr/straylight.py" bodystart="101" bodyend="119"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>An abstract base class for rotator-dependent stray light information.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>abc::ABC</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.straylight.StrayLightData</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_data"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.calibType.IsrCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>abc::ABC</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.straylight.StrayLightData</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_data"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.calibType.IsrCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/straylight.py" line="96" column="1" bodyfile="python/lsst/ip/isr/straylight.py" bodystart="96" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_data_1a2136ea0e5f74ace92d46a51e4ffedc56" prot="public" virt="non-virtual"><scope>lsst::ip::isr::straylight::StrayLightData</scope><name>evaluate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

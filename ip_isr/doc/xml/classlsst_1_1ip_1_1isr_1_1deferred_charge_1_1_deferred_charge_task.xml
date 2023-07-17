@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::deferredCharge::DeferredChargeTask</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Task</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task_1a0ef00e5e6ab355ded1195fc7d00a815a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.deferredCharge.DeferredChargeTask::ConfigClass</definition>
+        <argsstring></argsstring>
+        <name>ConfigClass</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.DeferredChargeTask.ConfigClass</qualifiedname>
+        <initializer>=  <ref refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_config" kindref="compound">DeferredChargeConfig</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="533" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="533" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task_1a0fec5146c3f50ffbb8700f788c41f3b3" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.deferredCharge.DeferredChargeTask::_DefaultName</definition>
+        <argsstring></argsstring>
+        <name>_DefaultName</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.DeferredChargeTask._DefaultName</qualifiedname>
+        <initializer>=  &apos;isrDeferredCharge&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="534" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task_1aac5d4a8a3ccb5357f5b1aa1bd948e3fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.deferredCharge.DeferredChargeTask.run</definition>
+        <argsstring>(self, exposure, ctiCalib, gains=None)</argsstring>
+        <name>run</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.DeferredChargeTask.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>ctiCalib</type>
+          <defname>ctiCalib</defname>
+        </param>
+        <param>
+          <type>gains</type>
+          <defname>gains</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Correct deferred charge/CTI issues.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to correct the deferred charge on.
+ctiCalib : `lsst.ip.isr.DeferredChargeCalib`
+    Calibration object containing the charge transfer
+    inefficiency model.
+gains : `dict` [`str`, `float`]
+    A dictionary, keyed by amplifier name, of the gains to
+    use.  If gains is None, the nominal gains in the amplifier
+    object are used.
+
+Returns
+-------
+exposure : `lsst.afw.image.Exposure`
+    The corrected exposure.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="536" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="536" bodyend="601"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task_1aabee465a6c73f09a49bfe136c290548a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.deferredCharge.DeferredChargeTask.flipData</definition>
+        <argsstring>(ampData, amp)</argsstring>
+        <name>flipData</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.DeferredChargeTask.flipData</qualifiedname>
+        <param>
+          <type>ampData</type>
+          <defname>ampData</defname>
+        </param>
+        <param>
+          <type>amp</type>
+          <defname>amp</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Flip data array such that readout corner is at lower-left.
+
+Parameters
+----------
+ampData : `numpy.ndarray`, (nx, ny)
+    Image data to flip.
+amp : `lsst.afw.cameraGeom.Amplifier`
+    Amplifier to get readout corner information.
+
+Returns
+-------
+ampData : `numpy.ndarray`, (nx, ny)
+    Flipped image data.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="603" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="603" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task_1a656132b182a199f0421eaf443da9ae94" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.deferredCharge.DeferredChargeTask.local_offset_inverse</definition>
+        <argsstring>(inputArr, drift_scale, decay_time, num_previous_pixels=15)</argsstring>
+        <name>local_offset_inverse</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.DeferredChargeTask.local_offset_inverse</qualifiedname>
+        <param>
+          <type>inputArr</type>
+          <defname>inputArr</defname>
+        </param>
+        <param>
+          <type>drift_scale</type>
+          <defname>drift_scale</defname>
+        </param>
+        <param>
+          <type>decay_time</type>
+          <defname>decay_time</defname>
+        </param>
+        <param>
+          <type>num_previous_pixels</type>
+          <defname>num_previous_pixels</defname>
+          <defval>15</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Remove CTI effects from local offsets.
+
+    This implements equation 10 of Snyder+21.  For an image with
+    CTI, s&apos;(m, n), the correction factor is equal to the maximum
+    value of the set of:
+
+    .. code-block::
+
+        {A_L s&apos;(m, n - j) exp(-j t / \tau_L)}_j=0^jmax
+
+    Parameters
+    ----------
+    inputArr : `numpy.ndarray`, (nx, ny)
+        Input image data to correct.
+    drift_scale : `float`
+        Drift scale (Snyder+21 A_L value) to use in correction.
+    decay_time : `float`
+        Decay time (Snyder+21 \tau_L) of the correction.
+    num_previous_pixels : `int`, optional
+        Number of previous pixels to use for correction.  As the
+        CTI has an exponential decay, this essentially truncates
+        the correction where that decay scales the input charge to
+        near zero.
+
+    Returns
+    -------
+    outputArr : `numpy.ndarray`, (nx, ny)
+        Corrected image data.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="635" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="635" bodyend="680"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task_1a43415527fe10ff9d0c6eb20e4f16fb9f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.deferredCharge.DeferredChargeTask.local_trap_inverse</definition>
+        <argsstring>(inputArr, trap, global_cti=0.0, num_previous_pixels=6)</argsstring>
+        <name>local_trap_inverse</name>
+        <qualifiedname>lsst::ip::isr.deferredCharge.DeferredChargeTask.local_trap_inverse</qualifiedname>
+        <param>
+          <type>inputArr</type>
+          <defname>inputArr</defname>
+        </param>
+        <param>
+          <type>trap</type>
+          <defname>trap</defname>
+        </param>
+        <param>
+          <type>global_cti</type>
+          <defname>global_cti</defname>
+          <defval>0.0</defval>
+        </param>
+        <param>
+          <type>num_previous_pixels</type>
+          <defname>num_previous_pixels</defname>
+          <defval>6</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Apply localized trapping inverse operator to pixel signals.
+
+    This implements equation 13 of Snyder+21.  For an image with
+    CTI, s&apos;(m, n), the correction factor is equal to the maximum
+    value of the set of:
+
+    .. code-block::
+
+        {A_L s&apos;(m, n - j) exp(-j t / \tau_L)}_j=0^jmax
+
+    Parameters
+    ----------
+    inputArr : `numpy.ndarray`, (nx, ny)
+        Input image data to correct.
+    trap : `lsst.ip.isr.SerialTrap`
+        Serial trap describing the capture and release of charge.
+    global_cti: `float`
+        Mean charge transfer inefficiency, b from Snyder+21.
+    num_previous_pixels : `int`, optional
+        Number of previous pixels to use for correction.
+
+    Returns
+    -------
+    outputArr : `numpy.ndarray`, (nx, ny)
+        Corrected image data.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/deferredCharge.py" line="682" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="682" bodyend="732"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Task to correct an exposure for charge transfer inefficiency.
+
+This uses the methods described by Snyder et al. 2021, Journal of
+Astronimcal Telescopes, Instruments, and Systems, 7,
+048002. doi:10.1117/1.JATIS.7.4.048002 (Snyder+21).
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.deferredCharge.DeferredChargeTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Task</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.deferredCharge.DeferredChargeTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Task</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/deferredCharge.py" line="526" column="1" bodyfile="python/lsst/ip/isr/deferredCharge.py" bodystart="526" bodyend="732"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task_1a0fec5146c3f50ffbb8700f788c41f3b3" prot="private" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::DeferredChargeTask</scope><name>_DefaultName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task_1a0ef00e5e6ab355ded1195fc7d00a815a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::DeferredChargeTask</scope><name>ConfigClass</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task_1aabee465a6c73f09a49bfe136c290548a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::DeferredChargeTask</scope><name>flipData</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task_1a656132b182a199f0421eaf443da9ae94" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::DeferredChargeTask</scope><name>local_offset_inverse</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task_1a43415527fe10ff9d0c6eb20e4f16fb9f" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::DeferredChargeTask</scope><name>local_trap_inverse</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1deferred_charge_1_1_deferred_charge_task_1aac5d4a8a3ccb5357f5b1aa1bd948e3fe" prot="public" virt="non-virtual"><scope>lsst::ip::isr::deferredCharge::DeferredChargeTask</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

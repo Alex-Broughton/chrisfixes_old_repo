@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="4" skipped="2" tests="82" time="199.387" timestamp="2023-07-12T01:42:10.644341" hostname="sdfrome002"><testcase classname="cp_pipe.bin.plotPhotonTransferCurve.flake-8" name="FLAKE8" time="0.412" /><testcase classname="cp_pipe.bin.src.plotPhotonTransferCurve.flake-8" name="FLAKE8" time="0.252" /><testcase classname="cp_pipe.config.crosstalkIsr.flake-8" name="FLAKE8" time="0.207" /><testcase classname="cp_pipe.config.defectIsr.flake-8" name="FLAKE8" time="0.200" /><testcase classname="cp_pipe.config.ptcIsr.flake-8" name="FLAKE8" time="0.337" /><testcase classname="cp_pipe.doc.conf.flake-8" name="FLAKE8" time="0.187" /><testcase classname="cp_pipe.python.lsst.__init__.flake-8" name="FLAKE8" time="0.206" /><testcase classname="cp_pipe.python.lsst.cp.__init__.flake-8" name="FLAKE8" time="0.180" /><testcase classname="cp_pipe.python.lsst.cp.pipe.__init__.flake-8" name="FLAKE8" time="0.333" /><testcase classname="cp_pipe.python.lsst.cp.pipe._lookupStaticCalibration.flake-8" name="FLAKE8" time="0.291" /><testcase classname="cp_pipe.python.lsst.cp.pipe.cpCombine.flake-8" name="FLAKE8" time="1.183" /><testcase classname="cp_pipe.python.lsst.cp.pipe.cpDarkTask.flake-8" name="FLAKE8" time="0.598" /><testcase classname="cp_pipe.python.lsst.cp.pipe.cpFlatNormTask.flake-8" name="FLAKE8" time="0.928" /><testcase classname="cp_pipe.python.lsst.cp.pipe.cpFringeTask.flake-8" name="FLAKE8" time="0.578" /><testcase classname="cp_pipe.python.lsst.cp.pipe.cpSkyTask.flake-8" name="FLAKE8" time="0.684" /><testcase classname="cp_pipe.python.lsst.cp.pipe.defects.flake-8" name="FLAKE8" time="1.973" /><testcase classname="cp_pipe.python.lsst.cp.pipe.deferredCharge.flake-8" name="FLAKE8" time="1.997" /><testcase classname="cp_pipe.python.lsst.cp.pipe.linearity.flake-8" name="FLAKE8" time="1.484" /><testcase classname="cp_pipe.python.lsst.cp.pipe.makeBrighterFatterKernel.flake-8" name="FLAKE8" time="1.554"><failure message="/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:205:1: W293 blank line contains whitespace&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:206:9: F841 local variable 'pcti' is assigned to but never used&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:210:1: W293 blank line contains whitespace&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:211:9: F841 local variable 'ptc' is assigned to but never used&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:211:12: E221 multiple spaces before operator&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:215:1: W293 blank line contains whitespace&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:217:9: E303 too many blank lines (2)&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:230:9: E265 block comment should start with '# '&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:231:50: E261 at least two spaces before inline comment&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:9: F841 local variable 'ampnoiseindx' is assigned to but never used&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:34: E231 missing whitespace after ','&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:44: E231 missing whitespace after ','&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:54: E231 missing whitespace after ','&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:64: E231 missing whitespace after ','&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:74: E231 missing whitespace after ','&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:84: E231 missing whitespace after ','&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:93: E231 missing whitespace after ','&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:102: E231 missing whitespace after ','&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:111: E501 line too long (174 &gt; 110 characters)&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:111: E231 missing whitespace after ','&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:120: E231 missing whitespace after ','&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:129: E231 missing whitespace after ','&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:138: E231 missing whitespace after ','&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:147: E231 missing whitespace after ','&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:156: E231 missing whitespace after ','&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:165: E231 missing whitespace after ','&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:241:1: W293 blank line contains whitespace&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:246:1: W293 blank line contains whitespace&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:248:52: E261 at least two spaces before inline comment&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:249:61: E222 multiple spaces after operator&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:249:84: E261 at least two spaces before inline comment&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:250:74: E261 at least two spaces before inline comment&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:251:31: E261 at least two spaces before inline comment&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:252:1: W293 blank line contains whitespace&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:254:13: F401 'astropy.io.fits' imported but unused&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:255:13: E265 block comment should start with '# '&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:256:80: W505 doc line too long (257 &gt; 79 characters)&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:256:111: E501 line too long (257 &gt; 110 characters)&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:257:13: E265 block comment should start with '# '&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:258:80: W505 doc line too long (257 &gt; 79 characters)&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:258:111: E501 line too long (257 &gt; 110 characters)&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:259:13: E265 block comment should start with '# '&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:260:80: W505 doc line too long (257 &gt; 79 characters)&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:260:111: E501 line too long (257 &gt; 110 characters)&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:261:13: E265 block comment should start with '# '&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:261:19: W291 trailing whitespace&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:262:80: W505 doc line too long (257 &gt; 79 characters)&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:262:111: E501 line too long (257 &gt; 110 characters)&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:263:1: W293 blank line contains whitespace&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:264:13: E265 block comment should start with '# '&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:265:15: E221 multiple spaces before operator&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:265:41: W291 trailing whitespace&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:269:1: W293 blank line contains whitespace&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:270:14: E221 multiple spaces before operator&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:270:36: E225 missing whitespace around operator&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:272:1: W293 blank line contains whitespace&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:351:80: W505 doc line too long (107 &gt; 79 characters)&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:352:1: W293 blank line contains whitespace&#10;/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:355:1: W293 blank line contains whitespace&#10;">/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:205:1: W293 blank line contains whitespace
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:206:9: F841 local variable 'pcti' is assigned to but never used
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:210:1: W293 blank line contains whitespace
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:211:9: F841 local variable 'ptc' is assigned to but never used
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:211:12: E221 multiple spaces before operator
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:215:1: W293 blank line contains whitespace
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:217:9: E303 too many blank lines (2)
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:230:9: E265 block comment should start with '# '
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:231:50: E261 at least two spaces before inline comment
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:9: F841 local variable 'ampnoiseindx' is assigned to but never used
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:34: E231 missing whitespace after ','
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:44: E231 missing whitespace after ','
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:54: E231 missing whitespace after ','
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:64: E231 missing whitespace after ','
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:74: E231 missing whitespace after ','
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:84: E231 missing whitespace after ','
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:93: E231 missing whitespace after ','
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:102: E231 missing whitespace after ','
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:111: E501 line too long (174 &gt; 110 characters)
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:111: E231 missing whitespace after ','
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:120: E231 missing whitespace after ','
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:129: E231 missing whitespace after ','
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:138: E231 missing whitespace after ','
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:147: E231 missing whitespace after ','
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:156: E231 missing whitespace after ','
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:240:165: E231 missing whitespace after ','
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:241:1: W293 blank line contains whitespace
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:246:1: W293 blank line contains whitespace
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:248:52: E261 at least two spaces before inline comment
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:249:61: E222 multiple spaces after operator
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:249:84: E261 at least two spaces before inline comment
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:250:74: E261 at least two spaces before inline comment
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:251:31: E261 at least two spaces before inline comment
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:252:1: W293 blank line contains whitespace
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:254:13: F401 'astropy.io.fits' imported but unused
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:255:13: E265 block comment should start with '# '
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:256:80: W505 doc line too long (257 &gt; 79 characters)
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:256:111: E501 line too long (257 &gt; 110 characters)
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:257:13: E265 block comment should start with '# '
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:258:80: W505 doc line too long (257 &gt; 79 characters)
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:258:111: E501 line too long (257 &gt; 110 characters)
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:259:13: E265 block comment should start with '# '
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:260:80: W505 doc line too long (257 &gt; 79 characters)
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:260:111: E501 line too long (257 &gt; 110 characters)
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:261:13: E265 block comment should start with '# '
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:261:19: W291 trailing whitespace
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:262:80: W505 doc line too long (257 &gt; 79 characters)
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:262:111: E501 line too long (257 &gt; 110 characters)
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:263:1: W293 blank line contains whitespace
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:264:13: E265 block comment should start with '# '
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:265:15: E221 multiple spaces before operator
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:265:41: W291 trailing whitespace
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:269:1: W293 blank line contains whitespace
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:270:14: E221 multiple spaces before operator
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:270:36: E225 missing whitespace around operator
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:272:1: W293 blank line contains whitespace
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:351:80: W505 doc line too long (107 &gt; 79 characters)
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:352:1: W293 blank line contains whitespace
+/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/python/lsst/cp/pipe/makeBrighterFatterKernel.py:355:1: W293 blank line contains whitespace
+</failure></testcase><testcase classname="cp_pipe.python.lsst.cp.pipe.measureCrosstalk.flake-8" name="FLAKE8" time="1.496" /><testcase classname="cp_pipe.python.lsst.cp.pipe.pdCorrection.flake-8" name="FLAKE8" time="0.844" /><testcase classname="cp_pipe.python.lsst.cp.pipe.utils.flake-8" name="FLAKE8" time="1.195" /><testcase classname="cp_pipe.python.lsst.cp.pipe.version.flake-8" name="FLAKE8" time="0.402" /><testcase classname="cp_pipe.python.lsst.cp.pipe.ptc.__init__.flake-8" name="FLAKE8" time="0.182" /><testcase classname="cp_pipe.python.lsst.cp.pipe.ptc.cpExtractPtcTask.flake-8" name="FLAKE8" time="1.848" /><testcase classname="cp_pipe.python.lsst.cp.pipe.ptc.cpPlotPtcTask.flake-8" name="FLAKE8" time="2.620" /><testcase classname="cp_pipe.python.lsst.cp.pipe.ptc.cpSolvePtcTask.flake-8" name="FLAKE8" time="2.460" /><testcase classname="cp_pipe.tests.test_brighterFatterKernel.flake-8" name="FLAKE8" time="0.724" /><testcase classname="cp_pipe.tests.test_brighterFatterKernel.BfkSolveTaskTestCase" name="test_aMatrix" time="0.007"><failure message="IndexError: boolean index did not match indexed array along dimension 0; dimension is 0 but corresponding boolean dimension is 10">self = &lt;test_brighterFatterKernel.BfkSolveTaskTestCase testMethod=test_aMatrix&gt;
+
+    def test_aMatrix(self):
+        """Test solution from Astier et al. 2019 "A" matrix
+        """
+        config = cpPipe.BrighterFatterKernelSolveConfig()
+        config.useAmatrix = True
+        task = cpPipe.BrighterFatterKernelSolveTask(config=config)
+    
+&gt;       results = task.run(self.ptc, ['this is a dummy exposure'], self.camera, {'detector': 1})
+
+tests/test_brighterFatterKernel.py:105: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;lsst.cp.pipe.makeBrighterFatterKernel.BrighterFatterKernelSolveTask object at 0x7f1546a1efe0&gt;
+inputPtc = &lt;lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset object at 0x7f1544e8e560&gt;, dummy = ['this is a dummy exposure']
+camera = &lt;lsst.afw.cameraGeom.Camera object at 0x7f15441d5430&gt;, inputDims = {'detector': 1}
+
+    def run(self, inputPtc, dummy, camera, inputDims):
+        """Combine covariance information from PTC into brighter-fatter
+        kernels.
+    
+        Parameters
+        ----------
+        inputPtc : `lsst.ip.isr.PhotonTransferCurveDataset`
+            PTC data containing per-amplifier covariance measurements.
+        dummy : `lsst.afw.image.Exposure`
+            The exposure used to select the appropriate PTC dataset.
+            In almost all circumstances, one of the input exposures
+            used to generate the PTC dataset is the best option.
+        camera : `lsst.afw.cameraGeom.Camera`
+            Camera to use for camera geometry information.
+        inputDims : `lsst.daf.butler.DataCoordinate` or `dict`
+            DataIds to use to populate the output calibration.
+    
+        Returns
+        -------
+        results : `lsst.pipe.base.Struct`
+            The resulst struct containing:
+    
+            ``outputBfk``
+                Resulting Brighter-Fatter Kernel
+                (`lsst.ip.isr.BrighterFatterKernel`).
+        """
+        if len(dummy) == 0:
+            self.log.warning("No dummy exposure found.")
+    
+        detector = camera[inputDims['detector']]
+        detName = detector.getName()
+    
+        pcti = {"R03_S12": (1.0e5)/1.702,
+                "R24_S11": (0.9e5)/1.498,
+                "R21_S02": (0.75e5)/1.497,
+                "R02_S00": (0.8e5)/1.679}
+    
+        ptc  = {"R03_S12": 77000.,
+                "R24_S11": 80000.,
+                "R21_S02": 68000.,
+                "R02_S00": 60000.}
+    
+    
+        if self.config.level == 'DETECTOR':
+            detectorCorrList = list()
+            detectorFluxes = list()
+    
+        bfk = BrighterFatterKernel(camera=camera, detectorId=detector.getId(), level=self.config.level)
+        bfk.rawMeans = inputPtc.rawMeans  # ADU
+        bfk.rawVariances = inputPtc.rawVars  # ADU^2
+        bfk.expIdMask = inputPtc.expIdMask
+    
+        # Use the PTC covariances as the cross-correlations.  These
+        # are scaled before the kernel is generated, which performs
+        # the conversion.  The input covariances are in (x, y) index
+        # ordering, as is the aMatrix.
+        ##bfk.rawXcorrs = inputPtc.covariances  # ADU^2
+        bfk.rawXcorrs = inputPtc.covariancesModel # ADU^2
+        bfk.badAmps = inputPtc.badAmps
+        bfk.shape = (inputPtc.covMatrixSide*2 + 1, inputPtc.covMatrixSide*2 + 1)
+        bfk.gain = inputPtc.gain
+        bfk.noise = inputPtc.noise
+        bfk.meanXcorrs = dict()
+        bfk.valid = dict()
+        bfk.updateMetadataFromExposures([inputPtc])
+    
+        ampnoiseindx = {'C00': 15,'C01': 14,'C02': 13,'C03': 12,'C04': 11,'C05': 10,'C06': 9,'C07': 8,'C11': 1,'C12': 2,'C13': 3,'C14': 4,'C15': 5,'C16': 6,'C17': 7,'C10': 0}
+    
+        for amp in detector:
+            ampName = amp.getName()
+            gain = bfk.gain[ampName]
+            mask = inputPtc.expIdMask[ampName]
+    
+            # Get single Cov model sample
+            mask = np.zeros(mask.shape, dtype=bool) # added
+            temp = np.asarray(inputPtc.rawMeans[ampName]) &lt;=  self.config.covSample # added
+            index = len(np.asarray(inputPtc.rawMeans[ampName])[temp]) - 1 # added
+            mask[index] = True # added
+    
+            # Convert to A matrix
+            from astropy.io import fits
+            #if detName == "R03_S12":
+            #    h = fits.open("/sdf/group/rubin/repo/main/u/abrought/BF/2023.06.16/ptc.R03-S12.trunc_to_pcti.fullnoisematrix/20230710T213347Z/ptc/ptc_LSSTCam_R03_S12_u_abrought_BF_2023_06_16_ptc_R03-S12_trunc_to_pcti_fullnoisematrix_20230710T213347Z.fits")
+            #elif detName == "R24_S11":
+            #    h = fits.open("/sdf/group/rubin/repo/main/u/abrought/BF/2023.06.16/ptc.R24-S11.trunc_to_pcti.fullnoisematrix/20230710T213533Z/ptc/ptc_LSSTCam_R24_S11_u_abrought_BF_2023_06_16_ptc_R24-S11_trunc_to_pcti_fullnoisematrix_20230710T213533Z.fits")
+            #elif detName == "R02_S00":
+            #    h = fits.open("/sdf/group/rubin/repo/main/u/abrought/BF/2023.06.16/ptc.R02-S00.trunc_to_pcti.fullnoisematrix/20230710T235125Z/ptc/ptc_LSSTCam_R02_S00_u_abrought_BF_2023_06_16_ptc_R02-S00_trunc_to_pcti_fullnoisematrix_20230710T235125Z.fits")
+            #else:
+            #    h = fits.open("/sdf/group/rubin/repo/main/u/abrought/BF/2023.06.16/ptc.R21-S02.trunc_to_pcti.fullnoisematrix/20230710T225605Z/ptc/ptc_LSSTCam_R21_S02_u_abrought_BF_2023_06_16_ptc_R21-S02_trunc_to_pcti_fullnoisematrix_20230710T225605Z.fits")
+    
+            #_n = h[1].data['NOISE_MATRIX'][ampnoiseindx[ampName]].reshape(8,8)
+            _g  = inputPtc.gain[ampName]
+            _mu = np.asarray(inputPtc.rawMeans[ampName])[mask]
+&gt;           _C_model = np.asarray(inputPtc.covariancesModel[ampName])[mask]
+E           IndexError: boolean index did not match indexed array along dimension 0; dimension is 0 but corresponding boolean dimension is 10
+
+python/lsst/cp/pipe/makeBrighterFatterKernel.py:267: IndexError</failure></testcase><testcase classname="cp_pipe.tests.test_brighterFatterKernel.BfkSolveTaskTestCase" name="test_averaged" time="0.004"><failure message="IndexError: boolean index did not match indexed array along dimension 0; dimension is 0 but corresponding boolean dimension is 10">self = &lt;test_brighterFatterKernel.BfkSolveTaskTestCase testMethod=test_averaged&gt;
+
+    def test_averaged(self):
+        """Test "averaged" brighter-fatter kernel.
+        """
+        task = cpPipe.BrighterFatterKernelSolveTask()
+    
+&gt;       results = task.run(self.ptc, ['this is a dummy exposure'], self.camera, {'detector': 1})
+
+tests/test_brighterFatterKernel.py:95: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;lsst.cp.pipe.makeBrighterFatterKernel.BrighterFatterKernelSolveTask object at 0x7f15469f06a0&gt;
+inputPtc = &lt;lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset object at 0x7f15469f3220&gt;, dummy = ['this is a dummy exposure']
+camera = &lt;lsst.afw.cameraGeom.Camera object at 0x7f1546d7b2f0&gt;, inputDims = {'detector': 1}
+
+    def run(self, inputPtc, dummy, camera, inputDims):
+        """Combine covariance information from PTC into brighter-fatter
+        kernels.
+    
+        Parameters
+        ----------
+        inputPtc : `lsst.ip.isr.PhotonTransferCurveDataset`
+            PTC data containing per-amplifier covariance measurements.
+        dummy : `lsst.afw.image.Exposure`
+            The exposure used to select the appropriate PTC dataset.
+            In almost all circumstances, one of the input exposures
+            used to generate the PTC dataset is the best option.
+        camera : `lsst.afw.cameraGeom.Camera`
+            Camera to use for camera geometry information.
+        inputDims : `lsst.daf.butler.DataCoordinate` or `dict`
+            DataIds to use to populate the output calibration.
+    
+        Returns
+        -------
+        results : `lsst.pipe.base.Struct`
+            The resulst struct containing:
+    
+            ``outputBfk``
+                Resulting Brighter-Fatter Kernel
+                (`lsst.ip.isr.BrighterFatterKernel`).
+        """
+        if len(dummy) == 0:
+            self.log.warning("No dummy exposure found.")
+    
+        detector = camera[inputDims['detector']]
+        detName = detector.getName()
+    
+        pcti = {"R03_S12": (1.0e5)/1.702,
+                "R24_S11": (0.9e5)/1.498,
+                "R21_S02": (0.75e5)/1.497,
+                "R02_S00": (0.8e5)/1.679}
+    
+        ptc  = {"R03_S12": 77000.,
+                "R24_S11": 80000.,
+                "R21_S02": 68000.,
+                "R02_S00": 60000.}
+    
+    
+        if self.config.level == 'DETECTOR':
+            detectorCorrList = list()
+            detectorFluxes = list()
+    
+        bfk = BrighterFatterKernel(camera=camera, detectorId=detector.getId(), level=self.config.level)
+        bfk.rawMeans = inputPtc.rawMeans  # ADU
+        bfk.rawVariances = inputPtc.rawVars  # ADU^2
+        bfk.expIdMask = inputPtc.expIdMask
+    
+        # Use the PTC covariances as the cross-correlations.  These
+        # are scaled before the kernel is generated, which performs
+        # the conversion.  The input covariances are in (x, y) index
+        # ordering, as is the aMatrix.
+        ##bfk.rawXcorrs = inputPtc.covariances  # ADU^2
+        bfk.rawXcorrs = inputPtc.covariancesModel # ADU^2
+        bfk.badAmps = inputPtc.badAmps
+        bfk.shape = (inputPtc.covMatrixSide*2 + 1, inputPtc.covMatrixSide*2 + 1)
+        bfk.gain = inputPtc.gain
+        bfk.noise = inputPtc.noise
+        bfk.meanXcorrs = dict()
+        bfk.valid = dict()
+        bfk.updateMetadataFromExposures([inputPtc])
+    
+        ampnoiseindx = {'C00': 15,'C01': 14,'C02': 13,'C03': 12,'C04': 11,'C05': 10,'C06': 9,'C07': 8,'C11': 1,'C12': 2,'C13': 3,'C14': 4,'C15': 5,'C16': 6,'C17': 7,'C10': 0}
+    
+        for amp in detector:
+            ampName = amp.getName()
+            gain = bfk.gain[ampName]
+            mask = inputPtc.expIdMask[ampName]
+    
+            # Get single Cov model sample
+            mask = np.zeros(mask.shape, dtype=bool) # added
+            temp = np.asarray(inputPtc.rawMeans[ampName]) &lt;=  self.config.covSample # added
+            index = len(np.asarray(inputPtc.rawMeans[ampName])[temp]) - 1 # added
+            mask[index] = True # added
+    
+            # Convert to A matrix
+            from astropy.io import fits
+            #if detName == "R03_S12":
+            #    h = fits.open("/sdf/group/rubin/repo/main/u/abrought/BF/2023.06.16/ptc.R03-S12.trunc_to_pcti.fullnoisematrix/20230710T213347Z/ptc/ptc_LSSTCam_R03_S12_u_abrought_BF_2023_06_16_ptc_R03-S12_trunc_to_pcti_fullnoisematrix_20230710T213347Z.fits")
+            #elif detName == "R24_S11":
+            #    h = fits.open("/sdf/group/rubin/repo/main/u/abrought/BF/2023.06.16/ptc.R24-S11.trunc_to_pcti.fullnoisematrix/20230710T213533Z/ptc/ptc_LSSTCam_R24_S11_u_abrought_BF_2023_06_16_ptc_R24-S11_trunc_to_pcti_fullnoisematrix_20230710T213533Z.fits")
+            #elif detName == "R02_S00":
+            #    h = fits.open("/sdf/group/rubin/repo/main/u/abrought/BF/2023.06.16/ptc.R02-S00.trunc_to_pcti.fullnoisematrix/20230710T235125Z/ptc/ptc_LSSTCam_R02_S00_u_abrought_BF_2023_06_16_ptc_R02-S00_trunc_to_pcti_fullnoisematrix_20230710T235125Z.fits")
+            #else:
+            #    h = fits.open("/sdf/group/rubin/repo/main/u/abrought/BF/2023.06.16/ptc.R21-S02.trunc_to_pcti.fullnoisematrix/20230710T225605Z/ptc/ptc_LSSTCam_R21_S02_u_abrought_BF_2023_06_16_ptc_R21-S02_trunc_to_pcti_fullnoisematrix_20230710T225605Z.fits")
+    
+            #_n = h[1].data['NOISE_MATRIX'][ampnoiseindx[ampName]].reshape(8,8)
+            _g  = inputPtc.gain[ampName]
+            _mu = np.asarray(inputPtc.rawMeans[ampName])[mask]
+&gt;           _C_model = np.asarray(inputPtc.covariancesModel[ampName])[mask]
+E           IndexError: boolean index did not match indexed array along dimension 0; dimension is 0 but corresponding boolean dimension is 10
+
+python/lsst/cp/pipe/makeBrighterFatterKernel.py:267: IndexError</failure></testcase><testcase classname="cp_pipe.tests.test_brighterFatterKernel.BfkSolveTaskTestCase" name="test_quadratic" time="0.004"><failure message="IndexError: boolean index did not match indexed array along dimension 0; dimension is 0 but corresponding boolean dimension is 10">self = &lt;test_brighterFatterKernel.BfkSolveTaskTestCase testMethod=test_quadratic&gt;
+
+    def test_quadratic(self):
+        """Test quadratic correlation solver.
+    
+        This requires a different model for the variance, so cannot
+        use the one generated by setUp.  This model is not entirely
+        physical, but will ensure that accidental code changes are
+        detected.
+        """
+        config = cpPipe.BrighterFatterKernelSolveConfig()
+        config.correlationQuadraticFit = True
+        config.forceZeroSum = True
+        task = cpPipe.BrighterFatterKernelSolveTask(config=config)
+    
+        ptc = ipIsr.PhotonTransferCurveDataset(ampNames=['amp 1'], ptcFitType='FULLCOVARIANCE',
+                                               covMatrixSide=3)
+        ptc.expIdMask['amp 1'] = np.array([False, True, True, True, True, True, True, True, True, True])
+        ptc.rawMeans['amp 1'] = np.array([1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000])
+        ptc.finalMeans['amp 1'] = ptc.rawMeans['amp 1'][ptc.expIdMask['amp 1']]
+        ptc.rawVars['amp 1'] = 9e-5 * np.square(np.array(ptc.rawMeans['amp 1'], dtype=float))
+        ptc.finalVars['amp 1'] = ptc.rawVars['amp 1'][ptc.expIdMask['amp 1']]
+        ptc.covariances['amp 1'] = []
+        for mean, variance in zip(ptc.rawMeans['amp 1'], ptc.rawVars['amp 1']):
+            residual = variance
+            covariance = [[variance, 0.5 * residual, 0.1 * residual],
+                          [0.2 * residual, 0.1 * residual, 0.05 * residual],
+                          [0.025 * residual, 0.015 * residual, 0.01 * residual]]
+            ptc.covariances['amp 1'].append(covariance)
+    
+        ptc.gain['amp 1'] = 1.0
+        ptc.noise['amp 1'] = 5.0
+    
+&gt;       results = task.run(ptc, ['this is a dummy exposure'], self.camera, {'detector': 1})
+
+tests/test_brighterFatterKernel.py:139: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;lsst.cp.pipe.makeBrighterFatterKernel.BrighterFatterKernelSolveTask object at 0x7f1543ea5510&gt;
+inputPtc = &lt;lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset object at 0x7f1543ea40d0&gt;, dummy = ['this is a dummy exposure']
+camera = &lt;lsst.afw.cameraGeom.Camera object at 0x7f15464e1830&gt;, inputDims = {'detector': 1}
+
+    def run(self, inputPtc, dummy, camera, inputDims):
+        """Combine covariance information from PTC into brighter-fatter
+        kernels.
+    
+        Parameters
+        ----------
+        inputPtc : `lsst.ip.isr.PhotonTransferCurveDataset`
+            PTC data containing per-amplifier covariance measurements.
+        dummy : `lsst.afw.image.Exposure`
+            The exposure used to select the appropriate PTC dataset.
+            In almost all circumstances, one of the input exposures
+            used to generate the PTC dataset is the best option.
+        camera : `lsst.afw.cameraGeom.Camera`
+            Camera to use for camera geometry information.
+        inputDims : `lsst.daf.butler.DataCoordinate` or `dict`
+            DataIds to use to populate the output calibration.
+    
+        Returns
+        -------
+        results : `lsst.pipe.base.Struct`
+            The resulst struct containing:
+    
+            ``outputBfk``
+                Resulting Brighter-Fatter Kernel
+                (`lsst.ip.isr.BrighterFatterKernel`).
+        """
+        if len(dummy) == 0:
+            self.log.warning("No dummy exposure found.")
+    
+        detector = camera[inputDims['detector']]
+        detName = detector.getName()
+    
+        pcti = {"R03_S12": (1.0e5)/1.702,
+                "R24_S11": (0.9e5)/1.498,
+                "R21_S02": (0.75e5)/1.497,
+                "R02_S00": (0.8e5)/1.679}
+    
+        ptc  = {"R03_S12": 77000.,
+                "R24_S11": 80000.,
+                "R21_S02": 68000.,
+                "R02_S00": 60000.}
+    
+    
+        if self.config.level == 'DETECTOR':
+            detectorCorrList = list()
+            detectorFluxes = list()
+    
+        bfk = BrighterFatterKernel(camera=camera, detectorId=detector.getId(), level=self.config.level)
+        bfk.rawMeans = inputPtc.rawMeans  # ADU
+        bfk.rawVariances = inputPtc.rawVars  # ADU^2
+        bfk.expIdMask = inputPtc.expIdMask
+    
+        # Use the PTC covariances as the cross-correlations.  These
+        # are scaled before the kernel is generated, which performs
+        # the conversion.  The input covariances are in (x, y) index
+        # ordering, as is the aMatrix.
+        ##bfk.rawXcorrs = inputPtc.covariances  # ADU^2
+        bfk.rawXcorrs = inputPtc.covariancesModel # ADU^2
+        bfk.badAmps = inputPtc.badAmps
+        bfk.shape = (inputPtc.covMatrixSide*2 + 1, inputPtc.covMatrixSide*2 + 1)
+        bfk.gain = inputPtc.gain
+        bfk.noise = inputPtc.noise
+        bfk.meanXcorrs = dict()
+        bfk.valid = dict()
+        bfk.updateMetadataFromExposures([inputPtc])
+    
+        ampnoiseindx = {'C00': 15,'C01': 14,'C02': 13,'C03': 12,'C04': 11,'C05': 10,'C06': 9,'C07': 8,'C11': 1,'C12': 2,'C13': 3,'C14': 4,'C15': 5,'C16': 6,'C17': 7,'C10': 0}
+    
+        for amp in detector:
+            ampName = amp.getName()
+            gain = bfk.gain[ampName]
+            mask = inputPtc.expIdMask[ampName]
+    
+            # Get single Cov model sample
+            mask = np.zeros(mask.shape, dtype=bool) # added
+            temp = np.asarray(inputPtc.rawMeans[ampName]) &lt;=  self.config.covSample # added
+            index = len(np.asarray(inputPtc.rawMeans[ampName])[temp]) - 1 # added
+            mask[index] = True # added
+    
+            # Convert to A matrix
+            from astropy.io import fits
+            #if detName == "R03_S12":
+            #    h = fits.open("/sdf/group/rubin/repo/main/u/abrought/BF/2023.06.16/ptc.R03-S12.trunc_to_pcti.fullnoisematrix/20230710T213347Z/ptc/ptc_LSSTCam_R03_S12_u_abrought_BF_2023_06_16_ptc_R03-S12_trunc_to_pcti_fullnoisematrix_20230710T213347Z.fits")
+            #elif detName == "R24_S11":
+            #    h = fits.open("/sdf/group/rubin/repo/main/u/abrought/BF/2023.06.16/ptc.R24-S11.trunc_to_pcti.fullnoisematrix/20230710T213533Z/ptc/ptc_LSSTCam_R24_S11_u_abrought_BF_2023_06_16_ptc_R24-S11_trunc_to_pcti_fullnoisematrix_20230710T213533Z.fits")
+            #elif detName == "R02_S00":
+            #    h = fits.open("/sdf/group/rubin/repo/main/u/abrought/BF/2023.06.16/ptc.R02-S00.trunc_to_pcti.fullnoisematrix/20230710T235125Z/ptc/ptc_LSSTCam_R02_S00_u_abrought_BF_2023_06_16_ptc_R02-S00_trunc_to_pcti_fullnoisematrix_20230710T235125Z.fits")
+            #else:
+            #    h = fits.open("/sdf/group/rubin/repo/main/u/abrought/BF/2023.06.16/ptc.R21-S02.trunc_to_pcti.fullnoisematrix/20230710T225605Z/ptc/ptc_LSSTCam_R21_S02_u_abrought_BF_2023_06_16_ptc_R21-S02_trunc_to_pcti_fullnoisematrix_20230710T225605Z.fits")
+    
+            #_n = h[1].data['NOISE_MATRIX'][ampnoiseindx[ampName]].reshape(8,8)
+            _g  = inputPtc.gain[ampName]
+            _mu = np.asarray(inputPtc.rawMeans[ampName])[mask]
+&gt;           _C_model = np.asarray(inputPtc.covariancesModel[ampName])[mask]
+E           IndexError: boolean index did not match indexed array along dimension 0; dimension is 0 but corresponding boolean dimension is 10
+
+python/lsst/cp/pipe/makeBrighterFatterKernel.py:267: IndexError</failure></testcase><testcase classname="cp_pipe.tests.test_brighterFatterKernel.TestMemory" name="testFileDescriptorLeaks" time="0.116" /><testcase classname="cp_pipe.tests.test_defects.flake-8" name="FLAKE8" time="1.740" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_badImage" time="0.471" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_defectFindingAllSensor" time="0.364" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_defectFindingEdgeIgnore" time="0.487" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_edgeMasking" time="0.360" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_getNumGoodPixels" time="0.354" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_maskBlocks_blob_both_sides_good_less_than_threshold" time="0.355" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_maskBlocks_blob_one_side_good_greater_than_threshold" time="0.359" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_maskBlocks_blobs_one_side_good_less_than_threshold" time="0.354" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_maskBlocks_blobs_other_side_good_less_than_threshold" time="0.355" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_maskBlocks_both_sides_good_greater_than_threshold" time="0.359" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_maskBlocks_discontigous_less_than_thresholds" time="0.355" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_maskBlocks_discontigous_to_single_block" time="0.478" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_maskBlocks_every_other_pixel_bad_greater_than_threshold" time="0.359" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_maskBlocks_every_other_pixel_bad_less_than_threshold" time="0.354" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_maskBlocks_full_column" time="0.356" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_maskBlocks_long_column" time="0.358" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_maskBlocks_more_than_thresholds" time="0.353" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_maskBlocks_not_enough_bad_pixels_in_column" time="0.353" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_maskBlocks_other_side_good_greater_than_threshold" time="0.358" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_maskBlocks_short_column" time="0.353" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_maskBlocks_y_out_of_order_dm38103" time="0.465" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_pixelCounting" time="0.367" /><testcase classname="cp_pipe.tests.test_defects.MeasureDefectsTaskTestCase" name="test_valueThreshold" time="0.394" /><testcase classname="cp_pipe.tests.test_defects.TestMemory" name="testFileDescriptorLeaks" time="0.120" /><testcase classname="cp_pipe.tests.test_deferredCharge.flake-8" name="FLAKE8" time="0.710" /><testcase classname="cp_pipe.tests.test_deferredCharge.CpCtiSolveTaskTestCase" name="test_task" time="14.564" /><testcase classname="cp_pipe.tests.test_deferredCharge.TestMemory" name="testFileDescriptorLeaks" time="0.143" /><testcase classname="cp_pipe.tests.test_measureCrosstalk.flake-8" name="FLAKE8" time="0.663" /><testcase classname="cp_pipe.tests.test_measureCrosstalk.MeasureCrosstalkTaskCases" name="testMeasureCrosstalkTaskTrimmed" time="2.946" /><testcase classname="cp_pipe.tests.test_measureCrosstalk.MeasureCrosstalkTaskCases" name="testMeasureCrosstalkTaskUntrimmed" time="2.925" /><testcase classname="cp_pipe.tests.test_measureCrosstalk.MemoryTester" name="testFileDescriptorLeaks" time="0.112" /><testcase classname="cp_pipe.tests.test_ptc.flake-8" name="FLAKE8" time="1.860" /><testcase classname="cp_pipe.tests.test_ptc.MeasurePhotonTransferCurveTaskTestCase" name="test_covAstier" time="32.707" /><testcase classname="cp_pipe.tests.test_ptc.MeasurePhotonTransferCurveTaskTestCase" name="test_getGainFromFlatPair" time="29.562" /><testcase classname="cp_pipe.tests.test_ptc.MeasurePhotonTransferCurveTaskTestCase" name="test_getInitialGoodPoints" time="0.361" /><testcase classname="cp_pipe.tests.test_ptc.MeasurePhotonTransferCurveTaskTestCase" name="test_makeZeroSafe" time="0.352" /><testcase classname="cp_pipe.tests.test_ptc.MeasurePhotonTransferCurveTaskTestCase" name="test_meanVarMeasurement" time="0.368" /><testcase classname="cp_pipe.tests.test_ptc.MeasurePhotonTransferCurveTaskTestCase" name="test_meanVarMeasurementAllNan" time="0.372" /><testcase classname="cp_pipe.tests.test_ptc.MeasurePhotonTransferCurveTaskTestCase" name="test_meanVarMeasurementTooFewPixels" time="0.369" /><testcase classname="cp_pipe.tests.test_ptc.MeasurePhotonTransferCurveTaskTestCase" name="test_meanVarMeasurementTooNarrowStrip" time="0.362" /><testcase classname="cp_pipe.tests.test_ptc.MeasurePhotonTransferCurveTaskTestCase" name="test_meanVarMeasurementWithNans" time="0.603" /><testcase classname="cp_pipe.tests.test_ptc.MeasurePhotonTransferCurveTaskTestCase" name="test_ptcFit" time="63.788" /><testcase classname="cp_pipe.tests.test_ptc.MeasurePhotonTransferCurveDatasetTestCase" name="test_generalBehaviour" time="0.002" /><testcase classname="cp_pipe.tests.test_ptc.TestMemory" name="testFileDescriptorLeaks" time="0.180" /><testcase classname="cp_pipe.tests.test_runEotestTask.flake-8" name="FLAKE8" time="0.570" /><testcase classname="cp_pipe.tests.test_runEotestTask.RunEotestTaskTestCase" name="testClassInstantiation" time="0.003"><skipped type="pytest.skip" message="No eotest setup, so skipping unit test">/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/tests/test_runEotestTask.py:52: No eotest setup, so skipping unit test</skipped></testcase><testcase classname="cp_pipe.tests.test_runEotestTask.RunEotestTaskTestCase" name="testExample" time="0.001" /><testcase classname="cp_pipe.tests.test_runEotestTask.RunEotestTaskTestCase" name="testImport" time="0.001"><skipped type="pytest.skip" message="No eotest setup, so skipping unit test">/sdf/home/a/abrought/alternate_branches/chrisfixes_old/cp_pipe/tests/test_runEotestTask.py:48: No eotest setup, so skipping unit test</skipped></testcase><testcase classname="cp_pipe.tests.test_runEotestTask.TestMemory" name="testFileDescriptorLeaks" time="0.112" /></testsuite></testsuites>

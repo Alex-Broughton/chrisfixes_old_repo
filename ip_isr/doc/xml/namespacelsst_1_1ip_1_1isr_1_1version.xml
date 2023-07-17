@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacelsst_1_1ip_1_1isr_1_1version" kind="namespace" language="Python">
+    <compoundname>lsst::ip::isr::version</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr::version.str</definition>
+        <argsstring></argsstring>
+        <name>str</name>
+        <qualifiedname>lsst::ip::isr.version.str</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/version.py" line="5" column="1" bodyfile="python/lsst/ip/isr/version.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelsst_1_1ip_1_1isr_1_1version_1a52efacbfd6718b1e169ced13787c69bb" prot="private" static="no" mutable="no">
+        <type>tuple</type>
+        <definition>tuple lsst::ip::isr::version.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>lsst::ip::isr.version.__all__</qualifiedname>
+        <initializer>=  (
+    &quot;__version__&quot;,
+    &quot;__repo_version__&quot;,
+    &quot;__fingerprint__&quot;,
+    &quot;__dependency_versions__&quot;,
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/version.py" line="36" column="1" bodyfile="python/lsst/ip/isr/version.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="python/lsst/ip/isr/version.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

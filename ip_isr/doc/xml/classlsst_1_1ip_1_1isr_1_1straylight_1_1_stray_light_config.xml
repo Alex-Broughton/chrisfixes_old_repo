@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_config" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::straylight::StrayLightConfig</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Config</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_config_1aa411d0295ffab3e08b245eddee68de1c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.straylight.StrayLightConfig::doRotatorAngleCorrection</definition>
+        <argsstring></argsstring>
+        <name>doRotatorAngleCorrection</name>
+        <qualifiedname>lsst::ip::isr.straylight.StrayLightConfig.doRotatorAngleCorrection</qualifiedname>
+        <initializer>=  Field(
+        dtype=bool,
+        doc=&quot;Rotator <ref refid="_function_library_8cc_1a139179d8a6d087f145315e68b9988c12" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">angle</ref> correction configuration.&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/straylight.py" line="35" column="1" bodyfile="python/lsst/ip/isr/straylight.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_config_1a2dbeb1c44b4a601de7f83c44f07132cb" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.straylight.StrayLightConfig::filters</definition>
+        <argsstring></argsstring>
+        <name>filters</name>
+        <qualifiedname>lsst::ip::isr.straylight.StrayLightConfig.filters</qualifiedname>
+        <initializer>=  ListField(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;Filters that need straylight correction.&quot;,
+        default=[],
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/straylight.py" line="41" column="1" bodyfile="python/lsst/ip/isr/straylight.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.straylight.StrayLightConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Config</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.straylight.StrayLightConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Config</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/straylight.py" line="34" column="1" bodyfile="python/lsst/ip/isr/straylight.py" bodystart="34" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_config_1aa411d0295ffab3e08b245eddee68de1c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::straylight::StrayLightConfig</scope><name>doRotatorAngleCorrection</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_config_1a2dbeb1c44b4a601de7f83c44f07132cb" prot="public" virt="non-virtual"><scope>lsst::ip::isr::straylight::StrayLightConfig</scope><name>filters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

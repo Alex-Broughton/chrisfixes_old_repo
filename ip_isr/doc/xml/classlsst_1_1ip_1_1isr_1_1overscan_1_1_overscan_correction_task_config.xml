@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::overscan::OverscanCorrectionTaskConfig</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pexConfig.Config</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a6e18a7f60592b3899bc6b606bd140fa2" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig::fitType</definition>
+        <argsstring></argsstring>
+        <name>fitType</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig.fitType</qualifiedname>
+        <initializer>=  pexConfig.ChoiceField(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;The method for fitting the overscan bias level.&quot;,
+        default=&apos;<ref refid="namespacelsst_1_1afw_1_1math_1a60dcc8ebfa435e65f612394b88b8b923a9e175e800a7fc0344552032613528ce3" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">MEDIAN</ref>&apos;,
+        allowed={
+            &quot;POLY&quot;: &quot;Fit ordinary polynomial <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> the longest axis of the overscan region&quot;,
+            &quot;CHEB&quot;: &quot;Fit Chebyshev polynomial <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> the longest axis of the overscan region&quot;,
+            &quot;LEG&quot;: &quot;Fit Legendre polynomial <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> the longest axis of the overscan region&quot;,
+            &quot;NATURAL_SPLINE&quot;: &quot;Fit natural spline <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> the longest axis of the overscan region&quot;,
+            &quot;CUBIC_SPLINE&quot;: &quot;Fit cubic spline <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> the longest axis of the overscan region&quot;,
+            &quot;AKIMA_SPLINE&quot;: &quot;Fit Akima spline <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> the longest axis of the overscan region&quot;,
+            &quot;MEAN&quot;: &quot;Correct using the mean of the overscan region&quot;,
+            &quot;MEANCLIP&quot;: &quot;Correct using <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> clipped mean of the overscan region&quot;,
+            &quot;MEDIAN&quot;: &quot;Correct using the median of the overscan region&quot;,
+            &quot;MEDIAN_PER_ROW&quot;: &quot;Correct using the median per <ref refid="_c_r_8cc_1af1d3cff2e4538e23400e260bae3dadad" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_algorithms/gf28172b03b+14260db065/doc/meas_algorithms.tag">row</ref> of the overscan region&quot;,
+        },
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="38" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a08b957b4488591e4f66dec670ae9995c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig::order</definition>
+        <argsstring></argsstring>
+        <name>order</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig.order</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=(&quot;Order of polynomial <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> fit if overscan fit <ref refid="_detector_8cc_1ab37e382f4a6dc8e92d68ffd983a3f959" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">type</ref> is <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> polynomial, &quot;
+             &quot;or number of spline knots if overscan fit <ref refid="_detector_8cc_1ab37e382f4a6dc8e92d68ffd983a3f959" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">type</ref> is <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> spline.&quot;),
+        default=1,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="55" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a36c254e831fb85bf4637cdcaea325cfa" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig::numSigmaClip</definition>
+        <argsstring></argsstring>
+        <name>numSigmaClip</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig.numSigmaClip</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        doc=&quot;Rejection threshold (<ref refid="_gaussian_psf_8cc_1a4e16839fa273d5b6d34598933d29fa67" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">sigma</ref>) for collapsing overscan before fit&quot;,
+        default=3.0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="61" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a4f3faf6130f923001fddc4701d6352fb" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig::maskPlanes</definition>
+        <argsstring></argsstring>
+        <name>maskPlanes</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig.maskPlanes</qualifiedname>
+        <initializer>=  pexConfig.ListField(
+        dtype=<ref refid="namespacelsst_1_1ip_1_1isr_1_1version_1a8e0487090af9fda0d05fe349a8919fee" kindref="member">str</ref>,
+        doc=&quot;Mask planes <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> reject when measuring overscan&quot;,
+        default=[&apos;BAD&apos;, &apos;SAT&apos;],
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="66" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1ac4df404bc389f1918a8c832ba38cde5a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig::overscanIsInt</definition>
+        <argsstring></argsstring>
+        <name>overscanIsInt</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig.overscanIsInt</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Treat overscan as an integer image for purposes of <ref refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a6e18a7f60592b3899bc6b606bd140fa2" kindref="member">fitType</ref>=MEDIAN&quot;
+            &quot; and <ref refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a6e18a7f60592b3899bc6b606bd140fa2" kindref="member">fitType</ref>=MEDIAN_PER_ROW.&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="71" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a6dd302378c0fa9fd7d451f16ff6e2238" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig::doParallelOverscan</definition>
+        <argsstring></argsstring>
+        <name>doParallelOverscan</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig.doParallelOverscan</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Correct using parallel overscan after <ref refid="_detector_8cc_1af2e79c66b1c1e4c3db7b71d8f2d04422" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">serial</ref> overscan correction?&quot;,
+        default=False,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="78" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a2ac85e28cb8626f9736eee03c2b4d9de" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig::parallelOverscanMaskThreshold</definition>
+        <argsstring></argsstring>
+        <name>parallelOverscanMaskThreshold</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig.parallelOverscanMaskThreshold</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=&quot;Threshold above which pixels in the parallel overscan are masked as bleeds.&quot;,
+        default=100000,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="83" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a56ad1629e295066f1a65ec8052722d69" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig::parallelOverscanMaskGrowSize</definition>
+        <argsstring></argsstring>
+        <name>parallelOverscanMaskGrowSize</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig.parallelOverscanMaskGrowSize</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=&quot;Masks created <ref refid="_transform_map_8cc_1a302c2cce96a9eb2cb1d89356b89a84bd" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">from</ref> saturated bleeds should be grown by this many &quot;
+            &quot;pixels during construction of the parallel overscan mask. &quot;
+            &quot;This value determined <ref refid="_transform_map_8cc_1a302c2cce96a9eb2cb1d89356b89a84bd" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">from</ref> the ITL chip in the LATISS camera&quot;,
+        default=7,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="88" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1aba3d1e623541ed337b7d4abcbf360c3f" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig::leadingColumnsToSkip</definition>
+        <argsstring></argsstring>
+        <name>leadingColumnsToSkip</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig.leadingColumnsToSkip</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=&quot;Number of leading columns <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> skip in <ref refid="_detector_8cc_1af2e79c66b1c1e4c3db7b71d8f2d04422" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">serial</ref> overscan correction.&quot;,
+        default=0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="96" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a571f0fbca67c4e64f1875b4e5bb4a6c2" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig::trailingColumnsToSkip</definition>
+        <argsstring></argsstring>
+        <name>trailingColumnsToSkip</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig.trailingColumnsToSkip</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=&quot;Number of trailing columns <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> skip in <ref refid="_detector_8cc_1af2e79c66b1c1e4c3db7b71d8f2d04422" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">serial</ref> overscan correction.&quot;,
+        default=0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="101" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a7b2f4ba65d66bfee1634574a7f1261ca" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig::leadingRowsToSkip</definition>
+        <argsstring></argsstring>
+        <name>leadingRowsToSkip</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig.leadingRowsToSkip</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=&quot;Number of leading rows <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> skip in parallel overscan correction.&quot;,
+        default=0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="106" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a65fede252c34452ec94ef6445eced585" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig::trailingRowsToSkip</definition>
+        <argsstring></argsstring>
+        <name>trailingRowsToSkip</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig.trailingRowsToSkip</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=&quot;Number of trailing rows <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> skip in parallel overscan correction.&quot;,
+        default=0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="111" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1af84473c05657cd76f0f7450a43bb3d13" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig::maxDeviation</definition>
+        <argsstring></argsstring>
+        <name>maxDeviation</name>
+        <qualifiedname>lsst::ip::isr.overscan.OverscanCorrectionTaskConfig.maxDeviation</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        doc=&quot;Maximum deviation <ref refid="_transform_map_8cc_1a302c2cce96a9eb2cb1d89356b89a84bd" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">from</ref> median (in ADU) <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> <ref refid="_heavy_footprint_8cc_1ab686a106d56d24e934338431811799aa" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">mask</ref> in overscan correction.&quot;,
+        default=1000.0, check=lambda x: <ref refid="_chebyshev_bounded_field_8cc_1af88b946fb90d5f08b5fb740c70e98c10" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">x</ref> &gt; 0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/overscan.py" line="117" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Overscan correction options.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.overscan.OverscanCorrectionTaskConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pexConfig.Config</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.overscan.OverscanCorrectionTaskConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pexConfig.Config</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/overscan.py" line="35" column="1" bodyfile="python/lsst/ip/isr/overscan.py" bodystart="35" bodyend="123"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a6dd302378c0fa9fd7d451f16ff6e2238" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTaskConfig</scope><name>doParallelOverscan</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a6e18a7f60592b3899bc6b606bd140fa2" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTaskConfig</scope><name>fitType</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1aba3d1e623541ed337b7d4abcbf360c3f" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTaskConfig</scope><name>leadingColumnsToSkip</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a7b2f4ba65d66bfee1634574a7f1261ca" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTaskConfig</scope><name>leadingRowsToSkip</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a4f3faf6130f923001fddc4701d6352fb" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTaskConfig</scope><name>maskPlanes</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1af84473c05657cd76f0f7450a43bb3d13" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTaskConfig</scope><name>maxDeviation</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a36c254e831fb85bf4637cdcaea325cfa" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTaskConfig</scope><name>numSigmaClip</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a08b957b4488591e4f66dec670ae9995c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTaskConfig</scope><name>order</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1ac4df404bc389f1918a8c832ba38cde5a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTaskConfig</scope><name>overscanIsInt</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a56ad1629e295066f1a65ec8052722d69" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTaskConfig</scope><name>parallelOverscanMaskGrowSize</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a2ac85e28cb8626f9736eee03c2b4d9de" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTaskConfig</scope><name>parallelOverscanMaskThreshold</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a571f0fbca67c4e64f1875b4e5bb4a6c2" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTaskConfig</scope><name>trailingColumnsToSkip</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1overscan_1_1_overscan_correction_task_config_1a65fede252c34452ec94ef6445eced585" prot="public" virt="non-virtual"><scope>lsst::ip::isr::overscan::OverscanCorrectionTaskConfig</scope><name>trailingRowsToSkip</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

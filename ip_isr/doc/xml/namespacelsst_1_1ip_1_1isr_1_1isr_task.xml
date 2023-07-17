@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacelsst_1_1ip_1_1isr_1_1isr_task" kind="namespace" language="Python">
+    <compoundname>lsst::ip::isr::isrTask</compoundname>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp" prot="public">lsst::ip::isr::isrTask::FakeAmp</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task" prot="public">lsst::ip::isr::isrTask::IsrTask</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_config" prot="public">lsst::ip::isr::isrTask::IsrTaskConfig</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_isr_task_connections" prot="public">lsst::ip::isr::isrTask::IsrTaskConnections</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelsst_1_1ip_1_1isr_1_1isr_task_1a8d80391a6f6a3f388680a08f7c559d40" prot="private" static="no" mutable="no">
+        <type><ref refid="fits_8cc_1a1fbc6c4766fd22cd31bc6972d5d6c14f" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">list</ref></type>
+        <definition>list lsst::ip::isr::isrTask.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>lsst::ip::isr.isrTask.__all__</qualifiedname>
+        <initializer>=  [&quot;IsrTask&quot;, &quot;IsrTaskConfig&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="22" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_task_1ac48582206c788a5153f18f31546b0d79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.crosstalkSourceLookup</definition>
+        <argsstring>(datasetType, registry, quantumDataId, collections)</argsstring>
+        <name>crosstalkSourceLookup</name>
+        <qualifiedname>lsst::ip::isr.isrTask.crosstalkSourceLookup</qualifiedname>
+        <param>
+          <type>datasetType</type>
+          <defname>datasetType</defname>
+        </param>
+        <param>
+          <type><ref refid="namespacelsst_1_1pex_1_1exceptions_1_1wrappers_1a407f637be10b015d54205c689591e668" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/pex_exceptions/g131b30d954+f6e951a35a/doc/pex_exceptions.tag">registry</ref></type>
+          <defname>registry</defname>
+        </param>
+        <param>
+          <type>quantumDataId</type>
+          <defname>quantumDataId</defname>
+        </param>
+        <param>
+          <type>collections</type>
+          <defname>collections</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Lookup function to identify crosstalkSource entries.
+
+This should return an empty list under most circumstances.  Only
+when inter-chip crosstalk has been identified should this be
+populated.
+
+Parameters
+----------
+datasetType : `str`
+    Dataset to lookup.
+registry : `lsst.daf.butler.Registry`
+    Butler registry to query.
+quantumDataId : `lsst.daf.butler.ExpandedDataCoordinate`
+    Data id to transform to identify crosstalkSources.  The
+    ``detector`` entry will be stripped.
+collections : `lsst.daf.butler.CollectionSearch`
+    Collections to search through.
+
+Returns
+-------
+results : `list` [`lsst.daf.butler.DatasetRef`]
+    List of datasets that match the query that will be used as
+    crosstalkSources.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="61" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="61" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="python/lsst/ip/isr/isrTask.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

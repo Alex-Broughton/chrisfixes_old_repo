@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::isrQa::IsrQaFlatnessConfig</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pexConfig.Config</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config_1ae895cb155b16f729d17fbcc67654af28" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrQa.IsrQaFlatnessConfig::meshX</definition>
+        <argsstring></argsstring>
+        <name>meshX</name>
+        <qualifiedname>lsst::ip::isr.isrQa.IsrQaFlatnessConfig.meshX</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=&quot;Mesh size in <ref refid="namespacelsst_1_1afw_1_1image_1ab29f35fe9d69bcec0d04313dbee90dfeaea6731ea60ae377c3ffd7c7dd9160818" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">X</ref> for flatness statistics&quot;,
+        default=256,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="31" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config_1ac85fe485055d232d3d351aace7d122db" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrQa.IsrQaFlatnessConfig::meshY</definition>
+        <argsstring></argsstring>
+        <name>meshY</name>
+        <qualifiedname>lsst::ip::isr.isrQa.IsrQaFlatnessConfig.meshY</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=&quot;Mesh size in <ref refid="namespacelsst_1_1afw_1_1image_1ab29f35fe9d69bcec0d04313dbee90dfea092dd8bc9a90b47f48dae4c6cd9a8f10" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">Y</ref> for flatness statistics&quot;,
+        default=256,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="36" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config_1a9a27883e18069b2d0accd0d9150c29c7" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrQa.IsrQaFlatnessConfig::doClip</definition>
+        <argsstring></argsstring>
+        <name>doClip</name>
+        <qualifiedname>lsst::ip::isr.isrQa.IsrQaFlatnessConfig.doClip</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=bool,
+        doc=&quot;Clip outliers for flatness statistics?&quot;,
+        default=<ref refid="namespacelsst_1_1meas_1_1base_1_1plugins_1a36f6bbecdc4948ed7e8229829af57b3b" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/meas_base/g91d91042f5+ca8b3fd1b0/doc/meas_base.tag">True</ref>,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="41" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config_1ae412b37e5c559a1a0c33dcaf94f0a734" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrQa.IsrQaFlatnessConfig::clipSigma</definition>
+        <argsstring></argsstring>
+        <name>clipSigma</name>
+        <qualifiedname>lsst::ip::isr.isrQa.IsrQaFlatnessConfig.clipSigma</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=float,
+        doc=&quot;Number of <ref refid="_gaussian_psf_8cc_1a4e16839fa273d5b6d34598933d29fa67" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">sigma</ref> deviant <ref refid="_transmission_curve_8cc_1aed7a0445bebba930fef77dec05b8c556" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">a</ref> <ref refid="_delta_function_kernel_8cc_1ae2a8d974644a75bdf33c1a72e76bd562" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">pixel</ref> must be <ref refid="_transform_map_8cc_1aa7cb577d822ed1158ca50a9c016b43f1" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">to</ref> be clipped <ref refid="_transform_map_8cc_1a302c2cce96a9eb2cb1d89356b89a84bd" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">from</ref> flatness statistics.&quot;,
+        default=3.0,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="46" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config_1abb77367d474551967194d5919ee01081" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrQa.IsrQaFlatnessConfig::nIter</definition>
+        <argsstring></argsstring>
+        <name>nIter</name>
+        <qualifiedname>lsst::ip::isr.isrQa.IsrQaFlatnessConfig.nIter</qualifiedname>
+        <initializer>=  pexConfig.Field(
+        dtype=<ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref>,
+        doc=&quot;Number of iterations used for outlier clipping in flatness statistics.&quot;,
+        default=3,
+    )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="51" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrQa.IsrQaFlatnessConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pexConfig.Config</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrQa.IsrQaFlatnessConfig</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pexConfig.Config</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/isrQa.py" line="30" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="30" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config_1ae412b37e5c559a1a0c33dcaf94f0a734" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrQa::IsrQaFlatnessConfig</scope><name>clipSigma</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config_1a9a27883e18069b2d0accd0d9150c29c7" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrQa::IsrQaFlatnessConfig</scope><name>doClip</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config_1ae895cb155b16f729d17fbcc67654af28" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrQa::IsrQaFlatnessConfig</scope><name>meshX</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config_1ac85fe485055d232d3d351aace7d122db" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrQa::IsrQaFlatnessConfig</scope><name>meshY</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config_1abb77367d474551967194d5919ee01081" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrQa::IsrQaFlatnessConfig</scope><name>nIter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

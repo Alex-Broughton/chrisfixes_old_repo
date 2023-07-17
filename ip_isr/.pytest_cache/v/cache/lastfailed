@@ -1,0 +1,3 @@
+{
+  "python/lsst/ip/isr/isrStatistics.py::flake-8::FLAKE8": true
+}

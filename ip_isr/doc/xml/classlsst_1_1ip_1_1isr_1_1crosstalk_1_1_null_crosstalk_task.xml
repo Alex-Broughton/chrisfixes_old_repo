@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_null_crosstalk_task" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::crosstalk::NullCrosstalkTask</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_task" prot="public" virt="non-virtual">lsst.ip.isr.crosstalk.CrosstalkTask</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_null_crosstalk_task_1abd770a1cf05e10a9e55952017ed8ecdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.crosstalk.NullCrosstalkTask.run</definition>
+        <argsstring>(self, exposure, crosstalkSources=None)</argsstring>
+        <name>run</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.NullCrosstalkTask.run</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_task_1a857118acbd84fe5f07271289ec08a07f">run</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>crosstalkSources</type>
+          <defname>crosstalk</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Apply intra-detector crosstalk correction
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure for which to remove crosstalk.
+crosstalkCalib : `lsst.ip.isr.CrosstalkCalib`, optional
+    External crosstalk calibration to apply.  Constructed from
+    detector if not found.
+crosstalkSources : `defaultdict`, optional
+    Image data for other detectors that are sources of
+    crosstalk in exposure.  The keys are expected to be names
+    of the other detectors, with the values containing
+    `lsst.afw.image.Exposure` at the same level of processing
+    as ``exposure``.
+    The default for intra-detector crosstalk here is None.
+isTrimmed : `bool`, optional
+    The image is already trimmed.
+    This should no longer be needed once DM-15409 is resolved.
+camera : `lsst.afw.cameraGeom.Camera`, optional
+    Camera associated with this exposure.  Only used for
+    inter-chip matching.
+
+Raises
+------
+RuntimeError
+    Raised if called for a detector that does not have a
+    crosstalk correction.  Also raised if the crosstalkSource
+    is not an expected type.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="766" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="766" bodyend="768"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.crosstalk.NullCrosstalkTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_null_crosstalk_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.crosstalk.CrosstalkTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_task"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Task</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.crosstalk.NullCrosstalkTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_null_crosstalk_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.crosstalk.CrosstalkTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_task"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Task</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/crosstalk.py" line="765" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="765" bodyend="768"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_null_crosstalk_task_1abd770a1cf05e10a9e55952017ed8ecdb" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::NullCrosstalkTask</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

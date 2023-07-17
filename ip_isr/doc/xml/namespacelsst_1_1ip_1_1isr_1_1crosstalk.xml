@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacelsst_1_1ip_1_1isr_1_1crosstalk" kind="namespace" language="Python">
+    <compoundname>lsst::ip::isr::crosstalk</compoundname>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib" prot="public">lsst::ip::isr::crosstalk::CrosstalkCalib</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_config" prot="public">lsst::ip::isr::crosstalk::CrosstalkConfig</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_task" prot="public">lsst::ip::isr::crosstalk::CrosstalkTask</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_null_crosstalk_task" prot="public">lsst::ip::isr::crosstalk::NullCrosstalkTask</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelsst_1_1ip_1_1isr_1_1crosstalk_1ac904e2b8b218c00a216902593ed32c65" prot="private" static="no" mutable="no">
+        <type><ref refid="fits_8cc_1a1fbc6c4766fd22cd31bc6972d5d6c14f" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">list</ref></type>
+        <definition>list lsst::ip::isr::crosstalk.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.__all__</qualifiedname>
+        <initializer>=  [&quot;CrosstalkCalib&quot;, &quot;CrosstalkConfig&quot;, &quot;CrosstalkTask&quot;,
+           &quot;NullCrosstalkTask&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="26" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="python/lsst/ip/isr/crosstalk.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

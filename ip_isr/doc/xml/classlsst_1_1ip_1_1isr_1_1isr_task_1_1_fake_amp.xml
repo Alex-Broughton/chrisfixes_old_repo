@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::isrTask::FakeAmp</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1afea5219c18b7629d4665cd543a80ca12" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.FakeAmp::_bbox</definition>
+        <argsstring></argsstring>
+        <name>_bbox</name>
+        <qualifiedname>lsst::ip::isr.isrTask.FakeAmp._bbox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2598" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2598" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a6254bbbe3e5f1b7b115bf7e1ce6e0b53" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.FakeAmp::_RawHorizontalOverscanBBox</definition>
+        <argsstring></argsstring>
+        <name>_RawHorizontalOverscanBBox</name>
+        <qualifiedname>lsst::ip::isr.isrTask.FakeAmp._RawHorizontalOverscanBBox</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2599" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2599" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a87a284e590ae11c79ec930e0c3fa8d37" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.FakeAmp::_gain</definition>
+        <argsstring></argsstring>
+        <name>_gain</name>
+        <qualifiedname>lsst::ip::isr.isrTask.FakeAmp._gain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2600" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2600" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1ae29b9bbe9842ce872561bb94ba156104" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.FakeAmp::_readNoise</definition>
+        <argsstring></argsstring>
+        <name>_readNoise</name>
+        <qualifiedname>lsst::ip::isr.isrTask.FakeAmp._readNoise</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2601" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2601" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1aa3b75cee3d0aa419aa7bbedf9f742897" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrTask.FakeAmp::_saturation</definition>
+        <argsstring></argsstring>
+        <name>_saturation</name>
+        <qualifiedname>lsst::ip::isr.isrTask.FakeAmp._saturation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2602" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2602" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a6b336af234f8c819e59a79125af6de2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.FakeAmp.__init__</definition>
+        <argsstring>(self, exposure, config)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.isrTask.FakeAmp.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>config</type>
+          <defname>config</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2597" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2597" bodyend="2603"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a92eb9003190328d94e51673002f52280" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.FakeAmp.getBBox</definition>
+        <argsstring>(self)</argsstring>
+        <name>getBBox</name>
+        <qualifiedname>lsst::ip::isr.isrTask.FakeAmp.getBBox</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2604" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2604" bodyend="2606"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1af9c72461dca40deda941381652238d6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.FakeAmp.getRawBBox</definition>
+        <argsstring>(self)</argsstring>
+        <name>getRawBBox</name>
+        <qualifiedname>lsst::ip::isr.isrTask.FakeAmp.getRawBBox</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2607" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2607" bodyend="2609"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a26f801f11ba1a8d64173ff0db8ec3040" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.FakeAmp.getRawHorizontalOverscanBBox</definition>
+        <argsstring>(self)</argsstring>
+        <name>getRawHorizontalOverscanBBox</name>
+        <qualifiedname>lsst::ip::isr.isrTask.FakeAmp.getRawHorizontalOverscanBBox</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2610" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2610" bodyend="2612"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a9bde294228f7ac32a4ed7a005828c93b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.FakeAmp.getGain</definition>
+        <argsstring>(self)</argsstring>
+        <name>getGain</name>
+        <qualifiedname>lsst::ip::isr.isrTask.FakeAmp.getGain</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2613" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2613" bodyend="2615"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a524eab3f1f50a293d9782a2ab63cf79d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.FakeAmp.getReadNoise</definition>
+        <argsstring>(self)</argsstring>
+        <name>getReadNoise</name>
+        <qualifiedname>lsst::ip::isr.isrTask.FakeAmp.getReadNoise</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2616" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2616" bodyend="2618"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a3c8383db6f48aa8a21041e7088e86b35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.FakeAmp.getSaturation</definition>
+        <argsstring>(self)</argsstring>
+        <name>getSaturation</name>
+        <qualifiedname>lsst::ip::isr.isrTask.FakeAmp.getSaturation</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2619" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2619" bodyend="2621"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a39e3c6bf9d5b02ea6248a206059a2449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrTask.FakeAmp.getSuspectLevel</definition>
+        <argsstring>(self)</argsstring>
+        <name>getSuspectLevel</name>
+        <qualifiedname>lsst::ip::isr.isrTask.FakeAmp.getSuspectLevel</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrTask.py" line="2622" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2622" bodyend="2624"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A Detector-like object that supports returning gain and saturation level
+
+This is used when the input exposure does not have a detector.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to generate a fake amplifier for.
+config : `lsst.ip.isr.isrTaskConfig`
+    Configuration to apply to the fake amplifier.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrTask.FakeAmp</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrTask.FakeAmp</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/isrTask.py" line="2584" column="1" bodyfile="python/lsst/ip/isr/isrTask.py" bodystart="2584" bodyend="2624"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a6b336af234f8c819e59a79125af6de2b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::FakeAmp</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1afea5219c18b7629d4665cd543a80ca12" prot="private" virt="non-virtual"><scope>lsst::ip::isr::isrTask::FakeAmp</scope><name>_bbox</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a87a284e590ae11c79ec930e0c3fa8d37" prot="private" virt="non-virtual"><scope>lsst::ip::isr::isrTask::FakeAmp</scope><name>_gain</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a6254bbbe3e5f1b7b115bf7e1ce6e0b53" prot="private" virt="non-virtual"><scope>lsst::ip::isr::isrTask::FakeAmp</scope><name>_RawHorizontalOverscanBBox</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1ae29b9bbe9842ce872561bb94ba156104" prot="private" virt="non-virtual"><scope>lsst::ip::isr::isrTask::FakeAmp</scope><name>_readNoise</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1aa3b75cee3d0aa419aa7bbedf9f742897" prot="private" virt="non-virtual"><scope>lsst::ip::isr::isrTask::FakeAmp</scope><name>_saturation</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a92eb9003190328d94e51673002f52280" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::FakeAmp</scope><name>getBBox</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a9bde294228f7ac32a4ed7a005828c93b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::FakeAmp</scope><name>getGain</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1af9c72461dca40deda941381652238d6a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::FakeAmp</scope><name>getRawBBox</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a26f801f11ba1a8d64173ff0db8ec3040" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::FakeAmp</scope><name>getRawHorizontalOverscanBBox</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a524eab3f1f50a293d9782a2ab63cf79d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::FakeAmp</scope><name>getReadNoise</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a3c8383db6f48aa8a21041e7088e86b35" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::FakeAmp</scope><name>getSaturation</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_task_1_1_fake_amp_1a39e3c6bf9d5b02ea6248a206059a2449" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrTask::FakeAmp</scope><name>getSuspectLevel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

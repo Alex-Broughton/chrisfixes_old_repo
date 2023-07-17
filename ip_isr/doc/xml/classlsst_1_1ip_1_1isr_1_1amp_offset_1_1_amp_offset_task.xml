@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_task" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::ampOffset::AmpOffsetTask</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pipeBase.Task</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_task_1aba768591ed007bda382b380e55cc034c" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ampOffset.AmpOffsetTask::ConfigClass</definition>
+        <argsstring></argsstring>
+        <name>ConfigClass</name>
+        <qualifiedname>lsst::ip::isr.ampOffset.AmpOffsetTask.ConfigClass</qualifiedname>
+        <initializer>=  <ref refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_config" kindref="compound">AmpOffsetConfig</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ampOffset.py" line="84" column="1" bodyfile="python/lsst/ip/isr/ampOffset.py" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_task_1a9b0434576269a647a3b1e229a979a572" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.ampOffset.AmpOffsetTask::_DefaultName</definition>
+        <argsstring></argsstring>
+        <name>_DefaultName</name>
+        <qualifiedname>lsst::ip::isr.ampOffset.AmpOffsetTask._DefaultName</qualifiedname>
+        <initializer>=  &quot;isrAmpOffset&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ampOffset.py" line="85" column="1" bodyfile="python/lsst/ip/isr/ampOffset.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_task_1a6de6e67a492e07ff1d8b972af0ba2d9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.ampOffset.AmpOffsetTask.__init__</definition>
+        <argsstring>(self, *args, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.ampOffset.AmpOffsetTask.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>*</type>
+          <declname>args</declname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ampOffset.py" line="87" column="1" bodyfile="python/lsst/ip/isr/ampOffset.py" bodystart="87" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_task_1a75c9c7b6d582347034cd345014efa3fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.ampOffset.AmpOffsetTask.run</definition>
+        <argsstring>(self, exposure)</argsstring>
+        <name>run</name>
+        <qualifiedname>lsst::ip::isr.ampOffset.AmpOffsetTask.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Calculate amp offset values, determine corrective pedestals for each
+amp, and update the input exposure in-place. This task is currently not
+implemented, and should be retargeted by a camera specific version.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to be corrected for any amp offsets.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ampOffset.py" line="95" column="1" bodyfile="python/lsst/ip/isr/ampOffset.py" bodystart="95" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Calculate and apply amp offset corrections to an exposure.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.ampOffset.AmpOffsetTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pipeBase::Task</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.ampOffset.AmpOffsetTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pipeBase::Task</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/ampOffset.py" line="81" column="1" bodyfile="python/lsst/ip/isr/ampOffset.py" bodystart="81" bodyend="106"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_task_1a6de6e67a492e07ff1d8b972af0ba2d9e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ampOffset::AmpOffsetTask</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_task_1a9b0434576269a647a3b1e229a979a572" prot="private" virt="non-virtual"><scope>lsst::ip::isr::ampOffset::AmpOffsetTask</scope><name>_DefaultName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_task_1aba768591ed007bda382b380e55cc034c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ampOffset::AmpOffsetTask</scope><name>ConfigClass</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1amp_offset_1_1_amp_offset_task_1a75c9c7b6d582347034cd345014efa3fd" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ampOffset::AmpOffsetTask</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

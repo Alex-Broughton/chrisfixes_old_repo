@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::straylight::StrayLightTask</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Task</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task_1a8dbf0d8be153aebae5912d820158e943" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.straylight.StrayLightTask::ConfigClass</definition>
+        <argsstring></argsstring>
+        <name>ConfigClass</name>
+        <qualifiedname>lsst::ip::isr.straylight.StrayLightTask.ConfigClass</qualifiedname>
+        <initializer>=  <ref refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_config" kindref="compound">StrayLightConfig</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/straylight.py" line="53" column="1" bodyfile="python/lsst/ip/isr/straylight.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task_1ab6bff54dafa225a74599128ed6ee2e2b" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.straylight.StrayLightTask::_DefaultName</definition>
+        <argsstring></argsstring>
+        <name>_DefaultName</name>
+        <qualifiedname>lsst::ip::isr.straylight.StrayLightTask._DefaultName</qualifiedname>
+        <initializer>=  &quot;isrStrayLight&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/straylight.py" line="54" column="1" bodyfile="python/lsst/ip/isr/straylight.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task_1a993c3a0b75d7a558289b666810e153c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.straylight.StrayLightTask.check</definition>
+        <argsstring>(self, exposure)</argsstring>
+        <name>check</name>
+        <qualifiedname>lsst::ip::isr.straylight.StrayLightTask.check</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Check if stray light correction should be run.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to correct.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/straylight.py" line="56" column="1" bodyfile="python/lsst/ip/isr/straylight.py" bodystart="56" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task_1ac05c378d5f8ea04cadf283568dc7694a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.straylight.StrayLightTask.run</definition>
+        <argsstring>(self, exposure, strayLightData)</argsstring>
+        <name>run</name>
+        <qualifiedname>lsst::ip::isr.straylight.StrayLightTask.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>strayLightData</type>
+          <defname>strayLightData</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Correct stray light.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+   Exposure to correct.
+strayLightData : `object`, optional
+    An opaque object that contains any calibration data used to
+    correct for stray light.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/straylight.py" line="66" column="1" bodyfile="python/lsst/ip/isr/straylight.py" bodystart="66" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task_1aa448e92f46ce956622ead19c3f695bd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.straylight.StrayLightTask.checkFilter</definition>
+        <argsstring>(self, exposure)</argsstring>
+        <name>checkFilter</name>
+        <qualifiedname>lsst::ip::isr.straylight.StrayLightTask.checkFilter</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Check whether we should fringe-subtract the science exposure.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    Exposure to check the filter of.
+
+Returns
+-------
+needsFringe : `bool`
+    If True, then the exposure has a filter listed in the
+    configuration, and should have the fringe applied.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/straylight.py" line="79" column="1" bodyfile="python/lsst/ip/isr/straylight.py" bodystart="79" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Remove stray light from instruments.
+
+This is a dummy task to be retargeted with an camera-specific version.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.straylight.StrayLightTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Task</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.straylight.StrayLightTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Task</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/straylight.py" line="48" column="1" bodyfile="python/lsst/ip/isr/straylight.py" bodystart="48" bodyend="95"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task_1ab6bff54dafa225a74599128ed6ee2e2b" prot="private" virt="non-virtual"><scope>lsst::ip::isr::straylight::StrayLightTask</scope><name>_DefaultName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task_1a993c3a0b75d7a558289b666810e153c3" prot="public" virt="non-virtual"><scope>lsst::ip::isr::straylight::StrayLightTask</scope><name>check</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task_1aa448e92f46ce956622ead19c3f695bd2" prot="public" virt="non-virtual"><scope>lsst::ip::isr::straylight::StrayLightTask</scope><name>checkFilter</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task_1a8dbf0d8be153aebae5912d820158e943" prot="public" virt="non-virtual"><scope>lsst::ip::isr::straylight::StrayLightTask</scope><name>ConfigClass</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task_1ac05c378d5f8ea04cadf283568dc7694a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::straylight::StrayLightTask</scope><name>run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

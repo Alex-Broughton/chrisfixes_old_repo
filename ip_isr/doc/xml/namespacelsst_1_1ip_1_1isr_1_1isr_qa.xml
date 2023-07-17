@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacelsst_1_1ip_1_1isr_1_1isr_qa" kind="namespace" language="Python">
+    <compoundname>lsst::ip::isr::isrQa</compoundname>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config" prot="public">lsst::ip::isr::isrQa::IsrQaConfig</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config" prot="public">lsst::ip::isr::isrQa::IsrQaFlatnessConfig</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelsst_1_1ip_1_1isr_1_1isr_qa_1adf25fe06beea5d241b5dad0c837f007f" prot="private" static="no" mutable="no">
+        <type><ref refid="fits_8cc_1a1fbc6c4766fd22cd31bc6972d5d6c14f" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">list</ref></type>
+        <definition>list lsst::ip::isr::isrQa.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>lsst::ip::isr.isrQa.__all__</qualifiedname>
+        <initializer>=  [&quot;IsrQaFlatnessConfig&quot;, &quot;IsrQaConfig&quot;, &quot;makeThumbnail&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="23" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelsst_1_1ip_1_1isr_1_1isr_qa_1aa7c93c290ccc50f83c90662838fa7a85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrQa.makeThumbnail</definition>
+        <argsstring>(exposure, isrQaConfig=None)</argsstring>
+        <name>makeThumbnail</name>
+        <qualifiedname>lsst::ip::isr.isrQa.makeThumbnail</qualifiedname>
+        <param>
+          <type>exposure</type>
+          <defname>exposure</defname>
+        </param>
+        <param>
+          <type>isrQaConfig</type>
+          <defname>isrQaConfig</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create a snapshot thumbnail from input exposure.
+
+The output thumbnail image is constructed based on the parameters
+in the configuration file.  Currently, the asinh mapping is the
+only mapping method used.
+
+Parameters
+----------
+exposure : `lsst.afw.image.Exposure`
+    The exposure to be converted into a thumbnail.
+isrQaConfig : `Config`
+    Configuration object containing all parameters to control the
+    thumbnail generation.
+
+Returns
+-------
+rgbImage : `numpy.ndarray`
+    Binned and scaled version of the exposure, converted to an
+    integer array to allow it to be written as PNG.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrQa.py" line="119" column="1" bodyfile="python/lsst/ip/isr/isrQa.py" bodystart="119" bodyend="159"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="python/lsst/ip/isr/isrQa.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

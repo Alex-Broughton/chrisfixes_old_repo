@@ -1,0 +1,769 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::crosstalk::CrosstalkCalib</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib" prot="public" virt="non-virtual">lsst.ip.isr.calibType.IsrCalib</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a45dbf20639999ef39b9c9ea62bde0f09" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.crosstalk.CrosstalkCalib::_OBSTYPE</definition>
+        <argsstring></argsstring>
+        <name>_OBSTYPE</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib._OBSTYPE</qualifiedname>
+        <initializer>=  &apos;CROSSTALK&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="86" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a25c6c83c571a5033a80f9f79fa51c551" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.crosstalk.CrosstalkCalib::_SCHEMA</definition>
+        <argsstring></argsstring>
+        <name>_SCHEMA</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib._SCHEMA</qualifiedname>
+        <initializer>=  &apos;Gen3 Crosstalk&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="87" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1ac8ffe810a3d4116784bcdd72a10651ad" prot="private" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float lsst::ip::isr.crosstalk.CrosstalkCalib::_VERSION</definition>
+        <argsstring></argsstring>
+        <name>_VERSION</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib._VERSION</qualifiedname>
+        <initializer>=  1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="88" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a1162712e4ad1f9b4ead2e096bd57252b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.crosstalk.CrosstalkCalib::hasCrosstalk</definition>
+        <argsstring></argsstring>
+        <name>hasCrosstalk</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.hasCrosstalk</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="91" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a3ca7dd4d599b1d17161c8dc8d68dc03e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.crosstalk.CrosstalkCalib::nAmp</definition>
+        <argsstring></argsstring>
+        <name>nAmp</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.nAmp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="92" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a3ef3dce6498cef6f2dede1f6ceb40c23" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.crosstalk.CrosstalkCalib::crosstalkShape</definition>
+        <argsstring></argsstring>
+        <name>crosstalkShape</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.crosstalkShape</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="93" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a70896522a8c70f9b527062436238cc05" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.crosstalk.CrosstalkCalib::coeffs</definition>
+        <argsstring></argsstring>
+        <name>coeffs</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.coeffs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="95" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a256cc5abe2f8efe8cbbb7def8a18707d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.crosstalk.CrosstalkCalib::coeffErr</definition>
+        <argsstring></argsstring>
+        <name>coeffErr</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.coeffErr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="96" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a42a927b73f361f4d3ea269ba50206d36" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.crosstalk.CrosstalkCalib::coeffNum</definition>
+        <argsstring></argsstring>
+        <name>coeffNum</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.coeffNum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="97" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a36f76e4c12ec71114827950534c3b45f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.crosstalk.CrosstalkCalib::coeffValid</definition>
+        <argsstring></argsstring>
+        <name>coeffValid</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.coeffValid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="99" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1aa9e50c72b69f9cfccccc56e814d7b172" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.crosstalk.CrosstalkCalib::interChip</definition>
+        <argsstring></argsstring>
+        <name>interChip</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.interChip</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="101" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1ab98b6fcaa8c3898a4f677f8138c7c92c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.crosstalk.CrosstalkCalib::_detectorId</definition>
+        <argsstring></argsstring>
+        <name>_detectorId</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib._detectorId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="153" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1ab9b5e7e12d0e85914e9c1e3e54153995" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.crosstalk.CrosstalkCalib::_detectorName</definition>
+        <argsstring></argsstring>
+        <name>_detectorName</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib._detectorName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="154" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a661b505955bd66805f0e131c786b9c87" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.crosstalk.CrosstalkCalib::_detectorSerial</definition>
+        <argsstring></argsstring>
+        <name>_detectorSerial</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib._detectorSerial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="155" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a335aafcc75e2dbd6517f73d717658784" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.crosstalk.CrosstalkCalib.__init__</definition>
+        <argsstring>(self, detector=None, nAmp=0, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.__init__</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a8b0c7d628ed5e5b429f66ec5b2b4f25b">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="_detector_collection_8cc_1a6b9c564255ea8f8ae53bf14d81234de7" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">detector</ref></type>
+          <defname>detector</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a3ca7dd4d599b1d17161c8dc8d68dc03e" kindref="member">nAmp</ref></type>
+          <defname>nAmp</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="90" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="90" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a95d989721a3535579164c8b1ce762268" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.crosstalk.CrosstalkCalib.updateMetadata</definition>
+        <argsstring>(self, setDate=False, **kwargs)</argsstring>
+        <name>updateMetadata</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.updateMetadata</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a800537ed1777875f9f9fd973a83c3809">updateMetadata</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>setDate</type>
+          <defname>setDate</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update calibration metadata.
+
+This calls the base class&apos;s method after ensuring the required
+calibration keywords will be saved.
+
+Parameters
+----------
+setDate : `bool`, optional
+    Update the CALIBDATE fields in the metadata to the current
+    time. Defaults to False.
+kwargs :
+    Other keyword parameters to set in the metadata.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="110" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="110" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a89ab82e7112c51558cab8822723684a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.crosstalk.CrosstalkCalib.fromDetector</definition>
+        <argsstring>(self, detector, coeffVector=None)</argsstring>
+        <name>fromDetector</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.fromDetector</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1aa4a68997772b1898843219a8d078e228">fromDetector</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="_detector_collection_8cc_1a6b9c564255ea8f8ae53bf14d81234de7" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">detector</ref></type>
+          <defname>detector</defname>
+        </param>
+        <param>
+          <type>coeffVector</type>
+          <defname>coeffVector</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set calibration parameters from the detector.
+
+Parameters
+----------
+detector : `lsst.afw.cameraGeom.Detector`
+    Detector to use to set parameters from.
+coeffVector : `numpy.array`, optional
+    Use the detector geometry (bounding boxes and flip
+    information), but use ``coeffVector`` instead of the
+    output of ``detector.getCrosstalk()``.
+
+Returns
+-------
+calib : `lsst.ip.isr.CrosstalkCalib`
+    The calibration constructed from the detector.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="134" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="134" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1af577ce5ea4a7263e6db7a711c30f874a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.crosstalk.CrosstalkCalib.fromDict</definition>
+        <argsstring>(cls, dictionary)</argsstring>
+        <name>fromDict</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.fromDict</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a817599a7eef2221ba3908296dab05347">fromDict</reimplements>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>dictionary</type>
+          <defname>dictionary</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a calibration from a dictionary of properties.
+
+Must be implemented by the specific calibration subclasses.
+
+Parameters
+----------
+dictionary : `dict`
+    Dictionary of properties.
+
+Returns
+-------
+calib : `lsst.ip.isr.CalibType`
+    Constructed calibration.
+
+Raises
+------
+RuntimeError
+    Raised if the supplied dictionary is for a different
+    calibration.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="182" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="182" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1ac171ee67c64e5dcfb0b9b7a4bab1f148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.crosstalk.CrosstalkCalib.toDict</definition>
+        <argsstring>(self)</argsstring>
+        <name>toDict</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.toDict</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1aab4a381103b94dbea2acb727184db72f">toDict</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a dictionary containing the calibration properties.
+
+The dictionary should be able to be round-tripped through
+`fromDict`.
+
+Returns
+-------
+dictionary : `dict`
+    Dictionary of properties.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="275" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="275" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a6d0b40b56e95815d70b32375ced6d40b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.crosstalk.CrosstalkCalib.fromTable</definition>
+        <argsstring>(cls, tableList)</argsstring>
+        <name>fromTable</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.fromTable</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a1403d6fec5026193600341be1a426533">fromTable</reimplements>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>tableList</type>
+          <defname>tableList</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct calibration from a list of tables.
+
+This method uses the `fromDict` method to create the
+calibration, after constructing an appropriate dictionary from
+the input tables.
+
+Parameters
+----------
+tableList : `list` [`lsst.afw.table.Table`]
+    List of tables to use to construct the crosstalk
+    calibration.
+
+Returns
+-------
+calib : `lsst.ip.isr.CrosstalkCalib`
+    The calibration defined in the tables.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="314" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="314" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a834d7e19e82bb372218b9e440636347d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.crosstalk.CrosstalkCalib.toTable</definition>
+        <argsstring>(self)</argsstring>
+        <name>toTable</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.toTable</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a247f0c08c122d6c0da72f764b5e4c466">toTable</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a list of tables containing the information in this
+calibration.
+
+The list of tables should create an identical calibration
+after being passed to this class&apos;s fromTable method.
+
+Returns
+-------
+tableList : `list` [`lsst.afw.table.Table`]
+    List of tables containing the crosstalk calibration
+    information.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="357" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="357" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a96e3e4148b1025d2a72b512d4a59b851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.crosstalk.CrosstalkCalib.subtractCrosstalk</definition>
+        <argsstring>(self, thisExposure, sourceExposure=None, crosstalkCoeffs=None, badPixels=[&quot;BAD&quot;], minPixelToMask=45000, crosstalkStr=&quot;CROSSTALK&quot;, isTrimmed=False, backgroundMethod=&quot;None&quot;)</argsstring>
+        <name>subtractCrosstalk</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.subtractCrosstalk</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>thisExposure</type>
+          <defname>thisExposure</defname>
+        </param>
+        <param>
+          <type>sourceExposure</type>
+          <defname>sourceExposure</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>crosstalkCoeffs</type>
+          <defname>crosstalkCoeffs</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>badPixels</type>
+          <defname>badPixels</defname>
+          <defval>[&quot;BAD&quot;]</defval>
+        </param>
+        <param>
+          <type>minPixelToMask</type>
+          <defname>minPixelToMask</defname>
+          <defval>45000</defval>
+        </param>
+        <param>
+          <type>crosstalkStr</type>
+          <defname>crosstalkStr</defname>
+          <defval>&quot;CROSSTALK&quot;</defval>
+        </param>
+        <param>
+          <type>isTrimmed</type>
+          <defname>isTrimmed</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>backgroundMethod</type>
+          <defname>backgroundMethod</defname>
+          <defval>&quot;None&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Subtract the crosstalk from thisExposure, optionally using a
+different source.
+
+We set the mask plane indicated by ``crosstalkStr`` in a target
+amplifier for pixels in a source amplifier that exceed
+``minPixelToMask``. Note that the correction is applied to all pixels
+in the amplifier, but only those that have a substantial crosstalk
+are masked with ``crosstalkStr``.
+
+The uncorrected image is used as a template for correction. This is
+good enough if the crosstalk is small (e.g., coefficients &lt; ~ 1e-3),
+but if it&apos;s larger you may want to iterate.
+
+Parameters
+----------
+thisExposure : `lsst.afw.image.Exposure`
+    Exposure for which to subtract crosstalk.
+sourceExposure : `lsst.afw.image.Exposure`, optional
+    Exposure to use as the source of the crosstalk.  If not set,
+    thisExposure is used as the source (intra-detector crosstalk).
+crosstalkCoeffs : `numpy.ndarray`, optional.
+    Coefficients to use to correct crosstalk.
+badPixels : `list` of `str`
+    Mask planes to ignore.
+minPixelToMask : `float`
+    Minimum pixel value (relative to the background level) in
+    source amplifier for which to set ``crosstalkStr`` mask plane
+    in target amplifier.
+crosstalkStr : `str`
+    Mask plane name for pixels greatly modified by crosstalk
+    (above minPixelToMask).
+isTrimmed : `bool`
+    The image is already trimmed.
+    This should no longer be needed once DM-15409 is resolved.
+backgroundMethod : `str`
+    Method used to subtract the background.  &quot;AMP&quot; uses
+    amplifier-by-amplifier background levels, &quot;DETECTOR&quot; uses full
+    exposure/maskedImage levels.  Any other value results in no
+    background subtraction.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="458" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="461" bodyend="570"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1aba597ab21cbe83370dbd2ce567ce1924" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.crosstalk.CrosstalkCalib.extractAmp</definition>
+        <argsstring>(image, amp, ampTarget, isTrimmed=False)</argsstring>
+        <name>extractAmp</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.extractAmp</qualifiedname>
+        <param>
+          <type>image</type>
+          <defname>image</defname>
+        </param>
+        <param>
+          <type>amp</type>
+          <defname>amp</defname>
+        </param>
+        <param>
+          <type>ampTarget</type>
+          <defname>ampTarget</defname>
+        </param>
+        <param>
+          <type>isTrimmed</type>
+          <defname>isTrimmed</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Extract the image data from an amp, flipped to match ampTarget.
+
+Parameters
+----------
+image : `lsst.afw.image.Image` or `lsst.afw.image.MaskedImage`
+    Image containing the amplifier of interest.
+amp : `lsst.afw.cameraGeom.Amplifier`
+    Amplifier on image to extract.
+ampTarget : `lsst.afw.cameraGeom.Amplifier`
+    Target amplifier that the extracted image will be flipped
+    to match.
+isTrimmed : `bool`
+    The image is already trimmed.
+    TODO : DM-15409 will resolve this.
+
+Returns
+-------
+output : `lsst.afw.image.Image`
+    Image of the amplifier in the desired configuration.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="394" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="394" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a48d6c1dd3b43a16ba1f9f106754ec334" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.crosstalk.CrosstalkCalib.calculateBackground</definition>
+        <argsstring>(mi, badPixels=[&quot;BAD&quot;])</argsstring>
+        <name>calculateBackground</name>
+        <qualifiedname>lsst::ip::isr.crosstalk.CrosstalkCalib.calculateBackground</qualifiedname>
+        <param>
+          <type>mi</type>
+          <defname>mi</defname>
+        </param>
+        <param>
+          <type>badPixels</type>
+          <defname>badPixels</defname>
+          <defval>[&quot;BAD&quot;]</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Estimate median background in image.
+
+Getting a great background model isn&apos;t important for crosstalk
+correction, since the crosstalk is at a low level. The median should
+be sufficient.
+
+Parameters
+----------
+mi : `lsst.afw.image.MaskedImage`
+    MaskedImage for which to measure background.
+badPixels : `list` of `str`
+    Mask planes to ignore.
+Returns
+-------
+bg : `float`
+    Median background level.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/crosstalk.py" line="435" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="435" bodyend="457"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Calibration of amp-to-amp crosstalk coefficients.
+
+Parameters
+----------
+detector : `lsst.afw.cameraGeom.Detector`, optional
+    Detector to use to pull coefficients from.
+nAmp : `int`, optional
+    Number of amplifiers to initialize.
+log : `logging.Logger`, optional
+    Log to write messages to.
+**kwargs :
+    Parameters to pass to parent constructor.
+
+Notes
+-----
+The crosstalk attributes stored are:
+
+hasCrosstalk : `bool`
+    Whether there is crosstalk defined for this detector.
+nAmp : `int`
+    Number of amplifiers in this detector.
+crosstalkShape : `tuple` [`int`, `int`]
+    A tuple containing the shape of the ``coeffs`` matrix.  This
+    should be equivalent to (``nAmp``, ``nAmp``).
+coeffs : `numpy.ndarray`
+    A matrix containing the crosstalk coefficients.  coeff[i][j]
+    contains the coefficients to calculate the contribution
+    amplifier_j has on amplifier_i (each row[i] contains the
+    corrections for detector_i).
+coeffErr : `numpy.ndarray`, optional
+    A matrix (as defined by ``coeffs``) containing the standard
+    distribution of the crosstalk measurements.
+coeffNum : `numpy.ndarray`, optional
+    A matrix containing the number of pixel pairs used to measure
+    the ``coeffs`` and ``coeffErr``.
+coeffValid : `numpy.ndarray`, optional
+    A matrix of Boolean values indicating if the coefficient is
+    valid, defined as abs(coeff) &gt; coeffErr / sqrt(coeffNum).
+interChip : `dict` [`numpy.ndarray`]
+    A dictionary keyed by detectorName containing ``coeffs``
+    matrices used to correct for inter-chip crosstalk with a
+    source on the detector indicated.</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>abc::ABC</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.crosstalk.CrosstalkCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.calibType.IsrCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>abc::ABC</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.crosstalk.CrosstalkCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.calibType.IsrCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/crosstalk.py" line="41" column="1" bodyfile="python/lsst/ip/isr/crosstalk.py" bodystart="41" bodyend="570"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a335aafcc75e2dbd6517f73d717658784" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1ab98b6fcaa8c3898a4f677f8138c7c92c" prot="private" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>_detectorId</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1ab9b5e7e12d0e85914e9c1e3e54153995" prot="private" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>_detectorName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a661b505955bd66805f0e131c786b9c87" prot="private" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>_detectorSerial</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a45dbf20639999ef39b9c9ea62bde0f09" prot="private" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>_OBSTYPE</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a25c6c83c571a5033a80f9f79fa51c551" prot="private" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>_SCHEMA</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1ac8ffe810a3d4116784bcdd72a10651ad" prot="private" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>_VERSION</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a48d6c1dd3b43a16ba1f9f106754ec334" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>calculateBackground</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a256cc5abe2f8efe8cbbb7def8a18707d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>coeffErr</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a42a927b73f361f4d3ea269ba50206d36" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>coeffNum</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a70896522a8c70f9b527062436238cc05" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>coeffs</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a36f76e4c12ec71114827950534c3b45f" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>coeffValid</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a3ef3dce6498cef6f2dede1f6ceb40c23" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>crosstalkShape</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1aba597ab21cbe83370dbd2ce567ce1924" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>extractAmp</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a89ab82e7112c51558cab8822723684a9" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>fromDetector</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1af577ce5ea4a7263e6db7a711c30f874a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>fromDict</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a6d0b40b56e95815d70b32375ced6d40b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>fromTable</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a1162712e4ad1f9b4ead2e096bd57252b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>hasCrosstalk</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1aa9e50c72b69f9cfccccc56e814d7b172" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>interChip</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a3ca7dd4d599b1d17161c8dc8d68dc03e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>nAmp</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a96e3e4148b1025d2a72b512d4a59b851" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>subtractCrosstalk</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1ac171ee67c64e5dcfb0b9b7a4bab1f148" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>toDict</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a834d7e19e82bb372218b9e440636347d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>toTable</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1crosstalk_1_1_crosstalk_calib_1a95d989721a3535579164c8b1ce762268" prot="public" virt="non-virtual"><scope>lsst::ip::isr::crosstalk::CrosstalkCalib</scope><name>updateMetadata</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

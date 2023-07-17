@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_none" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::linearize::LinearizeNone</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base" prot="public" virt="non-virtual">lsst.ip.isr.linearize.LinearizeBase</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_none_1ac7c95ee7c7992afcd2726e5b6ca7f9f7" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.linearize.LinearizeNone::LinearityType</definition>
+        <argsstring></argsstring>
+        <name>LinearityType</name>
+        <qualifiedname>lsst::ip::isr.linearize.LinearizeNone.LinearityType</qualifiedname>
+        <initializer>=  &quot;None&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/linearize.py" line="812" column="1" bodyfile="python/lsst/ip/isr/linearize.py" bodystart="812" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_none_1ab4354cc625be0b26bcd9877c2f37eeb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.linearize.LinearizeNone.__call__</definition>
+        <argsstring>(self, image, **kwargs)</argsstring>
+        <name>__call__</name>
+        <qualifiedname>lsst::ip::isr.linearize.LinearizeNone.__call__</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base_1a35a6c652513da5918c41f9b7ea91764d">__call__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>image</type>
+          <defname>image</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Do not correct for non-linearity.
+
+Parameters
+----------
+image : `lsst.afw.image.Image`
+    Image to be corrected
+kwargs : `dict`
+    Dictionary of parameter keywords:
+
+    ``coeffs``
+        Coefficient vector (`list` or `numpy.array`).
+    ``log``
+        Logger to handle messages (`logging.Logger`).
+
+Returns
+-------
+output : `tuple` [`bool`, `int`]
+    If true, a correction was applied successfully.  The
+    integer indicates the number of pixels that were
+    uncorrectable by being out of range.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/linearize.py" line="814" column="1" bodyfile="python/lsst/ip/isr/linearize.py" bodystart="814" bodyend="837"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Do not correct non-linearity.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>abc::ABCMeta</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.linearize.LinearizeNone</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_none"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.linearize.LinearizeBase</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>metaclass</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>abc::ABCMeta</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.linearize.LinearizeNone</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_none"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.linearize.LinearizeBase</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>metaclass</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/linearize.py" line="809" column="1" bodyfile="python/lsst/ip/isr/linearize.py" bodystart="809" bodyend="837"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_none_1ab4354cc625be0b26bcd9877c2f37eeb8" prot="public" virt="non-virtual"><scope>lsst::ip::isr::linearize::LinearizeNone</scope><name>__call__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_none_1ac7c95ee7c7992afcd2726e5b6ca7f9f7" prot="public" virt="non-virtual"><scope>lsst::ip::isr::linearize::LinearizeNone</scope><name>LinearityType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

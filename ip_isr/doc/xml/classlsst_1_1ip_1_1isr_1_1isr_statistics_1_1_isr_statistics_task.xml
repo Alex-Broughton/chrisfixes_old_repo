@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::isrStatistics::IsrStatisticsTask</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pipeBase.Task</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1a584fa204bd3fb0603bd54fa33e2563fc" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrStatistics.IsrStatisticsTask::ConfigClass</definition>
+        <argsstring></argsstring>
+        <name>ConfigClass</name>
+        <qualifiedname>lsst::ip::isr.isrStatistics.IsrStatisticsTask.ConfigClass</qualifiedname>
+        <initializer>=  <ref refid="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_config" kindref="compound">IsrStatisticsTaskConfig</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrStatistics.py" line="130" column="1" bodyfile="python/lsst/ip/isr/isrStatistics.py" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1afde03a2c38ea89e87e94943e235b9e81" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.isrStatistics.IsrStatisticsTask::_DefaultName</definition>
+        <argsstring></argsstring>
+        <name>_DefaultName</name>
+        <qualifiedname>lsst::ip::isr.isrStatistics.IsrStatisticsTask._DefaultName</qualifiedname>
+        <initializer>=  &quot;isrStatistics&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrStatistics.py" line="131" column="1" bodyfile="python/lsst/ip/isr/isrStatistics.py" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1a084cf65ac4ec3f975d6d50e769468621" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrStatistics.IsrStatisticsTask::statControl</definition>
+        <argsstring></argsstring>
+        <name>statControl</name>
+        <qualifiedname>lsst::ip::isr.isrStatistics.IsrStatisticsTask.statControl</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrStatistics.py" line="135" column="1" bodyfile="python/lsst/ip/isr/isrStatistics.py" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1aa5cdbefdd571ba90de42aad077ce4725" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrStatistics.IsrStatisticsTask::statType</definition>
+        <argsstring></argsstring>
+        <name>statType</name>
+        <qualifiedname>lsst::ip::isr.isrStatistics.IsrStatisticsTask.statType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrStatistics.py" line="137" column="1" bodyfile="python/lsst/ip/isr/isrStatistics.py" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1a57f5f0ca2e159ce699afcad159893e60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrStatistics.IsrStatisticsTask.__init__</definition>
+        <argsstring>(self, statControl=None, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.isrStatistics.IsrStatisticsTask.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1a084cf65ac4ec3f975d6d50e769468621" kindref="member">statControl</ref></type>
+          <defname>statControl</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrStatistics.py" line="133" column="1" bodyfile="python/lsst/ip/isr/isrStatistics.py" bodystart="133" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1a2b014e5a48a523d2f936b6f48b7e01f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrStatistics.IsrStatisticsTask.run</definition>
+        <argsstring>(self, inputExp, ptc=None, overscanResults=None, **kwargs)</argsstring>
+        <name>run</name>
+        <qualifiedname>lsst::ip::isr.isrStatistics.IsrStatisticsTask.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>inputExp</type>
+          <defname>inputExp</defname>
+        </param>
+        <param>
+          <type>ptc</type>
+          <defname>ptc</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>overscanResults</type>
+          <defname>overscanResults</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Task to run arbitrary statistics.
+
+The statistics should be measured by individual methods, and
+add to the dictionary in the return struct.
+
+Parameters
+----------
+inputExp : `lsst.afw.image.Exposure`
+    The exposure to measure.
+ptc : `lsst.ip.isr.PtcDataset`, optional
+    A PTC object containing gains to use.
+overscanResults : `list` [`lsst.pipe.base.Struct`], optional
+    List of overscan results.  Expected fields are:
+
+    ``imageFit``
+        Value or fit subtracted from the amplifier image data
+        (scalar or `lsst.afw.image.Image`).
+    ``overscanFit``
+        Value or fit subtracted from the overscan image data
+        (scalar or `lsst.afw.image.Image`).
+    ``overscanImage``
+        Image of the overscan region with the overscan
+        correction applied (`lsst.afw.image.Image`). This
+        quantity is used to estimate the amplifier read noise
+        empirically.
+
+Returns
+-------
+resultStruct : `lsst.pipe.base.Struct`
+    Contains the measured statistics as a dict stored in a
+    field named ``results``.
+
+Raises
+------
+RuntimeError
+    Raised if the amplifier gains could not be found.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrStatistics.py" line="139" column="1" bodyfile="python/lsst/ip/isr/isrStatistics.py" bodystart="139" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1af3f8aa449af57bbac72e4b5b11c55b84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrStatistics.IsrStatisticsTask.measureCti</definition>
+        <argsstring>(self, inputExp, overscans, gains)</argsstring>
+        <name>measureCti</name>
+        <qualifiedname>lsst::ip::isr.isrStatistics.IsrStatisticsTask.measureCti</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>inputExp</type>
+          <defname>inputExp</defname>
+        </param>
+        <param>
+          <type>overscans</type>
+          <defname>overscans</defname>
+        </param>
+        <param>
+          <type>gains</type>
+          <defname>gains</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Task to measure CTI statistics.
+
+Parameters
+----------
+inputExp : `lsst.afw.image.Exposure`
+    Exposure to measure.
+overscans : `list` [`lsst.pipe.base.Struct`]
+    List of overscan results.  Expected fields are:
+
+    ``imageFit``
+        Value or fit subtracted from the amplifier image data
+        (scalar or `lsst.afw.image.Image`).
+    ``overscanFit``
+        Value or fit subtracted from the overscan image data
+        (scalar or `lsst.afw.image.Image`).
+    ``overscanImage``
+        Image of the overscan region with the overscan
+        correction applied (`lsst.afw.image.Image`). This
+        quantity is used to estimate the amplifier read noise
+        empirically.
+gains : `dict` [`str` `float`]
+    Dictionary of per-amplifier gains, indexed by amplifier name.
+
+Returns
+-------
+outputStats : `dict` [`str`, [`dict` [`str`,`float]]
+    Dictionary of measurements, keyed by amplifier name and
+    statistics segment.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrStatistics.py" line="205" column="1" bodyfile="python/lsst/ip/isr/isrStatistics.py" bodystart="205" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1a1d64ae2c1c18776cbbe2e02713bd6f70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrStatistics.IsrStatisticsTask.measureBanding</definition>
+        <argsstring>(self, inputExp, overscans)</argsstring>
+        <name>measureBanding</name>
+        <qualifiedname>lsst::ip::isr.isrStatistics.IsrStatisticsTask.measureBanding</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>inputExp</type>
+          <defname>inputExp</defname>
+        </param>
+        <param>
+          <type>overscans</type>
+          <defname>overscans</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Task to measure banding statistics.
+
+Parameters
+----------
+inputExp : `lsst.afw.image.Exposure`
+    Exposure to measure.
+overscans : `list` [`lsst.pipe.base.Struct`]
+    List of overscan results.  Expected fields are:
+
+    ``imageFit``
+        Value or fit subtracted from the amplifier image data
+        (scalar or `lsst.afw.image.Image`).
+    ``overscanFit``
+        Value or fit subtracted from the overscan image data
+        (scalar or `lsst.afw.image.Image`).
+    ``overscanImage``
+        Image of the overscan region with the overscan
+        correction applied (`lsst.afw.image.Image`). This
+        quantity is used to estimate the amplifier read noise
+        empirically.
+
+Returns
+-------
+outputStats : `dict` [`str`, [`dict` [`str`,`float]]
+    Dictionary of measurements, keyed by amplifier name and
+    statistics segment.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrStatistics.py" line="321" column="1" bodyfile="python/lsst/ip/isr/isrStatistics.py" bodystart="321" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1a8779bfe4883529ee9a25e533f621a751" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrStatistics.IsrStatisticsTask.measureProjectionStatistics</definition>
+        <argsstring>(self, inputExp, overscans)</argsstring>
+        <name>measureProjectionStatistics</name>
+        <qualifiedname>lsst::ip::isr.isrStatistics.IsrStatisticsTask.measureProjectionStatistics</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>inputExp</type>
+          <defname>inputExp</defname>
+        </param>
+        <param>
+          <type>overscans</type>
+          <defname>overscans</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Task to measure metrics from image slicing.
+
+Parameters
+----------
+inputExp : `lsst.afw.image.Exposure`
+    Exposure to measure.
+overscans : `list` [`lsst.pipe.base.Struct`]
+    List of overscan results.  Expected fields are:
+
+    ``imageFit``
+        Value or fit subtracted from the amplifier image data
+        (scalar or `lsst.afw.image.Image`).
+    ``overscanFit``
+        Value or fit subtracted from the overscan image data
+        (scalar or `lsst.afw.image.Image`).
+    ``overscanImage``
+        Image of the overscan region with the overscan
+        correction applied (`lsst.afw.image.Image`). This
+        quantity is used to estimate the amplifier read noise
+        empirically.
+
+Returns
+-------
+outputStats : `dict` [`str`, [`dict` [`str`,`float]]
+    Dictionary of measurements, keyed by amplifier name and
+    statistics segment.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrStatistics.py" line="374" column="1" bodyfile="python/lsst/ip/isr/isrStatistics.py" bodystart="374" bodyend="454"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1a3a2c60e9a73eb44b4f5d4f5440c65a64" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrStatistics.IsrStatisticsTask.makeKernel</definition>
+        <argsstring>(kernelSize)</argsstring>
+        <name>makeKernel</name>
+        <qualifiedname>lsst::ip::isr.isrStatistics.IsrStatisticsTask.makeKernel</qualifiedname>
+        <param>
+          <type>kernelSize</type>
+          <defname>kernelSize</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Make a boxcar smoothing kernel.
+
+Parameters
+----------
+kernelSize : `int`
+    Size of the kernel in pixels.
+
+Returns
+-------
+kernel : `np.array`
+    Kernel for boxcar smoothing.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrStatistics.py" line="302" column="1" bodyfile="python/lsst/ip/isr/isrStatistics.py" bodystart="302" bodyend="320"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Task to measure arbitrary statistics on ISR processed exposures.
+
+The goal is to wrap a number of optional measurements that are
+useful for calibration production and detector stability.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrStatistics.IsrStatisticsTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pipeBase.Task</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrStatistics.IsrStatisticsTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pipeBase.Task</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/isrStatistics.py" line="124" column="1" bodyfile="python/lsst/ip/isr/isrStatistics.py" bodystart="124" bodyend="454"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1a57f5f0ca2e159ce699afcad159893e60" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrStatistics::IsrStatisticsTask</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1afde03a2c38ea89e87e94943e235b9e81" prot="private" virt="non-virtual"><scope>lsst::ip::isr::isrStatistics::IsrStatisticsTask</scope><name>_DefaultName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1a584fa204bd3fb0603bd54fa33e2563fc" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrStatistics::IsrStatisticsTask</scope><name>ConfigClass</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1a3a2c60e9a73eb44b4f5d4f5440c65a64" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrStatistics::IsrStatisticsTask</scope><name>makeKernel</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1a1d64ae2c1c18776cbbe2e02713bd6f70" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrStatistics::IsrStatisticsTask</scope><name>measureBanding</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1af3f8aa449af57bbac72e4b5b11c55b84" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrStatistics::IsrStatisticsTask</scope><name>measureCti</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1a8779bfe4883529ee9a25e533f621a751" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrStatistics::IsrStatisticsTask</scope><name>measureProjectionStatistics</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1a2b014e5a48a523d2f936b6f48b7e01f8" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrStatistics::IsrStatisticsTask</scope><name>run</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1a084cf65ac4ec3f975d6d50e769468621" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrStatistics::IsrStatisticsTask</scope><name>statControl</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_statistics_1_1_isr_statistics_task_1aa5cdbefdd571ba90de42aad077ce4725" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrStatistics::IsrStatisticsTask</scope><name>statType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

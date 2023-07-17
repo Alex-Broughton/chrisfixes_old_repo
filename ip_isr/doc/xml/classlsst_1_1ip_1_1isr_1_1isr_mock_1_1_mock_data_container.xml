@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::isrMock::MockDataContainer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1a3441c1dbfb76f04c0cc780d57b006ca6" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.isrMock.MockDataContainer::dataId</definition>
+        <argsstring></argsstring>
+        <name>dataId</name>
+        <qualifiedname>lsst::ip::isr.isrMock.MockDataContainer.dataId</qualifiedname>
+        <initializer>=  &quot;isrMock Fake Data&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="940" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="940" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1a566f1c1d5719c85077487d1c0ecc972e" prot="public" static="yes" mutable="no">
+        <type><ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref></type>
+        <definition>int lsst::ip::isr.isrMock.MockDataContainer::darkval</definition>
+        <argsstring></argsstring>
+        <name>darkval</name>
+        <qualifiedname>lsst::ip::isr.isrMock.MockDataContainer.darkval</qualifiedname>
+        <initializer>=  2.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="941" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="941" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1adcaac2d8157b24b4d9760e03e01bbf0a" prot="public" static="yes" mutable="no">
+        <type><ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref></type>
+        <definition>int lsst::ip::isr.isrMock.MockDataContainer::oscan</definition>
+        <argsstring></argsstring>
+        <name>oscan</name>
+        <qualifiedname>lsst::ip::isr.isrMock.MockDataContainer.oscan</qualifiedname>
+        <initializer>=  250.</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="942" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="942" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1aeffb37fb4a3cb93c82d1dffca935d131" prot="public" static="yes" mutable="no">
+        <type><ref refid="namespacelsst_1_1geom_1_1version_1ad20a58668f9bb2ed53d01218bf55f4eb" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">int</ref></type>
+        <definition>int lsst::ip::isr.isrMock.MockDataContainer::gradient</definition>
+        <argsstring></argsstring>
+        <name>gradient</name>
+        <qualifiedname>lsst::ip::isr.isrMock.MockDataContainer.gradient</qualifiedname>
+        <initializer>=  .10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="943" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="943" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1af2e457efaf2d93f15f6a42ea755ad00b" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float lsst::ip::isr.isrMock.MockDataContainer::exptime</definition>
+        <argsstring></argsstring>
+        <name>exptime</name>
+        <qualifiedname>lsst::ip::isr.isrMock.MockDataContainer.exptime</qualifiedname>
+        <initializer>=  15.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="944" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="944" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1a20ba1e57670714abf638912410528574" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float lsst::ip::isr.isrMock.MockDataContainer::darkexptime</definition>
+        <argsstring></argsstring>
+        <name>darkexptime</name>
+        <qualifiedname>lsst::ip::isr.isrMock.MockDataContainer.darkexptime</qualifiedname>
+        <initializer>=  15.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="945" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="945" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1a7e69b82bfff48ae64bf75ef074f9bc62" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.isrMock.MockDataContainer::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <qualifiedname>lsst::ip::isr.isrMock.MockDataContainer.config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="949" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="949" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1ae7dcb8d99bfe4d772ad98c15a0e4a7f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.MockDataContainer.__init__</definition>
+        <argsstring>(self, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.isrMock.MockDataContainer.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="947" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="947" bodyend="952"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1a8f5959356812b4a3799dc76c1c6e8387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.MockDataContainer.expectImage</definition>
+        <argsstring>(self)</argsstring>
+        <name>expectImage</name>
+        <qualifiedname>lsst::ip::isr.isrMock.MockDataContainer.expectImage</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="953" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="953" bodyend="958"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1a9f563d65791a11da836c38b3aa311464" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.MockDataContainer.expectData</definition>
+        <argsstring>(self)</argsstring>
+        <name>expectData</name>
+        <qualifiedname>lsst::ip::isr.isrMock.MockDataContainer.expectData</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="959" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="959" bodyend="964"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1a398f65562c0a6d52e1d8518702236682" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.isrMock.MockDataContainer.get</definition>
+        <argsstring>(self, dataType, **kwargs)</argsstring>
+        <name>get</name>
+        <qualifiedname>lsst::ip::isr.isrMock.MockDataContainer.get</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dataType</type>
+          <defname>dataType</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return an appropriate data product.
+
+Parameters
+----------
+dataType : `str`
+    Type of data product to return.
+
+Returns
+-------
+mock : IsrMock.run() result
+    The output product.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="965" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="965" bodyend="1018"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Container for holding ISR mock objects.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrMock.MockDataContainer</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.isrMock.MockDataContainer</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/isrMock.py" line="937" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="937" bodyend="1018"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1ae7dcb8d99bfe4d772ad98c15a0e4a7f4" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::MockDataContainer</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1a7e69b82bfff48ae64bf75ef074f9bc62" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::MockDataContainer</scope><name>config</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1a20ba1e57670714abf638912410528574" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::MockDataContainer</scope><name>darkexptime</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1a566f1c1d5719c85077487d1c0ecc972e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::MockDataContainer</scope><name>darkval</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1a3441c1dbfb76f04c0cc780d57b006ca6" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::MockDataContainer</scope><name>dataId</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1a9f563d65791a11da836c38b3aa311464" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::MockDataContainer</scope><name>expectData</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1a8f5959356812b4a3799dc76c1c6e8387" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::MockDataContainer</scope><name>expectImage</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1af2e457efaf2d93f15f6a42ea755ad00b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::MockDataContainer</scope><name>exptime</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1a398f65562c0a6d52e1d8518702236682" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::MockDataContainer</scope><name>get</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1aeffb37fb4a3cb93c82d1dffca935d131" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::MockDataContainer</scope><name>gradient</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container_1adcaac2d8157b24b4d9760e03e01bbf0a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::isrMock::MockDataContainer</scope><name>oscan</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

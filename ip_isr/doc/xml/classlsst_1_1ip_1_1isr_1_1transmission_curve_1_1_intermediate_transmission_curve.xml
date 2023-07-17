@@ -1,0 +1,372 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::transmissionCurve::IntermediateTransmissionCurve</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib" prot="public" virt="non-virtual">lsst.ip.isr.calibType.IsrCalib</basecompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_atmosphere_transmission_curve" prot="public" virt="non-virtual">lsst.ip.isr.transmissionCurve.IntermediateAtmosphereTransmissionCurve</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_filter_transmission_curve" prot="public" virt="non-virtual">lsst.ip.isr.transmissionCurve.IntermediateFilterTransmissionCurve</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_optics_transmission_curve" prot="public" virt="non-virtual">lsst.ip.isr.transmissionCurve.IntermediateOpticsTransmissionCurve</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_sensor_transmission_curve" prot="public" virt="non-virtual">lsst.ip.isr.transmissionCurve.IntermediateSensorTransmissionCurve</derivedcompoundref>
+    <derivedcompoundref refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_system_transmission_curve" prot="public" virt="non-virtual">lsst.ip.isr.transmissionCurve.IntermediateSystemTransmissionCurve</derivedcompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a5654a09b4e13eade503fbc55c96f4d19" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve::_OBSTYPE</definition>
+        <argsstring></argsstring>
+        <name>_OBSTYPE</name>
+        <qualifiedname>lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve._OBSTYPE</qualifiedname>
+        <initializer>=  &quot;transmission_curve&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/transmissionCurve.py" line="46" column="1" bodyfile="python/lsst/ip/isr/transmissionCurve.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1ae3c7ccdf1fbc89019735bc26eba93488" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve::_SCHEMA</definition>
+        <argsstring></argsstring>
+        <name>_SCHEMA</name>
+        <qualifiedname>lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve._SCHEMA</qualifiedname>
+        <initializer>=  &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/transmissionCurve.py" line="47" column="1" bodyfile="python/lsst/ip/isr/transmissionCurve.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a5714d84d0246777d4c43966dbadb6270" prot="private" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve::_VERSION</definition>
+        <argsstring></argsstring>
+        <name>_VERSION</name>
+        <qualifiedname>lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve._VERSION</qualifiedname>
+        <initializer>=  1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/transmissionCurve.py" line="48" column="1" bodyfile="python/lsst/ip/isr/transmissionCurve.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a1fa290ab56f243f6901f6e4fbf9ed196" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve.data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/transmissionCurve.py" line="51" column="1" bodyfile="python/lsst/ip/isr/transmissionCurve.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a27618313514b2250e2b89f71b32c3c9c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve::transmissionCurve</definition>
+        <argsstring></argsstring>
+        <name>transmissionCurve</name>
+        <qualifiedname>lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve.transmissionCurve</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/transmissionCurve.py" line="52" column="1" bodyfile="python/lsst/ip/isr/transmissionCurve.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a8f2c1aacf1bcab837d0d8d20925142d7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve::isSpatiallyConstant</definition>
+        <argsstring></argsstring>
+        <name>isSpatiallyConstant</name>
+        <qualifiedname>lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve.isSpatiallyConstant</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/transmissionCurve.py" line="53" column="1" bodyfile="python/lsst/ip/isr/transmissionCurve.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a5f20082b8e9f44aac8e3dc2036da5c06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.transmissionCurve.IntermediateTransmissionCurve.__init__</definition>
+        <argsstring>(self, filename=None)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve.__init__</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a8b0c7d628ed5e5b429f66ec5b2b4f25b">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>filename</type>
+          <defname>filename</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/transmissionCurve.py" line="50" column="1" bodyfile="python/lsst/ip/isr/transmissionCurve.py" bodystart="50" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1afdb35fa85f413ced66d13c788a9f5772" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.transmissionCurve.IntermediateTransmissionCurve.setMetadata</definition>
+        <argsstring>(self, metadata)</argsstring>
+        <name>setMetadata</name>
+        <qualifiedname>lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve.setMetadata</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a30a14c069ad836831726f303585ace41">setMetadata</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>metadata</type>
+          <defname>metadata</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Store a copy of the supplied metadata with this calibration.
+
+Parameters
+----------
+metadata : `lsst.daf.base.PropertyList`
+    Metadata to associate with the calibration.  Will be copied and
+    overwrite existing metadata.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/transmissionCurve.py" line="60" column="1" bodyfile="python/lsst/ip/isr/transmissionCurve.py" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a2a3d4213c2caeb26c55cd97d61f38c9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.transmissionCurve.IntermediateTransmissionCurve.fromTable</definition>
+        <argsstring>(cls, tableList)</argsstring>
+        <name>fromTable</name>
+        <qualifiedname>lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve.fromTable</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a1403d6fec5026193600341be1a426533">fromTable</reimplements>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>tableList</type>
+          <defname>tableList</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct intermediate transmission curve from a list of input
+tables.  Only the first table is used.
+
+Parameters
+----------
+tableList : `list` [`astropy.table.Table`]
+    List containing input tables.
+
+Returns
+-------
+calib : `lsst.ip.isr.IntermediateTransmissionCurve`
+    The final calibration.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/transmissionCurve.py" line="65" column="1" bodyfile="python/lsst/ip/isr/transmissionCurve.py" bodystart="65" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1af3dac70f996c5535e468e57fcaface19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.transmissionCurve.IntermediateTransmissionCurve.setTransmissionCurveRepresentation</definition>
+        <argsstring>(self)</argsstring>
+        <name>setTransmissionCurveRepresentation</name>
+        <qualifiedname>lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve.setTransmissionCurveRepresentation</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct transmission curve representation from the data that was
+read.
+
+Raises
+------
+RuntimeError
+    This is raised if no table data exists in the calibration,
+    if there are array length mismatches, or if the wavelength
+    sampling for multi-amp tables differ.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/transmissionCurve.py" line="89" column="1" bodyfile="python/lsst/ip/isr/transmissionCurve.py" bodystart="89" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a935ae17b58f67f4a0255eb78a0cd5492" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.transmissionCurve.IntermediateTransmissionCurve.getTransmissionCurve</definition>
+        <argsstring>(self)</argsstring>
+        <name>getTransmissionCurve</name>
+        <qualifiedname>lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve.getTransmissionCurve</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/transmissionCurve.py" line="164" column="1" bodyfile="python/lsst/ip/isr/transmissionCurve.py" bodystart="164" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a5124a5bc3d746fede3820dfdeeeebcd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.transmissionCurve.IntermediateTransmissionCurve.writeFits</definition>
+        <argsstring>(self, outputFilename)</argsstring>
+        <name>writeFits</name>
+        <qualifiedname>lsst::ip::isr.transmissionCurve.IntermediateTransmissionCurve.writeFits</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a33534b44aa3f134f809840472667631e">writeFits</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>outputFilename</type>
+          <defname>outputFilename</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Write the transmission curve data to a file.
+
+Parameters
+----------
+outputFilename : `str`
+    Destination filename.
+
+Returns
+-------
+outputFilename : `str`
+    The output filename actually used.
+
+Raises
+------
+RuntimeError
+    Raised if no transmission curve can be created.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/transmissionCurve.py" line="171" column="1" bodyfile="python/lsst/ip/isr/transmissionCurve.py" bodystart="171" bodyend="196"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Definition for the TransmissionCurve format used as inputs.
+
+Parameters
+----------
+filename : `str`
+    Filename of a transmission curve dataset.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>abc::ABC</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.calibType.IsrCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateAtmosphereTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_atmosphere_transmission_curve"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateFilterTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_filter_transmission_curve"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateOpticsTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_optics_transmission_curve"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateSensorTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_sensor_transmission_curve"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateSystemTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_system_transmission_curve"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>abc::ABC</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.transmissionCurve.IntermediateTransmissionCurve</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.calibType.IsrCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/transmissionCurve.py" line="37" column="1" bodyfile="python/lsst/ip/isr/transmissionCurve.py" bodystart="37" bodyend="196"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a5f20082b8e9f44aac8e3dc2036da5c06" prot="public" virt="non-virtual"><scope>lsst::ip::isr::transmissionCurve::IntermediateTransmissionCurve</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a5654a09b4e13eade503fbc55c96f4d19" prot="private" virt="non-virtual"><scope>lsst::ip::isr::transmissionCurve::IntermediateTransmissionCurve</scope><name>_OBSTYPE</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1ae3c7ccdf1fbc89019735bc26eba93488" prot="private" virt="non-virtual"><scope>lsst::ip::isr::transmissionCurve::IntermediateTransmissionCurve</scope><name>_SCHEMA</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a5714d84d0246777d4c43966dbadb6270" prot="private" virt="non-virtual"><scope>lsst::ip::isr::transmissionCurve::IntermediateTransmissionCurve</scope><name>_VERSION</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a1fa290ab56f243f6901f6e4fbf9ed196" prot="public" virt="non-virtual"><scope>lsst::ip::isr::transmissionCurve::IntermediateTransmissionCurve</scope><name>data</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a2a3d4213c2caeb26c55cd97d61f38c9a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::transmissionCurve::IntermediateTransmissionCurve</scope><name>fromTable</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a935ae17b58f67f4a0255eb78a0cd5492" prot="public" virt="non-virtual"><scope>lsst::ip::isr::transmissionCurve::IntermediateTransmissionCurve</scope><name>getTransmissionCurve</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a8f2c1aacf1bcab837d0d8d20925142d7" prot="public" virt="non-virtual"><scope>lsst::ip::isr::transmissionCurve::IntermediateTransmissionCurve</scope><name>isSpatiallyConstant</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1afdb35fa85f413ced66d13c788a9f5772" prot="public" virt="non-virtual"><scope>lsst::ip::isr::transmissionCurve::IntermediateTransmissionCurve</scope><name>setMetadata</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1af3dac70f996c5535e468e57fcaface19" prot="public" virt="non-virtual"><scope>lsst::ip::isr::transmissionCurve::IntermediateTransmissionCurve</scope><name>setTransmissionCurveRepresentation</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a27618313514b2250e2b89f71b32c3c9c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::transmissionCurve::IntermediateTransmissionCurve</scope><name>transmissionCurve</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1transmission_curve_1_1_intermediate_transmission_curve_1a5124a5bc3d746fede3820dfdeeeebcd2" prot="public" virt="non-virtual"><scope>lsst::ip::isr::transmissionCurve::IntermediateTransmissionCurve</scope><name>writeFits</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

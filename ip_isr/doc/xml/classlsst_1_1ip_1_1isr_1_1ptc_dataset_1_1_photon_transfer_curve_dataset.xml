@@ -1,0 +1,1158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib" prot="public" virt="non-virtual">lsst.ip.isr.calibType.IsrCalib</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a8b2305561b71b1aec3c10cd1644ea88f" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::_OBSTYPE</definition>
+        <argsstring></argsstring>
+        <name>_OBSTYPE</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset._OBSTYPE</qualifiedname>
+        <initializer>=  &apos;PTC&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="163" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1ab0100d4a29374d445985b65a13f35343" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::_SCHEMA</definition>
+        <argsstring></argsstring>
+        <name>_SCHEMA</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset._SCHEMA</qualifiedname>
+        <initializer>=  &apos;Gen3 Photon Transfer Curve&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="164" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1acf4a09dd892071267717e22569eafa29" prot="private" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::_VERSION</definition>
+        <argsstring></argsstring>
+        <name>_VERSION</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset._VERSION</qualifiedname>
+        <initializer>=  1.2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="165" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1afc790a51dd14ade14f1ea811c3d391e8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::ptcFitType</definition>
+        <argsstring></argsstring>
+        <name>ptcFitType</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.ptcFitType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="168" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a10106b118ea5aa231b760adea8020b93" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::ampNames</definition>
+        <argsstring></argsstring>
+        <name>ampNames</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.ampNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="169" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1aeb7515020e8b12568fd332d192801266" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::covMatrixSide</definition>
+        <argsstring></argsstring>
+        <name>covMatrixSide</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.covMatrixSide</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="170" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a7e9df4a477e37cac33f98254910f463b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::badAmps</definition>
+        <argsstring></argsstring>
+        <name>badAmps</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.badAmps</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="172" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1add2253cf754e5f91247c3a5144ab5a45" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::inputExpIdPairs</definition>
+        <argsstring></argsstring>
+        <name>inputExpIdPairs</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.inputExpIdPairs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="174" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a373e34f76c55b08d9fcd6f48764bd12a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::expIdMask</definition>
+        <argsstring></argsstring>
+        <name>expIdMask</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.expIdMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="175" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a08b066a3bb252cabdf4e7a13216683f8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::rawExpTimes</definition>
+        <argsstring></argsstring>
+        <name>rawExpTimes</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.rawExpTimes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="176" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1ab64f1aa6058798f6b4b20ea7722d0c53" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::rawMeans</definition>
+        <argsstring></argsstring>
+        <name>rawMeans</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.rawMeans</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="177" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a5d4e81e0e9aa244925b39f1816f19835" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::rawVars</definition>
+        <argsstring></argsstring>
+        <name>rawVars</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.rawVars</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="178" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a69625f16fbdb0e40a90711ca45dcd2b7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::photoCharges</definition>
+        <argsstring></argsstring>
+        <name>photoCharges</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.photoCharges</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="179" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a84e0d24d34a61e566f668e3a7d40bce5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.gain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="181" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a8a37aa80a3cda81ab76f4ed7ef28a505" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::gainErr</definition>
+        <argsstring></argsstring>
+        <name>gainErr</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.gainErr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="182" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a919c3c6dd2fa47a2a2edeebbe3c3095c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::noise</definition>
+        <argsstring></argsstring>
+        <name>noise</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.noise</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="183" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a166ae5cdacfaef8ae0b3e2365ac42e3e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::noiseErr</definition>
+        <argsstring></argsstring>
+        <name>noiseErr</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.noiseErr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="184" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1ab30289a5194ff6fc2dc3420c88f1d7d0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::histVars</definition>
+        <argsstring></argsstring>
+        <name>histVars</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.histVars</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="186" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a0a01d995439713543b469300c2f675ef" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::histChi2Dofs</definition>
+        <argsstring></argsstring>
+        <name>histChi2Dofs</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.histChi2Dofs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="187" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1af3218e2478053b3321ce42c5bc2942c9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::kspValues</definition>
+        <argsstring></argsstring>
+        <name>kspValues</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.kspValues</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="188" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1aea922084289d32133dd234a2e8aa671c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::ptcFitPars</definition>
+        <argsstring></argsstring>
+        <name>ptcFitPars</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.ptcFitPars</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="190" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a1587a2f3b4656be0e035012ce873a4da" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::ptcFitParsError</definition>
+        <argsstring></argsstring>
+        <name>ptcFitParsError</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.ptcFitParsError</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="191" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1af2993817837a3bebb537fa37355ac717" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::ptcFitChiSq</definition>
+        <argsstring></argsstring>
+        <name>ptcFitChiSq</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.ptcFitChiSq</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="192" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a47db82dea93d42e5a259af3263a697d2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::ptcTurnoff</definition>
+        <argsstring></argsstring>
+        <name>ptcTurnoff</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.ptcTurnoff</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="193" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1adb0b57ee551bd59d144007c7f3bc33b4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::covariances</definition>
+        <argsstring></argsstring>
+        <name>covariances</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.covariances</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="195" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a23d87031066973b6f898a3cf322b7de3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::covariancesModel</definition>
+        <argsstring></argsstring>
+        <name>covariancesModel</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.covariancesModel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="196" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1ae00fad4140848f0c1270440f345c359c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::covariancesSqrtWeights</definition>
+        <argsstring></argsstring>
+        <name>covariancesSqrtWeights</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.covariancesSqrtWeights</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="197" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a5180ef60aede578019a6acd5ce805a09" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::aMatrix</definition>
+        <argsstring></argsstring>
+        <name>aMatrix</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.aMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="198" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a2b318cf60427a7f8032b2a179466b33c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::bMatrix</definition>
+        <argsstring></argsstring>
+        <name>bMatrix</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.bMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="199" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a52a47b40767ac15ca3ef3b0b7cbcf188" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::covariancesModelNoB</definition>
+        <argsstring></argsstring>
+        <name>covariancesModelNoB</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.covariancesModelNoB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="200" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1af97111b98945b4448aee6f77286d23ff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::aMatrixNoB</definition>
+        <argsstring></argsstring>
+        <name>aMatrixNoB</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.aMatrixNoB</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="201" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a14bd34dbf42743044b710aac7e8ba226" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::finalVars</definition>
+        <argsstring></argsstring>
+        <name>finalVars</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.finalVars</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="203" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a97c2bb98dfa2e3a787f2f29cb4caa572" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::finalModelVars</definition>
+        <argsstring></argsstring>
+        <name>finalModelVars</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.finalModelVars</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="204" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a63b108996d1ce40136432ca3ca106004" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset::finalMeans</definition>
+        <argsstring></argsstring>
+        <name>finalMeans</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.finalMeans</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="205" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a0b66f32e4137da01908b5590bf3dafa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset.__init__</definition>
+        <argsstring>(self, ampNames=[], ptcFitType=None, covMatrixSide=1, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.__init__</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a8b0c7d628ed5e5b429f66ec5b2b4f25b">__init__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a10106b118ea5aa231b760adea8020b93" kindref="member">ampNames</ref></type>
+          <defname>ampNames</defname>
+          <defval>[]</defval>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1afc790a51dd14ade14f1ea811c3d391e8" kindref="member">ptcFitType</ref></type>
+          <defname>ptcFitType</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1aeb7515020e8b12568fd332d192801266" kindref="member">covMatrixSide</ref></type>
+          <defname>covMatrixSide</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="167" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="167" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a0e456e63aa2d5ca9ad43bbdac32564c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset.setAmpValuesPartialDataset</definition>
+        <argsstring>(self, ampName, inputExpIdPair=(-1, -1), rawExpTime=np.nan, rawMean=np.nan, rawVar=np.nan, photoCharge=np.nan, expIdMask=False, covariance=None, covSqrtWeights=None, gain=np.nan, noise=np.nan, histVar=np.nan, histChi2Dof=np.nan, kspValue=0.0)</argsstring>
+        <name>setAmpValuesPartialDataset</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.setAmpValuesPartialDataset</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ampName</type>
+          <defname>ampName</defname>
+        </param>
+        <param>
+          <type>inputExpIdPair</type>
+          <defname>inputExpIdPair</defname>
+          <defval>(-1, -1)</defval>
+        </param>
+        <param>
+          <type>rawExpTime</type>
+          <defname>rawExpTime</defname>
+          <defval>np.nan</defval>
+        </param>
+        <param>
+          <type>rawMean</type>
+          <defname>rawMean</defname>
+          <defval>np.nan</defval>
+        </param>
+        <param>
+          <type>rawVar</type>
+          <defname>rawVar</defname>
+          <defval>np.nan</defval>
+        </param>
+        <param>
+          <type>photoCharge</type>
+          <defname>photoCharge</defname>
+          <defval>np.nan</defval>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a373e34f76c55b08d9fcd6f48764bd12a" kindref="member">expIdMask</ref></type>
+          <defname>expIdMask</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>covariance</type>
+          <defname>covariance</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>covSqrtWeights</type>
+          <defname>covSqrtWeights</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a84e0d24d34a61e566f668e3a7d40bce5" kindref="member">gain</ref></type>
+          <defname>gain</defname>
+          <defval>np.nan</defval>
+        </param>
+        <param>
+          <type><ref refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a919c3c6dd2fa47a2a2edeebbe3c3095c" kindref="member">noise</ref></type>
+          <defname>noise</defname>
+          <defval>np.nan</defval>
+        </param>
+        <param>
+          <type>histVar</type>
+          <defname>histVar</defname>
+          <defval>np.nan</defval>
+        </param>
+        <param>
+          <type>histChi2Dof</type>
+          <defname>histChi2Dof</defname>
+          <defval>np.nan</defval>
+        </param>
+        <param>
+          <type>kspValue</type>
+          <defname>kspValue</defname>
+          <defval>0.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set the amp values for a partial PTC Dataset (from cpExtractPtcTask).
+
+Parameters
+----------
+ampName : `str`
+    Name of the amp to set the values.
+inputExpIdPair : `tuple` [`int`]
+    Exposure IDs of input pair.
+rawExpTime : `float`, optional
+    Exposure time for this exposure pair.
+rawMean : `float`, optional
+    Average of the means of the exposures in this pair.
+rawVar : `float`, optional
+    Variance of the difference of the exposures in this pair.
+photoCharge : `float`, optional
+    Integrated photocharge for flat pair for linearity calibration.
+expIdMask : `bool`, optional
+    Flag setting if this exposure pair should be used (True)
+    or not used (False).
+covariance : `np.ndarray` or None, optional
+    Measured covariance for this exposure pair.
+covSqrtWeights : `np.ndarray` or None, optional
+    Measured sqrt of covariance weights in this exposure pair.
+gain : `float`, optional
+    Estimated gain for this exposure pair.
+noise : `float`, optional
+    Estimated read noise for this exposure pair.
+histVar : `float`, optional
+    Variance estimated from fitting a histogram with a Gaussian model.
+histChi2Dof : `float`, optional
+    Chi-squared per degree of freedom from Gaussian histogram fit.
+kspValue : `float`, optional
+    KS test p-value from the Gaussian histogram fit.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="218" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="234" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1aabc2b0c3282530131bbf931ad8ec3b56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset.updateMetadata</definition>
+        <argsstring>(self, **kwargs)</argsstring>
+        <name>updateMetadata</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.updateMetadata</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a800537ed1777875f9f9fd973a83c3809">updateMetadata</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update calibration metadata.
+This calls the base class&apos;s method after ensuring the required
+calibration keywords will be saved.
+
+Parameters
+----------
+setDate : `bool`, optional
+    Update the CALIBDATE fields in the metadata to the current
+    time. Defaults to False.
+kwargs :
+    Other keyword parameters to set in the metadata.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="296" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="296" bodyend="310"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a3397ec9c284f23d5082f649e0247110f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset.fromDict</definition>
+        <argsstring>(cls, dictionary)</argsstring>
+        <name>fromDict</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.fromDict</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a817599a7eef2221ba3908296dab05347">fromDict</reimplements>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>dictionary</type>
+          <defname>dictionary</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a calibration from a dictionary of properties.
+Must be implemented by the specific calibration subclasses.
+
+Parameters
+----------
+dictionary : `dict`
+    Dictionary of properties.
+
+Returns
+-------
+calib : `lsst.ip.isr.PhotonTransferCurveDataset`
+    Constructed calibration.
+
+Raises
+------
+RuntimeError
+    Raised if the supplied dictionary is for a different
+    calibration.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="312" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="312" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a91cad8492ce14a356061fca7e7d19278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset.toDict</definition>
+        <argsstring>(self)</argsstring>
+        <name>toDict</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.toDict</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1aab4a381103b94dbea2acb727184db72f">toDict</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a dictionary containing the calibration properties.
+The dictionary should be able to be round-tripped through
+`fromDict`.
+
+Returns
+-------
+dictionary : `dict`
+    Dictionary of properties.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="410" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="410" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1ab0f2581a5659abaa2a38b56a8e5338c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset.fromTable</definition>
+        <argsstring>(cls, tableList)</argsstring>
+        <name>fromTable</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.fromTable</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a1403d6fec5026193600341be1a426533">fromTable</reimplements>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>tableList</type>
+          <defname>tableList</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct calibration from a list of tables.
+This method uses the `fromDict` method to create the
+calibration, after constructing an appropriate dictionary from
+the input tables.
+
+Parameters
+----------
+tableList : `list` [`lsst.afw.table.Table`]
+    List of tables to use to construct the datasetPtc.
+
+Returns
+-------
+calib : `lsst.ip.isr.PhotonTransferCurveDataset`
+    The calibration defined in the tables.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="468" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="468" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1aa8538a05fc2c5845b0f65c9885851b72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset.toTable</definition>
+        <argsstring>(self)</argsstring>
+        <name>toTable</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.toTable</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1a247f0c08c122d6c0da72f764b5e4c466">toTable</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a list of tables containing the information in this
+calibration.
+
+The list of tables should create an identical calibration
+after being passed to this class&apos;s fromTable method.
+
+Returns
+-------
+tableList : `list` [`astropy.table.Table`]
+    List of tables containing the linearity calibration
+    information.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="575" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="575" bodyend="639"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a96a6481cc0a9330c26d4e2f6fae54112" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset.fromDetector</definition>
+        <argsstring>(self, detector)</argsstring>
+        <name>fromDetector</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.fromDetector</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib_1aa4a68997772b1898843219a8d078e228">fromDetector</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="_detector_collection_8cc_1a6b9c564255ea8f8ae53bf14d81234de7" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">detector</ref></type>
+          <defname>detector</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Read metadata parameters from a detector.
+
+Parameters
+----------
+detector : `lsst.afw.cameraGeom.detector`
+    Input detector with parameters to use.
+
+Returns
+-------
+calib : `lsst.ip.isr.PhotonTransferCurveDataset`
+    The calibration constructed from the detector.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="640" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="640" bodyend="655"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a240eb9e81a0160fdd88ef41b2cf249f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset.getExpIdsUsed</definition>
+        <argsstring>(self, ampName)</argsstring>
+        <name>getExpIdsUsed</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.getExpIdsUsed</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ampName</type>
+          <defname>ampName</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the exposures used, i.e. not discarded, for a given amp.
+If no mask has been created yet, all exposures are returned.
+
+Parameters
+----------
+ampName : `str`
+
+Returns
+-------
+expIdsUsed : `list` [`tuple`]
+    List of pairs of exposure ids used in PTC.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="656" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="656" bodyend="689"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1abfb3b9a4573ab20e1e02cd6d83fb6a54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset.getGoodAmps</definition>
+        <argsstring>(self)</argsstring>
+        <name>getGoodAmps</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.getGoodAmps</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the good amps from this PTC.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="690" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="690" bodyend="693"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1acc73b6570f89cae8f8518056ce5506ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset.getGoodPoints</definition>
+        <argsstring>(self, ampName)</argsstring>
+        <name>getGoodPoints</name>
+        <qualifiedname>lsst::ip::isr.ptcDataset.PhotonTransferCurveDataset.getGoodPoints</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ampName</type>
+          <defname>ampName</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the good points used for a given amp in the PTC.
+
+Parameters
+----------
+ampName : `str`
+
+Returns
+-------
+goodPoints : `np.ndarray`
+    Boolean array of good points used in PTC.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/ptcDataset.py" line="694" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="694" bodyend="707"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A simple class to hold the output data from the PTC task.
+
+The dataset is made up of a dictionary for each item, keyed by the
+amplifiers&apos; names, which much be supplied at construction time.
+New items cannot be added to the class to save accidentally saving to the
+wrong property, and the class can be frozen if desired.
+inputExpIdPairs records the exposures used to produce the data.
+When fitPtc() or fitCovariancesAstier() is run, a mask is built up, which
+is by definition always the same length as inputExpIdPairs, rawExpTimes,
+rawMeans and rawVars, and is a list of bools, which are incrementally set
+to False as points are discarded from the fits.
+PTC fit parameters for polynomials are stored in a list in ascending order
+of polynomial term, i.e. par[0]*x^0 + par[1]*x + par[2]*x^2 etc
+with the length of the list corresponding to the order of the polynomial
+plus one.
+
+Parameters
+----------
+ampNames : `list`
+    List with the names of the amplifiers of the detector at hand.
+ptcFitType : `str`
+    Type of model fitted to the PTC: &quot;POLYNOMIAL&quot;, &quot;EXPAPPROXIMATION&quot;,
+    or &quot;FULLCOVARIANCE&quot;.
+covMatrixSide : `int`
+    Maximum lag of covariances (size of square covariance matrices).
+kwargs : `dict`, optional
+    Other keyword arguments to pass to the parent init.
+
+Notes
+-----
+The stored attributes are:
+
+badAmps : `list` [`str`]
+    List with bad amplifiers names.
+inputExpIdPairs : `dict`, [`str`, `list`]
+    Dictionary keyed by amp names containing the input exposures IDs.
+expIdMask : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing the mask produced after
+    outlier rejection. The mask produced by the &quot;FULLCOVARIANCE&quot;
+    option may differ from the one produced in the other two PTC
+    fit types.
+rawExpTimes : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing the unmasked exposure times.
+rawMeans : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing the unmasked average of the
+    means of the exposures in each flat pair.
+rawVars : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing the variance of the
+    difference image of the exposures in each flat pair.
+histVars : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing the variance of the
+    difference image of the exposures in each flat pair estimated
+    by fitting a Gaussian model.
+histChi2Dofs : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing the chi-squared per degree
+    of freedom fitting the difference image to a Gaussian model.
+kspValues : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing the KS test p-value from
+    fitting the difference image to a Gaussian model.
+gain : `dict`, [`str`, `float`]
+    Dictionary keyed by amp names containing the fitted gains.
+gainErr : `dict`, [`str`, `float`]
+    Dictionary keyed by amp names containing the errors on the
+    fitted gains.
+noise : `dict`, [`str`, `float`]
+    Dictionary keyed by amp names containing the fitted noise.
+noiseErr : `dict`, [`str`, `float`]
+    Dictionary keyed by amp names containing the errors on the fitted
+    noise.
+ptcFitPars : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing the fitted parameters of the
+    PTC model for ptcFitTye in [&quot;POLYNOMIAL&quot;, &quot;EXPAPPROXIMATION&quot;].
+ptcFitParsError : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing the errors on the fitted
+    parameters of the PTC model for ptcFitTye in
+    [&quot;POLYNOMIAL&quot;, &quot;EXPAPPROXIMATION&quot;].
+ptcFitChiSq : `dict`, [`str`, `float`]
+    Dictionary keyed by amp names containing the reduced chi squared
+    of the fit for ptcFitTye in [&quot;POLYNOMIAL&quot;, &quot;EXPAPPROXIMATION&quot;].
+ptcTurnoff : `dict` [`str, `float`]
+    Flux value (in ADU) where the variance of the PTC curve starts
+    decreasing consistently.
+covariances : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing a list of measured
+    covariances per mean flux.
+covariancesModel : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containinging covariances model
+    (Eq. 20 of Astier+19) per mean flux.
+covariancesSqrtWeights : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containinging sqrt. of covariances
+    weights.
+aMatrix : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing the &quot;a&quot; parameters from
+    the model in Eq. 20 of Astier+19.
+bMatrix : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing the &quot;b&quot; parameters from
+    the model in Eq. 20 of Astier+19.
+covariancesModelNoB : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing covariances model
+    (with &apos;b&apos;=0 in Eq. 20 of Astier+19)
+    per mean flux.
+aMatrixNoB : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing the &quot;a&quot; parameters from the
+    model in Eq. 20 of Astier+19
+    (and &apos;b&apos; = 0).
+finalVars : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing the masked variance of the
+    difference image of each flat
+    pair. If needed, each array will be right-padded with
+    np.nan to match the length of rawExpTimes.
+finalModelVars : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing the masked modeled
+    variance of the difference image of each flat pair. If needed, each
+    array will be right-padded with np.nan to match the length of
+    rawExpTimes.
+finalMeans : `dict`, [`str`, `np.ndarray`]
+    Dictionary keyed by amp names containing the masked average of the
+    means of the exposures in each flat pair. If needed, each array
+    will be right-padded with np.nan to match the length of
+    rawExpTimes.
+photoCharges : `dict`, [`str`, `np.ndarray`]
+     Dictionary keyed by amp names containing the integrated photocharge
+     for linearity calibration.
+
+Version 1.1 adds the `ptcTurnoff` attribute.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>abc::ABC</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.calibType.IsrCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>abc::ABC</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.ptcDataset.PhotonTransferCurveDataset</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.calibType.IsrCalib</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/ptcDataset.py" line="35" column="1" bodyfile="python/lsst/ip/isr/ptcDataset.py" bodystart="35" bodyend="707"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a0b66f32e4137da01908b5590bf3dafa1" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a8b2305561b71b1aec3c10cd1644ea88f" prot="private" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>_OBSTYPE</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1ab0100d4a29374d445985b65a13f35343" prot="private" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>_SCHEMA</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1acf4a09dd892071267717e22569eafa29" prot="private" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>_VERSION</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a5180ef60aede578019a6acd5ce805a09" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>aMatrix</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1af97111b98945b4448aee6f77286d23ff" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>aMatrixNoB</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a10106b118ea5aa231b760adea8020b93" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>ampNames</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a7e9df4a477e37cac33f98254910f463b" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>badAmps</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a2b318cf60427a7f8032b2a179466b33c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>bMatrix</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1adb0b57ee551bd59d144007c7f3bc33b4" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>covariances</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a23d87031066973b6f898a3cf322b7de3" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>covariancesModel</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a52a47b40767ac15ca3ef3b0b7cbcf188" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>covariancesModelNoB</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1ae00fad4140848f0c1270440f345c359c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>covariancesSqrtWeights</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1aeb7515020e8b12568fd332d192801266" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>covMatrixSide</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a373e34f76c55b08d9fcd6f48764bd12a" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>expIdMask</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a63b108996d1ce40136432ca3ca106004" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>finalMeans</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a97c2bb98dfa2e3a787f2f29cb4caa572" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>finalModelVars</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a14bd34dbf42743044b710aac7e8ba226" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>finalVars</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a96a6481cc0a9330c26d4e2f6fae54112" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>fromDetector</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a3397ec9c284f23d5082f649e0247110f" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>fromDict</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1ab0f2581a5659abaa2a38b56a8e5338c3" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>fromTable</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a84e0d24d34a61e566f668e3a7d40bce5" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>gain</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a8a37aa80a3cda81ab76f4ed7ef28a505" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>gainErr</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a240eb9e81a0160fdd88ef41b2cf249f5" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>getExpIdsUsed</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1abfb3b9a4573ab20e1e02cd6d83fb6a54" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>getGoodAmps</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1acc73b6570f89cae8f8518056ce5506ca" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>getGoodPoints</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a0a01d995439713543b469300c2f675ef" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>histChi2Dofs</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1ab30289a5194ff6fc2dc3420c88f1d7d0" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>histVars</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1add2253cf754e5f91247c3a5144ab5a45" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>inputExpIdPairs</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1af3218e2478053b3321ce42c5bc2942c9" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>kspValues</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a919c3c6dd2fa47a2a2edeebbe3c3095c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>noise</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a166ae5cdacfaef8ae0b3e2365ac42e3e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>noiseErr</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a69625f16fbdb0e40a90711ca45dcd2b7" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>photoCharges</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1af2993817837a3bebb537fa37355ac717" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>ptcFitChiSq</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1aea922084289d32133dd234a2e8aa671c" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>ptcFitPars</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a1587a2f3b4656be0e035012ce873a4da" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>ptcFitParsError</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1afc790a51dd14ade14f1ea811c3d391e8" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>ptcFitType</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a47db82dea93d42e5a259af3263a697d2" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>ptcTurnoff</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a08b066a3bb252cabdf4e7a13216683f8" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>rawExpTimes</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1ab64f1aa6058798f6b4b20ea7722d0c53" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>rawMeans</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a5d4e81e0e9aa244925b39f1816f19835" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>rawVars</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a0e456e63aa2d5ca9ad43bbdac32564c2" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>setAmpValuesPartialDataset</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1a91cad8492ce14a356061fca7e7d19278" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>toDict</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1aa8538a05fc2c5845b0f65c9885851b72" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>toTable</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1ptc_dataset_1_1_photon_transfer_curve_dataset_1aabc2b0c3282530131bbf931ad8ec3b56" prot="public" virt="non-virtual"><scope>lsst::ip::isr::ptcDataset::PhotonTransferCurveDataset</scope><name>updateMetadata</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

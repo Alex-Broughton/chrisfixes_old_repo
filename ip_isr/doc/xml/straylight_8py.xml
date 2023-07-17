@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="straylight_8py" kind="file" language="Python">
+    <compoundname>straylight.py</compoundname>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_config" prot="public">lsst::ip::isr::straylight::StrayLightConfig</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task" prot="public">lsst::ip::isr::straylight::StrayLightTask</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_data" prot="public">lsst::ip::isr::straylight::StrayLightData</innerclass>
+    <innernamespace refid="namespacelsst">lsst</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip">lsst::ip</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr">lsst::ip::isr</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1straylight">lsst::ip::isr::straylight</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacelsst_1_1ip_1_1isr_1_1straylight" refkind="compound"><highlight class="comment">#<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>ip_isr.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Developed<sp/>for<sp/>the<sp/>LSST<sp/>Data<sp/>Management<sp/>System.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>product<sp/>includes<sp/>software<sp/>developed<sp/>by<sp/>the<sp/>LSST<sp/>Project</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#<sp/>(https://www.lsst.org).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#<sp/>See<sp/>the<sp/>COPYRIGHT<sp/>file<sp/>at<sp/>the<sp/>top-level<sp/>directory<sp/>of<sp/>this<sp/>distribution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/>for<sp/>details<sp/>of<sp/>code<sp/>ownership.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">#<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">#<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">#<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">#<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;https://www.gnu.org/licenses/&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">__all__<sp/>=<sp/>[</highlight><highlight class="stringliteral">&quot;StrayLightConfig&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;StrayLightTask&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;StrayLightData&quot;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>abc<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>abstractmethod</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>typing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Optional</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="classlsst_1_1pex_1_1config_1_1config_1_1__PexConfigGenericAlias" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/pex_config/g4f1969f4e1+b66847d792/doc/pex_config.tag">lsst.pex.config</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Config,<sp/>Field,<sp/>ListField</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>lsst.pipe.base<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Task</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacelsst_1_1geom" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/geom/g3f8e1907dc+7442544851/doc/geom.tag">lsst.geom</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Angle</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.isrFunctions<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>checkFilter</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>.calibType<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>IsrCalib</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_config" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_config" kindref="compound">StrayLightConfig</ref>(Config):</highlight></codeline>
+<codeline lineno="35" refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_config_1aa411d0295ffab3e08b245eddee68de1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>doRotatorAngleCorrection<sp/>=<sp/>Field(</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=bool,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Rotator<sp/>angle<sp/>correction<sp/>configuration.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>TODO<sp/>DM-28093:<sp/>change<sp/>the<sp/>doc<sp/>to<sp/>specify<sp/>that<sp/>these<sp/>are<sp/>physical<sp/>labels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_config_1a2dbeb1c44b4a601de7f83c44f07132cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>filters<sp/>=<sp/>ListField(</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=str,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Filters<sp/>that<sp/>need<sp/>straylight<sp/>correction.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=[],</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task" kindref="compound">StrayLightTask</ref>(Task):</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Remove<sp/>stray<sp/>light<sp/>from<sp/>instruments.</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>This<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/>a<sp/>dummy<sp/>task<sp/>to<sp/>be<sp/>retargeted<sp/></highlight><highlight class="keyword">with</highlight><highlight class="normal"><sp/>an<sp/>camera-specific<sp/>version.</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="53" refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task_1a8dbf0d8be153aebae5912d820158e943" refkind="member"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>ConfigClass<sp/>=<sp/>StrayLightConfig</highlight></codeline>
+<codeline lineno="54"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>_DefaultName<sp/>=<sp/>&quot;isrStrayLight&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task_1a993c3a0b75d7a558289b666810e153c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task_1a993c3a0b75d7a558289b666810e153c3" kindref="member">check</ref>(self,<sp/>exposure):</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Check<sp/>if<sp/>stray<sp/>light<sp/>correction<sp/>should<sp/>be<sp/>run.</highlight></codeline>
+<codeline lineno="58"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="59"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Parameters</highlight></codeline>
+<codeline lineno="60"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>----------</highlight></codeline>
+<codeline lineno="61"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exposure<sp/>:<sp/>`<ref refid="classlsst_1_1afw_1_1image_1_1_exposure" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">lsst.afw.image.Exposure</ref>`</highlight></codeline>
+<codeline lineno="62"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Exposure<sp/>to<sp/>correct.</highlight></codeline>
+<codeline lineno="63"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="64"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task_1ac05c378d5f8ea04cadf283568dc7694a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task_1ac05c378d5f8ea04cadf283568dc7694a" kindref="member">run</ref>(self,<sp/>exposure,<sp/>strayLightData):</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Correct<sp/>stray<sp/>light.</highlight></codeline>
+<codeline lineno="68"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="69"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Parameters</highlight></codeline>
+<codeline lineno="70"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>----------</highlight></codeline>
+<codeline lineno="71"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exposure<sp/>:<sp/>`<ref refid="classlsst_1_1afw_1_1image_1_1_exposure" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">lsst.afw.image.Exposure</ref>`</highlight></codeline>
+<codeline lineno="72"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Exposure<sp/>to<sp/>correct.</highlight></codeline>
+<codeline lineno="73"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strayLightData<sp/>:<sp/>`object`,<sp/>optional</highlight></codeline>
+<codeline lineno="74"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>An<sp/>opaque<sp/>object<sp/>that<sp/>contains<sp/>any<sp/>calibration<sp/>data<sp/>used<sp/>to</highlight></codeline>
+<codeline lineno="75"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>correct<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>stray<sp/>light.</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="77"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>NotImplementedError(</highlight><highlight class="stringliteral">&quot;Must<sp/>be<sp/>implemented<sp/>by<sp/>subclasses.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_task_1aa448e92f46ce956622ead19c3f695bd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">checkFilter(self,<sp/>exposure):</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Check<sp/>whether<sp/>we<sp/>should<sp/>fringe-subtract<sp/>the<sp/>science<sp/>exposure.</highlight></codeline>
+<codeline lineno="81"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="82"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Parameters</highlight></codeline>
+<codeline lineno="83"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>----------</highlight></codeline>
+<codeline lineno="84"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exposure<sp/>:<sp/>`<ref refid="classlsst_1_1afw_1_1image_1_1_exposure" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">lsst.afw.image.Exposure</ref>`</highlight></codeline>
+<codeline lineno="85"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Exposure<sp/>to<sp/>check<sp/>the<sp/>filter<sp/>of.</highlight></codeline>
+<codeline lineno="86"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="87"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Returns</highlight></codeline>
+<codeline lineno="88"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-------</highlight></codeline>
+<codeline lineno="89"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>needsFringe<sp/>:<sp/>`bool`</highlight></codeline>
+<codeline lineno="90"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>If<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal">,<sp/>then<sp/>the<sp/>exposure<sp/>has<sp/>a<sp/>filter<sp/>listed<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>the</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>configuration,<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>should<sp/>have<sp/>the<sp/>fringe<sp/>applied.</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="93"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>checkFilter(exposure,<sp/>self.config.filters,<sp/>log=self.log)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_data" kindref="compound">StrayLightData</ref>(<ref refid="classlsst_1_1ip_1_1isr_1_1calib_type_1_1_isr_calib" kindref="compound">IsrCalib</ref>):</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;An<sp/>abstract<sp/>base<sp/>class<sp/>for<sp/>rotator-dependent<sp/>stray<sp/>light<sp/>information.</highlight></codeline>
+<codeline lineno="98"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="99"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="100"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">@abstractmethod</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_data_1a2136ea0e5f74ace92d46a51e4ffedc56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classlsst_1_1ip_1_1isr_1_1straylight_1_1_stray_light_data_1a2136ea0e5f74ace92d46a51e4ffedc56" kindref="member">evaluate</ref>(self,<sp/>angle_start:<sp/>Angle,<sp/>angle_end:<sp/>Optional[Angle]<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Get<sp/>a<sp/>stray<sp/>light<sp/>array<sp/>for<sp/>a<sp/>range<sp/>of<sp/>rotator<sp/>angles.</highlight></codeline>
+<codeline lineno="103"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="104"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Parameters</highlight></codeline>
+<codeline lineno="105"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>----------</highlight></codeline>
+<codeline lineno="106"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>angle_begin<sp/>:<sp/>`float`</highlight></codeline>
+<codeline lineno="107"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Instrument<sp/>rotation<sp/>angle<sp/>at<sp/>the<sp/>start<sp/>of<sp/>the<sp/>exposure.</highlight></codeline>
+<codeline lineno="108"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>angle_end<sp/>:<sp/>`float`,<sp/>optional</highlight></codeline>
+<codeline lineno="109"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Instrument<sp/>rotation<sp/>angle<sp/>at<sp/>the<sp/>end<sp/>of<sp/>the<sp/>exposure.</highlight></codeline>
+<codeline lineno="110"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>If<sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>provided,<sp/>the<sp/>returned<sp/>array<sp/>will<sp/>reflect<sp/>a<sp/>snapshot<sp/>at</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>`angle_start`.</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Returns</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-------</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>array<sp/>:<sp/>`numpy.ndarray`</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>A<sp/>stray-light<sp/>background<sp/>image<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>this<sp/>exposure.</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="118"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>NotImplementedError(</highlight><highlight class="stringliteral">&quot;Must<sp/>be<sp/>implemented<sp/>by<sp/>subclasses.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+    </programlisting>
+    <location file="python/lsst/ip/isr/straylight.py"/>
+  </compounddef>
+</doxygen>

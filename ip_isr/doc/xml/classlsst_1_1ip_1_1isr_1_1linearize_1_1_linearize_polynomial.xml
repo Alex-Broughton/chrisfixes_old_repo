@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_polynomial" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::linearize::LinearizePolynomial</compoundname>
+    <basecompoundref refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base" prot="public" virt="non-virtual">lsst.ip.isr.linearize.LinearizeBase</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_polynomial_1a54eb833525f1f1fe32c23cd0806ed70d" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.linearize.LinearizePolynomial::LinearityType</definition>
+        <argsstring></argsstring>
+        <name>LinearityType</name>
+        <qualifiedname>lsst::ip::isr.linearize.LinearizePolynomial.LinearityType</qualifiedname>
+        <initializer>=  &quot;Polynomial&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/linearize.py" line="638" column="1" bodyfile="python/lsst/ip/isr/linearize.py" bodystart="638" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_polynomial_1a881b85adb25570ddbd5c5142856d3d31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.linearize.LinearizePolynomial.__call__</definition>
+        <argsstring>(self, image, **kwargs)</argsstring>
+        <name>__call__</name>
+        <qualifiedname>lsst::ip::isr.linearize.LinearizePolynomial.__call__</qualifiedname>
+        <reimplements refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base_1a35a6c652513da5918c41f9b7ea91764d">__call__</reimplements>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>image</type>
+          <defname>image</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Correct non-linearity.
+
+Parameters
+----------
+image : `lsst.afw.image.Image`
+    Image to be corrected
+kwargs : `dict`
+    Dictionary of parameter keywords:
+
+    ``coeffs``
+        Coefficient vector (`list` or `numpy.array`).
+        If the order of the polynomial is n, this list
+        should have a length of n-1 (&quot;k0&quot; and &quot;k1&quot; are
+        not needed for the correction).
+    ``log``
+        Logger to handle messages (`logging.Logger`).
+
+Returns
+-------
+output : `tuple` [`bool`, `int`]
+    If true, a correction was applied successfully.  The
+    integer indicates the number of pixels that were
+    uncorrectable by being out of range.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/linearize.py" line="640" column="1" bodyfile="python/lsst/ip/isr/linearize.py" bodystart="640" bodyend="678"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Correct non-linearity with a polynomial mode.
+
+.. code-block::
+
+    corrImage = uncorrImage + sum_i c_i uncorrImage^(2 + i)
+
+where ``c_i`` are the linearity coefficients for each amplifier.
+Lower order coefficients are not included as they duplicate other
+calibration parameters:
+
+``k0``
+    A coefficient multiplied by ``uncorrImage**0`` is equivalent to
+    bias level.  Irrelevant for correcting non-linearity.
+``k1``
+    A coefficient multiplied by ``uncorrImage**1`` is proportional
+    to the gain.  Not necessary for correcting non-linearity.
+</verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>abc::ABCMeta</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.linearize.LinearizePolynomial</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_polynomial"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.linearize.LinearizeBase</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>metaclass</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="4">
+        <label>abc::ABCMeta</label>
+      </node>
+      <node id="1">
+        <label>lsst.ip.isr.linearize.LinearizePolynomial</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_polynomial"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lsst.ip.isr.linearize.LinearizeBase</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_base"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>metaclass</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/linearize.py" line="620" column="1" bodyfile="python/lsst/ip/isr/linearize.py" bodystart="620" bodyend="678"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_polynomial_1a881b85adb25570ddbd5c5142856d3d31" prot="public" virt="non-virtual"><scope>lsst::ip::isr::linearize::LinearizePolynomial</scope><name>__call__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1linearize_1_1_linearize_polynomial_1a54eb833525f1f1fe32c23cd0806ed70d" prot="public" virt="non-virtual"><scope>lsst::ip::isr::linearize::LinearizePolynomial</scope><name>LinearityType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

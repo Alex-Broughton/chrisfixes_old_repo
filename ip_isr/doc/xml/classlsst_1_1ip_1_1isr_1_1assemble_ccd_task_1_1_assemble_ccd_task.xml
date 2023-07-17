@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task" kind="class" language="Python" prot="public">
+    <compoundname>lsst::ip::isr::assembleCcdTask::AssembleCcdTask</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">pipeBase.Task</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1a21aa719562a3f251066a76e1b7e42cdd" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.assembleCcdTask.AssembleCcdTask::ConfigClass</definition>
+        <argsstring></argsstring>
+        <name>ConfigClass</name>
+        <qualifiedname>lsst::ip::isr.assembleCcdTask.AssembleCcdTask.ConfigClass</qualifiedname>
+        <initializer>=  <ref refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_config" kindref="compound">AssembleCcdConfig</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/assembleCcdTask.py" line="134" column="1" bodyfile="python/lsst/ip/isr/assembleCcdTask.py" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1ab914f7997a4fe04c6e1c7cc04c062cab" prot="private" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string lsst::ip::isr.assembleCcdTask.AssembleCcdTask::_DefaultName</definition>
+        <argsstring></argsstring>
+        <name>_DefaultName</name>
+        <qualifiedname>lsst::ip::isr.assembleCcdTask.AssembleCcdTask._DefaultName</qualifiedname>
+        <initializer>=  &quot;assembleCcd&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/assembleCcdTask.py" line="135" column="1" bodyfile="python/lsst/ip/isr/assembleCcdTask.py" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1afb7775fc26fed5fb5b258ab8599eca66" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lsst::ip::isr.assembleCcdTask.AssembleCcdTask::allKeysToRemove</definition>
+        <argsstring></argsstring>
+        <name>allKeysToRemove</name>
+        <qualifiedname>lsst::ip::isr.assembleCcdTask.AssembleCcdTask.allKeysToRemove</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/assembleCcdTask.py" line="145" column="1" bodyfile="python/lsst/ip/isr/assembleCcdTask.py" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1a2934b49a6c676de072599cdeca1833da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.assembleCcdTask.AssembleCcdTask.__init__</definition>
+        <argsstring>(self, **kwargs)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>lsst::ip::isr.assembleCcdTask.AssembleCcdTask.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>**</type>
+          <declname>kwargs</declname>
+        </param>
+        <briefdescription>
+<para>Initialize the <ref refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task" kindref="compound">AssembleCcdTask</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>    The keys for removal specified in the config are added to a default
+    set: (&apos;DATASEC&apos;, &apos;BIASSEC&apos;, &apos;TRIMSEC&apos;, &apos;GAIN&apos;)
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/assembleCcdTask.py" line="137" column="1" bodyfile="python/lsst/ip/isr/assembleCcdTask.py" bodystart="137" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1a0cee73e62b533a501bc948af2a5c0b89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.assembleCcdTask.AssembleCcdTask.assembleCcd</definition>
+        <argsstring>(self, assembleInput)</argsstring>
+        <name>assembleCcd</name>
+        <qualifiedname>lsst::ip::isr.assembleCcdTask.AssembleCcdTask.assembleCcd</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>assembleInput</type>
+          <defname>assembleInput</defname>
+        </param>
+        <briefdescription>
+<para>Assemble a set of amps into a single CCD size image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">assembleInput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ndash/> Either a dictionary of amp lsst.afw.image.Exposures or a single <ref refid="classlsst_1_1afw_1_1image_1_1_exposure" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">lsst.afw.image.Exposure</ref> containing all raw amps. If a dictionary of amp exposures, the key should be the amp name. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>assembledCcd <ndash/> An <ref refid="classlsst_1_1afw_1_1image_1_1_exposure" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">lsst.afw.image.Exposure</ref> of the assembled amp sections.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>TypeError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>with the following string:</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<variablelist>
+<varlistentry><term>Expected either a dictionary of amp exposures or a single raw exposure. </term></varlistentry>
+<listitem><para>The input exposures to be assembled do not adhere to the required format. </para>
+</listitem>
+</variablelist>
+</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>RuntimeError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>with the following string:</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<variablelist>
+<varlistentry><term>No ccd detector found </term></varlistentry>
+<listitem><para>The detector set on the input exposure is not set. </para>
+</listitem>
+</variablelist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/assembleCcdTask.py" line="147" column="1" bodyfile="python/lsst/ip/isr/assembleCcdTask.py" bodystart="147" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1a75117815c3d1f28b271b5a86f57dce6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def lsst.ip.isr.assembleCcdTask.AssembleCcdTask.postprocessExposure</definition>
+        <argsstring>(self, outExposure, inExposure)</argsstring>
+        <name>postprocessExposure</name>
+        <qualifiedname>lsst::ip::isr.assembleCcdTask.AssembleCcdTask.postprocessExposure</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>outExposure</type>
+          <defname>outExposure</defname>
+        </param>
+        <param>
+          <type>inExposure</type>
+          <defname>inExposure</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Set exposure non-image attributes, including wcs and metadata and
+display exposure (if requested)
+
+Call after assembling the pixels
+
+@param[in,out]  outExposure assembled exposure:
+                            - removes unwanted keywords
+                            - sets wcs, filter, and detector
+@param[in]      inExposure  input exposure
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/assembleCcdTask.py" line="224" column="1" bodyfile="python/lsst/ip/isr/assembleCcdTask.py" bodystart="224" bodyend="253"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><anchor id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1AssembleCcdTask_"/></para>
+    </briefdescription>
+    <detaileddescription>
+<para>Assemble a set of amplifier images into a full detector size set of pixels.</para>
+<sect1 id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1ip_isr_assemble_Contents">
+<title>Contents</title>
+<para><itemizedlist>
+<listitem><para><ref refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1ip_isr_assemble_Purpose" kindref="member">Description</ref></para>
+</listitem><listitem><para><ref refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1ip_isr_assemble_Initialize" kindref="member">Task initialization</ref></para>
+</listitem><listitem><para><ref refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1ip_isr_assemble_IO" kindref="member">Inputs/Outputs to the assembleCcd method</ref></para>
+</listitem><listitem><para><ref refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1ip_isr_assemble_Config" kindref="member">Configuration parameters</ref></para>
+</listitem><listitem><para><ref refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1ip_isr_assemble_Debug" kindref="member">Debug variables</ref></para>
+</listitem><listitem><para><ref refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1ip_isr_assemble_Example" kindref="member">A complete example of using</ref></para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1ip_isr_assemble_Purpose">
+<title>Description</title>
+<para>This task assembles sections of an image into a larger mosaic. The sub-sections are typically amplifier sections and are to be assembled into a detector size pixel grid. The assembly is driven by the entries in the raw amp information. The task can be configured to return a detector image with non-data (e.g. overscan) pixels included. The task can also renormalize the pixel values to a nominal gain of 1. The task also removes exposure metadata that has context in raw amps, but not in trimmed detectors (e.g. &apos;BIASSEC&apos;).</para>
+</sect1>
+<sect1 id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1ip_isr_assemble_Initialize">
+<title>Task initialization</title>
+<para>Initialize the <ref refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task" kindref="compound">AssembleCcdTask</ref>. </para>
+<para><verbatim>    The keys for removal specified in the config are added to a default
+    set: (&apos;DATASEC&apos;, &apos;BIASSEC&apos;, &apos;TRIMSEC&apos;, &apos;GAIN&apos;)
+</verbatim> </para>
+</sect1>
+<sect1 id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1ip_isr_assemble_IO">
+<title>Inputs/Outputs to the assembleCcd method</title>
+<para>Assemble a set of amps into a single CCD size image. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">assembleInput</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ndash/> Either a dictionary of amp lsst.afw.image.Exposures or a single <ref refid="classlsst_1_1afw_1_1image_1_1_exposure" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">lsst.afw.image.Exposure</ref> containing all raw amps. If a dictionary of amp exposures, the key should be the amp name. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>assembledCcd <ndash/> An <ref refid="classlsst_1_1afw_1_1image_1_1_exposure" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">lsst.afw.image.Exposure</ref> of the assembled amp sections.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>TypeError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>with the following string:</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<variablelist>
+<varlistentry><term>Expected either a dictionary of amp exposures or a single raw exposure. </term></varlistentry>
+<listitem><para>The input exposures to be assembled do not adhere to the required format. </para>
+</listitem>
+</variablelist>
+</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>RuntimeError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>with the following string:</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<variablelist>
+<varlistentry><term>No ccd detector found </term></varlistentry>
+<listitem><para>The detector set on the input exposure is not set. </para>
+</listitem>
+</variablelist>
+</para>
+</sect1>
+<sect1 id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1ip_isr_assemble_Config">
+<title>Configuration parameters</title>
+<para>See <ref refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_config" kindref="compound">AssembleCcdConfig</ref></para>
+</sect1>
+<sect1 id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1ip_isr_assemble_Debug">
+<title>Debug variables</title>
+<para>The command line task interface supports a flag <computeroutput>-d</computeroutput> to import <bold>debug.py</bold> from your <computeroutput>PYTHONPATH</computeroutput>; see <ulink url="https://developer.lsst.io/stack/debug.html">Debugging Tasks with lsstDebug</ulink> for more about <bold>debug.py</bold> files.</para>
+<para>The available variables in <ref refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task" kindref="compound">AssembleCcdTask</ref> are: <variablelist>
+<varlistentry><term><computeroutput>display</computeroutput> </term></varlistentry>
+<listitem><para>A dictionary containing debug point names as keys with frame number as value. Valid keys are: <variablelist>
+<varlistentry><term>assembledExposure </term></varlistentry>
+<listitem><para>display assembled exposure </para>
+</listitem>
+</variablelist>
+</para>
+</listitem>
+</variablelist>
+</para>
+</sect1>
+<sect1 id="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1ip_isr_assemble_Example">
+<title>A complete example of using</title>
+<para><ref refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task" kindref="compound">AssembleCcdTask</ref></para>
+<para><hruler/>
+ To investigate the <ref refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1ip_isr_assemble_Debug" kindref="member">Debug variables</ref>, put something like <programlisting filename=".py"><codeline><highlight class="keyword">import</highlight><highlight class="normal"><sp/>lsstDebug</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">DebugInfo(name):</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>di<sp/>=<sp/><ref refid="namespacelsst_debug_1a8aff38cccd562455f8d1d7fad8fc2a67" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/base.tag">lsstDebug.getInfo</ref>(name)<sp/><sp/></highlight><highlight class="comment">#<sp/>N.b.<sp/>lsstDebug.Info(name)<sp/>would<sp/>call</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>us<sp/>recursively</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>name<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;lsst.ip.isr.assembleCcdTask&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>di.display<sp/>=<sp/>{</highlight><highlight class="stringliteral">&apos;assembledExposure&apos;</highlight><highlight class="normal">:2}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>di</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="classlsst_debug_1_1_info" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/base/gca804b0f43+f0a1800e64/doc/base.tag">lsstDebug.Info</ref><sp/>=<sp/>DebugInfo</highlight></codeline>
+</programlisting> into your debug.py file and run runAssembleTask.py with the <computeroutput>--debug</computeroutput> flag.</para>
+<para>Conversion notes: Display code should be updated once we settle on a standard way of controlling what is displayed. </para>
+</sect1>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>lsst.ip.isr.assembleCcdTask.AssembleCcdTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pipeBase.Task</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>lsst.ip.isr.assembleCcdTask.AssembleCcdTask</label>
+        <link refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>pipeBase.Task</label>
+      </node>
+    </collaborationgraph>
+    <location file="python/lsst/ip/isr/assembleCcdTask.py" line="53" column="1" bodyfile="python/lsst/ip/isr/assembleCcdTask.py" bodystart="53" bodyend="253"/>
+    <listofallmembers>
+      <member refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1a2934b49a6c676de072599cdeca1833da" prot="public" virt="non-virtual"><scope>lsst::ip::isr::assembleCcdTask::AssembleCcdTask</scope><name>__init__</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1ab914f7997a4fe04c6e1c7cc04c062cab" prot="private" virt="non-virtual"><scope>lsst::ip::isr::assembleCcdTask::AssembleCcdTask</scope><name>_DefaultName</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1afb7775fc26fed5fb5b258ab8599eca66" prot="public" virt="non-virtual"><scope>lsst::ip::isr::assembleCcdTask::AssembleCcdTask</scope><name>allKeysToRemove</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1a0cee73e62b533a501bc948af2a5c0b89" prot="public" virt="non-virtual"><scope>lsst::ip::isr::assembleCcdTask::AssembleCcdTask</scope><name>assembleCcd</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1a21aa719562a3f251066a76e1b7e42cdd" prot="public" virt="non-virtual"><scope>lsst::ip::isr::assembleCcdTask::AssembleCcdTask</scope><name>ConfigClass</name></member>
+      <member refid="classlsst_1_1ip_1_1isr_1_1assemble_ccd_task_1_1_assemble_ccd_task_1a75117815c3d1f28b271b5a86f57dce6e" prot="public" virt="non-virtual"><scope>lsst::ip::isr::assembleCcdTask::AssembleCcdTask</scope><name>postprocessExposure</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

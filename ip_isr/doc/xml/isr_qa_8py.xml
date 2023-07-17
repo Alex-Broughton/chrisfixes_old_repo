@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="isr_qa_8py" kind="file" language="Python">
+    <compoundname>isrQa.py</compoundname>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config" prot="public">lsst::ip::isr::isrQa::IsrQaFlatnessConfig</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config" prot="public">lsst::ip::isr::isrQa::IsrQaConfig</innerclass>
+    <innernamespace refid="namespacelsst">lsst</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip">lsst::ip</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr">lsst::ip::isr</innernamespace>
+    <innernamespace refid="namespacelsst_1_1ip_1_1isr_1_1isr_qa">lsst::ip::isr::isrQa</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacelsst_1_1ip_1_1isr_1_1isr_qa" refkind="compound"><highlight class="comment">#<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>ip_isr.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Developed<sp/>for<sp/>the<sp/>LSST<sp/>Data<sp/>Management<sp/>System.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>product<sp/>includes<sp/>software<sp/>developed<sp/>by<sp/>the<sp/>LSST<sp/>Project</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#<sp/>(https://www.lsst.org).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#<sp/>See<sp/>the<sp/>COPYRIGHT<sp/>file<sp/>at<sp/>the<sp/>top-level<sp/>directory<sp/>of<sp/>this<sp/>distribution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/>for<sp/>details<sp/>of<sp/>code<sp/>ownership.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>program<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">#<sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">#<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">#<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">#<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">#<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">#<sp/>along<sp/>with<sp/>this<sp/>program.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;https://www.gnu.org/licenses/&gt;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">__all__<sp/>=<sp/>[</highlight><highlight class="stringliteral">&quot;IsrQaFlatnessConfig&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;IsrQaConfig&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;makeThumbnail&quot;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacelsst_1_1afw_1_1display_1_1rgb" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">lsst.afw.display.rgb</ref><sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>afwRGB</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="namespacelsst_1_1afw_1_1math" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">lsst.afw.math</ref><sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>afwMath</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/><ref refid="classlsst_1_1pex_1_1config_1_1config_1_1__PexConfigGenericAlias" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/pex_config/g4f1969f4e1+b66847d792/doc/pex_config.tag">lsst.pex.config</ref><sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>pexConfig</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config" kindref="compound">IsrQaFlatnessConfig</ref>(pexConfig.Config):</highlight></codeline>
+<codeline lineno="31" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config_1ae895cb155b16f729d17fbcc67654af28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>meshX<sp/>=<sp/>pexConfig.Field(</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=int,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Mesh<sp/>size<sp/>in<sp/>X<sp/>for<sp/>flatness<sp/>statistics&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=256,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="36" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config_1ac85fe485055d232d3d351aace7d122db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>meshY<sp/>=<sp/>pexConfig.Field(</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=int,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Mesh<sp/>size<sp/>in<sp/>Y<sp/>for<sp/>flatness<sp/>statistics&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=256,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="41" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config_1a9a27883e18069b2d0accd0d9150c29c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>doClip<sp/>=<sp/>pexConfig.Field(</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=bool,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Clip<sp/>outliers<sp/>for<sp/>flatness<sp/>statistics?&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">True</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="46" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config_1ae412b37e5c559a1a0c33dcaf94f0a734" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>clipSigma<sp/>=<sp/>pexConfig.Field(</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=float,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Number<sp/>of<sp/>sigma<sp/>deviant<sp/>a<sp/>pixel<sp/>must<sp/>be<sp/>to<sp/>be<sp/>clipped<sp/>from<sp/>flatness<sp/>statistics.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=3.0,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="51" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_flatness_config_1abb77367d474551967194d5919ee01081" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>nIter<sp/>=<sp/>pexConfig.Field(</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=int,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Number<sp/>of<sp/>iterations<sp/>used<sp/>for<sp/>outlier<sp/>clipping<sp/>in<sp/>flatness<sp/>statistics.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=3,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config" kindref="compound">IsrQaConfig</ref>(pexConfig.Config):</highlight></codeline>
+<codeline lineno="59" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1ae1207ff1867818d8d3635bd07bb17410" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>saveStats<sp/>=<sp/>pexConfig.Field(</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=bool,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Calculate<sp/>ISR<sp/>statistics<sp/>while<sp/>processing?&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">True</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a9e1869e604bae45b4fa47b249ac3811f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>flatness<sp/>=<sp/>pexConfig.ConfigField(</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=IsrQaFlatnessConfig,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Flatness<sp/>statistics<sp/>configuration.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a1d6d55700c7462c671abdf2b477f72bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>doWriteOss<sp/>=<sp/>pexConfig.Field(</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=bool,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Write<sp/>overscan<sp/>subtracted<sp/>image?&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="75" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1ac23257165048bd3919c1315219e94ae0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>doThumbnailOss<sp/>=<sp/>pexConfig.Field(</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=bool,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Write<sp/>overscan<sp/>subtracted<sp/>thumbnail?&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a8b7fd648b61a6dc385a93b3648e91b4f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>doWriteFlattened<sp/>=<sp/>pexConfig.Field(</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=bool,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Write<sp/>image<sp/>after<sp/>flat-field<sp/>correction?&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="86" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a0347806d049f65311e4db70d589574b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>doThumbnailFlattened<sp/>=<sp/>pexConfig.Field(</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=bool,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Write<sp/>thumbnail<sp/>after<sp/>flat-field<sp/>correction?&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=</highlight><highlight class="keyword">False</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1af1c74f8c7a6629e7339840bd54409841" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>thumbnailBinning<sp/>=<sp/>pexConfig.Field(</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=int,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Thumbnail<sp/>binning<sp/>factor.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=4,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="97" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a623af0d124748566fcf0a0e87dadcbef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>thumbnailStdev<sp/>=<sp/>pexConfig.Field(</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=float,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Number<sp/>of<sp/>sigma<sp/>below<sp/>the<sp/>background<sp/>to<sp/>set<sp/>the<sp/>thumbnail<sp/>minimum.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=3.0,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="102" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a8795d8ff3c3100a5e0070e85aa5e3f53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>thumbnailRange<sp/>=<sp/>pexConfig.Field(</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=float,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Total<sp/>range<sp/>in<sp/>sigma<sp/>for<sp/>thumbnail<sp/>mapping.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=5.0,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="107" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1a8ce97eba2d1243027ce9bb90a0dfa75e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>thumbnailQ<sp/>=<sp/>pexConfig.Field(</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=float,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Softening<sp/>parameter<sp/>for<sp/>thumbnail<sp/>mapping.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=20.0,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="112" refid="classlsst_1_1ip_1_1isr_1_1isr_qa_1_1_isr_qa_config_1ac58bde95a09ec09078b159097fc357f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>thumbnailSatBorder<sp/>=<sp/>pexConfig.Field(</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dtype=int,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>doc=</highlight><highlight class="stringliteral">&quot;Width<sp/>of<sp/>border<sp/>around<sp/>saturated<sp/>pixels<sp/>in<sp/>thumbnail.&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>default=2,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="namespacelsst_1_1ip_1_1isr_1_1isr_qa_1aa7c93c290ccc50f83c90662838fa7a85" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacelsst_1_1ip_1_1isr_1_1isr_qa_1aa7c93c290ccc50f83c90662838fa7a85" kindref="member">makeThumbnail</ref>(exposure,<sp/>isrQaConfig=None):</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Create<sp/>a<sp/>snapshot<sp/>thumbnail<sp/>from<sp/>input<sp/>exposure.</highlight></codeline>
+<codeline lineno="121"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="122"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>The<sp/>output<sp/>thumbnail<sp/>image<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/>constructed<sp/>based<sp/>on<sp/>the<sp/>parameters</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>the<sp/>configuration<sp/>file.<sp/><sp/>Currently,<sp/>the<sp/>asinh<sp/>mapping<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/>the</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>only<sp/>mapping<sp/>method<sp/>used.</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>Parameters</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>----------</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>exposure<sp/>:<sp/>`<ref refid="classlsst_1_1afw_1_1image_1_1_exposure" kindref="compound" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">lsst.afw.image.Exposure</ref>`</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>The<sp/>exposure<sp/>to<sp/>be<sp/>converted<sp/>into<sp/>a<sp/>thumbnail.</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>isrQaConfig<sp/>:<sp/>`Config`</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Configuration<sp/>object<sp/>containing<sp/>all<sp/>parameters<sp/>to<sp/>control<sp/>the</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thumbnail<sp/>generation.</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>Returns</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>-------</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>rgbImage<sp/>:<sp/>`numpy.ndarray`</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Binned<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>scaled<sp/>version<sp/>of<sp/>the<sp/>exposure,<sp/>converted<sp/>to<sp/>an</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>integer<sp/>array<sp/>to<sp/>allow<sp/>it<sp/>to<sp/>be<sp/>written<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>PNG.</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;</highlight></codeline>
+<codeline lineno="140"><highlight class="stringliteral"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isrQaConfig<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>binning<sp/>=<sp/>isrQaConfig.thumbnailBinning</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>binnedImage<sp/>=<sp/>afwMath.binImage(exposure.getMaskedImage(),<sp/>binning,<sp/>binning,<sp/>afwMath.MEAN)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>statsCtrl<sp/>=<sp/>afwMath.StatisticsControl()</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>statsCtrl.setAndMask(binnedImage.getMask().getPlaneBitMask([</highlight><highlight class="stringliteral">&quot;SAT&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;BAD&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;INTRP&quot;</highlight><highlight class="normal">]))</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stats<sp/>=<sp/>afwMath.makeStatistics(binnedImage,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>afwMath.MEDIAN<sp/>|<sp/>afwMath.STDEVCLIP<sp/>|<sp/>afwMath.MAX,<sp/>statsCtrl)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>low<sp/>=<sp/>stats.getValue(afwMath.MEDIAN)<sp/>-<sp/>isrQaConfig.thumbnailStdev*stats.getValue(afwMath.STDEVCLIP)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isrQaConfig.thumbnailSatBorder:</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>afwRGB.replaceSaturatedPixels(binnedImage,<sp/>binnedImage,<sp/>binnedImage,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isrQaConfig.thumbnailSatBorder,<sp/>stats.getValue(afwMath.MAX))</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>asinhMap<sp/>=<sp/>afwRGB.AsinhMapping(low,<sp/>isrQaConfig.thumbnailRange,<sp/>Q=isrQaConfig.thumbnailQ)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rgbImage<sp/>=<sp/>asinhMap.makeRgbImage(binnedImage)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>rgbImage</highlight></codeline>
+    </programlisting>
+    <location file="python/lsst/ip/isr/isrQa.py"/>
+  </compounddef>
+</doxygen>

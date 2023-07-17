@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacelsst_1_1ip_1_1isr_1_1isr_mock" kind="namespace" language="Python">
+    <compoundname>lsst::ip::isr::isrMock</compoundname>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_bf_kernel_mock" prot="public">lsst::ip::isr::isrMock::BfKernelMock</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_bias_mock" prot="public">lsst::ip::isr::isrMock::BiasMock</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_calibrated_raw_mock" prot="public">lsst::ip::isr::isrMock::CalibratedRawMock</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_crosstalk_coeff_mock" prot="public">lsst::ip::isr::isrMock::CrosstalkCoeffMock</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_dark_mock" prot="public">lsst::ip::isr::isrMock::DarkMock</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_defect_mock" prot="public">lsst::ip::isr::isrMock::DefectMock</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_flat_mock" prot="public">lsst::ip::isr::isrMock::FlatMock</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_fringe_mock" prot="public">lsst::ip::isr::isrMock::FringeMock</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock" prot="public">lsst::ip::isr::isrMock::IsrMock</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_isr_mock_config" prot="public">lsst::ip::isr::isrMock::IsrMockConfig</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_master_mock" prot="public">lsst::ip::isr::isrMock::MasterMock</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_data_container" prot="public">lsst::ip::isr::isrMock::MockDataContainer</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_mock_fringe_container" prot="public">lsst::ip::isr::isrMock::MockFringeContainer</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_dict_mock" prot="public">lsst::ip::isr::isrMock::RawDictMock</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_raw_mock" prot="public">lsst::ip::isr::isrMock::RawMock</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_transmission_mock" prot="public">lsst::ip::isr::isrMock::TransmissionMock</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_trimmed_raw_mock" prot="public">lsst::ip::isr::isrMock::TrimmedRawMock</innerclass>
+    <innerclass refid="classlsst_1_1ip_1_1isr_1_1isr_mock_1_1_untrimmed_fringe_mock" prot="public">lsst::ip::isr::isrMock::UntrimmedFringeMock</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelsst_1_1ip_1_1isr_1_1isr_mock_1a9ff44ebd0eef1058f290ea63bd30e78a" prot="private" static="no" mutable="no">
+        <type><ref refid="fits_8cc_1a1fbc6c4766fd22cd31bc6972d5d6c14f" kindref="member" external="/sdf/group/rubin/sw/conda/envs/lsst-scipipe-6.0.0/share/eups/Linux64/afw/g2c743f43ab+04f223c4f0/doc/afw.tag">list</ref></type>
+        <definition>list lsst::ip::isr::isrMock.__all__</definition>
+        <argsstring></argsstring>
+        <name>__all__</name>
+        <qualifiedname>lsst::ip::isr.isrMock.__all__</qualifiedname>
+        <initializer>=  [&quot;IsrMockConfig&quot;, &quot;IsrMock&quot;, &quot;RawMock&quot;, &quot;TrimmedRawMock&quot;, &quot;RawDictMock&quot;,
+           &quot;CalibratedRawMock&quot;, &quot;MasterMock&quot;,
+           &quot;BiasMock&quot;, &quot;DarkMock&quot;, &quot;FlatMock&quot;, &quot;FringeMock&quot;, &quot;UntrimmedFringeMock&quot;,
+           &quot;BfKernelMock&quot;, &quot;DefectMock&quot;, &quot;CrosstalkCoeffMock&quot;, &quot;TransmissionMock&quot;,
+           &quot;MockDataContainer&quot;, &quot;MockFringeContainer&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="python/lsst/ip/isr/isrMock.py" line="22" column="1" bodyfile="python/lsst/ip/isr/isrMock.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="python/lsst/ip/isr/isrMock.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>
